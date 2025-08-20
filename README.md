@@ -2,7 +2,7 @@
 
 ###
 
-<h4 align="left">Acharia legal a gente fazer esse ReadMe Junto, então adicionem o que acharem legal, ate termos algo do projeto</h4>
+<h4 align="left">Acharia legal a gente fazer esse ReadMe Junto, então adicionem o que acharem legal, até termos algo do projeto</h4>
 
 ###
 
@@ -24,13 +24,13 @@
 
 ###
 
-<img align="right" height="150" src="https://i.pinimg.com/originals/05/48/dd/0548dd4afa665874c0c568fe5c189bda.gif"  />
+<img align="left" height="150" src="https://i.pinimg.com/originals/05/48/dd/0548dd4afa665874c0c568fe5c189bda.gif"  />
 
 ###
 
-<div align="center">
-  <a href="https://open.spotify.com/user/Maciell">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=Maciell&count=1" alt="Spotify recently played"  />
+<div align="left">
+  <a href="https://open.spotify.com/track/0LjY5kfLP4TfD8wX3plY62" target="_blank" rel="noopener noreferrer">
+    <img align="center" height="120" src="https://i.pinimg.com/736x/6a/41/a5/6a41a576a9b50ff5c7ee92e927522ed4.jpg" alt="Minha Gatinha Comunista" />
   </a>
 </div>
 
@@ -38,10 +38,4 @@
 
 <img align="left" height="150" src="https://i.pinimg.com/originals/fe/04/b9/fe04b9b175c91e97df91eaa199d2d3dd.gif"  />
 
-###
 
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/MaciellCB/MaciellCB/output/snake.svg" alt="Snake animation" />
-
-###
