@@ -25,6 +25,7 @@
 ###
 
 <img align="left" height="150" src="https://i.pinimg.com/originals/05/48/dd/0548dd4afa665874c0c568fe5c189bda.gif"  />
+<img align="center" height="180" src="https://f.i.uol.com.br/fotografia/2025/04/23/174543286468093120f2871_1745432864_1x1_md.jpg"  />
 
 ###
 
