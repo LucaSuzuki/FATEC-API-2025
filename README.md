@@ -1,6 +1,6 @@
 <div align="center">
   <!-- Capa do Projeto -->
-  <img height="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1024px-International_Pok%C3%A9mon_logo.svg.png" alt="Logo do Projeto"/>
+  <img height="150" src="https://scareev.neocities.org/fatecos.png" alt="Logo do Projeto"/>
 </div>
 
 ###
@@ -10,20 +10,126 @@
 ---
 
 <h3 align="left">👩‍💻 Integrantes</h3>
-
 <!-- acho q o povo ainda nao entrou todo mundo aq, entao vao se add, se precisar d ajuda so me chamar -->
 <table>
   <tr>
     <td align="center">
       <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
       <br>
-      <sub><b> Nome do Integrante 1</b></sub>
-      <br>Qual o Papel
+      <sub><b> Heitor Galvão </b></sub>
+      <br> Scrum Master
       <br>
       <a href="LINK PRO SEU LINKEDIN" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
       </a>
-      <a href="https://github.com/SEU_GITHUB" target="_blank">
+      <a href="https://github.com/Scareev" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
+      </a>
+    </td>
+    <td align="center">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
+      <br>
+      <sub><b> Pedro Maciel </b></sub>
+      <br> Developer
+      <br>
+      <a href="LINK PRO SEU LINKEDIN" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
+      </a>
+      <a href="https://github.com/MaciellCB" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
+      </a>
+    </td>
+        <td align="center">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
+      <br>
+      <sub><b> Thiago Batista </b></sub>
+      <br> Product Owner
+      <br>
+      <a href="LINK PRO SEU LINKEDIN" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
+      </a>
+      <a href="https://github.com/Pottassiuw" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
+      </a>
+    </td>
+  </tr>
+      </td>
+        <td align="center">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
+      <br>
+      <sub><b> Elizabete Baltazar </b></sub>
+      <br> Developer
+      <br>
+      <a href="LINK PRO SEU LINKEDIN" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
+      </a>
+      <a href="https://github.com/BeteBaltazar" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
+      </a>
+    </td>
+  </tr>
+          <td align="center">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
+      <br>
+      <sub><b> Miguel Duarte </b></sub>
+      <br> Developer
+      <br>
+      <a href="LINK PRO SEU LINKEDIN" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
+      </a>
+      <a href="https://github.com/Duarte-Biophysics" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
+      </a>
+    </td>
+            <td align="center">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
+      <br>
+      <sub><b> Lucas Suzuki </b></sub>
+      <br> Developer
+      <br>
+      <a href="LINK PRO SEU LINKEDIN" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
+      </a>
+      <a href="https://github.com/LucaSuzuki" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
+      </a>
+    </td>
+              <td align="center">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
+      <br>
+      <sub><b> Gabriel Campos </b></sub>
+      <br> Developer
+      <br>
+      <a href="LINK PRO SEU LINKEDIN" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
+      </a>
+      <a href="https://github.com/gabrielyse" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
+      </a>
+    </td>
+                <td align="center">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
+      <br>
+      <sub><b> Nicolas Escobar </b></sub>
+      <br> Developer
+      <br>
+      <a href="LINK PRO SEU LINKEDIN" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
+      </a>
+      <a href="https://github.com/Niikoto" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
+      </a>
+    </td>
+                  <td align="center">
+      <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
+      <br>
+      <sub><b> João Vitor </b></sub>
+      <br> Developer
+      <br>
+      <a href="LINK PRO SEU LINKEDIN" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>
+      </a>
+      <a href="https://github.com/JoaoBarreto3" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="20"/>
       </a>
     </td>
