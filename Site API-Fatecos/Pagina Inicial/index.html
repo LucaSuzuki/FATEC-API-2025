@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Treinamento Ágil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#"> Treinamento Ágil</a>
+      <nav class="topnav" aria-label="Navegação principal">
+        <a href="#metodologia">Metodologia</a>
+        <a href="#funcoes">Funções</a>
+        <a href="#scrum">Scrum</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="mode-toggle" aria-pressed="false" title="Alternar tema"></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="funcoes">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1>Treinamento e Avaliação Ágil</h1>
+          <p class="lead">Aprenda práticas ágeis com foco em papéis, cerimônias e resultados — conteúdo prático e exercícios.</p>
+
+       
+          <div class="role-buttons" aria-label="Funções do time">
+            <button class="role-btn" data-title="Scrum Master"
+                    data-desc="Facilita o processo, remove impedimentos, protege o time de interrupções e ajuda no aprimoramento contínuo.">Scrum Master</button>
+
+            <button class="role-btn" data-title="Product Owner"
+                    data-desc="Responsável por maximizar o valor do produto: gerencia o backlog, prioriza funcionalidades e comunica stakeholders.">Product Owner</button>
+
+            <button class="role-btn" data-title="Time de Desenvolvimento"
+                    data-desc="Equipe multifuncional que transforma itens do backlog em incrementos de produto prontos e entregáveis.">Software Team</button>
+          </div>
+
+          <div class="role-explanation" id="roleExplanation" aria-live="polite">
+            <h3 id="roleTitle">Passe o mouse sobre uma função</h3>
+            <p id="roleText">Explicação breve sobre a função aparecerá aqui.</p>
+            <small class="hint">Passe o mouse/foque para ver. Clique para fixar.</small>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="image-placeholder" role="img" aria-label="Imagem ilustrativa do treinamento">
+            <span>Imagem do curso</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodologia" class="section-card">
+      <div class="section-grid">
+        <div>
+          <h2>Metodologia Ágil</h2>
+          <p>Texto sobre a metodologia ágil: entregas incrementais, feedback contínuo e priorização por valor.</p>
+
+          <h3>Homepage — Local para texto</h3>
+          <p>Resumo rápido e chamadas para ação: "Inscreva-se", "Ver exercícios".</p>
+        </div>
+
+        <aside class="quick-cards" aria-hidden="false">
+          <div class="mini-card">
+            <h4>Ritual</h4>
+            <p>Daily, Sprint Planning, Review — breve descrição.</p>
+          </div>
+          <div class="mini-card">
+            <h4>Entregas</h4>
+            <p>Incremento, Definition of Done — entrega de valor.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+
+    <section id="scrum" class="section-card">
+      <h2>Conceito de Scrum</h2>
+      <p>Scrum organiza o trabalho em Sprints, define papéis e cerimônias para melhorar inspeção e adaptação.</p>
+
+      <div class="video-wrap">
+   
+        <div class="video-embed" aria-hidden="false">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Vídeo explicativo sobre Scrum"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+       
+        <a href="https://www.youtube.com/watch?v=VIDEO_ID" class="video-btn" target="_blank" rel="noopener">Abrir em nova aba</a>
+      </div>
+    </section>
+
+    <!-- Exercícios -->
+    <section id="exercicios" class="section-card">
+      <h2>Exercícios & Quizzes</h2>
+      <div class="exercise-grid">
+        <article class="exercise-card">
+          <h4>Teste de Conhecimento Ágil</h4>
+          <p>Breve explicação e botão para iniciar.</p>
+          <button class="cta">Iniciar</button>
+        </article>
+
+        <article class="exercise-card">
+          <h4>Quiz sobre papéis do Scrum</h4>
+          <p>Perguntas rápidas para validar conhecimento.</p>
+          <button class="cta">Ir para o quiz</button>
+        </article>
+      </div>
+    </section>
+
+    
+    <section id="exemplos" class="section-card">
+      <h2>Exemplos de Categorias</h2>
+      <div class="examples" id="examples">
+        <div class="pill" data-desc="P.O. — Pessoas com forte visão de produto e decisão.">P.O. - Personalidades Fodas</div>
+        <div class="pill" data-desc="SM — Líderes que facilitam e desenvolvem times.">SM - Líderes Inspiradores</div>
+        <div class="pill" data-desc="ST — Times com alto desempenho e foco na entrega.">ST - Times de Elite</div>
+      </div>
+
+      <div class="pill-desc" id="pillDesc" aria-hidden="true">Passe o mouse sobre uma categoria para ver a descrição.</div>
+    </section>
+
+ 
+    <section id="contato" class="section-card" aria-label="Contato">
+      <h2>Contato</h2>
+      <p>Formas rápidas de contato com a equipe:</p>
+
+      <div class="contact-simple" role="list">
+        <div class="contact-item" role="listitem">
+          <strong>Scrum Master</strong>
+          <ul>
+            <li><a href="mailto:seu.email@exemplo.com" class="link">Gmail</a></li>
+            <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="link">WhatsApp</a></li>
+            <li><a href="https://github.com/seuusuario" target="_blank" rel="noopener" class="link">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Treinamento Ágil</div>
+      <div class="small">Texto sobre contato rápido</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
