@@ -1,5 +1,3 @@
-/* script.js */
-
 /* =========================
    Inicialização — elementos principais
    ========================= */
@@ -10,11 +8,7 @@ const mainEl = document.querySelector('main');
 
 if (spanAno) spanAno.textContent = new Date().getFullYear();
 
-/* =========================
-   Tema (persistência em localStorage)
-   - THEME_KEY: chave do localStorage
-   - applyTheme: aplica classe 'light' no <body> quando modo claro
-   ========================= */
+
 const THEME_KEY = "site-theme";
 function applyTheme(theme) {
   if (theme === "light") {
@@ -40,11 +34,7 @@ btnAlternarTema.addEventListener("click", () => {
   localStorage.setItem(THEME_KEY, next);
 });
 
-/* =========================
-   Botões de função (exibir explicação)
-   - mostra descrição ao passar o mouse / focar
-   - click fixa e ESC desfaz o fixo
-   ========================= */
+
 const roleBtns = document.querySelectorAll(".botao-funcao");
 const roleTitle = document.getElementById("titulo-funcao");
 const roleText = document.getElementById("texto-funcao");
@@ -83,9 +73,7 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-/* =========================
-   Etiquetas (pills) — mostrar descrição ao passar o mouse/focar
-   ========================= */
+
 const etiquetas = document.querySelectorAll(".etiqueta");
 const descricaoEtiqueta = document.getElementById("descricaoEtiqueta");
 etiquetas.forEach(p => {
@@ -105,11 +93,7 @@ etiquetas.forEach(p => {
   });
 });
 
-/* =========================
-   Acordeões — comportamento expandir/colapsar
-   - mantém apenas um aberto por vez
-   - ESC fecha todos
-   ========================= */
+
 const accordions = document.querySelectorAll(".botao-accordion");
 accordions.forEach(btn => {
   btn.addEventListener("click", () => {
@@ -137,9 +121,7 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-/* =========================
-   Rolagem suave para âncoras (links com data-scroll)
-   ========================= */
+
 const scrollLinks = document.querySelectorAll('a[data-scroll]');
 scrollLinks.forEach(link => {
   link.addEventListener('click', (ev) => {
@@ -154,16 +136,12 @@ scrollLinks.forEach(link => {
   });
 });
 
-/* =========================
-   BUSCA: destaque ao vivo + contagem por palavra
-   - busca sem total (contagens por palavra)
-   - usa snapshot do HTML original para restaurar
-   ========================= */
+
 const searchForm = document.getElementById('busca-topo');
 const searchInput = document.getElementById('q');
 const searchStats = document.getElementById('estatisticas-busca');
 
-// seletores dos elementos que serão pesquisados e destacados
+
 const contentSelectors = [
   'main h1','main h2','main h3','main p','main li',
   'main .resumo','main .texto-video','main .explicacao-funcao',
@@ -171,7 +149,7 @@ const contentSelectors = [
 ].join(',');
 const contentEls = Array.from(document.querySelectorAll(contentSelectors));
 
-// snapshot do HTML original para restauração
+
 contentEls.forEach(el => {
   if (!el.dataset.origHtml) el.dataset.origHtml = el.innerHTML;
 });
@@ -187,7 +165,7 @@ function clearHighlights() {
   searchStats.hidden = true;
 }
 
-// Executa busca e adiciona destaques
+
 function runSearchQuery(q) {
   const query = (q || '').trim();
   if (!query) {
@@ -195,16 +173,16 @@ function runSearchQuery(q) {
     return;
   }
 
-  // restaura originais antes de aplicar novo destaque
+  
   contentEls.forEach(el => {
     if (el.dataset.origHtml) el.innerHTML = el.dataset.origHtml;
   });
 
-  // separa palavras (preserva ordem, única)
+  
   const words = query.split(/\s+/).filter(Boolean);
   const uniqueWords = Array.from(new Set(words));
 
-  // conta ocorrências por palavra (texto principal, case-insensitive, palavra inteira)
+  
   const mainText = (mainEl && mainEl.innerText) ? mainEl.innerText : document.body.innerText;
   const counts = {};
   uniqueWords.forEach(w => {
@@ -217,7 +195,7 @@ function runSearchQuery(q) {
     }
   });
 
-  // monta regex segura para destaque
+
   const safeWords = uniqueWords.map(w => escapeRegExp(w));
   if (safeWords.length === 0) {
     clearHighlights();
@@ -225,7 +203,7 @@ function runSearchQuery(q) {
   }
   const highlightRegex = new RegExp('\\b(' + safeWords.join('|') + ')\\b', 'giu');
 
-  // aplica destaque em cada elemento (usa snapshot original)
+  
   contentEls.forEach(el => {
     const orig = el.dataset.origHtml || el.innerHTML;
     const replaced = orig.replace(highlightRegex, (match) => {
@@ -234,7 +212,7 @@ function runSearchQuery(q) {
     el.innerHTML = replaced;
   });
 
-  // Popula UI de estatísticas (por palavra) — sem total
+  
   let statsHtml = '<div class="per-word">';
   uniqueWords.forEach(w => {
     const c = counts[w] || 0;
@@ -245,7 +223,7 @@ function runSearchQuery(q) {
   searchStats.innerHTML = statsHtml;
   searchStats.hidden = false;
 
-  // botão Limpar (reattach seguro)
+  
   const clearBtn = document.getElementById('search-clear');
   if (clearBtn) {
     clearBtn.onclick = () => {
@@ -256,7 +234,7 @@ function runSearchQuery(q) {
   }
 }
 
-/* debounce para pesquisa ao digitar */
+
 let searchTimeout = null;
 const DEBOUNCE_MS = 300;
 
@@ -268,19 +246,19 @@ function scheduleSearch(q) {
   }, DEBOUNCE_MS);
 }
 
-// Entrada: busca ao digitar (live)
+
 if (searchInput) {
   searchInput.addEventListener('input', (e) => {
     const v = e.target.value || '';
     if (!v.trim()) {
-      // se vazio, restaura imediatamente
+     
       clearHighlights();
       return;
     }
     scheduleSearch(v);
   });
 
-  // Esc limpa destaques
+ 
   searchInput.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       clearHighlights();
@@ -289,7 +267,6 @@ if (searchInput) {
   });
 }
 
-// Submit também dispara busca imediata (sem debounce)
 if (searchForm) {
   searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
