@@ -101,7 +101,7 @@
     <td align="center">
       <img src="https://avatars.githubusercontent.com/u/204204167?v=4" width="80" style="border-radius:50%;" alt="Foto Integrante"/>
       <br>
-      <sub><b> João Vitor </b></sub>
+      <sub><b> João Victor </b></sub>
       <br> Developer
       <br>
       <a href="https://github.com/JoaoBarreto3" target="_blank">
