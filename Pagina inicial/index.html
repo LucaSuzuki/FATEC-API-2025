@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatec - Métodos Ágeis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="logo">FATEC</div>
+    <nav class="menu">
+      <a href="#">Cursos</a>
+      <a href="#">Teste</a>
+      <a href="#">Contato</a>
+    </nav>
+    <button class="login-btn" id="loginBtn">Login</button>
+  </header>
+
+  <!-- LOGIN MODAL -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <input type="text" placeholder="Usuário">
+      <input type="password" placeholder="Senha">
+      <button class="btn-login">Entrar</button>
+    </div>
+  </div>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-text">
+      <h1>Fatec São José Dos Campos</h1>
+      <p>Bom dia</p>
+      <button class="btn-saiba">Saiba Mais</button>
+    </div>
+  </section>
+
+  <!-- ACESSO RÁPIDO -->
+  <section class="cards-section">
+    <div class="acesso-rapido">
+      <h3>Acesso Rápido</h3>
+      <div class="icones">
+        <div class="icon-card">O que é o site?</div>
+        <div class="icon-card">Método Scrum</div>
+      </div>
+    </div>
+    <div class="resultado">
+      <h3>Resultado do usuário</h3>
+      <ul class="timeline">
+        <li class="done">Enviado</li>
+        <li class="active">Processando</li>
+        <li>Recebido</li>
+        <li>Pendente</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <main class="conteudo">
+    <h2>Metodologias Ágeis</h2>
+
+    <p>São abordagens para gestão de projetos que priorizam entregas rápidas, colaboração, adaptação a mudanças e melhoria contínua. Ao invés de planejar tudo de uma vez, trabalha-se em ciclos curtos e iterativos.</p>
+
+    <h3>Principais Frameworks</h3>
+    <ul>
+      <li><b>Scrum</b> – Framework iterativo que organiza times em papéis, eventos e artefatos.</li>
+      <li><b>Kanban</b> – Gestão visual do fluxo de trabalho, limitando tarefas em andamento.</li>
+      <li><b>XP (Extreme Programming)</b> – Práticas como TDD, pair programming e integração contínua.</li>
+    </ul>
+
+    <!-- MÉTODO SCRUM -->
+    <h3>Método Scrum</h3>
+    <p>O Scrum é um dos métodos ágeis mais utilizados para gestão de projetos, especialmente no desenvolvimento de software, mas também em outras áreas. Ele organiza o trabalho em ciclos curtos chamados sprints, geralmente de 2 a 4 semanas, permitindo entregas frequentes e melhorias contínuas. O Scrum é baseado em transparência, inspeção e adaptação, promovendo colaboração, comunicação constante e foco no valor entregue ao cliente.</p>
+
+    <h4>Scrum Master (SM)</h4>
+    <p>Facilita o processo e garante que o Scrum seja seguido corretamente. Remove obstáculos que impedem a equipe de entregar valor. Atua como coach da equipe, promovendo boas práticas e colaboração.</p>
+
+    <h4>Product Owner (PO)</h4>
+    <p>Responsável por definir o que deve ser feito e priorizar o backlog do produto. Atua como representante do cliente, garantindo que a equipe entregue valor real. Toma decisões sobre funcionalidades e priorização, equilibrando necessidades do negócio e capacidade da equipe.</p>
+
+    <h4>Time de Desenvolvimento (ST/Dev)</h4>
+    <p>Grupo responsável por entregar as funcionalidades planejadas na sprint. É auto-organizado e multidisciplinar, ou seja, possui todas as habilidades necessárias para completar o trabalho. Colabora diretamente com o Product Owner e o Scrum Master.</p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>@copyright etc</span>
+    <span>Desenvolvido por Los Fatecos</span>
+  </footer>
+
+  <script>
+    const loginBtn = document.getElementById("loginBtn");
+    const loginModal = document.getElementById("loginModal");
+    const closeLogin = document.getElementById("closeLogin");
+
+    loginBtn.onclick = () => loginModal.style.display = "flex";
+    closeLogin.onclick = () => loginModal.style.display = "none";
+    window.onclick = (e) => { if(e.target === loginModal) loginModal.style.display = "none"; }
+  </script>
+</body>
+</html>
