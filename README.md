@@ -122,13 +122,35 @@ Descrição do desafio,etc,etc
 
 ---
 
-<h3 align="left">📋 BackLog do Produto</h3>
+<h1>🌱 Backlog do Produto</h1>
 
-<p align="left">
-- Item 1<br>
-- Item 2<br>
-- Item 3
-</p>
+<table border="1">
+  <tr>
+    <th>Rank</th>
+    <th>Prioridade</th>
+    <th>User Story</th>
+    <th>Sprint</th>
+    <th>Status</th>
+    <th>Data de Entrega</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Alta</td>
+    <td>Como aluno e avaliador, quero me cadastrar usando informações básicas para criar minha conta</td>
+    <td>1</td>
+    <td>✅</td>
+    <td>28/03</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Alta</td>
+    <td>Como aluno e avaliador, quero logar na página para acessar a minha conta e atestados</td>
+    <td>1</td>
+    <td>✅</td>
+    <td>28/03</td>
+  </tr>
+</table>
+
 <!-- dica, lembra que se for quebrar, toma cuidado com o fechamento do <br> -->
 ---
 
