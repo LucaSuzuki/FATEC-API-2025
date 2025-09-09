@@ -198,7 +198,7 @@ Descrição do desafio,etc,etc
     <tr>
         <td> 1 </td>
         <td> Muito Alta </td>
-        <td> Como um gerente, eu quero ver uma página web com todos os módulos e informações sobre metodologias ágeis, para que eu possa entender o conteúdo do curso e escolher por onde começar.</td>
+        <td> Como gerente, quero ver uma página web (homepage) com todos os módulos e informações sobre metodologias ágeis, para que minha equipe possa entender os conteúdos.</td>
         <td> 28/09 </td>
         <td> 4 </td>
         <td> 1 </td>
@@ -214,7 +214,7 @@ Descrição do desafio,etc,etc
     <tr>
         <td> 3 </td>
         <td> Alta </td>
-        <td> Como gerente, eu quero ver as seções que possuem a definição das metodologias ágeis, para que eu possa compreender o papel de cada </td>
+        <td> Como gerente, quero ver as seções que possuem a definição das metodologias ágeis, para que minha equipe possa compreender o papel de cada </td>
         <td> 28/09 </td>
         <td> 2 </td>
         <td> 1 </td>
@@ -222,7 +222,7 @@ Descrição do desafio,etc,etc
     <tr>
         <td> 4 </td>
         <td> Alta </td>
-        <td> Como gerente, quero que o treinamento provida as informações necessárias para aplicar e entender a metodologia ágil SCRUM. </td>
+        <td> Como gerente, quero que o treinamento provida as informações necessárias para minha equipe aplicar e entender a metodologia ágil SCRUM. </td>
         <td> 26/10 </td>
         <td> 0 </td>
         <td> 2 </td>
@@ -230,7 +230,7 @@ Descrição do desafio,etc,etc
     <tr>
         <td> 5 </td>
         <td> Média </td>
-        <td> Como gerente, eu quero fazer um teste para prever o tipo de perfil que cada papel Scrum possui. (PO, SM, Developer) Para que eu possa me enquadrar em algum deles. </td>
+        <td> Como gerente, quero fazer um teste para prever o tipo de perfil que cada papel Scrum possui. (PO, SM, Developer) Para que minha equipe possa se enquadrar em algum deles. </td>
         <td> 23/11 </td>
         <td> 0 </td>
         <td> 3 </td>
@@ -238,7 +238,7 @@ Descrição do desafio,etc,etc
     <tr>
         <td> 6 </td>
         <td> Média </td>
-        <td> Como professor, quero ter uma área para acessar os atestados enviados por alunos </td>
+        <td> Como </td>
         <td> 23/11 </td>
         <td> 0 </td>
         <td> 3 </td>
