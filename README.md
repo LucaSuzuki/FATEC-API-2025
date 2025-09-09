@@ -136,7 +136,7 @@ Descrição do desafio,etc,etc
   <tr>
     <td>1</td>
     <td>Alta</td>
-    <td>Como aluno e avaliador, quero me cadastrar usando informações básicas para criar minha conta</td>
+    <td></td>
     <td>1</td>
     <td>✅</td>
     <td>28/03</td>
@@ -144,7 +144,7 @@ Descrição do desafio,etc,etc
   <tr>
     <td>2</td>
     <td>Alta</td>
-    <td>Como aluno e avaliador, quero logar na página para acessar a minha conta e atestados</td>
+    <td></td>
     <td>1</td>
     <td>✅</td>
     <td>28/03</td>
