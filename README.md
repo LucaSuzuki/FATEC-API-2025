@@ -1,3 +1,5 @@
+<h1>FATEC-API 1° SEMESTRE </h1>
+
 <h3 align="left">👩‍💻 Integrantes</h3>
 <table>
   <!-- cargos principais -->
@@ -122,29 +124,10 @@ Descrição do desafio,etc,etc
 
 ---
 
-<h3 align="left">📋 BackLog do Produto</h3>
-
-<p align="left">
-- Item 1<br>
-- Item 2<br>
-- Item 3
-</p>
-<!-- dica, lembra que se for quebrar, toma cuidado com o fechamento do <br> -->
----
-
 <h3 align="left">📈 Cronograma de Evolução do Projeto</h3>
 
 <p align="left">
 <img height="170" widhth="" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/33e56710846531.560ec4d2a729a.jpg" alt="Gráfico de evolução"/>
-</p>
-
----
-
-<h3 align="left">⏳ Período da Sprint</h3>
-
-<p align="left">
-📄 <a href="LINK DO DOCUMENTO" target="_blank">Documento da Sprint</a><br>
-🎥 <a href="LINK DO YOUTUBE" target="_blank">Vídeo do incremento entregue</a>
 </p>
 
 ---
@@ -322,14 +305,17 @@ Descrição do desafio,etc,etc
   </tr>
 </table>
   
+---
 
+<h3 align="left">⏳ Período da Sprint</h3>
 
-
-
-
-
+<p align="left">
+📄 <a href="LINK DO DOCUMENTO" target="_blank">Documento da Sprint</a><br>
+🎥 <a href="LINK DO YOUTUBE" target="_blank">Vídeo do incremento entregue</a>
+</p>
 
 ---
+
 
 <h3 align="left">⚙️ Como executar, usar e testar</h3>
 
@@ -337,13 +323,13 @@ Descrição do desafio,etc,etc
 
 ```bash
 # Clonar repositório
-git clone LINK PRO REPOSITORIO
+git clone https://github.com/LucaSuzuki/FATEC-API-2025
 
 # Entrar na pasta
-cd projeto
+cd ./FATEC-API-2025
 
 # Instalar dependências
-npm install
+pip install ...
 
 # Executar
-npm start
+python ....
