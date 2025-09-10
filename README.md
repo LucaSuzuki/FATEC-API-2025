@@ -342,13 +342,13 @@ Descrição do desafio,etc,etc
 
 ```bash
 # Clonar repositório
-git clone LINK PRO REPOSITORIO
+git clone https://github.com/LucaSuzuki/FATEC-API-2025
 
 # Entrar na pasta
-cd projeto
+cd ./FATEC-API-2025
 
 # Instalar dependências
-npm install
+pip install ...
 
 # Executar
-npm start
+python ....
