@@ -160,8 +160,12 @@ Descrição do desafio,etc,etc
 &nbsp;&nbsp;&nbsp; ┣ 📁 tests <br>
 &nbsp;&nbsp;&nbsp; ┗ README.md
 </p>
-
 ---
+<h3 align="left">📖 DoR - Definition of Ready</h3>
+---
+<h3 align="left">📖 DoD - Definition of Done</h3>
+---
+
 
 <h1>🌱 Backlog do Produto </h1>
 <table>
@@ -216,21 +220,13 @@ Descrição do desafio,etc,etc
     <tr>
         <td> 6 </td>
         <td> Média </td>
-        <td> Como </td>
-        <td> 23/11 </td>
-        <td> 0 </td>
-        <td> 3 </td>
-    </tr>
-    <tr>
-        <td> 7 </td>
-        <td> Média </td>
         <td> Como um aprendiz, quero que eu possa com o treinamento dado, ter capacidade de aplicar e entender a metodologia ágil SCRUM a partir de testes. </td>
         <td> 26/10 </td>
         <td> 0 </td>
         <td> 2 </td>
     </tr>
     <tr>
-        <td> 8 </td>
+        <td> 7 </td>
         <td> Média </td>
         <td> Como um aprendiz, eu preciso saber o que e para que servem os artefatos da metodologia, assim como maneiras de visualisá-los, caso preciso, como com um Burndown Chart. </td>
         <td> 26/10 </td>
@@ -238,7 +234,7 @@ Descrição do desafio,etc,etc
         <td> 2 </td>
     </tr>
     <tr>
-        <td> 9 </td>
+        <td> 8 </td>
         <td> Baixa </td>
         <td> Como desenvolvedor, preciso deixar o layout do projeto responsivo para mobile.  </td>
         <td> 26/10 </td>
@@ -247,7 +243,7 @@ Descrição do desafio,etc,etc
     </tr>
     <tr>
         </tr>
-        <td> 10 </td>
+        <td> 9 </td>
         <td> Baixa </td>
         <td> Como desenvolvedor, preciso criar a funcionalidade de trocar de temas dentre o projeto (preto e branco). </td>
         <td> 23/11 </td>
