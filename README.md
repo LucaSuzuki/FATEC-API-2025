@@ -1,10 +1,23 @@
-<h1>FATEC-API 1° SEMESTRE </h1>
+<h1>Treinamento e Avaliação de Padrão Ágil de desenvolvimento de Software </h1>
 
 <h3 align="left">🎯 Desafio</h3>
+<p> Aplicação Web de instruções para desenvolvimento de projetos ágeis (scrum) na área de TI</p>
 
-<p align="left">
+<h3 align="left">
 Descrição do desafio,etc,etc
-</p>
+</h3>
+
+<p>Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil 
+(Scrum), todos os processos deverão ter conceitos e fundamentos com referências, bem como a 
+aplicação com exemplos práticos para a plena compreensão do usuário do sistema. Deverá criar um 
+formulário para avaliações parciais e final (com totalização). O sistema deve primordialmente ter 
+foco na disseminação dos processos para que os usuários possam replicar todos os passos em 
+futuros desenvolvimentos. A prioridade secundária será a compreensão de habilidades (Skills) 
+importantes para um profissional de tecnologia da informação. Todo o material de conhecimento 
+publicado no sistema deverá ter forma indireta (Conhecimento adquirido e repassado pelos 
+desenvolvedores). Bem como toda a documentação de desenvolvimento deverá ser lastreado no 
+GitHub com todos os processos necessários para a fidelização do cliente. </p>
+---
 
 <h1>🌱 Backlog do Produto </h1>
 <table>
@@ -90,70 +103,7 @@ Descrição do desafio,etc,etc
         <td> 3 </td>
     </tr>
 </table>
-
 ---
-
-<h3 align="left">📈 Cronograma de Evolução do Projeto</h3>
-
-<p align="left">
-<img height="170" widhth="" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/33e56710846531.560ec4d2a729a.jpg" alt="Gráfico de evolução"/>
-</p>
-
----
-<h3> Tabela descritivas</h3>
-<p>Período: 08/09 - 28/09 </p>
-<a href="#">Link para documentação: </a>
-<a href="#">Link para video no Youtube do Incremento entregue:</a>
----
-
-
-
----
-
-
-
----
-
-
-
----
-
-<h3 align="left">🛠 Linguagens Usadas</h3>
-
-<div align="left">
-  <img src="https://www.svgrepo.com/show/452091/python.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://www.svgrepo.com/show/508915/flask.svg" height="40" alt="flask logo"  />
-  <img width="12" />
-  <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" height="40" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://www.svgrepo.com/show/452228/html-5.svg" height="40" alt="html logo"  />
-  <img width="12" />
-  <img src="https://www.svgrepo.com/show/452185/css-3.svg" height="40" alt="css logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="40" alt="aws logo"  />
-  
-</div>
-
----
-<!-- Eu nao entendi oq vem aqui na estrutura do projeto -->
-<h3 align="left">📂 Estrutura do Projeto</h3>
-
-<p align="left">
-📁 pasta-principal/ <br>
-&nbsp;&nbsp;&nbsp; ┣ 📁 src <br>
-&nbsp;&nbsp;&nbsp; ┣ 📁 docs <br>
-&nbsp;&nbsp;&nbsp; ┣ 📁 tests <br>
-&nbsp;&nbsp;&nbsp; ┗ README.md
-</p>
----
-<h3 align="left">📖 DoR - Definition of Ready</h3>
----
-<h3 align="left">📖 DoD - Definition of Done</h3>
----
-
-
-
 <p>Nossa equipe decidiu utilizar a sequencia de fibonacci adaptada, com as seguintes estimativas:</p>
 <table>
   <tr>
@@ -203,20 +153,54 @@ Descrição do desafio,etc,etc
     </td>
   </tr>
 </table>
-  
+
 ---
 
-<h3 align="left">⏳ Período da Sprint</h3>
+<h3 align="left">📈 Cronograma de Evolução do Projeto</h3>
 
 <p align="left">
-📄 <a href="LINK DO DOCUMENTO" target="_blank">Documento da Sprint</a><br>
-🎥 <a href="LINK DO YOUTUBE" target="_blank">Vídeo do incremento entregue</a>
+<img height="170" widhth="" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/33e56710846531.560ec4d2a729a.jpg" alt="Gráfico de evolução"/>
 </p>
 
 ---
 
+<h3> Tabela descritivas</h3>
+<p>Período: 08/09 - 28/09 </p>
+<a href="#">Link para documentação: </a>
+<a href="#">Link para video no Youtube do Incremento entregue:</a>
 
+---
 
+<h3 align="left">🛠 Linguagens Usadas</h3>
+
+<div align="left">
+  <img src="https://www.svgrepo.com/show/452091/python.svg" height="40" alt="python logo"  />
+  <img width="12" />
+  <img src="https://www.svgrepo.com/show/508915/flask.svg" height="40" alt="flask logo"  />
+  <img width="12" />
+  <img src="https://www.svgrepo.com/show/452228/html-5.svg" height="40" alt="html logo"  />
+  <img width="12" />
+  <img src="https://www.svgrepo.com/show/452185/css-3.svg" height="40" alt="css logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="40" alt="aws logo"  />
+  <img src="https://www.svgrepo.com/show/353498/bootstrap.svg" height="40"/>
+  <img src="https://www.svgrepo.com/show/353925/javascript.svg" height="40"/>
+</div>
+
+---
+
+<!-- Eu nao entendi oq vem aqui na estrutura do projeto -->
+<h3 align="left">📂 Estrutura do Projeto</h3>
+
+<p align="left">
+📁 pasta-principal/ <br>
+&nbsp;&nbsp;&nbsp; ┣ 📁 src <br>
+&nbsp;&nbsp;&nbsp; ┣ 📁 docs <br>
+&nbsp;&nbsp;&nbsp; ┣ 📁 tests <br>
+&nbsp;&nbsp;&nbsp; ┗ README.md
+</p>
+
+---
 
 <h3 align="left">⚙️ Como executar, usar e testar</h3>
 
@@ -234,6 +218,27 @@ pip install ...
 
 # Executar
 python ....
+```
+
+---
+
+<h3>Link para a documentação </h3>
+<h4 align="left">📖 Definition of Done / Definition of Ready</h4>
+
+
+<h4 align="left">📖 DoR / DoD por Sprint</h4>
+<h4>Estratégia de Branch </h4>
+<h4> Manual do Usuário</h4>
+<h4> Manual de instalação</h4>
+  
+---
+
+<h3 align="left">⏳ Período da Sprint</h3>
+
+<p align="left">
+📄 <a href="LINK DO DOCUMENTO" target="_blank">Documento da Sprint</a><br>
+🎥 <a href="LINK DO YOUTUBE" target="_blank">Vídeo do incremento entregue</a>
+</p>
 
 ---
 
