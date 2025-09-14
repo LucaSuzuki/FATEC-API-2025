@@ -1,45 +1,280 @@
-/* HEADER E NAVBAR */
-
-header{
-    color: #f9f9f9;
-    margin: 0%;
-    background-color: #a30000;
-    padding: 12px 40px;
-}
-
-/*.navbar {
+/* HEADER */
+.navbar {
+  background: #a30000;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  padding: 12px 40px;
   position: sticky;
-}
-*/
-/* ACESSO RÁPIDO */
-
-.acesso-rapido{
-    padding: 2%;
-    height: 50%;
-    width: 50%;
-    background: #d4d3d3;
-    border-radius: 8px;
+  top: 0;
+  z-index: 1000;
 }
 
-/* BANNER DA FATEC */
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ddd;
+}
+
+.login-btn {
+  background: teal;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* BANNER */
+.banner {
+  position: relative;
+  height: 300px;
+  background: url("fatec.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
 
 .banner{
   background-image: url("https://sjc.fatec.sp.gov.br/static/media/predio.a3883078.png");
   padding: 18%;
 }
 
-.banner-h1{
+.banner-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.banner-text {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-text h1 {
+  font-size: 32px;
+}
+
+.banner-text p {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.btn-saiba {
+  background: #a30000;
+  border: none;
+  padding: 10px 24px;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ACESSO RÁPIDO */
+.cards-section {
   display: flex;
-  align-items: center;
-  font-size: 300%;
+  justify-content: space-between;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.acesso-rapido{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.acesso-rapido, .resultado {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.acesso-rapido h3, .resultado h3 {
+  background: #a30000;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.acesso-rapido a{
+  text-decoration: none;
+}
+
+.icones {
+  display: flex;
+   gap: 10px;
+  margin-top: 15px;
+}
+
+.icon-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.icon-card:hover {
+  background: #eee;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  list-style: none;
+  padding-left: 60px; 
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px; 
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ccc;
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.timeline li {
+  position: relative;
+  margin: 25px 0;
+  padding-left: 0px; 
+  font-size: 14px;
+  color: #666;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -48px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ccc;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+/* Estados */
+.timeline li.done {
+  color: #0056d6;
+}
+.timeline li.done::before {
+  background: #0056d6;
+}
+
+.timeline li.active {
+  color: #0ca44d;
+  font-weight: bold;
+}
+.timeline li.active::before {
+  background: #0ca44d;
+}
+
+.timeline li:not(.done):not(.active) {
+  color: #aaa;
+}
+
+
+/* Passado */
+.timeline li.done {
+  color: #0056d6;
+}
+.timeline li.done::before {
+  background: #0056d6;
+}
+
+/* Atual */
+.timeline li.active {
+  color: #0ca44d;
+  font-weight: bold;
+}
+.timeline li.active::before {
+  background: #0ca44d;
+}
+
+/* Futuro */
+.timeline li:not(.done):not(.active) {
+  color: #aaa;
 }
 
 /* CONTEÚDO */
+.conteudo {
+  padding: 30px 40px;
+  line-height: 1.7;
+}
 
-.conteudo{
-  padding: 5%;
+.conteudo h2, .conteudo h3, .conteudo h4 {
+  margin: 20px 0 10px;
+  color: #222;
+}
+
+.conteudo ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #a30000;
+  color: white;
+  text-align: center;
+}
+
+ .container {
+  background: #eee;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-around;          
+  justify-items: center;
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 15px; 
+}
+
+.container li b {
+  display: block;       
+  text-align: center;   
+  margin-bottom: 5px;
+  background: #c4c4c4;
+  border-radius: 9px; 
+  
+}
+
+.scrum {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-around; 
 }
