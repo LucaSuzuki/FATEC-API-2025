@@ -1,0 +1,45 @@
+/* HEADER E NAVBAR */
+
+header{
+    color: #f9f9f9;
+    margin: 0%;
+    background-color: #a30000;
+    padding: 12px 40px;
+}
+
+/*.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: sticky;
+}
+*/
+/* ACESSO RÁPIDO */
+
+.acesso-rapido{
+    padding: 2%;
+    height: 50%;
+    width: 50%;
+    background: #d4d3d3;
+    border-radius: 8px;
+}
+
+/* BANNER DA FATEC */
+
+.banner{
+  background-image: url("https://sjc.fatec.sp.gov.br/static/media/predio.a3883078.png");
+  padding: 18%;
+}
+
+.banner-h1{
+  display: flex;
+  align-items: center;
+  font-size: 300%;
+}
+
+/* CONTEÚDO */
+
+.conteudo{
+  padding: 5%;
+}
