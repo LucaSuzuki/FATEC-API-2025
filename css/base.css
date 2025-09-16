@@ -156,90 +156,6 @@
   background: #eee;
 }
 
-/* TIMELINE */
-.timeline {
-  position: relative;
-  list-style: none;
-  padding-left: 60px; 
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 20px; 
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: #ccc;
-  border-radius: 2px;
-  z-index: 0;
-}
-
-.timeline li {
-  position: relative;
-  margin: 25px 0;
-  padding-left: 0px; 
-  font-size: 14px;
-  color: #666;
-}
-
-.timeline li::before {
-  content: "";
-  position: absolute;
-  left: -48px; 
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #ccc;
-  border: 2px solid white;
-  z-index: 1;
-}
-
-/* Estados */
-.timeline li.done {
-  color: #0056d6;
-}
-.timeline li.done::before {
-  background: #0056d6;
-}
-
-.timeline li.active {
-  color: #0ca44d;
-  font-weight: bold;
-}
-.timeline li.active::before {
-  background: #0ca44d;
-}
-
-.timeline li:not(.done):not(.active) {
-  color: #aaa;
-}
-
-
-/* Passado */
-.timeline li.done {
-  color: #0056d6;
-}
-.timeline li.done::before {
-  background: #0056d6;
-}
-
-/* Atual */
-.timeline li.active {
-  color: #0ca44d;
-  font-weight: bold;
-}
-.timeline li.active::before {
-  background: #0ca44d;
-}
-
-/* Futuro */
-.timeline li:not(.done):not(.active) {
-  color: #aaa;
-}
-
 /* CONTEÚDO */
 .conteudo {
   padding: 30px 40px;
@@ -256,6 +172,7 @@
   margin-top: 10px;
 }
 
+
 /* FOOTER */
 .footer {
   background: #a30000;
@@ -266,15 +183,16 @@
  .container {
   background: #eee;
   display: grid;
-  column-gap: 50px;
   grid-template-columns: repeat(3, 300px);
   justify-content: space-around;          
-  justify-items: center;
+  align-items: center;
   list-style: none;
   text-align: center;
   margin-top: 20px;
   border-radius: 15px; 
 }
+
+
 
 .container li b {
   display: block;       
@@ -290,13 +208,6 @@
   grid-template-columns: repeat(3, 300px);
   justify-content: space-around; 
 }
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
   .banner {
