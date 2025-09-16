@@ -42,19 +42,22 @@
 /* BANNER */
 .banner {
   position: relative;
-  height: 300px;
-  background: url("fatec.jpg") center/cover no-repeat;
+  height: 320px; 
+  background-image: url("https://sjc.fatec.sp.gov.br/static/media/predio.a3883078.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; 
   color: white;
   text-align: center;
+  padding: 10px 0 0 0; 
+  margin-bottom: 0; 
+  overflow: hidden;
 }
 
-.banner{
-  background-image: url("https://sjc.fatec.sp.gov.br/static/media/predio.a3883078.png");
-  padding: 18%;
-}
 
 .banner-overlay {
   position: absolute;
@@ -68,9 +71,13 @@
   z-index: 1;
 }
 
-.banner-text h1 {
-  font-size: 32px;
+.banner-h1, .banner-text h1 {
+  font-size: 48px;  
+  font-weight: 900;
+  margin: 5px 0 10px 0; 
+  line-height: 1;
 }
+
 
 .banner-text p {
   margin: 8px 0;
@@ -82,10 +89,15 @@
   border: none;
   padding: 10px 24px;
   color: white;
-  font-size: 16px;
-  border-radius: 25px;
+  font-size: 18px;
+  border-radius: 22px;
   cursor: pointer;
-  margin-top: 10px;
+  transition: 0.2s;
+  margin-bottom: 5px; 
+}
+
+.btn-saiba:hover {
+  background: #7a0000;
 }
 
 /* ACESSO RÁPIDO */
@@ -277,4 +289,24 @@
   display: grid;
   grid-template-columns: repeat(3, 300px);
   justify-content: space-around; 
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .banner {
+    height: 90px;
+  }
+  .banner-h1 {
+    font-size: 20px;
+  }
+  .btn-saiba {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
 }
