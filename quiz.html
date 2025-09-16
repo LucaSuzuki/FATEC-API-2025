@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="quiz"></div>
+  </div>
+
+  <script>
+    const perguntas = [
+      {
+        pergunta: "Qual a capital da França?",
+        alternativas: ["Roma", "Paris", "Berlim", "Madri", "Londres"],
+        correta: 1
+      },
+      {
+        pergunta: "Quanto é 2 + 2?",
+        alternativas: ["3", "4", "5", "6", "22"],
+        correta: 1
+      },
+      {
+        pergunta: "Qual o maior planeta do sistema solar?",
+        alternativas: ["Terra", "Vênus", "Marte", "Júpiter", "Saturno"],
+        correta: 3
+      },
+      {
+        pergunta: "Quem pintou a Mona Lisa?",
+        alternativas: ["Picasso", "Da Vinci", "Michelangelo", "Van Gogh", "Monet"],
+        correta: 1
+      },
+      {
+        pergunta: "Qual é o metal líquido à temperatura ambiente?",
+        alternativas: ["Ferro", "Mercúrio", "Prata", "Alumínio", "Cobre"],
+        correta: 1
+      }
+    ];
+
+    let atual = 0;
+    let respostas = Array(perguntas.length).fill(null);
+
+    const quizEl = document.getElementById("quiz");
+
+    function mostrarPergunta() {
+      const q = perguntas[atual];
+      quizEl.innerHTML = `
+        <h2>${q.pergunta}</h2>
+        <div class="options">
+          ${q.alternativas.map((alt, i) => `
+            <div class="option ${respostas[atual] === i ? "selected" : ""}" onclick="selecionarResposta(${i})">
+              ${alt}
+            </div>
+          `).join("")}
+        </div>
+        <div class="actions">
+          <button onclick="proxima()" ${respostas[atual] === null ? "disabled" : ""}>
+            ${atual === perguntas.length - 1 ? "Finalizar" : "Próxima"}
+          </button>
+        </div>
+      `;
+    }
+
+    function selecionarResposta(indice) {
+      respostas[atual] = indice;
+      mostrarPergunta();
+    }
+
+    function proxima() {
+      if (atual < perguntas.length - 1) {
+        atual++;
+        mostrarPergunta();
+      } else {
+        finalizar();
+      }
+    }
+
+    function finalizar() {
+      const acertos = respostas.filter((r, i) => r === perguntas[i].correta).length;
+      quizEl.innerHTML = `
+        <div class="resultado">
+          Você acertou ${acertos} de ${perguntas.length} perguntas!
+        </div>
+      `;
+    }
+
+    mostrarPergunta();
+  </script>
+</body>
+</html>
