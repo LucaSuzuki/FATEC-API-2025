@@ -52,6 +52,11 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
 <a href="./api-logs/user_manual.md">Como utilizar o Projeto</a>
 
 ---
+<h3 align="left">📈 Diagrama de Caso de Uso do Projeto</h3>
+
+[Caso de Uso](./api-logs/UseCase%Diagram0.asta)
+
+---
 
 <h3>Documentação</h3>
 <a href="./api-logs/documentation.md">Documentação do Projeto</a>
