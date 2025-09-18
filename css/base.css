@@ -229,3 +229,9 @@
   background-color: #eee;
   border-radius: 10px;
 }
+
+
+/* Classe com formatação justificar */
+.txt-justify{
+  text-align: justify;
+}
