@@ -157,23 +157,6 @@
   background: #eee;
 }
 
-/* CONTEÚDO */
-.conteudo {
-  padding: 30px 40px;
-  line-height: 1.7;
-}
-
-.conteudo h2, .conteudo h3, .conteudo h4 {
-  margin: 20px 0 10px;
-  color: #222;
-}
-
-.conteudo ul {
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-
 /* FOOTER */
 .footer {
   background: #a30000;
@@ -191,7 +174,8 @@
   list-style: none;
   text-align: center;
   margin-top: 20px;
-  border-radius: 15px; 
+  border-radius: 15px;
+  padding: 5px;
 }
 
 
@@ -200,7 +184,6 @@
   display: block;       
   text-align: center;   
   margin-bottom: 5px;
-  background: #c4c4c4;
   border-radius: 9px; 
   
 }
@@ -225,7 +208,7 @@
 }
 
 /* Mudança container bootstrap */
-.container{
+.container-info{
   background-color: #eee;
   border-radius: 10px;
 }
