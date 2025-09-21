@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso - dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/button.css">
+</head>
+<body>
+    
+    <!--HEADER COM NAVBAR-->
+  <header>
+    <!-- NAVBAR BOOTSTRAP -->
+    <nav class="navbar navbar-red navbar-expand-lg">
+        <div class="container-fluid"><!-- CONTAINER COM FUNÇÕES DE UM DISPLAY FLEX -->
+            <a class="navbar-brand text-white">FATEC</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navdrop" type="button"><!-- BOTÃO HAMBUERGUER -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navdrop"><!-- O COLLAPSE SÓ É NECESSARIO CASO TENHA O BOTÃO HAMBUERGUER -->
+                <ul class="navbar-nav"><!-- LOCAL ONDE FICA OS LINKS DE NAVEGAÇÃO -->
+                    <li class="nav-item me-2"><a href="../../index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item dropdown me-2"><!-- DROPDOWN ONDE VÃO FICAR OS LINKS PARA AS PAGINAS DO CURSO -->
+                        <a href="" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Curso</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="po.html" class="dropdown-item">PO</a"></li><!-- OS LINKS/ITEMS DO DROPDOWN -->
+                            <li><a href="scrum.html" class="dropdown-item">Master</a"></li>
+                            <li><a href="dev.html" class="dropdown-item">Dev</a"></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2"><a href="../quiz.html" class="nav-link text-white">Avaliação</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <main>
+    <section> 
+        <div class="container container-info mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center p-3">
+                        <h3>Capítulos para Scrum Master</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-around">
+                            <a href="#" class="btn btn-primary cursos-btn" data-bs-target="#carouselExample" data-bs-slide-to="0">Capítulo 1</a>
+                            <a href="#" class="btn btn-primary cursos-btn" data-bs-target="#carouselExample" data-bs-slide-to="1">Capítulo 2</a>
+                            <a href="#" class="btn btn-primary cursos-btn" data-bs-target="#carouselExample" data-bs-slide-to="2">Capítulo 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="slide-content container-md mt-5">
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h1>Capítulo 1</h1>
+                <p class="txt-justify">O Scrum Master é um dos papéis fundamentais do Scrum, atuando como facilitador do time de desenvolvimento e guardião do processo ágil.
+                    Ele garante que a equipe siga corretamente os princípios e práticas do Scrum, removendo obstáculos que possam impedir o progresso do projeto.
+                    Além disso, o Scrum Master ajuda a equipe a melhorar continuamente, promovendo retrospectivas e aprendizado constante.</p>
+            </div>
+            <div class="carousel-item">
+                <h1>Capítulo 2</h1>
+                <p>O Scrum Master facilita reuniões como Daily Scrum, Sprint Planning, Review e Retrospective, remove impedimentos que bloqueiem o time,
+                    protege a equipe de interferências externas e distrações, apoia o Product Owner na gestão do backlog, garantindo que o time compreenda claramente
+                    os itens a serem desenvolvidos, e promove a cultura ágil, ensinando e reforçando práticas do Scrum.</p>
+            </div>
+            <div class="carousel-item">
+                <h1>Capítulo 3</h1>
+                <p>Um bom Scrum Master precisa ter comunicação e escuta ativa para mediar conflitos e garantir alinhamento, liderança servidora para ajudar o time a se
+                    organizar e entregar valor sem ser autoritário, habilidade para resolução de problemas removendo impedimentos rapidamente, e conhecimento do Scrum
+                    e métodos ágeis, aplicando as práticas de forma eficaz e adaptativa. O Scrum Master é essencial para o sucesso do time ágil, tornando o processo mais
+                    eficiente e o ambiente de trabalho mais colaborativo.</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+</main>
+
+  <!--FOOTER-->
+<footer class="footer text-center py-2 p-2 fixed-bottom mt-5">
+   FatecOS
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+</body>
+</html>

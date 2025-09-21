@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso - dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/button.css">
+</head>
+<body>
+    
+    <!--HEADER COM NAVBAR-->
+  <header>
+    <!-- NAVBAR BOOTSTRAP -->
+    <nav class="navbar navbar-red navbar-expand-lg">
+        <div class="container-fluid"><!-- CONTAINER COM FUNÇÕES DE UM DISPLAY FLEX -->
+            <a class="navbar-brand text-white">FATEC</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navdrop" type="button"><!-- BOTÃO HAMBUERGUER -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navdrop"><!-- O COLLAPSE SÓ É NECESSARIO CASO TENHA O BOTÃO HAMBUERGUER -->
+                <ul class="navbar-nav"><!-- LOCAL ONDE FICA OS LINKS DE NAVEGAÇÃO -->
+                    <li class="nav-item me-2"><a href="../../index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item dropdown me-2"><!-- DROPDOWN ONDE VÃO FICAR OS LINKS PARA AS PAGINAS DO CURSO -->
+                        <a href="" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Curso</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="po.html" class="dropdown-item">PO</a"></li><!-- OS LINKS/ITEMS DO DROPDOWN -->
+                            <li><a href="scrum.html" class="dropdown-item">Master</a"></li>
+                            <li><a href="dev.html" class="dropdown-item">Dev</a"></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2"><a href="../quiz.html" class="nav-link text-white">Avaliação</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <main>
+    <section> 
+        <div class="container container-info mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center p-3">
+                        <h3>Capítulos para Dev Team:</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-around">
+                            <a href="#" class="btn btn-primary cursos-btn" data-bs-target="#carouselExample" data-bs-slide-to="0">Capítulo 1</a>
+                            <a href="#" class="btn btn-primary cursos-btn" data-bs-target="#carouselExample" data-bs-slide-to="1">Capítulo 2</a>
+                            <a href="#" class="btn btn-primary cursos-btn" data-bs-target="#carouselExample" data-bs-slide-to="2">Capítulo 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="slide-content container-md mt-5">
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h1>Capítulo 1</h1>
+                <p class="txt-justify">O Time de Desenvolvimento é o grupo de profissionais responsáveis por transformar as ideias do Product Owner em funcionalidades reais do produto. Ele é auto-organizado, ou seja, decide internamente como executar o trabalho para atingir os objetivos da sprint. Cada membro contribui com suas habilidades especializadas, como programação, design, testes ou análise, garantindo que o produto seja entregue com qualidade e valor para o cliente. A colaboração é fundamental, pois todos compartilham a responsabilidade pelo sucesso do sprint.</p>
+            </div>
+            <div class="carousel-item">
+                <h1>Capítulo 2</h1>
+                <p>O Time de Desenvolvimento deve ser pequeno e multifuncional, geralmente entre 3 e 9 membros, para facilitar a comunicação e a produtividade. Ele é responsável por criar incrementos funcionais do produto a cada sprint, estimar e planejar as tarefas, garantir qualidade e testes contínuos, e participar de reuniões do Scrum como Daily Scrum, Sprint Planning e Sprint Review. Cada membro tem autonomia para decidir como executar as tarefas, mas todos compartilham a responsabilidade pelo sucesso da entrega.</p>
+            </div>
+            <div class="carousel-item">
+                <h1>Capítulo 3</h1>
+                <p>A essência do Dev Team está na auto-organização e colaboração. O time escolhe a melhor forma de trabalhar em conjunto para entregar o valor prometido. Isso significa que eles decidem prioridades internas, dividem tarefas, ajudam uns aos outros e resolvem problemas sem depender de instruções externas.
+                A comunicação constante dentro do time e com o Product Owner é essencial, permitindo ajustes rápidos, aprendizado contínuo e entregas que atendam às necessidades do cliente. Um Dev Team bem alinhado é a base do sucesso do Scrum.</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+</main>
+
+  <!--FOOTER-->
+<footer class="footer text-center py-2 p-2 fixed-bottom mt-5">
+   FatecOS
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+</body>
+</html>
