@@ -9,9 +9,9 @@ git clone https://github.com/LucaSuzuki/FATEC-API-2025
 cd ./FATEC-API-2025
 
 # Instalar dependências
-pip install ...
+pip install flask
 
 # Executar
-python ....
+cd flask --debug
 ```
 </p>

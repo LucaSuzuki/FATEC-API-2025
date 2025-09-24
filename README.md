@@ -24,7 +24,7 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
     <a href="./api-logs/fibonacci.md">Planning Poker com Fibonnacci Adaptado</a>
 
 <h3 align="left">📈 Cronograma de Evolução do Projeto</h3>
-    <a href="./api-logs/product-cronogram.md">Cronograma</a>
+    <a href="./api-logs/Sprints.xlsx">Cronograma</a>
 
 ---
 
