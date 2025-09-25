@@ -211,3 +211,103 @@
 .txt-justify{
   text-align: justify;
 }
+
+/* Estilo dos capítulos em forma de "árvore" */
+.chapters {
+  margin-top: 2rem;
+  margin-left: 0.5rem; 
+  position: relative;
+}
+
+.chapters p.h2 {
+  font-size: 2rem; 
+  font-weight: bold;
+}
+
+.chapters li {
+  margin: 1.5rem 0;
+  position: relative;
+  padding-left: 2.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-size: 1.2rem; 
+}
+
+/* Bolinhas maiores */
+.chapters li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 20px;  
+  height: 20px; 
+  background: #555;
+  border-radius: 50%;
+}
+
+/* Linha vertical mais grossa */
+.chapters li::after {
+  content: "";
+  position: absolute;
+  left: 19px; 
+  top: 1.6em;
+  bottom: -1.4em;
+  width: 3px; 
+  background: #555;
+}
+
+
+
+/* Espaço do conteúdo */
+
+.conteudo {
+  margin-left: 6rem;    
+  margin-top: 2rem;
+  width: calc(100% + 6px); 
+}
+
+
+.chapters ul {
+  list-style: none;   
+  padding-left: 0;    
+  position: relative;
+}
+
+
+.chapters li:hover {
+  color: #940b0b; 
+  cursor: pointer;
+}
+
+/* Item selecionado */
+.chapters li.active {
+  color: #000000;  
+  font-weight: bold; 
+}
+
+
+
+.btn-bot-exercicio{
+margin-right: 50px;  
+
+}
+
+.btn-bot-exercicio {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #d31a1a, #ec3333);
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-bot-exercicio:hover {
+    background: linear-gradient(135deg, #ec3333, #d31a1a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
