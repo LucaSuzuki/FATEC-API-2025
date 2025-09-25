@@ -21,7 +21,7 @@
         <td> Como gerente, preciso acompanhar a proficiência de minha equipe. Por analisar os requerimentos mínimos para cada função dentro da metodologia, para saber se minha equipe está apta. </td>
         <td> 28/09 </td>
         <td> 13 </td>
-        <td> 1 </td>
+        <td> 2 </td>
     </tr>
     <tr>
         <td> 3 </td>
@@ -45,7 +45,7 @@
         <td> Como gerente, quero fazer um teste para prever o tipo de perfil que cada papel Scrum possui. (PO, SM, Developer) Para que minha equipe possa se enquadrar em algum deles. </td>
         <td> 23/11 </td>
         <td> 0 </td>
-        <td> 3 </td>
+        <td> 1 </td>
     </tr>
     <tr>
         <td> 6 </td>

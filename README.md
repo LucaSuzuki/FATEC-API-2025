@@ -53,8 +53,8 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
 
 ---
 <h3 align="left">📈 Diagrama de Caso de Uso do Projeto</h3>
-
-[Caso de Uso](./api-logs/UseCase.asta)
+<a href="/api-logs/usercase/UseCase.asta">Arquivo .asta</a>
+<a href="/api-logs/usercase/usercase.md">Imagem do caso</a>
 
 ---
 
