@@ -1,4 +1,4 @@
-<h1> Definition of Done Geral</h1>
+<h1> Definition of Done do Projeto</h1>
 
 <ul>
     <li>✉️Criação do sistema de envio de relatório via Email. </li>
