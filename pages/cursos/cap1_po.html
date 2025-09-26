@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FatecOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/button.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVBAR BOOTSTRAP -->
+        <nav class="navbar navbar-red navbar-expand-lg">
+            <div class="container-fluid"><!-- CONTAINER COM FUNÇÕES DE UM DISPLAY FLEX -->
+                <a class="navbar-brand text-white">FATEC</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navdrop"
+                    type="button"><!-- BOTÃO HAMBUERGUER -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navdrop">
+                    <!-- O COLLAPSE SÓ É NECESSARIO CASO TENHA O BOTÃO HAMBUERGUER -->
+                    <ul class="navbar-nav"><!-- LOCAL ONDE FICA OS LINKS DE NAVEGAÇÃO -->
+                        <li class="nav-item me-2"><a href="../../index.html" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item dropdown me-2">
+                            <!-- DROPDOWN ONDE VÃO FICAR OS LINKS PARA AS PAGINAS DO CURSO -->
+                            <a href="" class="nav-link dropdown-toggle text-white" role="button"
+                                data-bs-toggle="dropdown">Curso</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="po.html" class="dropdown-item">PO</a">
+                                </li><!-- OS LINKS/ITEMS DO DROPDOWN -->
+                                <li><a href="scrum.html" class="dropdown-item">Master</a">
+                                </li>
+                                <li><a href="dev.html" class="dropdown-item">Dev</a">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2"><a href="../quiz.html" class="nav-link text-white"><!--Avaliação--></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container row">
+            <div class="col-2 d-flex justify-content-start">
+                <section class="mt-5 ms-4"><!-- TESTE BOTÃO QUE MUDA CONTEUDO -->
+                    <p class="h2">Capitulos</p>
+                    <nav class="navbar">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item mt-2">
+                                <button href="" class="nav-link btn btn-primary text-white" id="sub0">Capitulo
+                                    1</button>
+                            </li><!-- IMPORTANTE DEFINIR UM ID PARA PUXAR COM O JS -->
+                            <li class="nav-item mt-2">
+                                <button href="" class="nav-link btn btn-primary text-white" id="sub1">Capitulo
+                                    1.1</button>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <button href="" class="nav-link btn btn-primary text-white" id="sub2">Capitulo
+                                    1.2</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <div class="col-10">
+                <section class="mb-5">
+                    <div class="container container-info p-4 mt-4 mb-5">
+                        <!-- CONTAINER COM O CAPITULO, CONTENDO INFORMAÇÕES -->
+                        <div class="row"> <!-- DIVISÃO DE LINHA -->
+                            <div class="col" style="height: auto; overflow: auto; max-height: 65vh;">
+                                <div class="conteudo"><!-- DIVISÃO DE COLUNA -->
+                                    <h3>1. FUNÇÃO DO CARGO</h3>
+                                    <div class="row txt-justify">
+                                        <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
+                                <p class="mt-2">O Product Owner (P.O.) é o dono do produto, sendo o único responsável por maximizar
+                                o valor do produto resultante do trabalho da equipe de desenvolvimento. A forma como
+                                isso é feito pode variar amplamente entre organizações, equipes Scrum e indivíduos,
+                                mas a responsabilidade central permanece a mesma: garantir que a equipe esteja
+                                construindo a coisa certa, na hora certa. </p>
+
+                                <p class="mt-2">O P.O. é a ponte entre o mundo dos negócios (clientes e mercado) e a equipe de
+                                desenvolvimento. Ele é a "voz do cliente" dentro do time, garantindo que as
+                                necessidades e desejos dos usuários sejam compreendidos e traduzidos em
+                                funcionalidades concretas.</p>
+
+                                <p class="mt-2">No dia a dia, ele é o "guardião da visão", alguém com a capacidade de definir o que é
+                                mais importante a ser feito e de comunicar o "porquê" por trás de cada funcionalidade.
+                                Se há dúvidas sobre o que uma funcionalidade deve fazer ou qual item é mais
+                                prioritário, ele é a pessoa com a autoridade final para decidir.</p>
+
+                                <p class="mt-2">O pilar que sustenta o papel do Product Owner é o conceito de gerenciamento de valor.
+                                O P.O. não é um gerente de projetos que controla o cronograma; ele é um
+                                empreendedor do produto que busca o maior retorno sobre o investimento (ROI). Em
+                                vez de focar em "entregar tudo o que foi pedido", o P.O. foca em "entregar o que gera
+                                mais impacto para o negócio e para o cliente", mesmo que isso signifique dizer "não"
+                                para muitas outras ideias.</p>
+
+                                <p class="mt-2">Junto com isso, ele precisa de uma parceria fortíssima com os Developers. Enquanto o
+                                P.O. é responsável pelo "o quê" e pelo "porquê", os Developers são responsáveis pelo
+                                "como". Essa colaboração é diária e essencial para criar um produto de alta qualidade.
+                                Em relação ao Scrum Master, eles são parceiros estratégicos. O S.M. ajuda o P.O. a ser
+                                mais eficaz, ensinando técnicas de gerenciamento de backlog, facilitação de reuniões
+                                com stakeholders e garantindo que a comunicação com a equipe flua sem ruídos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col d-flex justify-content-end">
+                                <a href="cap1_po_ativit.html" class="btn btn-primary">Proximo</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer text-center py-2 p-2 fixed-bottom mt-5">
+        FatecOS
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script>
+        const conteudo1 = `
+            <h3>1. FUNÇÃO DO CARGO</h3>
+            <div class="row txt-justify">
+            <p class="mt-2">O Product Owner (P.O.) é o dono do produto, sendo o único responsável por maximizar
+            o valor do produto resultante do trabalho da equipe de desenvolvimento. A forma como
+            isso é feito pode variar amplamente entre organizações, equipes Scrum e indivíduos,
+            mas a responsabilidade central permanece a mesma: garantir que a equipe esteja
+            construindo a coisa certa, na hora certa. </p>
+
+            <p class="mt-2">O P.O. é a ponte entre o mundo dos negócios (clientes e mercado) e a equipe de
+            desenvolvimento. Ele é a "voz do cliente" dentro do time, garantindo que as
+            necessidades e desejos dos usuários sejam compreendidos e traduzidos em
+            funcionalidades concretas.</p>
+
+            <p class="mt-2">No dia a dia, ele é o "guardião da visão", alguém com a capacidade de definir o que é
+            mais importante a ser feito e de comunicar o "porquê" por trás de cada funcionalidade.
+            Se há dúvidas sobre o que uma funcionalidade deve fazer ou qual item é mais
+            prioritário, ele é a pessoa com a autoridade final para decidir.</p>
+
+            <p class="mt-2">O pilar que sustenta o papel do Product Owner é o conceito de gerenciamento de valor.
+            O P.O. não é um gerente de projetos que controla o cronograma; ele é um
+            empreendedor do produto que busca o maior retorno sobre o investimento (ROI). Em
+            vez de focar em "entregar tudo o que foi pedido", o P.O. foca em "entregar o que gera
+            mais impacto para o negócio e para o cliente", mesmo que isso signifique dizer "não"
+            para muitas outras ideias.</p>
+
+            <p class="mt-2">Junto com isso, ele precisa de uma parceria fortíssima com os Developers. Enquanto o
+            P.O. é responsável pelo "o quê" e pelo "porquê", os Developers são responsáveis pelo
+            "como". Essa colaboração é diária e essencial para criar um produto de alta qualidade.
+            Em relação ao Scrum Master, eles são parceiros estratégicos. O S.M. ajuda o P.O. a ser
+            mais eficaz, ensinando técnicas de gerenciamento de backlog, facilitação de reuniões
+            com stakeholders e garantindo que a comunicação com a equipe flua sem ruídos.</p>
+            </div>
+`;
+
+        const conteudo2 = `
+            <h3>1.1. DESENVOLVIMENTO DE SKILLS</h3>
+            <div class="row txt-justify">
+            <p class="mt-2"> Assim como o Scrum Master, um Product Owner de sucesso precisa de um conjunto
+            equilibrado de habilidades interpessoais e técnicas para navegar em um ambiente
+            complexo e dinâmico. </p>
+
+            <p class="mt-2"><b>SOFT SKILLS DE UM PRODUCT OWNER:</b></p>
+            Comunicação e Negociação: Talvez a mais crítica das habilidades. O P.O. precisa
+            articular a visão do produto para a equipe, negociar prioridades com múltiplos
+            stakeholders (que muitas vezes têm interesses conflitantes) e comunicar o progresso
+            de forma clara.</p>
+
+            <p class="mt-2">Visão de Negócio e Pensamento Estratégico: Um bom P.O. não apenas entende o que
+            os clientes pedem, mas também entende o mercado, a concorrência e os objetivos da
+            empresa, alinhando o produto a essa visão maior.</p>
+
+            <p class="mt-2">Tomada de Decisão: O P.O. precisa tomar decisões difíceis constantemente, muitas
+            vezes com informações incompletas. A habilidade de dizer "não" de forma construtiva
+            é essencial para manter o foco e evitar que o produto se torne uma coleção de
+            funcionalidades sem coesão.</p>
+
+            <p class="mt-2">Empatia com o Cliente: Para construir um produto que as pessoas amem, é preciso
+            entender profundamente suas dores, necessidades e desejos. O P.O. deve ser o maior
+            defensor do usuário final.</p>
+
+            <p class="mt-2">Storytelling (Contar Histórias): A capacidade de criar uma narrativa convincente sobre
+            o produto e suas funcionalidades. Isso ajuda a motivar a equipe e a alinhar os
+            stakeholders, explicando o valor de cada entrega de forma humana e impactante.</p>
+
+            <p class="mt-2"><b>HARD SKILLS DE UM PRODUCT OWNER:</b></p>
+
+            <p class="mt-2">Gerenciamento de Product Backlog: Esta é a principal ferramenta do P.O. Envolve criar,
+            refinar e priorizar os Itens do Backlog do Produto (PBIs), escrevendo-os de forma clara
+            (ex: usando o formato de Histórias de Usuário) para que todos entendam o que precisa
+            ser feito.</p>
+
+            <p class="mt-2">Conhecimento do Domínio e do Mercado: É imprescindível que o P.O. entenda
+            profundamente o produto, seu mercado, seus usuários e a tecnologia envolvida. Ele
+            não precisa ser um expert técnico, mas deve entender o suficiente para ter discussões
+            produtivas com a equipe.</p>
+
+            <p class="mt-2">Técnicas de Priorização: Dominar frameworks para priorização (Ex: MoSCoW, Kano
+            Model, Value vs. Effort) é crucial para garantir que o tempo valioso da equipe de
+            desenvolvimento seja gasto nos itens de maior impacto.</p>
+
+            <p class="mt-2">Análise de Dados e Métricas de Produto: Um P.O. moderno não se baseia apenas em
+            intuição. Ele deve ser capaz de definir e analisar métricas de sucesso do produto (Ex:
+            taxa de conversão, engajamento do usuário, satisfação do cliente - CSAT) para tomar
+            decisões informadas.</p>
+            </div>
+
+
+
+`;
+
+        conteudo3 = `
+            <h3>1.2. DESAFIOS COMUNS NA JORNADA DO PRODUCT OWNER</h3>
+            <div class="row txt-justify">
+            <p class="mt-2">A jornada de um Product Owner é cheia de desafios que exigem equilíbrio e resiliência.
+            O sucesso não vem de ter todas as respostas, mas de saber como navegar na incerteza
+            e guiar o produto na direção certa, aprendendo e adaptando ao longo do caminho. </p>
+
+            <p class="mt-2">Um dos maiores desafios é gerenciar a pressão dos stakeholders. Muitas vezes, cada
+            departamento ou cliente acredita que sua necessidade é a mais urgente. O P.O. pode
+            se sentir como se estivesse no meio de um cabo de guerra. A solução não é tentar
+            agradar a todos, o que é impossível. A chave é a transparência. Um Product Backlog
+            bem priorizado e visível para todos é a melhor ferramenta. Ele deixa claro o que está
+            sendo feito, o que virá a seguir e, mais importante, o que não está sendo feito agora. A
+            conversa muda de "por que o meu item não está pronto?" para "vamos discutir onde
+            este item se encaixa na estratégia geral do produto?". </p>
+
+            <p class="mt-2">Outro desafio comum é escrever bons Itens de Backlog. Um item mal escrito pode
+            gerar retrabalho, frustração e desperdício. Itens que são muito vagos ("Melhorar a tela
+            de login") ou muito prescritivos ("Colocar um botão azul de 12px na coordenada X, Y")
+            são problemáticos. A solução está na colaboração. O P.O. deve trabalhar junto com os
+            Developers no Refinamento do Backlog (Backlog Refinement). Nessa cerimônia, eles
+            discutem os itens, tiram dúvidas, estimam o esforço e garantem que todos tenham um
+            entendimento compartilhado antes mesmo de a Sprint começar. Um bom item de
+            backlog é um convite para uma conversa. </p>
+
+            <p class="mt-2">Por fim, o desafio de dizer "não". Muitos P.O.s, especialmente no início, têm
+            dificuldade em negar pedidos, com medo de frustrar stakeholders importantes. Mas
+            um "sim" para tudo significa um produto sem foco e uma equipe sobrecarregada. A
+            melhor forma de dizer "não" é explicando o custo de oportunidade. "Sim, podemos
+            fazer a sua ideia, mas isso significa que teremos que adiar aquela outra funcionalidade
+            que impacta um número maior de clientes. Dado nosso objetivo atual, ainda faz
+            sentido priorizar a sua?". Isso transforma uma negativa em uma decisão de negócios
+            estratégica e colaborativa. </p>
+            </div> 
+
+`;
+
+        const conteudo = document.querySelector(".conteudo");// BUSCA DENTRO DA PAGE UMA CLASSE CHAMADA CONTEUDO E GUARDA EM UMA VARIAVEL
+        const pressbtn = document.getElementById("sub0");// A MESMA COISA DE CIMA, POREM PROCURA UM ID
+        pressbtn.addEventListener("click", () => {// USANDO A VARIAVEL SE UTILIZA DE UMA FUNÇÃO JÁ PRONTA, ONDE QUANDO UM EVENTO OCORRE (NESSE CASO UM CLICK ELE EXECULTA UMA FUNÇÃO)
+            conteudo.innerHTML = conteudo1// PEGA ONDE ESTÁ GUARDADO ID E INSERE NELE A INFORMAÇÃO DIGITADA DEPOIS
+        })
+        const pressbtn2 = document.getElementById("sub1");
+        pressbtn2.addEventListener("click", () => {
+            conteudo.innerHTML = conteudo2
+        })
+        const pressbtn3 = document.getElementById("sub2");
+        pressbtn3.addEventListener("click", () => {
+            conteudo.innerHTML = conteudo3
+        })
+    </script>
+</body>
+
+</html>

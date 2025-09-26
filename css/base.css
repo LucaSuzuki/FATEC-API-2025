@@ -1,14 +1,7 @@
 /* HEADER */
-.navbar {
+.navbar-red{
   background: #a30000;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 
@@ -79,6 +72,7 @@
 }
 
 
+/* Botão sobre nós */
 .banner-text p {
   margin: 8px 0;
   font-size: 18px;
@@ -156,106 +150,6 @@
   background: #eee;
 }
 
-/* TIMELINE */
-.timeline {
-  position: relative;
-  list-style: none;
-  padding-left: 60px; 
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 20px; 
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: #ccc;
-  border-radius: 2px;
-  z-index: 0;
-}
-
-.timeline li {
-  position: relative;
-  margin: 25px 0;
-  padding-left: 0px; 
-  font-size: 14px;
-  color: #666;
-}
-
-.timeline li::before {
-  content: "";
-  position: absolute;
-  left: -48px; 
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #ccc;
-  border: 2px solid white;
-  z-index: 1;
-}
-
-/* Estados */
-.timeline li.done {
-  color: #0056d6;
-}
-.timeline li.done::before {
-  background: #0056d6;
-}
-
-.timeline li.active {
-  color: #0ca44d;
-  font-weight: bold;
-}
-.timeline li.active::before {
-  background: #0ca44d;
-}
-
-.timeline li:not(.done):not(.active) {
-  color: #aaa;
-}
-
-
-/* Passado */
-.timeline li.done {
-  color: #0056d6;
-}
-.timeline li.done::before {
-  background: #0056d6;
-}
-
-/* Atual */
-.timeline li.active {
-  color: #0ca44d;
-  font-weight: bold;
-}
-.timeline li.active::before {
-  background: #0ca44d;
-}
-
-/* Futuro */
-.timeline li:not(.done):not(.active) {
-  color: #aaa;
-}
-
-/* CONTEÚDO */
-.conteudo {
-  padding: 30px 40px;
-  line-height: 1.7;
-}
-
-.conteudo h2, .conteudo h3, .conteudo h4 {
-  margin: 20px 0 10px;
-  color: #222;
-}
-
-.conteudo ul {
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
 /* FOOTER */
 .footer {
   background: #a30000;
@@ -263,24 +157,26 @@
   text-align: center;
 }
 
- .container {
+/* Container proprio */
+ .container-base {
   background: #eee;
   display: grid;
-  column-gap: 50px;
   grid-template-columns: repeat(3, 300px);
   justify-content: space-around;          
-  justify-items: center;
+  align-items: center;
   list-style: none;
   text-align: center;
   margin-top: 20px;
-  border-radius: 15px; 
+  border-radius: 15px;
+  padding: 5px;
 }
 
-.container li b {
+
+
+.container-base li b {
   display: block;       
   text-align: center;   
   margin-bottom: 5px;
-  background: #c4c4c4;
   border-radius: 9px; 
   
 }
@@ -290,13 +186,6 @@
   grid-template-columns: repeat(3, 300px);
   justify-content: space-around; 
 }
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
   .banner {
@@ -309,4 +198,116 @@
     padding: 6px 14px;
     font-size: 14px;
   }
+}
+
+/* Mudança container bootstrap */
+.container-info{
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+
+/* Classe com formatação justificar */
+.txt-justify{
+  text-align: justify;
+}
+
+/* Estilo dos capítulos em forma de "árvore" */
+.chapters {
+  margin-top: 2rem;
+  margin-left: 0.5rem; 
+  position: relative;
+}
+
+.chapters p.h2 {
+  font-size: 2rem; 
+  font-weight: bold;
+}
+
+.chapters li {
+  margin: 1.5rem 0;
+  position: relative;
+  padding-left: 2.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-size: 1.2rem; 
+}
+
+/* Bolinhas maiores */
+.chapters li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 20px;  
+  height: 20px; 
+  background: #555;
+  border-radius: 50%;
+}
+
+/* Linha vertical mais grossa */
+.chapters li::after {
+  content: "";
+  position: absolute;
+  left: 19px; 
+  top: 1.6em;
+  bottom: -1.4em;
+  width: 3px; 
+  background: #555;
+}
+
+
+
+/* Espaço do conteúdo */
+
+.conteudo {
+  margin-left: 6rem;    
+  margin-top: 2rem;
+  width: calc(100% + 6px); 
+}
+
+
+.chapters ul {
+  list-style: none;   
+  padding-left: 0;    
+  position: relative;
+}
+
+
+.chapters li:hover {
+  color: #940b0b; 
+  cursor: pointer;
+}
+
+/* Item selecionado */
+.chapters li.active {
+  color: #000000;  
+  font-weight: bold; 
+}
+
+
+
+.btn-bot-exercicio{
+margin-right: 50px;  
+
+}
+
+.btn-bot-exercicio {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #d31a1a, #ec3333);
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-bot-exercicio:hover {
+    background: linear-gradient(135deg, #ec3333, #d31a1a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
