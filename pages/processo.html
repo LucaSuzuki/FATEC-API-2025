@@ -1,55 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/base.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/base.css">
 </head>
+
 <body>
 
-<!--HEADER COM NAVBAR-->
+  <!--HEADER COM NAVBAR-->
   <header>
     <!-- NAVBAR BOOTSTRAP -->
     <nav class="navbar navbar-red navbar-expand-lg">
-        <div class="container-fluid"><!-- CONTAINER COM FUNÇÕES DE UM DISPLAY FLEX -->
-            <a class="navbar-brand text-white">FATEC</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navdrop" type="button"><!-- BOTÃO HAMBUERGUER -->
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navdrop"><!-- O COLLAPSE SÓ É NECESSARIO CASO TENHA O BOTÃO HAMBUERGUER -->
-                <ul class="navbar-nav"><!-- LOCAL ONDE FICA OS LINKS DE NAVEGAÇÃO -->
-                    <li class="nav-item me-2"><a href="../index.html" class="nav-link text-white">Home</a></li>
-                    <li class="nav-item dropdown me-2"><!-- DROPDOWN ONDE VÃO FICAR OS LINKS PARA AS PAGINAS DO CURSO -->
-                        <a href="" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Curso</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="cursos/po.html" class="dropdown-item">PO</a></li>
-                            <li><a href="cursos/scrum.html" class="dropdown-item">Master</a></li>
-                            <li><a href="cursos/dev.html" class="dropdown-item">Dev</a></li>
-
-
-                        </ul>
-                    </li>
-                    <li class="nav-item me-2"><a href="quiz.html" class="nav-link text-white">Avaliação</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid"><!-- CONTAINER COM FUNÇÕES DE UM DISPLAY FLEX -->
+        <a class="navbar-brand text-white">FATEC</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navdrop"
+          type="button"><!-- BOTÃO HAMBUERGUER -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navdrop">
+          <!-- O COLLAPSE SÓ É NECESSARIO CASO TENHA O BOTÃO HAMBUERGUER -->
+          <ul class="navbar-nav"><!-- LOCAL ONDE FICA OS LINKS DE NAVEGAÇÃO -->
+            <li class="nav-item me-2"><a href="../index.html" class="nav-link text-white">Home</a></li>
+            <li class="nav-item dropdown me-2"><!-- DROPDOWN ONDE VÃO FICAR OS LINKS PARA AS PAGINAS DO CURSO -->
+              <a href="" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown">Curso</a>
+              <ul class="dropdown-menu">
+                <li><a href="cursos/po.html" class="dropdown-item">PO</a></li>
+                <li><a href="cursos/scrum.html" class="dropdown-item">Master</a></li>
+                <li><a href="cursos/dev.html" class="dropdown-item">Dev</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-2"><a href="#" class="nav-link text-white">Avaliação</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
   </header>
 
-<!--BANNER DA FATEC-->
-<section>
-  <figure class="banner">
-    <div class="banner-text">
-      <h1 class="banner-h1">Fatec - Jessen Vidal</h1>
-      <a href="/pages/sobrenos.html" class="btn btn-saiba">Sobre nós</a>
-    </div>
-  </figure>
-</section>
-
-<!--ACESSO RÁPIDO -->
-<section class="">
+  <!--ACESSO RÁPIDO -->
+  <section class="">
     <div class="acesso-rapido">
       <h3>Acesso rápido</h3>
       <div class="acesso-a">
@@ -57,36 +50,41 @@
         <a href="/pages/metodo.html" class="btn btn-danger me-2 ms-2 mb-2">Outros métodos</a>
       </div>
     </div>
-</section>
-
-<!--CONTEÚDO-->
-<main class="container mb-5 mt-4">
-
-  <section>
-      <h2 class="container mb-5 mt-4">Processo de aprendizagem</h2>
-<p>Nosso site oferece um treinamento online sobre metodologias ágeis, com um foco 
-principal no framework Scrum. A estrutura do treinamento foi projetada para ser 
-intuitiva, guiando o usuário através de um aprendizado progressivo a partir de 
-capítulos.</p>
-
-<p>Os cursos são dos 3 cargos Scrum, respectivamente: Scrum Master, Product Owner e 
-Development Team. Cada curso possuí 3 capítulos com cada um deles intercalando 
-com atividades e perguntas para reforçar o seu aprendizado. </p>
-
-<p>Ao fim do curso, você fará o teste final para ver seu conhecimento ao longo do percurso 
-total. O resultado será avaliado pelo o avaliador para poder atribuir o valor em seu 
-sistema. </p>
-
   </section>
 
-</main>
+  <!--CONTEÚDO-->
+  <main class="container mb-5 mt-4">
 
-<!--FOOTER-->
-<footer class="footer text-center py-2 p-2">
-   <p>FatecOS</p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <section>
+      <h2 class="container mb-5 mt-4">Processo de aprendizagem</h2>
+      <p>Nosso site oferece um treinamento online sobre metodologias ágeis, com um foco
+        principal no framework Scrum. A estrutura do treinamento foi projetada para ser
+        intuitiva, guiando o usuário através de um aprendizado progressivo a partir de
+        capítulos.</p>
+
+      <p>Os cursos são dos 3 cargos Scrum, respectivamente: Scrum Master, Product Owner e
+        Development Team. Cada curso possuí 3 capítulos com cada um deles intercalando
+        com atividades e perguntas para reforçar o seu aprendizado. </p>
+
+      <p>Ao fim do curso, você fará o teste final para ver seu conhecimento ao longo do percurso
+        total. O resultado será avaliado pelo o avaliador para poder atribuir o valor em seu
+        sistema. </p>
+
+    </section>
+
+  </main>
+
+  <!--FOOTER-->
+  <footer class="footer fixed-bottom text-center py-2 p-2">
+    <p>FatecOS</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
