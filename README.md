@@ -59,7 +59,6 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
 ---
 
 <h3>Documentação</h3>
-<a href="./api-logs/documentation.md">Documentação do Projeto</a>
 
 <h3 align="left">📖 Definition of Done / Definition of Ready</h3>
 <a href="./api-logs/doc_DOD.md">🎓 Definition of Done</a>
