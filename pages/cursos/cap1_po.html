@@ -39,7 +39,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item me-2"><a href="../quiz.html" class="nav-link text-white"><!--Avaliação--></a></li>
+                        <li class="nav-item me-2"><a href="#" class="nav-link text-white">Avaliação</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,72 +49,73 @@
     <main>
         <div class="container row">
             <div class="col-2 d-flex justify-content-start">
-                <section class="mt-5 ms-4"><!-- TESTE BOTÃO QUE MUDA CONTEUDO -->
-                    <p class="h2">Capitulos</p>
-                    <nav class="navbar">
-                        <ul class="nav nav-pills flex-column">
-                            <li class="nav-item mt-2">
-                                <button href="" class="nav-link btn btn-primary text-white" id="sub0">Capitulo
-                                    1</button>
-                            </li><!-- IMPORTANTE DEFINIR UM ID PARA PUXAR COM O JS -->
-                            <li class="nav-item mt-2">
-                                <button href="" class="nav-link btn btn-primary text-white" id="sub1">Capitulo
-                                    1.1</button>
-                            </li>
-                            <li class="nav-item mt-2">
-                                <button href="" class="nav-link btn btn-primary text-white" id="sub2">Capitulo
-                                    1.2</button>
-                            </li>
-                        </ul>
-                    </nav>
+                <section class="chapters mt-5 ms-4">
+                    <p class="h2">Capítulos</p>
+                    <ul>
+                        <li id="sub0">Capítulo 1</li>
+                        <li id="sub1">Capítulo 1.1</li>
+                        <li id="sub2">Capítulo 1.2</li>
+                    </ul>
                 </section>
             </div>
             <div class="col-10">
                 <section class="mb-5">
-                    <div class="container container-info p-4 mt-4 mb-5">
+                    <div class="">
                         <!-- CONTAINER COM O CAPITULO, CONTENDO INFORMAÇÕES -->
                         <div class="row"> <!-- DIVISÃO DE LINHA -->
-                            <div class="col" style="height: auto; overflow: auto; max-height: 65vh;">
+                            <div class="col">
                                 <div class="conteudo"><!-- DIVISÃO DE COLUNA -->
                                     <h3>1. FUNÇÃO DO CARGO</h3>
                                     <div class="row txt-justify">
                                         <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
-                                <p class="mt-2">O Product Owner (P.O.) é o dono do produto, sendo o único responsável por maximizar
-                                o valor do produto resultante do trabalho da equipe de desenvolvimento. A forma como
-                                isso é feito pode variar amplamente entre organizações, equipes Scrum e indivíduos,
-                                mas a responsabilidade central permanece a mesma: garantir que a equipe esteja
-                                construindo a coisa certa, na hora certa. </p>
+                                        <p class="mt-2">O Product Owner (P.O.) é o dono do produto, sendo o único
+                                            responsável por maximizar
+                                            o valor do produto resultante do trabalho da equipe de desenvolvimento. A
+                                            forma como
+                                            isso é feito pode variar amplamente entre organizações, equipes Scrum e
+                                            indivíduos,
+                                            mas a responsabilidade central permanece a mesma: garantir que a equipe
+                                            esteja
+                                            construindo a coisa certa, na hora certa. </p>
 
-                                <p class="mt-2">O P.O. é a ponte entre o mundo dos negócios (clientes e mercado) e a equipe de
-                                desenvolvimento. Ele é a "voz do cliente" dentro do time, garantindo que as
-                                necessidades e desejos dos usuários sejam compreendidos e traduzidos em
-                                funcionalidades concretas.</p>
+                                        <p class="mt-2">O P.O. é a ponte entre o mundo dos negócios (clientes e mercado)
+                                            e a equipe de
+                                            desenvolvimento. Ele é a "voz do cliente" dentro do time, garantindo que as
+                                            necessidades e desejos dos usuários sejam compreendidos e traduzidos em
+                                            funcionalidades concretas.</p>
 
-                                <p class="mt-2">No dia a dia, ele é o "guardião da visão", alguém com a capacidade de definir o que é
-                                mais importante a ser feito e de comunicar o "porquê" por trás de cada funcionalidade.
-                                Se há dúvidas sobre o que uma funcionalidade deve fazer ou qual item é mais
-                                prioritário, ele é a pessoa com a autoridade final para decidir.</p>
+                                        <p class="mt-2">No dia a dia, ele é o "guardião da visão", alguém com a
+                                            capacidade de definir o que é
+                                            mais importante a ser feito e de comunicar o "porquê" por trás de cada
+                                            funcionalidade.
+                                            Se há dúvidas sobre o que uma funcionalidade deve fazer ou qual item é mais
+                                            prioritário, ele é a pessoa com a autoridade final para decidir.</p>
 
-                                <p class="mt-2">O pilar que sustenta o papel do Product Owner é o conceito de gerenciamento de valor.
-                                O P.O. não é um gerente de projetos que controla o cronograma; ele é um
-                                empreendedor do produto que busca o maior retorno sobre o investimento (ROI). Em
-                                vez de focar em "entregar tudo o que foi pedido", o P.O. foca em "entregar o que gera
-                                mais impacto para o negócio e para o cliente", mesmo que isso signifique dizer "não"
-                                para muitas outras ideias.</p>
+                                        <p class="mt-2">O pilar que sustenta o papel do Product Owner é o conceito de
+                                            gerenciamento de valor.
+                                            O P.O. não é um gerente de projetos que controla o cronograma; ele é um
+                                            empreendedor do produto que busca o maior retorno sobre o investimento
+                                            (ROI). Em
+                                            vez de focar em "entregar tudo o que foi pedido", o P.O. foca em "entregar o
+                                            que gera
+                                            mais impacto para o negócio e para o cliente", mesmo que isso signifique
+                                            dizer "não"
+                                            para muitas outras ideias.</p>
 
-                                <p class="mt-2">Junto com isso, ele precisa de uma parceria fortíssima com os Developers. Enquanto o
-                                P.O. é responsável pelo "o quê" e pelo "porquê", os Developers são responsáveis pelo
-                                "como". Essa colaboração é diária e essencial para criar um produto de alta qualidade.
-                                Em relação ao Scrum Master, eles são parceiros estratégicos. O S.M. ajuda o P.O. a ser
-                                mais eficaz, ensinando técnicas de gerenciamento de backlog, facilitação de reuniões
-                                com stakeholders e garantindo que a comunicação com a equipe flua sem ruídos.</p>
+                                        <p class="mt-2">Junto com isso, ele precisa de uma parceria fortíssima com os
+                                            Developers. Enquanto o
+                                            P.O. é responsável pelo "o quê" e pelo "porquê", os Developers são
+                                            responsáveis pelo
+                                            "como". Essa colaboração é diária e essencial para criar um produto de alta
+                                            qualidade.
+                                            Em relação ao Scrum Master, eles são parceiros estratégicos. O S.M. ajuda o
+                                            P.O. a ser
+                                            mais eficaz, ensinando técnicas de gerenciamento de backlog, facilitação de
+                                            reuniões
+                                            com stakeholders e garantindo que a comunicação com a equipe flua sem
+                                            ruídos.</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col d-flex justify-content-end">
-                                <a href="cap1_po_ativit.html" class="btn btn-primary">Proximo</a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +258,12 @@
             que impacta um número maior de clientes. Dado nosso objetivo atual, ainda faz
             sentido priorizar a sua?". Isso transforma uma negativa em uma decisão de negócios
             estratégica e colaborativa. </p>
-            </div> 
+            </div>
+            <div class="mt-4 text-center">
+                <a href="cap1_po_ativit.html" class="btn-bot-exercicio" id="btn-exercicios">
+                    Ir para exercícios
+                </a>
+            </div>
 
 `;
 
