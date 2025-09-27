@@ -19,12 +19,12 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
 
 ---
 <h1>📋 Backlog do Produto</h1>
-    <a href="./api-logs/product_backlog.md">backlog do produto</a>
+    <a href="./Logs/product_backlog.md">backlog do produto</a>
     <br>
-    <a href="./api-logs/fibonacci.md">Planning Poker com Fibonnacci Adaptado</a>
+    <a href="./Logs/fibonacci.md">Planning Poker com Fibonnacci Adaptado</a>
 
 <h3 align="left">📈 Cronograma de Evolução do Projeto</h3>
-    <a href="./api-logs/Sprints.xlsx">Cronograma</a>
+    <a href="./Logs/Sprints.xlsx">Cronograma</a>
 
 ---
 
@@ -37,36 +37,36 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
 ---
 
 <h3>Tecnologias Utilizadas no Projeto</h3>
-<a href="./api-logs/technologies.md">Tecnologias</a>
+<a href="./Logs/technologies.md">Tecnologias</a>
 
 <!-- Eu nao entendi oq vem aqui na estrutura do projeto -->
 <h3 align="left">📂 Estrutura do Projeto</h3>
-<a href="./api-logs/folder_structure.md">Estrutura</a>
+<a href="./Logs/folder_structure.md">Estrutura</a>
 
 ---
 
 <h3 align="left">⚙️ Manual de instalação</h3>
-<a href="./api-logs/installation_manual.md">Como executar e instalar</a>
+<a href="./Logs/installation_manual.md">Como executar e instalar</a>
 
 <h3 align="left"> Manual do Usuário</h3>
-<a href="./api-logs/user_manual.md">Como utilizar o Projeto</a>
+<a href="./Logs/user_manual.md">Como utilizar o Projeto</a>
 
 ---
 <h3 align="left">📈 Diagrama de Caso de Uso do Projeto</h3>
-<a href="/api-logs/usercase/UseCase.asta">Arquivo .asta</a>
-<a href="/api-logs/usercase/usercase.md">Imagem do caso</a>
+<a href="/Logs/usercase/UseCase.asta">Arquivo .asta</a>
+<a href="/Logs/usercase/usercase.md">Imagem do caso</a>
 
 ---
 
 <h3>Documentação</h3>
 
 <h3 align="left">📖 Definition of Done / Definition of Ready</h3>
-<a href="./api-logs/doc_DOD.md">🎓 Definition of Done</a>
-<a href="./api-logs/doc_DOR.md">🏃 Definition of Ready</a>
+<a href="./Logs/doc_DOD.md">🎓 Definition of Done</a>
+<a href="./Logs/doc_DOR.md">🏃 Definition of Ready</a>
 
 <h3 align="left">📖 DoR / DoD por Sprint</h3>
-<a href="./api-logs/doc_DOD_sprint.md">🎓 Definition of Done por sprint</a>
-<a href="./api-logs/doc_DOR_sprint.md">🏃 Definition of Ready por sprint</a>
+<a href="./Logs/doc_DOD_sprint.md">🎓 Definition of Done por sprint</a>
+<a href="./Logs/doc_DOR_sprint.md">🏃 Definition of Ready por sprint</a>
 <h3>Estratégia de Branch </h3>
 
 ---
@@ -81,6 +81,6 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
 ---
 
 <h3 align="left">👩‍💻 Integrantes</h3>
-<a href="./api-logs/members.md">Todos os membros participantes</a>
+<a href="./Logs/members.md">Todos os membros participantes</a>
 <!-- Deixe os integrantes a cima dessa linha -->
 </table>
