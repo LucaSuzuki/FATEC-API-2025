@@ -4,18 +4,11 @@
 <p> Aplicação Web de instruções para desenvolvimento de projetos ágeis (scrum) na área de TI</p>
 
 <h3 align="left">
-Proporcionar um website de treinamento sobre a metologia ágil SCRUM 🤯
+Proporcionar um website de treinamento sobre a metologia ágil SCRUM 
 </h3>
 <p>Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil 
 (Scrum), todos os processos deverão ter conceitos e fundamentos com referências, bem como a 
-aplicação com exemplos práticos para a plena compreensão do usuário do sistema. Deverá criar um 
-formulário para avaliações parciais e final (com totalização). O sistema deve primordialmente ter 
-foco na disseminação dos processos para que os usuários possam replicar todos os passos em 
-futuros desenvolvimentos. A prioridade secundária será a compreensão de habilidades (Skills) 
-importantes para um profissional de tecnologia da informação. Todo o material de conhecimento 
-publicado no sistema deverá ter forma indireta (Conhecimento adquirido e repassado pelos 
-desenvolvedores). Bem como toda a documentação de desenvolvimento deverá ser lastreado no 
-GitHub com todos os processos necessários para a fidelização do cliente. </p>
+aplicação com exemplos práticos para a plena compreensão do usuário do sistema.</p>
 
 ---
 <h1>📋 Backlog do Produto</h1>
@@ -24,7 +17,7 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
     <a href="./Logs/fibonacci.md">Planning Poker com Fibonnacci Adaptado</a>
 
 <h3 align="left">📈 Cronograma de Evolução do Projeto</h3>
-    <a href="./Logs/Sprints.xlsx">Cronograma</a>
+    <a href="./Logs/cronograma/">Cronograma</a>
 
 ---
 
@@ -32,7 +25,7 @@ GitHub com todos os processos necessários para a fidelização do cliente. </p>
     <p>Período: 08/09 - 28/09 </p>
     <a href="#">Link para documentação: (link)</a>
     <br>
-    <a href="#">Link para video no Youtube do Incremento entregue: (link)</a>
+    <a href="https://youtu.be/Oi-A6S8d2tw">Link para video no Youtube do Incremento entregue: (link)</a>
 
 ---
 
