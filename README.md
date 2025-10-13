@@ -1,79 +1,73 @@
-<h1>Treinamento e Avaliação de Padrão Ágil de desenvolvimento de Software </h1>
+# Treinamento e Avaliação de Padrão Ágil de Desenvolvimento de Software
 
-<h3 align="left">🎯 Desafio</h3>
-<p> Aplicação Web de instruções para desenvolvimento de projetos ágeis (scrum) na área de TI</p>
+## 🎯 Desafio
 
-<h3 align="left">
-Proporcionar um website de treinamento sobre a metologia ágil SCRUM 
-</h3>
-<p>Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil 
-(Scrum), todos os processos deverão ter conceitos e fundamentos com referências, bem como a 
-aplicação com exemplos práticos para a plena compreensão do usuário do sistema.</p>
+Aplicação Web de instruções para desenvolvimento de projetos ágeis (Scrum) na área de TI.
 
----
-<h1>📋 Backlog do Produto</h1>
-    <a href="./Logs/product_backlog.md">backlog do produto</a>
-    <br>
-    <a href="./Logs/fibonacci.md">Planning Poker com Fibonnacci Adaptado</a>
+## 📌 Objetivo
 
-<h3 align="left">📈 Cronograma de Evolução do Projeto</h3>
-    <a href="./Logs/cronograma/">Cronograma</a>
+Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil (Scrum). Todos os processos deverão conter conceitos e fundamentos com referências, bem como aplicação com exemplos práticos para a plena compreensão do usuário do sistema.
 
 ---
 
-<h3> Tabela descritivas</h3>
-    <p>Período: 08/09 - 28/09 </p>
-    <a href="#">Link para documentação: (link)</a>
-    <br>
-    <a href="https://youtu.be/Oi-A6S8d2tw">Link para video no Youtube do Incremento entregue: (link)</a>
+## 📚 Documentação do Projeto
+
+### 📋 Backlog e Planejamento
+- [Backlog do Produto](./Docs/product_backlog.md)
+- [Planning Poker com Fibonacci Adaptado](./Docs/fibonacci.md)
+- [Cronograma de Evolução do Projeto](./Docs/cronograma/)
+
+### 📖 Definições de Qualidade
+- [Definition of Ready (DoR)](./Docs/doc_DOR.md)
+- [Definition of Done (DoD)](./Docs/doc_DOD.md)
+- [DoR por Sprint](./Docs/doc_DOR_sprint.md)
+- [DoD por Sprint](./Docs/doc_DOD_sprint.md)
+
+### 🎨 Modelagem
+- [Diagrama de Caso de Uso (.asta)](./Docs/usercase/UseCase.asta)
+- [Diagrama de Caso de Uso (imagem)](./Docs/usercase/usercase.md)
 
 ---
 
-<h3>Tecnologias Utilizadas no Projeto</h3>
-<a href="./Logs/technologies.md">Tecnologias</a>
+## 🛠️ Tecnologias e Estrutura
 
-<!-- Eu nao entendi oq vem aqui na estrutura do projeto -->
-<h3 align="left">📂 Estrutura do Projeto</h3>
-<a href="./Logs/folder_structure.md">Estrutura</a>
-
----
-
-<h3 align="left">⚙️ Manual de instalação</h3>
-<a href="./Logs/installation_manual.md">Como executar e instalar</a>
-
-<h3 align="left"> Manual do Usuário</h3>
-<a href="./Logs/user_manual.md">Como utilizar o Projeto</a>
-
----
-<h3 align="left">📈 Diagrama de Caso de Uso do Projeto</h3>
-<a href="/Logs/usercase/UseCase.asta">Arquivo .asta</a>
-<a href="/Logs/usercase/usercase.md">Imagem do caso</a>
+- [Tecnologias Utilizadas](./Docs/technologies.md)
+- [Estrutura de Pastas do Projeto](./Docs/folder_structure.md)
+- Estratégia de Branch *(em desenvolvimento)*
 
 ---
 
-<h3>Documentação</h3>
+## 📦 Instalação e Uso
 
-<h3 align="left">📖 Definition of Done / Definition of Ready</h3>
-<a href="./Logs/doc_DOD.md">🎓 Definition of Done</a>
-<a href="./Logs/doc_DOR.md">🏃 Definition of Ready</a>
+### ⚙️ Manual de Instalação
+[Como executar e instalar o projeto](./Docs/installation_manual.md)
 
-<h3 align="left">📖 DoR / DoD por Sprint</h3>
-<a href="./Logs/doc_DOD_sprint.md">🎓 Definition of Done por sprint</a>
-<a href="./Logs/doc_DOR_sprint.md">🏃 Definition of Ready por sprint</a>
-<h3>Estratégia de Branch </h3>
+### 📱 Manual do Usuário
+[Como utilizar o projeto](./Docs/user_manual.md)
 
 ---
 
-<h3 align="left">⏳ Período da Sprint</h3>
+## 🚀 Sprints
 
-<p align="left">
-📄 <a href="LINK DO DOCUMENTO" target="_blank">Documento da Sprint</a><br>
-🎥 <a href="LINK DO YOUTUBE" target="_blank">Vídeo do incremento entregue</a>
-</p>
+### Sprint 1
+**Período:** 08/09 - 28/09
+
+- 📄 [Documentação da Sprint](./Docs/sprints/sprint01.md)
+- 🎥 [Vídeo do Incremento no YouTube](https://youtu.be/Oi-A6S8d2tw)
+
+### Próximas Sprints
+*(Documentação será adicionada conforme progresso)*
 
 ---
 
-<h3 align="left">👩‍💻 Integrantes</h3>
-<a href="./Logs/members.md">Todos os membros participantes</a>
-<!-- Deixe os integrantes a cima dessa linha -->
-</table>
+## 👥 Equipe
+
+[Integrantes do Projeto](./Docs/members.md)
+
+---
+
+## 📝 Notas
+
+Este projeto está sendo desenvolvido seguindo as práticas e cerimônias do framework Scrum, com foco em entregar valor incremental através de sprints bem definidas.
+
+**Status:** Em Desenvolvimento 🚧
