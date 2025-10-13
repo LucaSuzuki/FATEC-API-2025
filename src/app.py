@@ -2,6 +2,8 @@ from flask import Flask
 
 # importar todos os blueprints aqui
 from routes.main import main_bp
+from routes.cursos import cursos_bp
+
 
 app = Flask(__name__)
 # Configurações básicas:
@@ -10,6 +12,7 @@ app.config["SECRET_KEY"] = "sua-chave-secreta-aqui"
 app.config["DEBUG"] = True
 # Registrar todos os blueprints
 app.register_blueprint(main_bp)
+app.register_blueprint(cursos_bp)
 
 
 # erro 404, (pode ser uma página!)
