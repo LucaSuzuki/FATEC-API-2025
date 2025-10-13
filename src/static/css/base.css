@@ -1,295 +1,313 @@
-/* HEADER */
-.navbar-red{
-  background: #a30000;
-  color: white;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Deixa a altura mínima da página em 100 de view height (100%) */
+}
+
+main {
+    flex: 1; /* Expande para preencher o espaço entre navbar e footer */
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* HEADER */
+.navbar-red {
+    background: #a30000;
+    color: white;
+}
 
 .logo {
-  font-size: 22px;
-  font-weight: bold;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .menu a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s;
+    margin: 0 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .menu a:hover {
-  color: #ddd;
+    color: #ddd;
 }
 
 .login-btn {
-  background: teal;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
+    background: teal;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 /* BANNER */
 .banner {
-  position: relative;
-  height: 320px; 
-  background-image: url("https://sjc.fatec.sp.gov.br/static/media/predio.a3883078.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; 
-  color: white;
-  text-align: center;
-  padding: 10px 0 0 0; 
-  margin-bottom: 0; 
-  overflow: hidden;
+    position: relative;
+    height: 320px;
+    background-image: url("https://sjc.fatec.sp.gov.br/static/media/predio.a3883078.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin-bottom: 0;
+    overflow: hidden;
 }
 
-
 .banner-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .banner-text {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
-.banner-h1, .banner-text h1 {
-  font-size: 48px;  
-  font-weight: 900;
-  margin: 5px 0 10px 0; 
-  line-height: 1;
+.banner-h1,
+.banner-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 5px 0 10px 0;
+    line-height: 1;
 }
-
 
 /* Botão sobre nós */
 .banner-text p {
-  margin: 8px 0;
-  font-size: 18px;
+    margin: 8px 0;
+    font-size: 18px;
 }
 
 .btn-saiba {
-  background: #a30000;
-  border: none;
-  padding: 10px 24px;
-  color: white;
-  font-size: 18px;
-  border-radius: 22px;
-  cursor: pointer;
-  transition: 0.2s;
-  margin-bottom: 5px; 
+    background: #a30000;
+    border: none;
+    padding: 10px 24px;
+    color: white;
+    font-size: 18px;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 5px;
 }
 
 .btn-saiba:hover {
-  background: #7a0000;
+    background: #7a0000;
 }
 
 /* ACESSO RÁPIDO */
 .cards-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    gap: 20px;
 }
 
-.acesso-rapido{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.acesso-rapido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.acesso-rapido, .resultado {
-  flex: 1;
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
+.acesso-rapido,
+.resultado {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
 }
 
-.acesso-rapido h3, .resultado h3 {
-  background: #a30000;
-  color: white;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 16px;
+.acesso-rapido h3,
+.resultado h3 {
+    background: #a30000;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-.acesso-rapido a{
-  text-decoration: none;
+.acesso-rapido a {
+    text-decoration: none;
 }
 
 .icones {
-  display: flex;
-   gap: 10px;
-  margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .icon-card {
-  background: white;
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 12px;
-  width: 120px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  transition: 0.3s;
-  cursor: pointer;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 12px;
+    width: 120px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .icon-card:hover {
-  background: #eee;
+    background: #eee;
 }
 
 /* FOOTER */
 .footer {
-  background: #a30000;
-  color: white;
-  text-align: center;
+    background: #a30000;
+    color: white;
+    text-align: center;
 }
 
 /* Container proprio */
- .container-base {
-  background: #eee;
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  justify-content: space-around;          
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  margin-top: 20px;
-  border-radius: 15px;
-  padding: 5px;
+.container-base {
+    background: #eee;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px;
 }
 
-
-
 .container-base li b {
-  display: block;       
-  text-align: center;   
-  margin-bottom: 5px;
-  border-radius: 9px; 
-  
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 9px;
 }
 
 .scrum {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  justify-content: space-around; 
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-around;
 }
 
 @media (max-width: 768px) {
-  .banner {
-    height: 90px;
-  }
-  .banner-h1 {
-    font-size: 20px;
-  }
-  .btn-saiba {
-    padding: 6px 14px;
-    font-size: 14px;
-  }
+    .banner {
+        height: 90px;
+    }
+    .banner-h1 {
+        font-size: 20px;
+    }
+    .btn-saiba {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
 }
 
 /* Mudança container bootstrap */
-.container-info{
-  background-color: #eee;
-  border-radius: 10px;
+.container-info {
+    background-color: #eee;
+    border-radius: 10px;
 }
 
-
 /* Classe com formatação justificar */
-.txt-justify{
-  text-align: justify;
+.txt-justify {
+    text-align: justify;
 }
 
 /* Estilo dos capítulos em forma de "árvore" */
 .chapters {
-  margin-top: 2rem;
-  margin-left: 0.5rem; 
-  position: relative;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    position: relative;
 }
 
 .chapters p.h2 {
-  font-size: 2rem; 
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .chapters li {
-  margin: 1.5rem 0;
-  position: relative;
-  padding-left: 2.5rem;
-  cursor: pointer;
-  transition: color 0.2s ease;
-  font-size: 1.2rem; 
+    margin: 1.5rem 0;
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    font-size: 1.2rem;
 }
 
 /* Bolinhas maiores */
 .chapters li::before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 6px;
-  width: 20px;  
-  height: 20px; 
-  background: #555;
-  border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    background: #555;
+    border-radius: 50%;
 }
 
 /* Linha vertical mais grossa */
 .chapters li::after {
-  content: "";
-  position: absolute;
-  left: 19px; 
-  top: 1.6em;
-  bottom: -1.4em;
-  width: 3px; 
-  background: #555;
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 1.6em;
+    bottom: -1.4em;
+    width: 3px;
+    background: #555;
 }
-
-
 
 /* Espaço do conteúdo */
 
 .conteudo {
-  margin-left: 6rem;    
-  margin-top: 2rem;
-  width: calc(100% + 6px); 
+    margin-left: 6rem;
+    margin-top: 2rem;
+    width: calc(100% + 6px);
 }
-
 
 .chapters ul {
-  list-style: none;   
-  padding-left: 0;    
-  position: relative;
+    list-style: none;
+    padding-left: 0;
+    position: relative;
 }
 
-
 .chapters li:hover {
-  color: #940b0b; 
-  cursor: pointer;
+    color: #940b0b;
+    cursor: pointer;
 }
 
 /* Item selecionado */
 .chapters li.active {
-  color: #000000;  
-  font-weight: bold; 
+    color: #000000;
+    font-weight: bold;
 }
 
-
-
-.btn-bot-exercicio{
-margin-right: 50px;  
-
+.btn-bot-exercicio {
+    margin-right: 50px;
 }
 
 .btn-bot-exercicio {
@@ -303,11 +321,11 @@ margin-right: 50px;
     border-radius: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-bot-exercicio:hover {
     background: linear-gradient(135deg, #ec3333, #d31a1a);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }

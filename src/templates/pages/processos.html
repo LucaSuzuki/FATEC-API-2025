@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block title %}Processos de aprendizagem{% endblock
+%} {% block content %}
+<!--ACESSO RÁPIDO -->
+<section class="">
+    <div class="acesso-rapido">
+        <h3>Acesso rápido</h3>
+        <div class="acesso-a">
+            <a
+                href="{{url_for('main.processos')}}"
+                class="btn btn-danger me-2 ms-2 mb-2"
+                >Como funciona o treinamento?</a
+            >
+            <a
+                href="{{url_for('main.metodos')}}"
+                class="btn btn-danger me-2 ms-2 mb-2"
+                >Outros métodos</a
+            >
+        </div>
+    </div>
+</section>
+<!--CONTEÚDO-->
+<main class="container mb-5 mt-4">
+    <section>
+        <h2 class="container mt-4">Processo de aprendizagem</h2>
+        <p>
+            Nosso site oferece um treinamento online sobre metodologias ágeis,
+            com um foco principal no framework Scrum. A estrutura do treinamento
+            foi projetada para ser intuitiva, guiando o usuário através de um
+            aprendizado progressivo a partir de capítulos.
+        </p>
+
+        <p>
+            Os cursos são dos 3 cargos Scrum, respectivamente: Scrum Master,
+            Product Owner e Development Team. Cada curso possuí 3 capítulos com
+            cada um deles intercalando com atividades e perguntas para reforçar
+            o seu aprendizado.
+        </p>
+
+        <p>
+            Ao fim do curso, você fará o teste final para ver seu conhecimento
+            ao longo do percurso total. O resultado será avaliado pelo o
+            avaliador para poder atribuir o valor em seu sistema.
+        </p>
+    </section>
+</main>
+{% endblock %}

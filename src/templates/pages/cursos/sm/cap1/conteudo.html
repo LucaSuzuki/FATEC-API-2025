@@ -1,45 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FatecOS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}">
-</head>
-
-
-<body>
-
-    <header>
-        <nav class="navbar navbar-red navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white">FATEC</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navdrop" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navdrop">
-                    <ul class="navbar-nav">
-                        <li class="nav-item me-2"><a href="../../index.html" class="nav-link text-white">Home</a></li>
-                        <li class="nav-item dropdown me-2">
-                            <a href="" class="nav-link dropdown-toggle text-white" role="button"
-                                data-bs-toggle="dropdown">Curso</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="po.html" class="dropdown-item">PO</a></li>
-                                <li><a href="scrum.html" class="dropdown-item">Master</a></li>
-                                <li><a href="dev.html" class="dropdown-item">Dev</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item me-2"><a href="pages/quiz.html" class="nav-link text-white">Avaliação</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+{% extends 'base.html' %}
+{% block title%}Capítulo 1{% endblock %}
+{% block content %}
     <main>
         <div class="container row">
             <!-- Coluna capítulos -->
@@ -113,27 +75,10 @@
                     </div>
             </div>
         </div>
-
-        </div>
-
-
-        </section>
-
-        </div>
     </main>
+{%endblock%}
 
-
-    <footer class="footer text-center py-2 fixed-bottom">
-        FatecOS
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
+{%block scripts%}
     <script>
         const conteudo1 = `
             <h3>Função do Cargo</h3>
@@ -301,7 +246,7 @@
             gestor, como pode ser visto nesta imagem: (imagem1)</p>
         </div>
        <div class="mt-4 text-center">
-    <a href="cap1_scrum_ativit.html" class="btn-bot-exercicio" id="btn-exercicios">
+    <a href="{{url_for('cursos.cap_atividade', curso='sm', id=1)}}" class="btn-bot-exercicio" id="btn-exercicios">
         Ir para exercícios
     </a>
 </div>
@@ -334,7 +279,4 @@
 
         })
     </script>
-</body>
-
-
-</html>
+{%endblock%}
