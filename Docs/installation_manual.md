@@ -53,8 +53,8 @@ pip3 --version
 
 <p>Clone o repositório do projeto para sua máquina local:</p>
 
-<pre><code>git clone &lthttps://github.com/LucaSuzuki/FATEC-API-2025&gt;
-cd &lt;/FATEC-API-2025&gt;
+<pre><code>git clone thttps://github.com/LucaSuzuki/FATEC-API-2025;
+cd /FATEC-API-2025;
 </code></pre>
 
 <h2>3. Criação do Ambiente Virtual</h2>
