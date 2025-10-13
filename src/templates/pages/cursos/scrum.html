@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso - po</title>
+    <title>Curso - scrum</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/button.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}">
 </head>
 <body>
-    
+
     <!--HEADER COM NAVBAR-->
   <header>
     <!-- NAVBAR BOOTSTRAP -->
@@ -38,35 +38,36 @@
   </header>
 
   <main>
-    <section> 
+    <section>
         <div class="container container-info mt-5">
             <div class="row">
                 <div class="col">
                     <div class="text-center p-3">
-                        <h3>Capítulos para Product Owner:</h3>
+                        <h3>Capítulos para Scrum Master:</h3>
                     </div>
                     <div class="row">
                         <div class="col d-flex justify-content-around">
-                            <a href="../cursos/cap1_po.html" class="btn btn-primary cursos-btn">Capítulo 1</a>
+                            <a href="cap1_scrum.html" class="btn btn-primary cursos-btn">Capítulo 1</a>
                             <!--<a href="" class="btn btn-primary cursos-btn">Capítulo 2</a>
                             <a href="" class="btn btn-primary cursos-btn">Capítulo 3</a>-->
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </section>
 
     <section>
-            <div class="mt-5">
+        <div class="mt-5">
                 <div class="container container-info p-3">
-                        <h3 class="text-center mb-4">Sobre o Product Owner:</h3>
-                        <p>É o dono do produto e a voz do cliente, responsável por definir e priorizar os itens no Product Backlog para maximizar o valor entregue pelo time. </p>
-                    </div>
-            </div>
-        </section>
+                    <h3 class="text-center mb-4"> Sobre o Scrum Master: </h3>
+                    <p>É o facilitador do processo, um líder-servidor que remove impedimentos e garante que o time siga a metodologia ágil, protegendo-o de interrupções. </p>
+                </div>
+        </div>
+    </section>
 
-</main>
+
+  </main>
 
   <!--FOOTER-->
 <footer class="footer text-center py-2 p-2 fixed-bottom mt-5">

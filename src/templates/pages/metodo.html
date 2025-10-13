@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
 </head>
 <body>
-
 <!--HEADER COM NAVBAR-->
   <header>
     <!-- NAVBAR BOOTSTRAP -->
     <nav class="navbar navbar-red navbar-expand-lg">
         <div class="container-fluid"><!-- CONTAINER COM FUNÇÕES DE UM DISPLAY FLEX -->
-         
+
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navdrop" type="button"><!-- BOTÃO HAMBUERGUER -->
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -96,7 +95,7 @@
 
     <p>
         Apesar de parecerem princípios rasos ou básicos, cada um deles têm suas especificidades. O mais visto e utilizado do método Kanban ainda não foi aprofundado: <b>Seus quadros</b>.<br>
-        Os quadros de Kanban se dividem em, primordialmente, 3 colunas: <b>To Do</b> (Para fazer), <b>Doing</b> (Fazendo) e <b>Done</b> (Feito), nessas colunas são colocadas as tarefas e seus respectivos estágios, há de exemplo lavar louça - quando a pia possui louças não lavadas, ela está no estágio de To Do, pois será necessário lavar essas louças em algum momento, quando estão sendo lavadas, mesmo que em períodos diferentes e pausados, elas vão para o Doing; assim que as louças estão limpas e a pia vazia, considera-se a tarefa como Done. 
+        Os quadros de Kanban se dividem em, primordialmente, 3 colunas: <b>To Do</b> (Para fazer), <b>Doing</b> (Fazendo) e <b>Done</b> (Feito), nessas colunas são colocadas as tarefas e seus respectivos estágios, há de exemplo lavar louça - quando a pia possui louças não lavadas, ela está no estágio de To Do, pois será necessário lavar essas louças em algum momento, quando estão sendo lavadas, mesmo que em períodos diferentes e pausados, elas vão para o Doing; assim que as louças estão limpas e a pia vazia, considera-se a tarefa como Done.
     </p>
     <!-- Imagem do balacobaco -->
     </section>
@@ -125,7 +124,7 @@
     <p>
         O Empurrar implica na produção de produtos apenas quando necessário ou requisitado pelo cliente.
     </p>
-    
+
     <h5>Perfeição (Perfection)</h5>
     <p>
         A Perfeição é o anseio por sempre ser melhor, obter melhorias até chegar em zero defeitos.

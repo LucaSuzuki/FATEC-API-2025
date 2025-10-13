@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FatecOS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
 </head>
 <body>
 
@@ -29,7 +29,7 @@
                             <li><a href="pages/cursos/dev.html" class="dropdown-item">Dev</a"></li>
                         </ul>
                     </li>
-                    <li class="nav-item me-2"><a href="pages/quiz.html" class="nav-link text-white">Avaliação</a></li>
+                    <li class="nav-item me-2"><a href="{{ url_for('main.quiz')}}" class="nav-link text-white">Avaliação</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +41,7 @@
   <figure class="banner">
     <div class="banner-text">
       <h1 class="banner-h1">Fatec - Jessen Vidal</h1>
-      <a href="pages/sobrenos.html" class="btn btn-saiba">Sobre nós</a>
+      <a href="{{url_for('main.sobre')}}" class="btn btn-saiba">Sobre nós</a>
     </div>
   </figure>
 </section>
@@ -69,7 +69,7 @@
       <h3 class="mt-5">Principais Frameworks</h3>
       <ul class="container-base p-3">
           <li>
-            <b class="h4">Scrum</b> 
+            <b class="h4">Scrum</b>
             <p>Framework iterativo que organiza times em papéis, eventos e artefatos.</p>
           </li>
 

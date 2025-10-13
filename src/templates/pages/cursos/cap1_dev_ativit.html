@@ -7,8 +7,8 @@
     <title>FatecOS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/button.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <!-- LINK ICON BOOTSTRAP -->
 </head>
@@ -66,10 +66,10 @@
                                     <button class="btn btn-primary btn_exercicio3">Exercicio 3</button>
                                 </li>
                                 <li class="nav-item mt-2">
-                                    <button class="btn btn-primary btn_exercicio4">Exercicio 4</button>
+                                    <button class="btn btn-primary btn_exercicio4" disabled>Exercicio 4</button>
                                 </li>
                                 <li class="nav-item mt-2">
-                                    <button class="btn btn-primary btn_exercicio5">Exercicio 5</button>
+                                    <button class="btn btn-primary btn_exercicio5" disabled>Exercicio 5</button>
                                 </li>
                             </ul>
                         </nav>
@@ -82,50 +82,48 @@
                             <div class="row conteudo_questao" style="height: auto; overflow: auto; max-height: 65vh;">
                                 <div class="row"> <!-- DIVISÃO DE LINHA -->
                                     <div class="col"> <!-- DIVISÃO DE COLUNA -->
-                                        <h3>Capitulo 1 P.O</h3>
+                                        <h3>Capitulo 1 Scrum</h3>
                                         <div class="row txt-justify">
-                                            <p> 1. A principal responsabilidade de um Product Owner (P.O.), que guia
-                                                todas as suas ações, é:</p>
+                                            <p> 1. Em uma equipe dividida pela metodologia Scrum, qual a ordem mais
+                                                adequada para se distribuir os cargos de forma hierárquica?</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <form action="">
-                                        <label for="" class="form-label">Alternativas:</label>
+                                        <label for="" class="form-label">Altividades:</label>
                                         <div class="form-check">
                                             <input type="radio" name="questao" class="form-check-input" value="false">
-                                            <label for="valor1" class="form-check-label"><b>A)</b> Gerenciar o
-                                                cronograma do projeto e garantir que tudo seja entregue na data
-                                                prometida.</label>
+                                            <label for="valor1" class="form-check-label"><b>A)</b> Scrum Master >
+                                                Product Owner > Scrum Team</label>
                                         </div>
 
                                         <div class="form-check">
                                             <input type="radio" name="questao" id="valor2" class="form-check-input"
                                                 value="false">
-                                            <label for="valor2" class="form-check-label"><b>B)</b> Escrever o código das
-                                                funcionalidades mais importantes do produto.</label>
+                                            <label for="valor2" class="form-check-label"><b>B)</b> Scrum Team > Scrum
+                                                Master > Product Owner</label>
                                         </div>
 
                                         <div class="form-check">
                                             <input type="radio" name="questao" id="valor3" class="form-check-input"
-                                                value="true">
-                                            <label for="valor3" class="form-check-label"><b>C)</b> Maximizar o valor do
-                                                produto, garantindo que a equipe construa as funcionalidades de maior
-                                                impacto para o negócio e para o cliente.</label>
+                                                value="false">
+                                            <label for="valor3" class="form-check-label"><b>C)</b> Product Owner > Scrum
+                                                Master > Scrum Team</label>
                                         </div>
 
                                         <div class="form-check">
                                             <input type="radio" name="questao" id="valor4" class="form-check-input"
                                                 value="false">
-                                            <label for="valor4" class="form-check-label"><b>D)</b> Organizar as reuniões
-                                                do Scrum e garantir que a equipe siga as regras da metodologia.</label>
+                                            <label for="valor4" class="form-check-label"><b>D)</b> Product Owner = Scrum
+                                                Master > Scrum Team</label>
                                         </div>
 
                                         <div class="form-check">
                                             <input type="radio" name="questao" id="valor5" class="form-check-input"
-                                                value="false">
-                                            <label for="valor5" class="form-check-label"><b>E)</b> Atender a todos os
-                                                pedidos dos stakeholders para mantê-los satisfeitos.</label>
+                                                value="true">
+                                            <label for="valor5" class="form-check-label"><b>E)</b> Scrum Team = Scrum
+                                                Master = Product Owner</label>
                                         </div>
                                     </form>
                                 </div>
@@ -182,53 +180,53 @@
         const exercio1 = `
         <div class="row"> <!-- DIVISÃO DE LINHA -->
             <div class="col"> <!-- DIVISÃO DE COLUNA -->
-                <h3>Capitulo 1 P.O</h3>
+                <h3>Capitulo 1 Scrum</h3>
                 <div class="row txt-justify">
-                    <p> 1. A principal responsabilidade de um Product Owner (P.O.), que guia
-                        todas as suas ações, é:</p>
+                    <p> 1. Em uma equipe dividida pela metodologia Scrum, qual a ordem mais
+                        adequada para se distribuir os cargos de forma hierárquica?</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <form action="">
-                <label for="" class="form-label">Alternativas:</label>
+                <label for="" class="form-label">Altividades:</label>
                 <div class="form-check">
                     <input type="radio" name="questao" class="form-check-input" value="false">
-                    <label for="valor1" class="form-check-label"><b>A)</b> Gerenciar o cronograma do projeto e garantir que tudo seja entregue na data prometida.</label>
+                    <label for="valor1" class="form-check-label"><b>A)</b> Scrum Master > Product Owner > Scrum Team</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor2" class="form-check-input"
                         value="false">
-                    <label for="valor2" class="form-check-label"><b>B)</b> Escrever o código das funcionalidades mais importantes do produto.</label>
+                    <label for="valor2" class="form-check-label"><b>B)</b> Scrum Team > Scrum Master > Product Owner</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor3" class="form-check-input"
-                        value="true">
-                    <label for="valor3" class="form-check-label"><b>C)</b> Maximizar o valor do produto, garantindo que a equipe construa as funcionalidades de maior impacto para o negócio e para o cliente.</label>
+                        value="false">
+                    <label for="valor3" class="form-check-label"><b>C)</b> Product Owner > Scrum Master > Scrum Team</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor4" class="form-check-input"
                         value="false">
-                    <label for="valor4" class="form-check-label"><b>D)</b> Organizar as reuniões do Scrum e garantir que a equipe siga as regras da metodologia.</label>
+                    <label for="valor4" class="form-check-label"><b>D)</b> Product Owner = Scrum Master > Scrum Team</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor5" class="form-check-input"
-                        value="false">
-                    <label for="valor5" class="form-check-label"><b>E)</b> Atender a todos os pedidos dos stakeholders para mantê-los satisfeitos.</label>
+                        value="true">
+                    <label for="valor5" class="form-check-label"><b>E)</b> Scrum Team = Scrum Master = Product Owner</label>
                 </div>
             </form>
         </div>
         `;
-        const exercio2 = `        
+        const exercio2 = `
         <div class="row"> <!-- DIVISÃO DE LINHA -->
             <div class="col"> <!-- DIVISÃO DE COLUNA -->
-                <h3>Capitulo 1 P.O</h3>
+                <h3>Capitulo 1 Scrum</h3>
                 <div class="row txt-justify">
-                    <p> 2. Como funciona a relação de um Product Owner com a equipe de Developers?</p>
+                    <p>2. Para um membro do ST, quais Skills seriam mais apropriadas e de maior auxílio para o time?</p>
                 </div>
             </div>
         </div>
@@ -238,41 +236,41 @@
                 <div class="form-check">
                     <input type="radio" name="questao" class="form-check-input"
                         value="false">
-                    <label for="valor1" class="form-check-label"><b>A)</b> O P.O. atua como um chefe, distribuindo tarefas diárias e cobrando o progresso individual de cada um.</label>
+                    <label for="valor1" class="form-check-label"><b>A)</b> Liderança e organização.</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor2" class="form-check-input"
                         value="true">
-                    <label for="valor2" class="form-check-label"><b>B)</b> É uma relação de colaboração: o P.O. define "o quê" e "porquê" e os Developers definem o "como" fazer.</label>
+                    <label for="valor2" class="form-check-label"><b>B)</b> Proatividade e boa comunicação.</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor3" class="form-check-input"
                         value="false">
-                    <label for="valor3" class="form-check-label"><b>C)</b> Os Developers trabalham de forma isolada, e o P.O. apenas valida o trabalho no final da Sprint.</label>
+                    <label for="valor3" class="form-check-label"><b>C)</b> Entendimento do método e do Backlog.</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor4" class="form-check-input"
                         value="false">
-                    <label for="valor4" class="form-check-label"><b>D)</b> O P.O. é responsável por escrever todo o detalhamento técnico das tarefas para os Developers.</label>
+                    <label for="valor4" class="form-check-label"><b>D)</b> Resolução de conflitos e estimativas de trabalho.</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor5" class="form-check-input"
                         value="false">
-                    <label for="valor5" class="form-check-label"><b>E)</b> Eles não possuem uma relação direta, pois o Scrum Master faz a mediação.</label>
+                    <label for="valor5" class="form-check-label"><b>E)</b> Conhecimento do trabalho em equipe e coaching.</label>
                 </div>
             </form>
         </div>
         `;
-        const exercio3 = `        
+        const exercio3 = `
         <div class="row"> <!-- DIVISÃO DE LINHA -->
             <div class="col"> <!-- DIVISÃO DE COLUNA -->
-                <h3>Capitulo 1 P.O</h3>
+                <h3>Capitulo 1 Scrum</h3>
                 <div class="row txt-justify">
-                    <p> 3.  Um dos desafios mais comuns do P.O. é lidar com múltiplos stakeholders que querem suas solicitações priorizadas. A melhor ferramenta para gerenciar isso é:</p>
+                    <p> 3. Qual a função primordial do Scrum Team numa equipe de desenvolvimento?</p>
                 </div>
             </div>
         </div>
@@ -282,127 +280,38 @@
                 <div class="form-check">
                     <input type="radio" name="questao" class="form-check-input"
                         value="false">
-                    <label for="valor1" class="form-check-label"><b>A)</b> Dizer "sim" para todos e pedir para a equipe trabalhar mais rápido.</label>
+                    <label for="valor1" class="form-check-label"><b>A)</b> Seguir à risca as tarefas designadas pelos outros cargos, Scrum Master e Product Owner.</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor2" class="form-check-input"
                         value="false">
-                    <label for="valor2" class="form-check-label"><b>B)</b> FUm cronograma detalhado (gráfico de Gantt) mostrando exatamente quando cada item será entregue.</label>
+                    <label for="valor2" class="form-check-label"><b>B)</b> Atentar-se apenas aos detalhes técnicos para que a Sprint seja entregue no prazo correto.</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor3" class="form-check-input"
                         value="false">
-                    <label for="valor3" class="form-check-label"><b>C)</b> Fazer reuniões individuais e secretas com cada stakeholder.</label>
+                    <label for="valor3" class="form-check-label"><b>C)</b> Cumprir o trabalho que lhe foi dado e aguardar as outras partes ociosamente.</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor4" class="form-check-input"
                         value="true">
-                    <label for="valor4" class="form-check-label"><b>D)</b> Manter um Product Backlog transparente e bem priorizado, que sirva como a única fonte da verdade sobre o que será feito.</label>
+                    <label for="valor4" class="form-check-label"><b>D)</b> Concluir sua parte de desenvolvimento, auxiliando ou sendo auxiliado por outros cargos.</label>
                 </div>
 
                 <div class="form-check">
                     <input type="radio" name="questao" id="valor5" class="form-check-input"
                         value="false">
-                    <label for="valor5" class="form-check-label"><b>E)</b> Ignorar os stakeholders e focar apenas no que a equipe de desenvolvimento acha importante.</label>
+                    <label for="valor5" class="form-check-label"><b>E)</b> Voltar a atenção para a liderança na ausência do Scrum Master ou do Product Owner.</label>
                 </div>
             </form>
         </div>
-        `;
-        const exercio4 = `
-        <div class="row"> <!-- DIVISÃO DE LINHA -->
-            <div class="col"> <!-- DIVISÃO DE COLUNA -->
-                <h3>Capitulo 1 P.O</h3>
-                <div class="row txt-justify">
-                    <p> 4. Qual das seguintes opções é considerada uma HARD SKILL essencial para um Product Owner?</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <form action="">
-                <label for="" class="form-label">Alternativas:</label>
-                <div class="form-check">
-                    <input type="radio" name="questao" class="form-check-input"
-                        value="false">
-                    <label for="valor1" class="form-check-label"><b>A)</b> Liderança Servidora.</label>
-                </div>
-
-                <div class="form-check">
-                    <input type="radio" name="questao" id="valor2" class="form-check-input"
-                        value="true">
-                    <label for="valor2" class="form-check-label"><b>B)</b> Gerenciamento de Product Backlog e conhecimento de técnicas de priorização.</label>
-                </div>
-
-                <div class="form-check">
-                    <input type="radio" name="questao" id="valor3" class="form-check-input"
-                        value="false">
-                    <label for="valor3" class="form-check-label"><b>C)</b> Resolução de conflitos internos da equipe.</label>
-                </div>
-
-                <div class="form-check">
-                    <input type="radio" name="questao" id="valor4" class="form-check-input"
-                        value="false">
-                    <label for="valor4" class="form-check-label"><b>D)</b> Coaching e Mentoria sobre a metodologia ágil.</label>
-                </div>
-
-                <div class="form-check">
-                    <input type="radio" name="questao" id="valor5" class="form-check-input"
-                        value="false">
-                    <label for="valor5" class="form-check-label"><b>E)</b> Empatia e inteligência emocional.</label>
-                </div>
-            </form>
-        </div>
-        `;
-        const exercio5 = `
-            <div class="row"> <!-- DIVISÃO DE LINHA -->
-                <div class="col"> <!-- DIVISÃO DE COLUNA -->
-                    <h3>Capitulo 1 P.O</h3>
-                    <div class="row txt-justify">
-                        <p> 5. Por que a habilidade de "dizer não" é tão crucial para o sucesso de um Product Owner?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <form action="">
-                    <label for="" class="form-label">Alternativas:</label>
-                    <div class="form-check">
-                        <input type="radio" name="questao" class="form-check-input"
-                            value="false">
-                        <label for="valor1" class="form-check-label"><b>A)</b> Para mostrar autoridade e controle sobre a equipe de desenvolvimento.</label>
-                    </div>
-
-                    <div class="form-check">
-                        <input type="radio" name="questao" id="valor2" class="form-check-input"
-                            value="false">
-                        <label for="valor2" class="form-check-label"><b>B)</b> Para evitar trabalho e reduzir os custos do projeto o máximo possível.</label>
-                    </div>
-
-                    <div class="form-check">
-                        <input type="radio" name="questao" id="valor3" class="form-check-input"
-                            value="true">
-                        <label for="valor3" class="form-check-label"><b>C)</b> Porque o foco é essencial. Dizer "não" para ideias de baixo valor permite dizer "sim" para as funcionalidades que realmente importam e movem o produto na direção estratégica correta.</label>
-                    </div>
-
-                    <div class="form-check">
-                        <input type="radio" name="questao" id="valor4" class="form-check-input"
-                            value="false">
-                        <label for="valor4" class="form-check-label"><b>D)</b> Para garantir que apenas as tarefas mais fáceis e rápidas sejam selecionadas para a Sprint.</label>
-                    </div>
-
-                    <div class="form-check">
-                        <input type="radio" name="questao" id="valor5" class="form-check-input"
-                            value="false">
-                        <label for="valor5" class="form-check-label"><b>E)</b> Nenhuma das questões está correta.</label>
-                    </div>
-                </form>
-            </div>
         `;
     </script>
     <script src="../../js/button_atividade.js"></script>
-    <script src="../../js/atividade_verificador.js"></script>
-    <!--  COD JS QUE VAI VERIFICAR SE AS RESPOSTAS ESTÃO CERTAS -->
+    <script src="../../js/atividade_verificador.js"></script><!--  COD JS QUE VAI VERIFICAR SE AS RESPOSTAS ESTÃO CERTAS -->
 </body>
 
 </html>
