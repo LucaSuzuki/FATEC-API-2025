@@ -53,8 +53,8 @@ pip3 --version
 
 <p>Clone o repositório do projeto para sua máquina local:</p>
 
-<pre><code>git clone &lt;URL_DO_REPOSITORIO&gt;
-cd &lt;NOME_DO_PROJETO&gt;
+<pre><code>git clone &lthttps://github.com/LucaSuzuki/FATEC-API-2025&gt;
+cd &lt;/FATEC-API-2025&gt;
 </code></pre>
 
 <h2>3. Criação do Ambiente Virtual</h2>
@@ -120,22 +120,8 @@ DATABASE_URL=sqlite:///database.db
 
 <p><strong>Importante</strong>: Nunca compartilhe seu arquivo <code>.env</code> em repositórios públicos.</p>
 
-<h2>7. Inicialização do Banco de Dados</h2>
 
-<p>Se o projeto utilizar banco de dados, execute as migrações necessárias:</p>
-
-<pre><code># Exemplo com Flask-Migrate
-flask db init
-flask db migrate -m "Initial migration"
-flask db upgrade
-</code></pre>
-
-<p>Ou execute o script de inicialização específico do projeto (se houver):</p>
-
-<pre><code>python init_db.py
-</code></pre>
-
-<h2>8. Execução do Projeto</h2>
+<h2>7. Execução do Projeto</h2>
 
 <h3>Modo de Desenvolvimento</h3>
 
@@ -216,7 +202,6 @@ gunicorn -w 4 -b 0.0.0.0:8000 app:app
 │
 ├── static/               # Arquivos estáticos (CSS, JS, imagens)
 ├── templates/            # Templates HTML
-├── models/               # Modelos do banco de dados
 └── routes/               # Rotas da aplicação
 </code></pre>
 
