@@ -1,0 +1,33 @@
+{%extends 'base.html' %} {%block title%} Product Owner {%endblock%} {%block
+content%}
+<main class="container">
+    <section>
+        <div class="container mt-5">
+            <div class="row container-info pb-3 text-center">
+                <div class="p-3">
+                    <h3>Capítulos para Product Owner:</h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="{{ url_for('cursos.cap_conteudo', curso='po', id=1) }}" class="btn btn-primary">
+                            Capítulo 1
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mt-5">
+            <div class="container container-info p-3">
+                <h3 class="text-center mb-4">Sobre o Product Owner:</h3>
+                <p>
+                    É o dono do produto e a voz do cliente, responsável por
+                    definir e priorizar os itens no Product Backlog para
+                    maximizar o valor entregue pelo time.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+{%endblock%}

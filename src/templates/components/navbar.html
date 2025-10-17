@@ -1,0 +1,77 @@
+<header>
+    <!-- NAVBAR BOOTSTRAP -->
+    <nav class="navbar navbar-red navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="{{url_for('main.home')}}" class="navbar-brand text-white"
+                >FATEC</a
+            >
+            <!-- CONTAINER COM FUNÇÕES DE UM DISPLAY FLEX -->
+            <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navdrop"
+                type="button"
+            >
+                <!-- BOTÃO HAMBUERGUER -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navdrop"
+            >
+                <!-- O COLLAPSE SÓ É NECESSARIO CASO TENHA O BOTÃO HAMBUERGUER -->
+                <ul class="navbar-nav">
+                    <!-- LOCAL ONDE FICA OS LINKS DE NAVEGAÇÃO -->
+                    <li class="nav-item me-2">
+                        <a
+                            href="{{url_for('main.home')}}"
+                            class="nav-link text-white"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <!-- DROPDOWN ONDE VÃO FICAR OS LINKS PARA AS PAGINAS DO CURSO -->
+                        <a
+                            href=""
+                            class="nav-link dropdown-toggle text-white"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            >Cursos</a
+                        >
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a
+                                    href="{{url_for('cursos.product_owner')}}"
+                                    class="dropdown-item"
+                                    >PO</a
+                                >
+                            </li>
+                            <!-- OS LINKS/ITEMS DO DROPDOWN -->
+                            <li>
+                                <a
+                                    href="{{url_for('cursos.scrum_master')}}"
+                                    class="dropdown-item"
+                                    >Master</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="{{url_for('cursos.dev_team')}}"
+                                    class="dropdown-item"
+                                    >Dev</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a
+                            href="{{url_for('main.quiz')}}"
+                            class="nav-link text-white"
+                            >Avaliação</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
