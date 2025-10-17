@@ -1,77 +1,76 @@
 {% extends 'base.html' %}
 {% block title%}Capítulo 1{% endblock %}
 {% block content %}
-  <main>
-    <div class="container row">
-      <!-- Coluna capítulos -->
-      <div class="col-2 d-flex justify-content-start">
-        <section class="chapters mt-5 ms-4">
-          <p class="h2">Capítulos</p>
-          <ul>
-            <li id="sub0">Capítulo 1</li>
-            <li id="sub1">Capítulo 1.1</li>
-            <li id="sub2">Capítulo 1.2</li>
-          </ul>
-        </section>
-      </div>
-      <div class="col-10">
-        <section class="mb-5">
-          <div class="row">
-            <div class="col">
-              <div class="conteudo">
-                <h3>Função do Cargo</h3>
-                <div class="row txt-justify">
-                  <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
-                  <p class="mt-2">O Scrum Team exerce apenas os papéis que o Scrum estabelece, nada mais além do
-                    que a metodologia já explica, diferindo-se do Scrum Master e do Product Owner, que
-                    possuem papéis mais específicos e além de apenas seguir o método.</p>
-                  <p class="mt-2">Não é incomum que os integrantes, no cargo de ST, sejam vistos como menos
-                    importantes. O fato é que todas as funções desempenhadas no método Scrum são
-                    dependentes uma das outras, assim como não haveria Scrum Team sem a guia de um
-                    Scrum Master, não haveria SM sem as atualizações dadas pelo Product Owner, além
-                    disso, ambos dependem da produção e do desenvolvimento estabelecido pelos
-                    membros do ST, assim formando uma coexistência necessária.</p>
-                  <p class="mt-2">Os que desempenham essa função necessitam sempre estar alerta sobre suas
-                    próximas tarefas, mas nunca sendo omitidos da partilha dessas: não há cargos
-                    maiores ou menores, apenas diferentes, então os integrantes do Scrum Team também
-                    possuem a liberdade de opinar na organização e divisão de atividades. Com isso em
-                    mente, sabe-se que as tarefas na área de desenvolvimento serão, majoritariamente,
-                    direcionadas ao ST, pois eles possuem um tempo e foco maior para essa seção, tendo
-                    em vista que o SM e PO terão de cuidar da parte sociável e administrativa também de
-                    todo o negócio, além de repassarem e reforçarem os passos que devem ser tomados
-                    para o produto final.</p>
-                  <p class="mt-2">Sempre atento, dividindo suas tarefas para entregar no prazo correto e congruente com
-                    as explicações e observações dos outros cargos, o Scrum Team deve também ser
-                    âncora de auxílio para seus parceiros de equipe; é factual que alguns membros terão
-                    mais facilidades em certos assuntos do que outros, cada um terá sua área de
-                    expertise, na ciência disso, aqueles que finalizaram suas tarefas com maior
-                    prioridades, devem estar abertos para auxiliar os com maior dificuldade, mas apenas
-                    se for em momentos oportunos e de conhecimento do que terminou sua tarefa, caso
-                    contrário, duas mentes confusas podem acabar desacelerando ainda mais um
-                    processo. Mas vale lembrar que talvez o desacelerar de um processo pode vir
-                    acompanhado de uma aquisição de competência e conhecimento, que vale tanto
-                    quanto uma tarefa adiantada (mas não vale o preço de uma tarefa atrasada).</p>
-                  <p class="mt-2">Na equipe em que se utiliza a metodologia ágil Scrum, será decidido entre eles quem
-                    ocupa cada cargo, então é de se esperar que os PO e SM sejam aqueles com maiores
-                    habilidades para exercer tais cargos, significando que devem servir de instrutores para
-                    os ST em momentos de “aperto”, facilitando para o aprendizado de habilidades
-                    necessárias.</p>
-                </div>
-              </div>
+<main class="container">
+  <div class="row">
+    <!-- Coluna capítulos -->
+    <div class="col-12 col-md-3 d-flex justify-content-center">
+      <section class="chapters mt-5">
+        <p class="h2">Capítulos</p>
+        <ul>
+          <li id="sub0">Capítulo 1</li>
+          <li id="sub1">Capítulo 1.1</li>
+          <li id="sub2">Capítulo 1.2</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="col-12 col-md-9 mt-5">
+      <section class="mb-5">
+        <div class="col">
+          <div class="conteudo text-center">
+            <h3>Função do Cargo</h3>
+            <div class="txt-justify">
+              <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
+              <p class="mt-2">O Scrum Team exerce apenas os papéis que o Scrum estabelece, nada mais além do
+                que a metodologia já explica, diferindo-se do Scrum Master e do Product Owner, que
+                possuem papéis mais específicos e além de apenas seguir o método.</p>
+              <p class="mt-2">Não é incomum que os integrantes, no cargo de ST, sejam vistos como menos
+                importantes. O fato é que todas as funções desempenhadas no método Scrum são
+                dependentes uma das outras, assim como não haveria Scrum Team sem a guia de um
+                Scrum Master, não haveria SM sem as atualizações dadas pelo Product Owner, além
+                disso, ambos dependem da produção e do desenvolvimento estabelecido pelos
+                membros do ST, assim formando uma coexistência necessária.</p>
+              <p class="mt-2">Os que desempenham essa função necessitam sempre estar alerta sobre suas
+                próximas tarefas, mas nunca sendo omitidos da partilha dessas: não há cargos
+                maiores ou menores, apenas diferentes, então os integrantes do Scrum Team também
+                possuem a liberdade de opinar na organização e divisão de atividades. Com isso em
+                mente, sabe-se que as tarefas na área de desenvolvimento serão, majoritariamente,
+                direcionadas ao ST, pois eles possuem um tempo e foco maior para essa seção, tendo
+                em vista que o SM e PO terão de cuidar da parte sociável e administrativa também de
+                todo o negócio, além de repassarem e reforçarem os passos que devem ser tomados
+                para o produto final.</p>
+              <p class="mt-2">Sempre atento, dividindo suas tarefas para entregar no prazo correto e congruente com
+                as explicações e observações dos outros cargos, o Scrum Team deve também ser
+                âncora de auxílio para seus parceiros de equipe; é factual que alguns membros terão
+                mais facilidades em certos assuntos do que outros, cada um terá sua área de
+                expertise, na ciência disso, aqueles que finalizaram suas tarefas com maior
+                prioridades, devem estar abertos para auxiliar os com maior dificuldade, mas apenas
+                se for em momentos oportunos e de conhecimento do que terminou sua tarefa, caso
+                contrário, duas mentes confusas podem acabar desacelerando ainda mais um
+                processo. Mas vale lembrar que talvez o desacelerar de um processo pode vir
+                acompanhado de uma aquisição de competência e conhecimento, que vale tanto
+                quanto uma tarefa adiantada (mas não vale o preço de uma tarefa atrasada).</p>
+              <p class="mt-2">Na equipe em que se utiliza a metodologia ágil Scrum, será decidido entre eles quem
+                ocupa cada cargo, então é de se esperar que os PO e SM sejam aqueles com maiores
+                habilidades para exercer tais cargos, significando que devem servir de instrutores para
+                os ST em momentos de “aperto”, facilitando para o aprendizado de habilidades
+                necessárias.</p>
             </div>
           </div>
-      </div>
+        </div>
     </div>
-    </section>
-    </div>
-  </main>
+  </div>
+  </section>
+  </div>
+</main>
 {%endblock%}
 
 {%block scripts%}
-  <script>
-    const conteudo1 = `
+<script>
+  const conteudo1 = `
             <h3>Função do Cargo</h3>
-            <div class="row txt-justify">
+            <div class="txt-justify">
                 <p class="mt-2">O Scrum Team exerce apenas os papéis que o Scrum estabelece, nada mais além do
                 que a metodologia já explica, diferindo-se do Scrum Master e do Product Owner, que
                 possuem papéis mais específicos e além de apenas seguir o método.</p>
@@ -116,9 +115,9 @@
                 os ST em momentos de “aperto”, facilitando para o aprendizado de habilidades
                 necessárias.</p>`;
 
-        const conteudo2 = `
+  const conteudo2 = `
             <h3>Desenvolvimento de Skills</h3>
-            <div class="row txt-justify">
+            <div class="txt-justify">
                 <p class="mt-2">Algumas habilidades são indispensáveis para quando se é um membro do Scrum
                 Team, isto é, a falta de algumas habilidades ou a falta de interesse para as obter pode
                 causar uma gradual desaceleração em todo o processo, podendo danificar os prazos
@@ -171,9 +170,9 @@
 
 
             </div>`;
-    conteudo3 = `
+  conteudo3 = `
     <h3>Desafios comuns na jornada do Scrum Team</h3>
-        <div class="row txt-justify">
+        <div class="txt-justify">
             <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
             <p class="mt-2">Muitas das complicações já foram abordadas anteriormente neste capítulo,
                 retomando, seriam: atenção aos pedidos do cliente repassados pelo PO e SM;
@@ -194,30 +193,30 @@
     </a>
 </div>`;
 
-const chapters = document.querySelectorAll(".chapters li");
+  const chapters = document.querySelectorAll(".chapters li");
 
-chapters.forEach(li => {
+  chapters.forEach(li => {
     li.addEventListener("click", () => {
 
       chapters.forEach(item => item.classList.remove("active"));
 
       li.classList.add("active");
-      });
     });
+  });
 
-    const conteudo = document.querySelector(".conteudo");// BUSCA DENTRO DA PAGE UMA CLASSE CHAMADA CONTEUDO E GUARDA EM UMA VARIAVEL
-    const pressbtn = document.getElementById("sub0");// A MESMA COISA DE CIMA, POREM PROCURA UM ID
-    pressbtn.addEventListener("click", () => {// USANDO A VARIAVEL SE UTILIZA DE UMA FUNÇÃO JÁ PRONTA, ONDE QUANDO UM EVENTO OCORRE (NESSE CASO UM CLICK ELE EXECULTA UMA FUNÇÃO)
-      conteudo.innerHTML = conteudo1// PEGA ONDE ESTÁ GUARDADO ID E INSERE NELE A INFORMAÇÃO DIGITADA DEPOIS
-    })
-    const pressbtn2 = document.getElementById("sub1");
-    pressbtn2.addEventListener("click", () => {
-      conteudo.innerHTML = conteudo2
-    })
-    const pressbtn3 = document.getElementById("sub2");
-    pressbtn3.addEventListener("click", () => {
-      conteudo.innerHTML = conteudo3
+  const conteudo = document.querySelector(".conteudo");// BUSCA DENTRO DA PAGE UMA CLASSE CHAMADA CONTEUDO E GUARDA EM UMA VARIAVEL
+  const pressbtn = document.getElementById("sub0");// A MESMA COISA DE CIMA, POREM PROCURA UM ID
+  pressbtn.addEventListener("click", () => {// USANDO A VARIAVEL SE UTILIZA DE UMA FUNÇÃO JÁ PRONTA, ONDE QUANDO UM EVENTO OCORRE (NESSE CASO UM CLICK ELE EXECULTA UMA FUNÇÃO)
+    conteudo.innerHTML = conteudo1// PEGA ONDE ESTÁ GUARDADO ID E INSERE NELE A INFORMAÇÃO DIGITADA DEPOIS
+  })
+  const pressbtn2 = document.getElementById("sub1");
+  pressbtn2.addEventListener("click", () => {
+    conteudo.innerHTML = conteudo2
+  })
+  const pressbtn3 = document.getElementById("sub2");
+  pressbtn3.addEventListener("click", () => {
+    conteudo.innerHTML = conteudo3
 
-    });
-  </script>
+  });
+</script>
 {%endblock%}

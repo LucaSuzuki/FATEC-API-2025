@@ -4,23 +4,6 @@
     margin: 0;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    scroll-behavior: smooth;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Deixa a altura mínima da página em 100 de view height (100%) */
-}
-
-main {
-    flex: 1; /* Expande para preencher o espaço entre navbar e footer */
-}
-
 footer {
     margin-top: auto;
 }
@@ -186,46 +169,6 @@ footer {
     text-align: center;
 }
 
-/* Container proprio */
-.container-base {
-    background: #eee;
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-    margin-top: 20px;
-    border-radius: 15px;
-    padding: 5px;
-}
-
-.container-base li b {
-    display: block;
-    text-align: center;
-    margin-bottom: 5px;
-    border-radius: 9px;
-}
-
-.scrum {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    justify-content: space-around;
-}
-
-@media (max-width: 768px) {
-    .banner {
-        height: 90px;
-    }
-    .banner-h1 {
-        font-size: 20px;
-    }
-    .btn-saiba {
-        padding: 6px 14px;
-        font-size: 14px;
-    }
-}
-
 /* Mudança container bootstrap */
 .container-info {
     background-color: #eee;
@@ -281,14 +224,7 @@ footer {
     background: #555;
 }
 
-/* Espaço do conteúdo */
-
-.conteudo {
-    margin-left: 6rem;
-    margin-top: 2rem;
-    width: calc(100% + 6px);
-}
-
+/* Conteúdo curso*/
 .chapters ul {
     list-style: none;
     padding-left: 0;

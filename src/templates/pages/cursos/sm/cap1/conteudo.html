@@ -2,11 +2,11 @@
 {% extends 'base.html' %}
 {% block title%}Capítulo 1{% endblock %}
 {% block content %}
-    <main>
-        <div class="container row">
+    <main class="container">
+        <div class="row">
             <!-- Coluna capítulos -->
-            <div class="col-2 d-flex justify-content-start">
-                <section class="chapters mt-5 ms-4">
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <section class="chapters mt-5">
                     <p class="h2">Capítulos</p>
                     <ul>
                         <li id="sub0">Capítulo 1</li>
@@ -16,13 +16,13 @@
                 </section>
             </div>
 
-            <div class="col-10">
-                <section class="mb-5">
+            <div class="col-12 col-md-9">
+                <section class="mb-5 mt-5">
                     <div class="row">
                         <div class="col">
-                            <div class="conteudo">
+                            <div class="conteudo text-center">
                                 <h3>Função do Cargo</h3><!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
-                                <div class="row txt-justify">
+                                <div class="txt-justify">
                                     <p class="mt-2">O Scrum Master é responsável por estabelecer toda a ideia desta
                                         metodologia ágil, ele sabe como funciona a prática e a teoria da aplicação,
                                         tanto dentro da equipe como na organização.</p>
@@ -82,7 +82,7 @@
     <script>
         const conteudo1 = `
             <h3>Função do Cargo</h3>
-            <div class="row txt-justify">
+            <div class="txt-justify">
                 <p class="mt-2">O Scrum Master é responsável por estabelecer toda a ideia desta
                 metodologia ágil, ele sabe como funciona a prática e a teoria da aplicação,
                 tanto dentro da equipe como na organização.</p>
@@ -132,7 +132,7 @@
 
         const conteudo2 = `
             <h3>Desenvolvimento de Skills</h3>
-            <div class="row txt-justify">
+            <div class="txt-justify">
                 <p class="mt-2">Soft e Hard Skills são conceitos importantes para poder
                     desenvolver-se na vida
                     pessoal e na vida empresarial. Respectivamente sendo habilidades
@@ -216,7 +216,7 @@
 
         conteudo3 = `
     <h3>Desafios comuns na jornada do Scrum Master</h3>
-        <div class="row txt-justify">
+        <div class="txt-justify">
             <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
             <p class="mt-2">Como dito anteriormente, haverá muitos riscos no meio processo que precisarão
             ser tomados de forma crítica e empírica. As vezes pode ser um pouco frustrante

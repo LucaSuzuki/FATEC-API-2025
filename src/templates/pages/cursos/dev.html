@@ -1,22 +1,17 @@
 {% extends 'base.html' %} {% block title%} Dev Team {%endblock%} {% block
 content %}
-<main>
+<main class="container">
     <section>
-        <div class="container container-info mt-5">
-            <div class="row">
-                <div class="col">
-                    <div class="text-center p-3">
-                        <h3>Capítulos para Dev Team:</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col d-flex justify-content-around">
-                            <a
-                                href="{{ url_for('cursos.cap_conteudo', curso='dev', id=1) }}"
-                                class="btn btn-primary"
-                            >
-                                Capítulo 1
-                            </a>
-                        </div>
+        <div class="container mt-5">
+            <div class="row container-info text-center pb-3">
+                <div class="text-center p-3">
+                    <h3>Capítulos para Dev Team:</h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="{{ url_for('cursos.cap_conteudo', curso='dev', id=1) }}" class="btn btn-primary">
+                            Capítulo 1
+                        </a>
                     </div>
                 </div>
             </div>
