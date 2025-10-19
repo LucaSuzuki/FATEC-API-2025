@@ -1,17 +1,24 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0;   
 }
 
 footer {
     margin-top: auto;
 }
 
+/* MUDAR FONTE + GRADIENTE*/
+body{
+    background-image: linear-gradient(to top, rgb(255, 255, 255), #bad6f0);
+    font-family: 'NomeDaFonte', sans-serif;
+}
+
 /* HEADER */
 .navbar-red {
-    background: #a30000;
+    background-image: linear-gradient(to right, rgb(184, 112, 112), #a30000);
     color: white;
+    padding: 1.5%;
 }
 
 .logo {
@@ -264,4 +271,10 @@ footer {
     background: linear-gradient(135deg, #ec3333, #d31a1a);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* NOVA COR DO CONTAINER! */ 
+
+.container-info{
+        background: linear-gradient(135deg, #95bdeb, #ccd3da);
 }
