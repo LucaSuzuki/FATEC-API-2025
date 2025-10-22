@@ -1,0 +1,77 @@
+{% extends 'base.html' %} {% block title %}Sobre nós{% endblock %} {% block
+content %}
+
+<!--ACESSO RÁPIDO -->
+
+<section class="">
+    <div class="acesso-rapido">
+        <h3>Acesso rápido</h3>
+        <div class="acesso-a">
+            <a href="{{url_for('main.processos')}}" class="btn btn-danger me-2 ms-2 mb-2"
+                >Como funciona o treinamento?</a
+            >
+            <a href="{{url_for('main.metodos')}}" class="btn btn-danger me-2 ms-2 mb-2"
+                >Outros métodos</a
+            >
+        </div>
+    </div>
+</section>
+
+<!--CONTEÚDO-->
+<main class="container mb-5 mt-4">
+    <section>
+        <h2 class="container mb-5 mt-4">Sobre Nós</h2>
+        <p>
+            Bem-vindo ao FatecOS! Somos uma equipe de desenvolvedores de
+            software direcionados pela metodologia ágil Scrum, com o objetivo de
+            produzir um site focado em lecionar o método Scrum. Nossa equipe
+            trabalha em conjunto, seguindo os princípios ensinados, para
+            garantir a entrega de um produto de alta qualidade.
+        </p>
+
+        <p>
+            Nosso objetivo é criar um site que seja uma referência para quem
+            deseja aprender ou aprimorar suas habilidades em Scrum. Queremos
+            fornecer uma plataforma que seja útil, intuitiva e fácil de usar,
+            refletindo os valores da Fatec e da metodologia.
+        </p>
+
+        <p>
+            Trabalhamos em sprints, utilizando o GitHub para gerenciar nossos
+            códigos e documentações. Cada sprint é cuidadosamente planejada para
+            garantir que estamos entregando um produto de valor aos nossos
+            usuários. Nossa equipe é composta por desenvolvedores talentosos que
+            estão comprometidos a entregar um resultado além das expectativas.
+        </p>
+
+        <p>
+            Nossa equipe é formada por universitários inspirados, divididos em:
+        </p>
+        <ul>
+            <li>
+                Desenvolvedores: responsáveis por escrever, testar e corrigir o
+                código que constitui o site.
+            </li>
+
+            <li>
+                Product Owner: define as prioridades e fornece orientações sobre
+                o que cada sprint abrangerá.
+            </li>
+
+            <li>
+                Scrum Master: facilita as reuniões e melhora a eficiência de
+                cada sprint.
+            </li>
+        </ul>
+        <p>
+            Estamos comprometidos em entregar um site que atenda às necessidades
+            dos nossos usuários.
+        </p>
+
+        <p>
+            Trabalhamos com dedicação para garantir que o FatecOS seja uma
+            ferramenta valiosa para a comunidade.
+        </p>
+    </section>
+</main>
+{%endblock%}
