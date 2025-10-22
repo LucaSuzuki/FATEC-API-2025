@@ -336,11 +336,11 @@ let respostas = Array(perguntas.length).fill(null);
 let nome = "";
 let email = "";
 
-const quizEl = document.getElementById("quiz");
+const AvaliaçãoEl = document.getElementById("Avaliação");
 
 // Tela inicial para pedir nome e email
 function pedirDados() {
-quizEl.innerHTML = `
+ AvaliaçãoEl.innerHTML = `
     <h2>Antes de começar, insira seus dados:</h2>
     <div class="mb-3">
       <label>Nome:</label>
@@ -351,7 +351,7 @@ quizEl.innerHTML = `
       <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" />
     </div>
     <div class="mt-4 text-end">
-      <button class="btn btn-primary" id="começarBtn" onclick="iniciarquiz()">Começar</button>
+      <button class="btn btn-primary" id="começarBtn" onclick="iniciarAvaliação()">Começar</button>
     </div>
   `;
 }
@@ -361,7 +361,7 @@ function validarEmail(e) {
   return /\S+@\S+\.\S+/.test(e);
 }
 
-function iniciarquiziação() {
+function iniciarAvaliaçãoiação() {
   nome = document.getElementById("nome").value.trim();
   email = document.getElementById("email").value.trim();
 
@@ -379,7 +379,7 @@ function iniciarquiziação() {
 
 function mostrarPergunta() {
   const q = perguntas[atual];
- quizEl.innerHTML = `
+ AvaliaçãoEl.innerHTML = `
     <p>Questão n°: ${q.numeroq}</p>
     <h2>${q.pergunta}</h2>
     <div class="options">
@@ -418,7 +418,7 @@ function proxima() {
 async function enviarResultado(resultado) {
   // SUBSTITUIR COM A ROTA DO BACK, eu nao sei ela ainda ###############################################################
 
-  const url = "/api/quiz";
+  const url = "/api/Avaliação";
 
   try {
     const resp = await fetch(url, {
@@ -458,7 +458,7 @@ async function finalizar() {
     console.warn("Não foi possível salvar no localStorage:", e);
   }
 
- quizEl.innerHTML = `
+  AvaliaçãoEl.innerHTML = `
     <div class="text-center h5 fw-bold">
       <p>Obrigado, <strong>${nome}</strong>!</p>
       <p>Você acertou ${acertos} de ${perguntas.length} perguntas!</p>
