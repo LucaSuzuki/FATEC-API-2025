@@ -1,17 +1,24 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0;   
 }
 
 footer {
     margin-top: auto;
 }
 
+/* MUDAR FONTE + GRADIENTE*/
+body{
+    background-image: linear-gradient(to top, rgb(255, 255, 255), #bad6f0);
+    font-family: 'NomeDaFonte', sans-serif;
+}
+
 /* HEADER */
 .navbar-red {
-    background: #a30000;
+    background-image: linear-gradient(to right, rgb(184, 112, 112), #a30000);
     color: white;
+    padding: 1.5%;
 }
 
 .logo {
@@ -180,7 +187,7 @@ footer {
     text-align: justify;
 }
 
-/* Estilo dos capítulos em forma de "árvore" */
+    /* Estilo dos capítulos em forma de "árvore" */
 .chapters {
     margin-top: 2rem;
     margin-left: 0.5rem;
@@ -201,15 +208,37 @@ footer {
     font-size: 1.2rem;
 }
 
-/* Bolinhas maiores */
-.chapters li::before {
+/* Bolinhas maiores para capítulos principais */
+.chapters .main-chapter::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    width: 30px; 
+    height: 30px;
+    background: #524f4f;
+    border-radius: 50%;
+}
+
+/* Bolinhas menores para subcapítulos */
+.chapters .sub-chapter::before {
     content: "";
     position: absolute;
     left: 10px;
     top: 6px;
-    width: 20px;
+    width: 20px;  
     height: 20px;
-    background: #555;
+    background: #857777;
+    border-radius: 50%;
+}
+.chapters .sub-atividade::before {
+   content: "";
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    width: 15px;  
+    height: 15px;
+    background: #aca1a1;
     border-radius: 50%;
 }
 
@@ -264,4 +293,10 @@ footer {
     background: linear-gradient(135deg, #ec3333, #d31a1a);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* NOVA COR DO CONTAINER! */ 
+
+.container-info{
+        background: linear-gradient(135deg, #95bdeb, #ccd3da);
 }
