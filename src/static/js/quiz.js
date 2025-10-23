@@ -1,338 +1,192 @@
+// Substitua/cole este script no seu projeto
 const perguntas = [
   {
-    pergunta: "Qual a capital da França?",
-    alternativas: ["Roma", "Paris", "Berlim", "Madri", "Londres"],
-    correta: 1,
+    pergunta: "Quando o time enfrenta um obstáculo inesperado, você tende a...",
+    alternativas: [
+      { texto: "Mediar a conversa e buscar consenso da equipe", peso: "1-SM" },
+      { texto: "Tentar reorganizar prioridades", peso: "1-PO" },
+      { texto: "Ajudar diretamente a resolver o problema técnico", peso: "1-ST" },
+      //{ texto: "???", peso: "1-PO" },
+      { texto: "Buscar orientação externa para decidir como mediar o conflito", peso: "1-SM" },
+    ],
     numeroq: 1,
   },
   {
-    pergunta: "Quanto é 2 + 2?",
-    alternativas: ["3", "4", "5", "6", "22"],
-    correta: 1,
+    pergunta: "Quando o time traz várias ideias novas para o produto, você tende a...",
+    alternativas: [
+      { texto: "Estimular a equipe a discutir coletivamente os prós e contras de cada ideia", peso: "1-SM" },
+      { texto: "Avaliar quais ideias se alinham melhor à visão do produto e aos objetivos do cliente", peso: "1-PO" },
+      { texto: "Fazer uma análise técnica para ver o que é viável implementar primeiro", peso: "1-ST" },
+      //{ texto: "???", peso: "1-SM" },
+      { texto: "Esperar uma decisão para então contribuir com melhorias na execução", peso: "1-ST" },
+    ],
     numeroq: 2,
   },
   {
-    pergunta: "Qual o maior planeta do sistema solar?",
-    alternativas: ["Terra", "Vênus", "Marte", "Júpiter", "Saturno"],
-    correta: 3,
+    pergunta: "Quando a equipe está planejando o próximo sprint e há mais histórias do que o time pode entregar, você tende a...",
+    alternativas: [
+      { texto: "Facilitar uma conversa para alinhar expectativas e priorizar juntos", peso: "1-SM" },
+      { texto: "Reordenar as histórias de acordo com o valor de negócio e metas do produto", peso: "1-PO" },
+      { texto: "Defender que o time escolha apenas o que é tecnicamente viável", peso: "1-ST" },
+      //{ texto: "???", peso: "1-ST" },
+      { texto: "Propor dividir as histórias maiores em partes menores", peso: "1-PO" },
+    ],
     numeroq: 3,
   },
   {
-    pergunta: "Quem pintou a Mona Lisa?",
-    alternativas: ["Picasso", "Da Vinci", "Michelangelo", "Van Gogh", "Monet"],
-    correta: 1,
+    pergunta: "O cliente pede uma alteração importante no meio do sprint. O que você faz?",
+    alternativas: [
+      { texto: "Relembro o cliente sobre o compromisso do sprint e busco replanejar na próxima entrega", peso: "1-SM" },
+      { texto: "Avalio o impacto no backlog e verifico se o valor justifica a mudança imediata", peso: "1-PO" },
+      { texto: "Adapto o código e tento entregar mesmo assim", peso: "1-ST" },
+      { texto: "Consulto o time para ver se é possível antes de responder", peso: "1-SM" },
+      { texto: "Aguardo o PO decidir e sigo o plano atual", peso: "1-ST" },
+    ],
     numeroq: 4,
   },
   {
-    pergunta: "Qual é o metal líquido à temperatura ambiente?",
-    alternativas: ["Ferro", "Mercúrio", "Prata", "Alumínio", "Cobre"],
-    correta: 1,
+    pergunta: "Alguns membros do time discordam fortemente sobre como implementar uma funcionalidade. O que você faz?",
+    alternativas: [
+      { texto: "Facilito uma conversa neutra para que o grupo chegue a um consenso", peso: "1-SM" },
+      { texto: "Decido a abordagem com base no impacto no produto", peso: "1-PO" },
+      { texto: "Analiso quem tem o argumento mais consistente baseado no resultado que trará ao projeto", peso: "1-ST" },
+      { texto: "Proponho uma votação para decidir rapidamente", peso: "1-PO" },
+      //{ texto: "???", peso: "1-PO" },
+    ],
     numeroq: 5,
   },
   {
-    pergunta: "texto da questao 6",
+    pergunta: "Durante a sprint review, o cliente mostra insatisfação com o resultado entregue. Qual é sua primeira reação?",
     alternativas: [
-      "Alternativa A (correta)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
+      { texto: "Facilitar o diálogo entre cliente e equipe para entender a origem da insatisfação", peso: "1-SM" },
+      { texto: "Questionar o cliente sobre o alinhamento inicial e revisar prioridades de valor", peso: "1-PO" },
+      { texto: "Analiso com o time o que deu errado e proponho ações imediatas de melhoria técnica", peso: "1-ST" },
+      { texto: "Aceitar o feedback e prometer corrigir tudo na próxima sprint", peso: "1-ST" },
+      { texto: "Reúno o time e o cliente para entender o que pode ser melhorado juntos", peso: "1-SM" },
     ],
-    correta: 0,
     numeroq: 6,
   },
   {
-    pergunta: "texto da questao 7",
+    pergunta: "Após um erro que afetou a entrega, o que você faz na sprint review?",
     alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (correta)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
+      { texto: "Incentivo todos a discutir o que aprendemos e propor melhorias", peso: "1-SM" },
+      { texto: "Reavalio se o erro impactou o valor de negócio e ajusto o backlog", peso: "1-PO" },
+      { texto: "Analiso o problema e proponho uma solução de prevenção", peso: "1-ST" },
+      { texto: "Fico em silêncio e apenas escuto o que os outros dizem", peso: "0" },
+      { texto: "Explico ao cliente o impacto do erro e destaco como o time planeja ajustar as prioridades", peso: "1-PO" },
     ],
-    correta: 2,
     numeroq: 7,
   },
   {
-    pergunta: "texto da questao 8",
+    pergunta: "Ao receber várias demandas ao mesmo tempo, você geralmente...",
     alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (correta)",
-      "Alternativa E (errada)",
+      { texto: "Reúne o time para decidir coletivamente o que fazer primeiro", peso: "1-SM" },
+      { texto: "Escolhe a tarefa com maior valor para o cliente", peso: "1-PO" },
+      { texto: "Começa pelo que parece mais simples de ser feito", peso: "1-ST" },
+      //{ texto: "???", peso: "1-ST" },
+      //{ texto: "???", peso: "1-PO" },
     ],
-    correta: 3,
     numeroq: 8,
   },
   {
-    pergunta: "texto da questao 9",
+    pergunta: "Durante a sprint, como você costuma acompanhar o andamento do trabalho?",
     alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (correta)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
+      { texto: "Facilito check-ins diários para manter o alinhamento", peso: "1-SM" },
+      { texto: "Verifico se as tarefas entregues correspondem às prioridades do produto", peso: "1-PO" },
+      { texto: "Atualizo o quadro e resolvo o que estiver estagnado", peso: "1-ST" },
+      //{ texto: "???", peso: "1-ST" },
+      //{ texto: "???", peso: "1-SM" },
     ],
-    correta: 1,
     numeroq: 9,
   },
   {
-    pergunta: "texto da questao 10",
+    pergunta: "O time precisa escolher rapidamente entre duas soluções possíveis. O que você faz?",
     alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (correta)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
+      { texto: "Incentivo uma conversa breve para chegar a um consenso", peso: "1-SM" },
+      { texto: "Escolho a opção com maior valor de entrega", peso: "1-PO" },
+      { texto: "Escolho a opção mais simples de implementar", peso: "1-ST" },
+      //{ texto: "???", peso: "1-ST" },
+      //{ texto: "???", peso: "1-PO" },
     ],
-    correta: 2,
     numeroq: 10,
   },
   {
-    pergunta: "texto da questao 11",
+    pergunta: "Quando alguém te dá um feedback construtivo sobre o trabalho, você...",
     alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (correta)",
+      { texto: "Agradece e sugere discutir o assunto em equipe", peso: "1-SM" },
+      { texto: "Reflete e pensa em como ele pode ajudar a melhorar o produto ou o relacionamento com o cliente", peso: "1-PO" },
+      { texto: "Ajusta seu processo técnico para melhorar", peso: "1-ST" },
+      //{ texto: "???", peso: "1-PO" },
+      { texto: "Ignora, pois não acha relevante", peso: "0" },
     ],
-    correta: 4,
     numeroq: 11,
   },
   {
-    pergunta: "texto da questao 12",
+    pergunta: "Quando o cliente faz uma pergunta inesperada sobre o andamento do projeto, você tende a...",
     alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (correta)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
+      { texto: "Pedir para tratar o assunto na próxima reunião formal", peso: "1-SM" },
+      { texto: "Resumir o impacto no produto e próximos passos", peso: "1-PO" },
+      { texto: "Explicar o status técnico da tarefa em detalhes", peso: "1-ST" },
+      //{ texto: "???", peso: "1-ST" },
+      //{ texto: "???", peso: "1-PO" },
     ],
-    correta: 1,
     numeroq: 12,
   },
   {
-    pergunta: "texto da questao 13",
+    pergunta: "Durante a sprint review a equipe notou que houve um ‘efeito cascata’ no meio do andamento do projeto. O que você faz?",
     alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (correta)",
-      "Alternativa E (errada)",
+      { texto: "Incentivo o time a analisar o que causou o efeito e facilito uma conversa para encontrar melhorias no processo", peso: "1-SM" },
+      { texto: "Avalio com o cliente se o impacto do efeito exige repriorização das entregas futuras.", peso: "1-PO" },
+      { texto: "Investigo com a equipe as falhas técnicas que levaram ao efeito e proponho soluções", peso: "1-ST" },
+      { texto: "Registro o problema e deixo para discutir na próxima sprint review", peso: "1-SM" },
+      { texto: "Documento o ocorrido e aviso o PO para que considere na priorização futura", peso: "1-ST" },
     ],
-    correta: 3,
     numeroq: 13,
   },
   {
-    pergunta: "texto da questao 14",
+    pergunta: "O time está em crise! O prazo está apertado, há muitos conflitos internos e o cliente acabou de pedir uma mudança importante no projeto. O que você faz?",
     alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (correta)",
+      { texto: "Eu reúno o time para acalmar a situação, buscar entender o que está atrasando a equipe e criar um plano em conjunto para seguir em frente", peso: "2-SM" },
+      { texto: "Eu converso com o cliente para entender o valor da mudança no produto e reorganizo as prioridades para reverter o impacto negativo", peso: "2-PO" },
+      { texto: "Eu analiso o que pode ser ajustado e me ofereço para ajudar a entregar o essencial ao projeto dentro do prazo", peso: "2-ST" },
+      //{ texto: "", peso: "" },
+      //{ texto: "", peso: "" },
     ],
-    correta: 4,
     numeroq: 14,
   },
-  {
-    pergunta: "texto da questao 15",
-    alternativas: [
-      "Alternativa A (correta)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 0,
-    numeroq: 15,
-  },
-  {
-    pergunta: "texto da questao 16",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (correta)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 2,
-    numeroq: 16,
-  },
-  {
-    pergunta: "texto da questao 17",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (correta)",
-      "Alternativa E (errada)",
-    ],
-    correta: 3,
-    numeroq: 17,
-  },
-  {
-    pergunta: "texto da questao 18",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (correta)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 1,
-    numeroq: 18,
-  },
-  {
-    pergunta: "texto da questao 19",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (correta)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 2,
-    numeroq: 19,
-  },
-  {
-    pergunta: "texto da questao 20",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (correta)",
-    ],
-    correta: 4,
-    numeroq: 20,
-  },
-  {
-    pergunta: "texto da questao 21",
-    alternativas: [
-      "Alternativa A (correta)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 0,
-    numeroq: 21,
-  },
-  {
-    pergunta: "texto da questao 22",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (correta)",
-      "Alternativa E (errada)",
-    ],
-    correta: 3,
-    numeroq: 22,
-  },
-  {
-    pergunta: "texto da questao 23",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (correta)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 1,
-    numeroq: 23,
-  },
-  {
-    pergunta: "texto da questao 24",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (correta)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 2,
-    numeroq: 24,
-  },
-  {
-    pergunta: "texto da questao 25",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (correta)",
-      "Alternativa E (errada)",
-    ],
-    correta: 3,
-    numeroq: 25,
-  },
-  {
-    pergunta: "texto da questao 26",
-    alternativas: [
-      "Alternativa A (correta)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 0,
-    numeroq: 26,
-  },
-  {
-    pergunta: "texto da questao 27",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (correta)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 2,
-    numeroq: 27,
-  },
-  {
-    pergunta: "texto da questao 28",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (correta)",
-    ],
-    correta: 4,
-    numeroq: 28,
-  },
-  {
-    pergunta: "texto da questao 29",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (correta)",
-      "Alternativa C (errada)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 1,
-    numeroq: 29,
-  },
-  {
-    pergunta: "texto da questao 30",
-    alternativas: [
-      "Alternativa A (errada)",
-      "Alternativa B (errada)",
-      "Alternativa C (correta)",
-      "Alternativa D (errada)",
-      "Alternativa E (errada)",
-    ],
-    correta: 2,
-    numeroq: 30,
-  },
 ];
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
+// cria cópia embaralhada das perguntas e embaralha alternativas por questão
+function criarQuizEmbaralhado() {
+  // deep copy para não mutar o original
+  const copia = JSON.parse(JSON.stringify(perguntas || []));
+  // normaliza alternativas para formato {texto, peso}
+  copia.forEach((q) => {
+    q.alternativas = (q.alternativas || []).map((alt) => {
+      if (typeof alt === "string") return { texto: alt, peso: "" };
+      // já no formato {texto,peso} ou similar
+      return {
+        texto: alt.texto !== undefined ? String(alt.texto) : "",
+        peso: alt.peso !== undefined ? String(alt.peso) : "",
+      };
+    });
+    // embaralha alternativas mantendo as entradas vazias também
+    shuffleArray(q.alternativas);
+  });
+  // embaralha as perguntas
+  return shuffleArray(copia);
+}
+
+let quizPerguntas = []; // perguntas embaralhadas usadas no quiz
 let atual = 0;
-let respostas = Array(perguntas.length).fill(null);
+let respostas = [];
 let nome = "";
 let email = "";
 
@@ -340,7 +194,7 @@ const quizEl = document.getElementById("quiz");
 
 // Tela inicial para pedir nome e email
 function pedirDados() {
-quizEl.innerHTML = `
+  quizEl.innerHTML = `
     <h2>Antes de começar, insira seus dados:</h2>
     <div class="mb-3">
       <label>Nome:</label>
@@ -351,17 +205,16 @@ quizEl.innerHTML = `
       <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" />
     </div>
     <div class="mt-4 text-end">
-      <button class="btn btn-primary" id="começarBtn" onclick="iniciarquiz()">Começar</button>
+      <button class="btn btn-primary" id="comecarBtn" onclick="iniciarquiz()">Começar</button>
     </div>
   `;
 }
 
 function validarEmail(e) {
-  // validação simples
   return /\S+@\S+\.\S+/.test(e);
 }
 
-function iniciarquiziação() {
+function iniciarquiz() {
   nome = document.getElementById("nome").value.trim();
   email = document.getElementById("email").value.trim();
 
@@ -374,28 +227,43 @@ function iniciarquiziação() {
     return;
   }
 
+  // criar versão embaralhada do quiz e inicializar respostas
+  quizPerguntas = criarQuizEmbaralhado();
+  respostas = Array(quizPerguntas.length).fill(null);
+  atual = 0;
+
   mostrarPergunta();
 }
 
 function mostrarPergunta() {
-  const q = perguntas[atual];
- quizEl.innerHTML = `
-    <p>Questão n°: ${q.numeroq}</p>
-    <h2>${q.pergunta}</h2>
+  const q = quizPerguntas[atual];
+  // mostra número sequencial (ordem aleatória) e o número original da pergunta para referência
+  const exibicaoNumero = `Questão n°: ${atual + 1}`;
+
+  quizEl.innerHTML = `
+    <p>${exibicaoNumero}</p>
+    <h2>${q.pergunta || ""}</h2>
     <div class="options">
       ${q.alternativas
-        .map(
-          (alt, i) => `
-        <div class="option ${respostas[atual] === i ? "selected" : ""}" onclick="selecionarResposta(${i})">
-          ${alt}
-        </div>
-      `,
-        )
+        .map((alt, i) => {
+          const texto = (alt && alt.texto) ? alt.texto : "";
+          const selected = respostas[atual] === i ? "selected" : "";
+          // se alternativa vazia ("" ou somente espaços) desabilita clique e reduz opacidade
+          const isEmpty = texto.trim() === "";
+          const disabledAttr = isEmpty ? "data-empty='true' style='opacity:0.45;pointer-events:none;'" : "";
+          // mostra índice visual (1., 2., 3., ...) para ficar claro/proporcional à memória do usuário
+          const indiceVisivel = i + 1;
+          return `
+            <div class="option ${selected}" onclick="selecionarResposta(${i})" ${disabledAttr}>
+              <strong>${indiceVisivel}.</strong> ${texto}
+            </div>
+          `;
+        })
         .join("")}
     </div>
     <div class="text-end">
       <button class="btn btn-primary mt-4 text-end" onclick="proxima()" ${respostas[atual] === null ? "disabled" : ""}>
-        ${atual === perguntas.length - 1 ? "Finalizar" : "Próxima"}
+        ${atual === quizPerguntas.length - 1 ? "Finalizar" : "Próxima"}
       </button>
     </div>
   `;
@@ -407,7 +275,7 @@ function selecionarResposta(indice) {
 }
 
 function proxima() {
-  if (atual < perguntas.length - 1) {
+  if (atual < quizPerguntas.length - 1) {
     atual++;
     mostrarPergunta();
   } else {
@@ -416,8 +284,7 @@ function proxima() {
 }
 
 async function enviarResultado(resultado) {
-  // SUBSTITUIR COM A ROTA DO BACK, eu nao sei ela ainda ###############################################################
-
+  // SUBSTITUIR COM A ROTA DO BACK, se houver
   const url = "/api/quiz";
 
   try {
@@ -442,40 +309,74 @@ async function enviarResultado(resultado) {
   }
 }
 
+function parsePeso(pesoStr) {
+  if (!pesoStr) return null;
+  if (pesoStr === "0") return { valor: 0, papel: null };
+  const parts = pesoStr.split("-");
+  const valor = parseInt(parts[0], 10);
+  const papel = parts[1] ? parts[1].toUpperCase() : null;
+  if (Number.isNaN(valor)) return null;
+  return { valor, papel };
+}
+
 async function finalizar() {
-  const acertos = respostas.filter((r, i) => r === perguntas[i].correta).length;
+  // soma os pesos segundo as respostas selecionadas na versão embaralhada
+  const totais = {};
+
+  respostas.forEach((selIndex, i) => {
+    if (selIndex === null || selIndex === undefined) return;
+    const q = quizPerguntas[i];
+    const alt = (q.alternativas && q.alternativas[selIndex]) ? q.alternativas[selIndex] : null;
+    const pesoStr = alt && alt.peso ? String(alt.peso) : "";
+    const parsed = parsePeso(pesoStr);
+    if (parsed && parsed.papel && parsed.valor) {
+      if (!Object.prototype.hasOwnProperty.call(totais, parsed.papel)) totais[parsed.papel] = 0;
+      totais[parsed.papel] += parsed.valor;
+    }
+  });
+
   const resultadoFinal = {
-    nome: nome,
-    email: email,
-    nota: acertos,
-    total: perguntas.length,
+    nome,
+    email,
+    totalPerguntas: quizPerguntas.length,
+    respostas, 
+    totaisPorPapel: totais,
+   
+    quizMostrado: quizPerguntas,
   };
 
-  // salva localmente
   try {
     localStorage.setItem("ultimoResultado", JSON.stringify(resultadoFinal));
   } catch (e) {
     console.warn("Não foi possível salvar no localStorage:", e);
   }
 
- quizEl.innerHTML = `
+  // mostra resumo
+  quizEl.innerHTML = `
     <div class="text-center h5 fw-bold">
       <p>Obrigado, <strong>${nome}</strong>!</p>
-      <p>Você acertou ${acertos} de ${perguntas.length} perguntas!</p>
-      <p id="statusEnvio">Enviando resultado...</p>
+      <p>Resultado salvo localmente e pronto para envio ao servidor.</p>
+      <div id="statusEnvio">Enviando resultado...</div>
+      <div style="margin-top:12px;text-align:left;">
+        <strong>Totais por papel:</strong>
+        <ul id="listaTotais">
+          ${Object.keys(totais).length === 0 ? "<li>(nenhum total computado)</li>" :
+            Object.entries(totais).map(([papel, val]) => `<li>${papel}: ${val}</li>`).join("")}
+        </ul>
+      </div>
     </div>
   `;
-  console.log("Resultado pronto para envio:", resultadoFinal);
 
-  // PROVAVELMENTE enviara pro back, assim q a gente arrumar da pra testar
   const envio = await enviarResultado(resultadoFinal);
-
   const statusEl = document.getElementById("statusEnvio");
   if (envio.ok) {
     statusEl.textContent = "Resultado enviado com sucesso.";
   } else {
-    statusEl.textContent =
-      "Falha ao enviar resultado: " + envio.message + " (salvo localmente)";
+    statusEl.textContent = "Falha ao enviar resultado: " + envio.message + " (salvo localmente)";
   }
+
+  console.log("ResultadoFinal:", resultadoFinal);
 }
+
+// inicia com formulário
 pedirDados();
