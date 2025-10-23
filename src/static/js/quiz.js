@@ -167,11 +167,11 @@ function shuffleArray(arr) {
 function criarQuizEmbaralhado() {
   // deep copy para não mutar o original
   const copia = JSON.parse(JSON.stringify(perguntas || []));
-  // normaliza alternativas para formato {texto, peso}
+ 
   copia.forEach((q) => {
     q.alternativas = (q.alternativas || []).map((alt) => {
       if (typeof alt === "string") return { texto: alt, peso: "" };
-      // já no formato {texto,peso} ou similar
+     
       return {
         texto: alt.texto !== undefined ? String(alt.texto) : "",
         peso: alt.peso !== undefined ? String(alt.peso) : "",
@@ -192,7 +192,6 @@ let email = "";
 
 const quizEl = document.getElementById("quiz");
 
-// Tela inicial para pedir nome e email
 function pedirDados() {
   quizEl.innerHTML = `
     <h2>Antes de começar, insira seus dados:</h2>
@@ -227,7 +226,6 @@ function iniciarquiz() {
     return;
   }
 
-  // criar versão embaralhada do quiz e inicializar respostas
   quizPerguntas = criarQuizEmbaralhado();
   respostas = Array(quizPerguntas.length).fill(null);
   atual = 0;
@@ -237,7 +235,7 @@ function iniciarquiz() {
 
 function mostrarPergunta() {
   const q = quizPerguntas[atual];
-  // mostra número sequencial (ordem aleatória) e o número original da pergunta para referência
+ 
   const exibicaoNumero = `Questão n°: ${atual + 1}`;
 
   quizEl.innerHTML = `
@@ -248,10 +246,9 @@ function mostrarPergunta() {
         .map((alt, i) => {
           const texto = (alt && alt.texto) ? alt.texto : "";
           const selected = respostas[atual] === i ? "selected" : "";
-          // se alternativa vazia ("" ou somente espaços) desabilita clique e reduz opacidade
-          const isEmpty = texto.trim() === "";
+       
           const disabledAttr = isEmpty ? "data-empty='true' style='opacity:0.45;pointer-events:none;'" : "";
-          // mostra índice visual (1., 2., 3., ...) para ficar claro/proporcional à memória do usuário
+       
           const indiceVisivel = i + 1;
           return `
             <div class="option ${selected}" onclick="selecionarResposta(${i})" ${disabledAttr}>
@@ -284,7 +281,7 @@ function proxima() {
 }
 
 async function enviarResultado(resultado) {
-  // SUBSTITUIR COM A ROTA DO BACK, se houver
+  // aq fica a rota por back
   const url = "/api/quiz";
 
   try {
@@ -320,7 +317,7 @@ function parsePeso(pesoStr) {
 }
 
 async function finalizar() {
-  // soma os pesos segundo as respostas selecionadas na versão embaralhada
+  // soma os pesos 
   const totais = {};
 
   respostas.forEach((selIndex, i) => {
@@ -351,12 +348,11 @@ async function finalizar() {
     console.warn("Não foi possível salvar no localStorage:", e);
   }
 
-  // mostra resumo
+  // aq fiz literalmente so pra test, qualquer coisa so apagar isso
   quizEl.innerHTML = `
     <div class="text-center h5 fw-bold">
       <p>Obrigado, <strong>${nome}</strong>!</p>
-      <p>Resultado salvo localmente e pronto para envio ao servidor.</p>
-      <div id="statusEnvio">Enviando resultado...</div>
+      <p>Resultado salvo localmente .</p>
       <div style="margin-top:12px;text-align:left;">
         <strong>Totais por papel:</strong>
         <ul id="listaTotais">
@@ -378,5 +374,4 @@ async function finalizar() {
   console.log("ResultadoFinal:", resultadoFinal);
 }
 
-// inicia com formulário
 pedirDados();
