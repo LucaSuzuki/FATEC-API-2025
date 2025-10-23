@@ -1,69 +1,55 @@
-#Biblioteca csv
-import csv
+from flask import Flask, request, jsonify
 
-#Arquivo CSV com os resultados
-arquivo_csv = "resultados.csv"
+app = Flask(__name__)
 
-#Valor input apenas como teste inicial, o código final receberá os dados do site
-#Variáveis  e contadores referentes ao PO, Scrum Master e Dev Team
-product_owner = "a"
-scrum_master = "b"
-dev_team = "c"
+@app.route("/api/quiz", methods=["POST"])
+def receber_resultado():
+    data = request.get_json()
 
-po_count = 0
-sm_count = 0
-dev_count = 0
+    nome = data.get("nome", "")
+    email = data.get("email", "")
+    respostas = data.get("respostas", [])
 
-#Input dos usuários
-nome = input("Informe seu nome: ")
-email = input("Informe o nome do seu email: ")
+    # Contadores
+    po_count = respostas.count("A")
+    sm_count = respostas.count("B")
+    dev_count = respostas.count("C")
+    total = len(respostas)
 
-#Algoritmo de contagem de questões
-#Contador de questões e inicializador de respostas
-num_questoes = 20
-resposta = "" 
-alternativas = ['a', 'b', 'c']
-count = 0
-while num_questoes != count:
-    resposta = input("Escolha uma alternativa: ")
-    if resposta not in alternativas:
-        resposta = input("Insira uma alternativa válida: ")
+    # Evita divisão por zero
+    if total == 0:
+        return jsonify({
+            "ok": False,
+            "mensagem": "Nenhuma resposta enviada."
+        }), 400
+
+    # Porcentagens
+    def pct(x): 
+        return round((x / total) * 100, 2)
+
+    po = pct(po_count)
+    sm = pct(sm_count)
+    dev = pct(dev_count)
+
+    # Determina perfil dominante
+    if po > sm and po > dev:
+        perfil = "Product Owner"
+    elif sm > po and sm > dev:
+        perfil = "Scrum Master"
+    elif dev > po and dev > sm:
+        perfil = "Dev Team"
     else:
-        if resposta == "a":
-            po_count += 1
-            count += 1
-        elif resposta == "b":
-            sm_count += 1
-            count += 1
-        else:
-            dev_count += 1
-            count += 1
+        perfil = "Equilíbrio entre os perfis"
 
-def porcentagem(po_count, sm_count, dev_count, num_questoes):
-    po = po_count / num_questoes * 100
-    sm = sm_count / num_questoes * 100
-    dev = dev_count / num_questoes * 100
+    # Retorna o resultado (sem alternativas)
+    return jsonify({
+        "ok": True,
+        "mensagem": "Resultado calculado com sucesso.",
+        "perfil": perfil,
+        "po": po,
+        "sm": sm,
+        "dev": dev
+    })
 
-    return po, sm, dev
-
-#Cria uma lista com os resultados
-po, sm, dev = porcentagem(po_count, sm_count, dev_count, num_questoes)
-resultado = [po, sm, dev]
-
-#Dicionário para a organização dos resultados
-dados = {
-    "Nome": nome,
-    "E-Mail": email,               
-    "Resultado": resultado
-}
-
-#Escrevendo os dados nos arquivos
-with open("resultados.csv", "w", newline="") as arquivo:
-    colunas = ["Nome", "E-Mail", "Resultado"]
-    escritor = csv.DictWriter(arquivo, fieldnames=colunas)
-    escritor.writeheader()
-    escritor.writerow(dados)
-    
-print(resultado)
-
-
+if __name__ == "__main__":
+    app.run(debug=True)
