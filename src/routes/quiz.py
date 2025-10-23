@@ -4,7 +4,7 @@ from config import email_sender, senha_email
 
 quiz_bp = Blueprint('quiz', __name__, url_prefix='/api')
 mail = Mail()
-EMAIL_RECIPIENTE = 'gabixp10@gmail.com'
+EMAIL_RECIPIENTE = ''
 
 class Dados:
     def __init__(self, nome, email, nota, total):
