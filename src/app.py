@@ -1,8 +1,11 @@
 from flask import Flask
+from flask_mail import Mail,Message
+from config import email_sender,senha_email
 
 # importar todos os blueprints aqui
 from routes.main import main_bp
 from routes.cursos import cursos_bp
+from routes.quiz import quiz_bp
 
 
 app = Flask(__name__)
@@ -10,9 +13,25 @@ app = Flask(__name__)
 # cookies, sessões, segurança, essas paradas...
 app.config["SECRET_KEY"] = "sua-chave-secreta-aqui"
 app.config["DEBUG"] = True
+
+mail_settings = {
+    "MAIL_SERVER" : 'smtp.gmail.com',
+    "MAIL_PORT": 587,
+    "MAIL_USE_TLS": True,
+    "MAIL_USE_SSL": False,
+    "MAIL_USERNAME": "fatecos67@gmail.com",
+    "MAIL_PASSWORD": "fwab jhbe ksii dsxt",
+
+}
+app.config.update(mail_settings)
+mail = Mail(app)
+
+
 # Registrar todos os blueprints
 app.register_blueprint(main_bp)
 app.register_blueprint(cursos_bp)
+app.register_blueprint(quiz_bp)
+
 
 
 # erro 404, (pode ser uma página!)
