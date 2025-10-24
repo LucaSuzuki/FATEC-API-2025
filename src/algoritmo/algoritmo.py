@@ -16,6 +16,8 @@ def receber_resultado():
     dev_count = respostas.count("C")
     total = len(respostas)
 
+
+
     # Evita divisão por zero
     if total == 0:
         return jsonify({
