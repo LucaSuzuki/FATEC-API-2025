@@ -1,139 +1,3 @@
-<<<<<<< HEAD
-const perguntas = [
-  {
-    pergunta: "Você prefere planejar e definir metas do projeto?",
-    alternativas: ["Sim", "Às vezes", "Prefiro executar tarefas técnicas"],
-    numeroq: 1,
-  },
-  {
-    pergunta: "Você gosta de facilitar reuniões e ajudar o time a se organizar?",
-    alternativas: ["Não muito", "Sim, bastante", "Prefiro programar ou desenvolver"],
-    numeroq: 2,
-  },
-  {
-    pergunta: "Você se sente mais confortável codando e resolvendo problemas técnicos?",
-    alternativas: ["Não", "Depende do contexto", "Sim, muito"],
-    numeroq: 3,
-  },
-];
-
-let atual = 0;
-let respostas = Array(perguntas.length).fill(null);
-let nome = "";
-let email = "";
-
-const quizEl = document.getElementById("quiz");
-
-function pedirDados() {
-  quizEl.innerHTML = `
-    <h2>Antes de começar, insira seus dados:</h2>
-    <div class="mb-3">
-      <label>Nome:</label>
-      <input type="text" id="nome" class="form-control" placeholder="Seu nome" />
-    </div>
-    <div class="mb-3">
-      <label>E-mail:</label>
-      <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" />
-    </div>
-    <div class="mt-4 text-end">
-      <button class="btn btn-primary" onclick="iniciarQuiz()">Começar</button>
-    </div>
-  `;
-}
-
-function validarEmail(e) {
-  return /\S+@\S+\.\S+/.test(e);
-}
-
-function iniciarQuiz() {
-  nome = document.getElementById("nome").value.trim();
-  email = document.getElementById("email").value.trim();
-
-  if (!nome || !email) { alert("Preencha nome e e-mail."); return; }
-  if (!validarEmail(email)) { alert("E-mail inválido."); return; }
-
-  mostrarPergunta();
-}
-
-function mostrarPergunta() {
-  const q = perguntas[atual];
-  quizEl.innerHTML = `
-    <p>Questão ${q.numeroq} de ${perguntas.length}</p>
-    <h2>${q.pergunta}</h2>
-    <div class="options">
-      ${q.alternativas
-        .map((alt, i) => `
-          <div class="option ${respostas[atual] === i ? "selected" : ""}" onclick="selecionarResposta(${i})">
-            ${alt}
-          </div>
-        `).join("")}
-    </div>
-    <div class="text-end">
-      <button class="btn btn-primary mt-4" onclick="proxima()" ${respostas[atual] === null ? "disabled" : ""}>
-        ${atual === perguntas.length - 1 ? "Finalizar" : "Próxima"}
-      </button>
-    </div>
-  `;
-}
-
-function selecionarResposta(indice) {
-  respostas[atual] = indice;
-  mostrarPergunta();
-}
-
-function proxima() {
-  if (atual < perguntas.length - 1) {
-    atual++;
-    mostrarPergunta();
-  } else {
-    finalizar();
-  }
-}
-
-async function enviarResultado(resultado) {
-  const url = "http://127.0.0.1:5000/quiz/api";
-
-  try {
-    const resp = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(resultado),
-    });
-
-    if (!resp.ok) {
-      const text = await resp.text().catch(() => null);
-      throw new Error("Erro do servidor: " + (text || resp.status));
-    }
-
-    return await resp.json();
-  } catch (err) {
-    console.error("Erro ao enviar resultado:", err);
-    return { ok: false, mensagem: err.message || "Erro desconhecido" };
-  }
-}
-
-async function finalizar() {
-  const letras = respostas.map(r => ["A","B","C"][r]);
-  const resultadoFinal = { nome, email, respostas: letras };
-
-  quizEl.innerHTML = `<p>Enviando resultado...</p>`;
-
-  const envio = await enviarResultado(resultadoFinal);
-
-  if(envio.ok){
-    quizEl.innerHTML = `
-      <h3>Obrigado, ${nome}!</h3>
-      <p>PO: ${envio.po ?? 0}% | SM: ${envio.sm ?? 0}% | Dev: ${envio.dev ?? 0}%</p>
-      <p>Perfil dominante: ${envio.perfil}</p>
-      <p class="text-success">Resultado enviado e salvo ✅</p>
-    `;
-  } else {
-    quizEl.innerHTML = `<p class="text-danger">Erro ao enviar: ${envio.mensagem}</p>`;
-  }
-}
-
-pedirDados();
-=======
 const perguntas = [
   {
     pergunta: "Qual a capital da França?",
@@ -472,11 +336,11 @@ let respostas = Array(perguntas.length).fill(null);
 let nome = "";
 let email = "";
 
-const quizEl = document.getElementById("quiz");
+const AvaliaçãoEl = document.getElementById("Avaliação");
 
 // Tela inicial para pedir nome e email
 function pedirDados() {
-quizEl.innerHTML = `
+ AvaliaçãoEl.innerHTML = `
     <h2>Antes de começar, insira seus dados:</h2>
     <div class="mb-3">
       <label>Nome:</label>
@@ -487,7 +351,7 @@ quizEl.innerHTML = `
       <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" />
     </div>
     <div class="mt-4 text-end">
-      <button class="btn btn-primary" id="começarBtn" onclick="iniciarquiz()">Começar</button>
+      <button class="btn btn-primary" id="começarBtn" onclick="iniciarAvaliação()">Começar</button>
     </div>
   `;
 }
@@ -497,7 +361,7 @@ function validarEmail(e) {
   return /\S+@\S+\.\S+/.test(e);
 }
 
-function iniciarquiziação() {
+function iniciarAvaliaçãoiação() {
   nome = document.getElementById("nome").value.trim();
   email = document.getElementById("email").value.trim();
 
@@ -515,7 +379,7 @@ function iniciarquiziação() {
 
 function mostrarPergunta() {
   const q = perguntas[atual];
- quizEl.innerHTML = `
+ AvaliaçãoEl.innerHTML = `
     <p>Questão n°: ${q.numeroq}</p>
     <h2>${q.pergunta}</h2>
     <div class="options">
@@ -554,7 +418,7 @@ function proxima() {
 async function enviarResultado(resultado) {
   // SUBSTITUIR COM A ROTA DO BACK, eu nao sei ela ainda ###############################################################
 
-  const url = "/api/quiz";
+  const url = "/api/Avaliação";
 
   try {
     const resp = await fetch(url, {
@@ -594,7 +458,7 @@ async function finalizar() {
     console.warn("Não foi possível salvar no localStorage:", e);
   }
 
- quizEl.innerHTML = `
+  AvaliaçãoEl.innerHTML = `
     <div class="text-center h5 fw-bold">
       <p>Obrigado, <strong>${nome}</strong>!</p>
       <p>Você acertou ${acertos} de ${perguntas.length} perguntas!</p>
@@ -615,4 +479,3 @@ async function finalizar() {
   }
 }
 pedirDados();
->>>>>>> main
