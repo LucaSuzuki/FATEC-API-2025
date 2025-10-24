@@ -361,7 +361,7 @@ function validarEmail(e) {
   return /\S+@\S+\.\S+/.test(e);
 }
 
-function iniciarAvaliaçãoiação() {
+function iniciarAvaliação() {
   nome = document.getElementById("nome").value.trim();
   email = document.getElementById("email").value.trim();
 
