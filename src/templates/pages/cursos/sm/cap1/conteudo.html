@@ -1,282 +1,494 @@
-
 {% extends 'base.html' %}
-{% block title%}Capítulo 1{% endblock %}
+{% block title %}PO Capítulo 1{% endblock %}
+
 {% block content %}
-    <main class="container">
-        <div class="row">
-            <!-- Coluna capítulos -->
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                <section class="chapters mt-5">
-                    <p class="h2">Capítulos</p>
-                    <ul>
-                        <li id="sub0">Capítulo 1</li>
-                        <li id="sub1">Capítulo 1.1</li>
-                        <li id="sub2">Capítulo 1.2</li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="col-12 col-md-9">
-                <section class="mb-5 mt-5">
-                    <div class="row">
-                        <div class="col">
-                            <div class="conteudo text-center">
-                                <h3>Função do Cargo</h3><!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
-                                <div class="txt-justify">
-                                    <p class="mt-2">O Scrum Master é responsável por estabelecer toda a ideia desta
-                                        metodologia ágil, ele sabe como funciona a prática e a teoria da aplicação,
-                                        tanto dentro da equipe como na organização.</p>
-                                    <p class="mt-2">No entanto, um Scrum Master é muito mais do que isso. O papel do
-                                        Scrum Master tem muitas camadas e facetas. Ao mesmo tempo em que
-                                        conscientiza
-                                        sobre o Scrum e permite maior agilidade, os Scrum Masters também precisam de
-                                        habilidades interpessoais, necessárias para orientar e orientar os membros
-                                        do
-                                        Time Scrum e outros na organização</p>
-                                    <p class="mt-2">No dia a dia, ele seria o “eliminador de ruídos”, alguém com a
-                                        capacidade de resolver conflitos e amenizar problemas de forma eficaz. Se há
-                                        algum impedimento no trajeto do projeto, ele que vai ser a primeira pessoa a
-                                        tomar a atitude de entender o que está dando errado.</p>
-                                    <p class="mt-2">O pilar filosófico que sustenta o papel do Scrum Master é o
-                                        conceito
-                                        de liderança servidora. Um líder servidor prioriza as necessidades dos
-                                        membros
-                                        da equipe e dos clientes que eles servem, com o objetivo de alcançar
-                                        resultados
-                                        alinhados aos valores e objetivos da organização. Esta abordagem representa
-                                        uma
-                                        inversão do modelo de gestão tradicional de "comando e controle". Em vez de
-                                        ditar ordens e gerenciar tarefas, o Scrum Master lidera "por trás",
-                                        capacitando
-                                        a equipe, facilitando suas interações e atuando como um defensor de suas
-                                        necessidades.</p>
-                                    <p class="mt-2">Além disto tudo, ele serve a equipe atuando como um coach,
-                                        orientando os membros com sua autogestão e multifuncionalidade e ajuda na
-                                        questão da produtividade eficaz da equipe, ajudando-os a se alinharem nos
-                                        eixos
-                                        das demandas e objetivos do projeto.</p>
-                                    <p class="mt-2">Junto com isso, ele também precisa fazer uma grande parceria com
-                                        o
-                                        Product Owner (PO) que é vital para o sucesso do produto. Eles vão tentar
-                                        achar
-                                        a forma mais eficaz de compreender a necessidade de itens de backlog claros
-                                        e
-                                        concisos.</p>
-                                    <p class="mt-2">Em relação aos Developers, ele os ajuda de diversas formas, pode
-                                        ser
-                                        por treinamento de alguma habilidade, prover os recursos necessários para o
-                                        avanço do projeto ou até mesmo questões envolvendo Soft Skills</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-            </div>
+<main class="container">
+    <div class="row">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <section class="chapters mt-5">
+                <p class="h2">Capítulos</p>
+                <ul>
+                    <li id="sub0">Capítulo 1</li>
+                    <li id="sub1">Exercicio 1</li>
+                    <li id="sub2">Capítulo 1.1</li>
+                    <li id="sub3">exercicio 2</li>
+                    <li id="sub4">Capítulo 1.2</li>
+                    <li id="sub5">exercicio 3</li>
+                    <li id="sub6">Capítulo 2</li>
+                    <li id="sub7">Exercicio 4</li>
+                    <li id="sub8">Capítulo 2.1</li>
+                    <li id="sub9">exercicio 5</li>
+                    <li id="sub10">Capítulo 2.2</li>
+                    <li id="sub11">exercicio 6</li>
+                </ul>
+            </section>
         </div>
-    </main>
+        
+        <div class="col-12 col-md-9">
+            <section class="mt-5 mb-5">
+                
+                <div class="conteudo text-center">
+                    </div>
+
+                <div class="mt-4 text-center" id="verificador_container" style="display: none;">
+                    <button
+                        id="btn_verificador"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ModalVerificar"
+                        class="btn btn-info"
+                    >
+                        Verificar
+                    </button>
+                </div>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <button class="btn btn-secondary" id="btn_voltar">
+                        <i class="bi bi-arrow-left-short"></i> Voltar
+                    </button>
+                    <button class="btn btn-primary" id="btn_proximo">
+                        Próximo <i class="bi bi-arrow-right-short"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<div id="ModalVerificar" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-tittle">Verificador</h1>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center conteudo_verificar"></div>
+        </div>
+    </div>
+</div>
 {%endblock%}
 
+
 {%block scripts%}
-    <script>
-        const conteudo1 = `
-            <h3>Função do Cargo</h3>
+
+<script>
+    // --- 1. DEFINIÇÃO DE CONTEÚDO (Dos seus Blocos 2 e 3) ---
+
+    // Capítulos (do seu Bloco 3)
+    const conteudo1 = `
+            <h3>1. FUNÇÃO DO CARGO</h3>
             <div class="txt-justify">
-                <p class="mt-2">O Scrum Master é responsável por estabelecer toda a ideia desta
-                metodologia ágil, ele sabe como funciona a prática e a teoria da aplicação,
-                tanto dentro da equipe como na organização.</p>
-
-
-                <p class="mt-2">No entanto, um Scrum Master é muito mais do que isso. O papel do
-                Scrum Master tem muitas camadas e facetas. Ao mesmo tempo em que conscientiza
-                sobre o Scrum e permite maior agilidade, os Scrum Masters também precisam de
-                habilidades interpessoais, necessárias para orientar e orientar os membros do
-                Time Scrum e outros na organização</p>
-
-
-                <p class="mt-2">No dia a dia, ele seria o “eliminador de ruídos”, alguém com a
-                capacidade de resolver conflitos e amenizar problemas de forma eficaz. Se há
-                algum impedimento no trajeto do projeto, ele que vai ser a primeira pessoa a
-                tomar a atitude de entender o que está dando errado.</p>
-
-
-                <p class="mt-2">O pilar filosófico que sustenta o papel do Scrum Master é o conceito
-                de liderança servidora. Um líder servidor prioriza as necessidades dos membros
-                da equipe e dos clientes que eles servem, com o objetivo de alcançar resultados
-                alinhados aos valores e objetivos da organização. Esta abordagem representa uma
-                inversão do modelo de gestão tradicional de "comando e controle". Em vez de
-                ditar ordens e gerenciar tarefas, o Scrum Master lidera "por trás", capacitando
-                a equipe, facilitando suas interações e atuando como um defensor de suas
-                necessidades.</p>
-
-
-                <p class="mt-2">Além disto tudo, ele serve a equipe atuando como um coach,
-                orientando os membros com sua autogestão e multifuncionalidade e ajuda na
-                questão da produtividade eficaz da equipe, ajudando-os a se alinharem nos eixos
-                das demandas e objetivos do projeto.</p>
-
-
-                <p class="mt-2">Junto com isso, ele também precisa fazer uma grande parceria com o
-                Product Owner (PO) que é vital para o sucesso do produto. Eles vão tentar achar
-                a forma mais eficaz de compreender a necessidade de itens de backlog claros e
-                concisos.</p>
-
-
-                <p class="mt-2">Em relação aos Developers, ele os ajuda de diversas formas, pode ser
-                por treinamento de alguma habilidade, prover os recursos necessários para o
-                avanço do projeto ou até mesmo questões envolvendo Soft Skills</p>
-            </div>
-`;
-
-
-        const conteudo2 = `
-            <h3>Desenvolvimento de Skills</h3>
+                <p class="mt-2">O Product Owner (P.O.) é o dono do produto...</p>
+                </div>
+    `;
+    const conteudo2 = `
+            <h3>1.1. DESENVOLVIMENTO DE SKILLS</h3>
             <div class="txt-justify">
-                <p class="mt-2">Soft e Hard Skills são conceitos importantes para poder
-                    desenvolver-se na vida
-                    pessoal e na vida empresarial. Respectivamente sendo habilidades
-                    interpessoais e
-                    técnicas. Elas não necessariamente surgem do nada, elas são desenvolvidas e
-                    podem
-                    ser estimuladas através do exercício delas.</p>
+                <p class="mt-2"> Assim como o Scrum Master...</p>
+                </div>
+    `;
+    const conteudo3 = `
+            <h3>1.2. DESAFIOS COMUNS</h3>
+            <div class="txt-justify">
+                <p class="mt-2">A jornada de um Product Owner é cheia de desafios...</p>
+                </div>
+    `;
+    // (Preenchendo o resto do seu menu)
+    const conteudo4 = '<h3>Capítulo 2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2...</p></div>';
+    const conteudo5 = '<h3>Capítulo 2.1</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.1...</p></div>';
+    const conteudo6 = '<h3>Capítulo 2.2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.2...</p></div>';
 
 
-                <p class="mt-2 fw-bold">SOFT SKILLS DE UM SCRUM MASTER:</p>
+    // Exercícios (do seu Bloco 2)
+    // ISSO É IMPORTANTE: Defini eles *depois* dos do Bloco 3,
+    // para que o `exercicio1` com a pergunta real APAGUE o `exercicio1 = 'teste 1'`
+const exercicio1 = `
+       <div class="row"> <!-- DIVISÃO DE LINHA -->
+           <div class="col"> <!-- DIVISÃO DE COLUNA -->
+               <h3>EXERCÍCIO FIXADOR</h3>
+               <div class="row txt-justify">
+                   <p> 1. A principal responsabilidade de um Product Owner (P.O.), que guia
+                       todas as suas ações, é:</p>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <form action="">
+               <label for="" class="form-label">Alternativas:</label>
+               <div class="form-check">
+                   <input type="radio" name="questao" class="form-check-input" value="false">
+                   <label for="valor1" class="form-check-label"><b>A)</b> Gerenciar o cronograma do projeto e garantir que tudo seja entregue na data prometida.</label>
+               </div>
 
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor2" class="form-check-input"
+                       value="false">
+                   <label for="valor2" class="form-check-label"><b>B)</b> Escrever o código das funcionalidades mais importantes do produto.</label>
+               </div>
 
-                <p>Comunicação Eficaz: A habilidade de se comunicar de forma clara,
-                    concisa e adaptada
-                    a diferentes públicos é muito necessária, para poder esclarecer tudo que
-                    está
-                    acontecendo no projeto.</p>
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor3" class="form-check-input"
+                       value="true">
+                   <label for="valor3" class="form-check-label"><b>C)</b> Maximizar o valor do produto, garantindo que a equipe construa as funcionalidades de maior impacto para o negócio e para o cliente.</label>
+               </div>
 
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor4" class="form-check-input"
+                       value="false">
+                   <label for="valor4" class="form-check-label"><b>D)</b> Organizar as reuniões do Scrum e garantir que a equipe siga as regras da metodologia.</label>
+               </div>
 
-                <p class="mt-2">Empatia e Inteligência Emocional: Compreender e se conectar com
-                    os sentimentos e
-                    perspectivas dos membros da equipe é essencial para poder entender a
-                    situação de
-                    forma humanizada e orgânica</p>
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor5" class="form-check-input"
+                       value="false">
+                   <label for="valor5" class="form-check-label"><b>E)</b> Atender a todos os pedidos dos stakeholders para mantê-los satisfeitos.</label>
+               </div>
+           </form>
+       </div>
+       `;
+const exercicio2 = `
+       <div class="row"> <!-- DIVISÃO DE LINHA -->
+           <div class="col"> <!-- DIVISÃO DE COLUNA -->
+               <h3>EXERCÍCIO FIXADOR</h3>
+               <div class="row txt-justify">
+                   <p> 2. Como funciona a relação de um Product Owner com a equipe de Developers?</p>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <form action="">
+               <label for="" class="form-label">Alternativas:</label>
+               <div class="form-check">
+                   <input type="radio" name="questao" class="form-check-input"
+                       value="false">
+                   <label for="valor1" class="form-check-label"><b>A)</b> O P.O. atua como um chefe, distribuindo tarefas diárias e cobrando o progresso individual de cada um.</label>
+               </div>
 
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor2" class="form-check-input"
+                       value="true">
+                   <label for="valor2" class="form-check-label"><b>B)</b> É uma relação de colaboração: o P.O. define "o quê" e "porquê" e os Developers definem o "como" fazer.</label>
+               </div>
 
-                <p class="mt-2">Resolução de Conflitos: Conflitos são naturais em qualquer
-                    equipe, mas como SM você
-                    tem o papel de amenizar qualquer faísca de problema que surgir.</p>
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor3" class="form-check-input"
+                       value="false">
+                   <label for="valor3" class="form-check-label"><b>C)</b> Os Developers trabalham de forma isolada, e o P.O. apenas valida o trabalho no final da Sprint.</label>
+               </div>
 
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor4" class="form-check-input"
+                       value="false">
+                   <label for="valor4" class="form-check-label"><b>D)</b> O P.O. é responsável por escrever todo o detalhamento técnico das tarefas para os Developers.</label>
+               </div>
 
-                <p class="mt-2">Liderança Servidora: O Scrum Master não é um gerente
-                    tradicional, no Scrum não há
-                    hierarquias de poder, apenas de organização. Ser um servidor significa estar
-                    pronto
-                    para adaptar-se em qualquer situação que pode dificultar o processo.</p>
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor5" class="form-check-input"
+                       value="false">
+                   <label for="valor5" class="form-check-label"><b>E)</b> Eles não possuem uma relação direta, pois o Scrum Master faz a mediação.</label>
+               </div>
+           </form>
+       </div>
+       `;
+const exercicio3 = `
+       <div class="row"> <!-- DIVISÃO DE LINHA -->
+           <div class="col"> <!-- DIVISÃO DE COLUNA -->
+               <h3>EXERCÍCIO FIXADOR</h3>
+               <div class="row txt-justify">
+                   <p> 3.  Um dos desafios mais comuns do P.O. é lidar com múltiplos stakeholders que querem suas solicitações priorizadas. A melhor ferramenta para gerenciar isso é:</p>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <form action="">
+               <label for="" class="form-label">Alternativas:</label>
+               <div class="form-check">
+                   <input type="radio" name="questao" class="form-check-input"
+                       value="false">
+                   <label for="valor1" class="form-check-label"><b>A)</b> Dizer "sim" para todos e pedir para a equipe trabalhar mais rápido.</label>
+               </div>
 
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor2" class="form-check-input"
+                       value="false">
+                   <label for="valor2" class="form-check-label"><b>B)</b> FUm cronograma detalhado (gráfico de Gantt) mostrando exatamente quando cada item será entregue.</label>
+               </div>
 
-                <p class="mt-2">Coaching e Mentoria: Atuar como um coach, ajudando a equipe a
-                    desenvolver suas
-                    habilidades, a se auto-organizar e a internalizar os princípios ágeis é uma
-                    responsabilidade central. Isso envolve orientar, mas não ditar, as soluções.
-                </p>
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor3" class="form-check-input"
+                       value="false">
+                   <label for="valor3" class="form-check-label"><b>C)</b> Fazer reuniões individuais e secretas com cada stakeholder.</label>
+               </div>
 
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor4" class="form-check-input"
+                       value="true">
+                   <label for="valor4" class="form-check-label"><b>D)</b> Manter um Product Backlog transparente e bem priorizado, que sirva como a única fonte da verdade sobre o que será feito.</label>
+               </div>
 
-                <p class="mt-2">Se você é um novo Scrum Master, o conhecimento técnico é
-                    importante. Porém o
-                    essencial é desenvolver o lado emocional por ser um gestor que auxilia sua
-                    equipe em
-                    crescer nessa metodologia ágil.
-                </p>
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor5" class="form-check-input"
+                       value="false">
+                   <label for="valor5" class="form-check-label"><b>E)</b> Ignorar os stakeholders e focar apenas no que a equipe de desenvolvimento acha importante.</label>
+               </div>
+           </form>
+       </div>
+       `;
+const exercicio4 = `
+       <div class="row"> <!-- DIVISÃO DE LINHA -->
+           <div class="col"> <!-- DIVISÃO DE COLUNA -->
+               <h3>EXERCÍCIO FIXADOR</h3>
+               <div class="row txt-justify">
+                   <p> 4. Qual das seguintes opções é considerada uma HARD SKILL essencial para um Product Owner?</p>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <form action="">
+               <label for="" class="form-label">Alternativas:</label>
+               <div class="form-check">
+                   <input type="radio" name="questao" class="form-check-input"
+                       value="false">
+                   <label for="valor1" class="form-check-label"><b>A)</b> Liderança Servidora.</label>
+               </div>
 
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor2" class="form-check-input"
+                       value="true">
+                   <label for="valor2" class="form-check-label"><b>B)</b> Gerenciamento de Product Backlog e conhecimento de técnicas de priorização.</label>
+               </div>
 
-                <p class="mt-2 fw-bold">HARD SKILLS DE UM SCRUM MASTER:</p>
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor3" class="form-check-input"
+                       value="false">
+                   <label for="valor3" class="form-check-label"><b>C)</b> Resolução de conflitos internos da equipe.</label>
+               </div>
 
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor4" class="form-check-input"
+                       value="false">
+                   <label for="valor4" class="form-check-label"><b>D)</b> Coaching e Mentoria sobre a metodologia ágil.</label>
+               </div>
 
-                <p>Conhecimento Profundo do Framework Scrum e dos Princípios Ágeis: É
-                imprescindível que o Scrum Master domine o Guia do Scrum, seus papéis, eventos,
-                artefatos e regras. Além disso, deve ter uma compreensão sólida dos valores e
-                princípios do Manifesto Ágil.</p>
+               <div class="form-check">
+                   <input type="radio" name="questao" id="valor5" class="form-check-input"
+                       value="false">
+                   <label for="valor5" class="form-check-label"><b>E)</b> Empatia e inteligência emocional.</label>
+               </div>
+           </form>
+       </div>
+       `;
+const exercicio5 = `
+           <div class="row"> <!-- DIVISÃO DE LINHA -->
+               <div class="col"> <!-- DIVISÃO DE COLUNA -->
+               <h3>EXERCÍCIO FIXADOR</h3>
+                   <div class="row txt-justify">
+                       <p> 5. Por que a habilidade de "dizer não" é tão crucial para o sucesso de um Product Owner?</p>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+               <form action="">
+                   <label for="" class="form-label">Alternativas:</label>
+                   <div class="form-check">
+                       <input type="radio" name="questao" class="form-check-input"
+                           value="false">
+                       <label for="valor1" class="form-check-label"><b>A)</b> Para mostrar autoridade e controle sobre a equipe de desenvolvimento.</label>
+                   </div>
 
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor2" class="form-check-input"
+                           value="false">
+                       <label for="valor2" class="form-check-label"><b>B)</b> Para evitar trabalho e reduzir os custos do projeto o máximo possível.</label>
+                   </div>
 
-                <p class="mt-2">Gerenciamento de Riscos: A capacidade de identificar, analisar e planejar a
-                mitigação de riscos que possam impactar o andamento do projeto e o alcance das
-                metas da Sprint.</p>
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor3" class="form-check-input"
+                           value="true">
+                       <label for="valor3" class="form-check-label"><b>C)</b> Porque o foco é essencial. Dizer "não" para ideias de baixo valor permite dizer "sim" para as funcionalidades que realmente importam e movem o produto na direção estratégica correta.</label>
+                   </div>
 
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor4" class="form-check-input"
+                           value="false">
+                       <label for="valor4" class="form-check-label"><b>D)</b> Para garantir que apenas as tarefas mais fáceis e rápidas sejam selecionadas para a Sprint.</label>
+                   </div>
 
-                <p class="mt-2">Domínio de Ferramentas de Gerenciamento Ágil: Proficiência em ferramentas como
-                Jira, Trello, Azure DevOps ou similares é crucial para gerenciar o backlog do
-                produto, acompanhar o progresso das Sprints e gerar métricas que ajudem a equipe
-                a inspecionar e adaptar seu trabalho.</p>
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor5" class="form-check-input"
+                           value="false">
+                       <label for="valor5" class="form-check-label"><b>E)</b> Nenhuma das questões está correta.</label>
+                   </div>
+               </form>
+           </div>
+       `;
 
+    const exercicio6 = `
+           <div class="row"> <!-- DIVISÃO DE LINHA -->
+               <div class="col"> <!-- DIVISÃO DE COLUNA -->
+               <h3>EXERCÍCIO FIXADOR</h3>
+                   <div class="row txt-justify">
+                       <p> 5. Por que a habilidade de "dizer não" é tão crucial para o sucesso de um Product Owner?</p>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+               <form action="">
+                   <label for="" class="form-label">Alternativas:</label>
+                   <div class="form-check">
+                       <input type="radio" name="questao" class="form-check-input"
+                           value="false">
+                       <label for="valor1" class="form-check-label"><b>A)</b> Para mostrar autoridade e controle sobre a equipe de desenvolvimento.</label>
+                   </div>
 
-                <p class="mt-2">Não se preocupe em possuir todos estes requerimentos da noite pro dia, você
-                desenvolve praticando-as no seu projeto, e está tudo bem errar ali e aqui, tudo
-                faz parte do aprendizado final. Scrum também é sobre tomar riscos e decisões
-                complexas.</p>
-            </div>
-`;
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor2" class="form-check-input"
+                           value="false">
+                       <label for="valor2" class="form-check-label"><b>B)</b> Para evitar trabalho e reduzir os custos do projeto o máximo possível.</label>
+                   </div>
 
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor3" class="form-check-input"
+                           value="true">
+                       <label for="valor3" class="form-check-label"><b>C)</b> Porque o foco é essencial. Dizer "não" para ideias de baixo valor permite dizer "sim" para as funcionalidades que realmente importam e movem o produto na direção estratégica correta.</label>
+                   </div>
 
-        conteudo3 = `
-    <h3>Desafios comuns na jornada do Scrum Master</h3>
-        <div class="txt-justify">
-            <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
-            <p class="mt-2">Como dito anteriormente, haverá muitos riscos no meio processo que precisarão
-            ser tomados de forma crítica e empírica. As vezes pode ser um pouco frustrante
-            ou comprometedor realizar alguma tarefa, mas lembre-se que isso no fim irá gerar
-            os frutos das suas decisões. Se suas escolhas levaram a maior qualidade do
-            produto, você está caminhando certo! As vezes o problema é sobre a motivação da
-            equipe em relação ao projeto, ou a falta de conexão entre os membros, e há
-            várias formas de poder resolver isto.</p>
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor4" class="form-check-input"
+                           value="false">
+                       <label for="valor4" class="form-check-label"><b>D)</b> Para garantir que apenas as tarefas mais fáceis e rápidas sejam selecionadas para a Sprint.</label>
+                   </div>
 
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor5" class="form-check-input"
+                           value="false">
+                       <label for="valor5" class="form-check-label"><b>E)</b> Nenhuma das questões está correta.</label>
+                   </div>
+               </form>
+           </div>
+       `;
+    // --- 2. LÓGICA DE NAVEGAÇÃO (Do seu Bloco 1, mas corrigida) ---
 
-            <p class="mt-2">Basta você pode analisar a situação de forma "Macro", ou seja, de forma global e
-            entender o motivo do distanciamento. Será que ninguém se conhece? Ou a relação é
-            meio tímida? Ou eles no passado já se conheciam, mas houve algo entre eles? As
-            possibilidades são infinitas, e as soluções também! O importante é ser honesto e
-            falar individualmente com os integrantes se há algo impedindo-os de poder
-            prosseguir com a comunicação, as vezes é uma questão de tempo, ou de adaptação
-            até chegar no ideal que é um ecossistema saudável de conversações e debates do
-            projeto.</p>
+    // (Usei os nomes de variáveis que você deu no Bloco 1)
+    
+    // CORREÇÃO: Mudei ID para ficar mais seguro e não dar conflito
+    const voltar = document.querySelector("#btn_voltar"); 
+    const proximo = document.querySelector("#btn_proximo");
+    
+    // CORREÇÃO: Apontei para a div certa (".conteudo")
+    const conteudo_questao = document.querySelector(".conteudo"); 
+    const verificadorContainer = document.querySelector("#verificador_container");
 
+    let valor = 1; // Sua variável de controle
+    const maxValor = 12; // O total de etapas (6 capítulos + 6 exercícios)
 
-            <p class="mt-2">Outro problema bem comum é sobre querer adentrar na metodologia em si, sempre é
-            importante ressaltar as diferenças dos outros processos e do Scrum, o que torna
-            o Scrum mais ágil que os outros? O sistema cascata (ou waterfall) pode soar
-            ultrapassado as vezes, por depender de outro funcionário para realizar o seu
-            próximo passo, deixando os outros integrantes sem objetivo. O Scrum é totalmente
-            o contrário disto, ele proporciona que cada um possa ser seu próprio gerente e
-            gestor, como pode ser visto nesta imagem: (imagem1)</p>
-        </div>
-       <div class="mt-4 text-center">
-    <a href="{{url_for('cursos.cap_atividade', curso='sm', id=1)}}" class="btn-bot-exercicio" id="btn-exercicios">
-        Ir para exercícios
-    </a>
-</div>
+    voltar.addEventListener("click", () => {
+        if (valor > 1){
+            valor = valor - 1;
+            renderizar(valor);
+        }
+    });
 
-`;
-        const chapters = document.querySelectorAll(".chapters li");
+    proximo.addEventListener("click", () => {
+        // limite de 12 (questão + conteúdo)
+        if (valor < maxValor){ 
+            valor = valor + 1;
+            renderizar(valor);
+        }
+    });
 
-        chapters.forEach(li => {
-            li.addEventListener("click", () => {
+    function renderizar(valor){
+        // Desabilita botões nos limites
+        voltar.disabled = (valor === 1);
+        proximo.disabled = (valor === maxValor);
+        if (valor === 1) {
+            conteudo_questao.innerHTML = conteudo1;
+            verificadorContainer.style.display = 'none'; 
+        }
+        else if (valor === 2) {
+            conteudo_questao.innerHTML = exercicio1;
+            verificadorContainer.style.display = 'block'; 
+        }
+        else if (valor === 3) {
+            conteudo_questao.innerHTML = conteudo2;
+            verificadorContainer.style.display = 'none';
+        }
+        else if (valor === 4) {
+            conteudo_questao.innerHTML = exercicio2;
+            verificadorContainer.style.display = 'block';
+        }
+        else if (valor === 5) {
+            conteudo_questao.innerHTML = conteudo3;
+            verificadorContainer.style.display = 'none';
+        }
+        else if (valor === 6) {
+            conteudo_questao.innerHTML = exercicio3;
+            verificadorContainer.style.display = 'block';
+        }
+        else if (valor === 7) {
+            conteudo_questao.innerHTML = conteudo4;
+            verificadorContainer.style.display = 'none';
+        }
+        else if (valor === 8) {
+            conteudo_questao.innerHTML = exercicio4;
+            verificadorContainer.style.display = 'block';
+        }
+        else if (valor === 9) {
+            conteudo_questao.innerHTML = conteudo5;
+            verificadorContainer.style.display = 'none';
+        }
+        else if (valor === 10) {
+            conteudo_questao.innerHTML = exercicio5;
+            verificadorContainer.style.display = 'block';
+        }
+        else if (valor === 11) {
+            conteudo_questao.innerHTML = conteudo6;
+            verificadorContainer.style.display = 'none';
+        }
+        else if (valor === 12) {
+            conteudo_questao.innerHTML = exercicio6;
+            verificadorContainer.style.display = 'block';
+        }
+    }
 
-                chapters.forEach(item => item.classList.remove("active"));
+    // Carrega a primeira página (Capítulo 1)
+    renderizar(valor);
+    
+    // Removi a lógica do menu lateral (pressbtn, pressbtn2) 
+    // porque ela conflita com a lógica do "Próximo/Voltar".
 
-                li.classList.add("active");
-            });
-        });
+</script>
 
+<script>
+    // (Cole o seu "código 4" completo aqui)
+    
+    //VARIVEIS QUE GUARDAM O RESULTADO DO VERIFICADOR
+    const modal_success = `... (código do modal de sucesso) ...`;
+    const modal_danger = `... (código do modal de erro) ...`;
+    const modal_null = `... (código do modal nulo) ...`;
 
-        const conteudo = document.querySelector(".conteudo");// BUSCA DENTRO DA PAGE UMA CLASSE CHAMADA CONTEUDO E GUARDA EM UMA VARIAVEL
-        const pressbtn = document.getElementById("sub0");// A MESMA COISA DE CIMA, POREM PROCURA UM ID
-        pressbtn.addEventListener("click", () => {// USANDO A VARIAVEL SE UTILIZA DE UMA FUNÇÃO JÁ PRONTA, ONDE QUANDO UM EVENTO OCORRE (NESSE CASO UM CLICK ELE EXECULTA UMA FUNÇÃO)
-            conteudo.innerHTML = conteudo1// PEGA ONDE ESTÁ GUARDADO ID E INSERE NELE A INFORMAÇÃO DIGITADA DEPOIS
-        })
-        const pressbtn2 = document.getElementById("sub1");
-        pressbtn2.addEventListener("click", () => {
-            conteudo.innerHTML = conteudo2
-        })
-        const pressbtn3 = document.getElementById("sub2");
-        pressbtn3.addEventListener("click", () => {
-            conteudo.innerHTML = conteudo3
+    //VARIAVEL QUE VAI GUARDAR ONDEM VAI ESTAR O CONTEUDO DO MODAL
+    const conteudo_modal = document.querySelector(".conteudo_verificar");
+    //VARIAVEL QUE VAI GUADAR O BOTAO DE VERIFICACAO
+    const verificador = document.getElementById("btn_verificador");
 
-        })
-    </script>
+    //QUANDO O BOTAO FOR ACIONADO/CLICADO
+    verificador.addEventListener("click", () =>{
+        //VARIAVEL QUE GUARDA A ALTERNATIVA SELECIONADA
+        // CORREÇÃO: Precisa procurar dentro do container que muda
+        const alternativa = conteudo_questao.querySelector('input[name="questao"]:checked');
+        
+        if (alternativa){
+            if (alternativa.value === "true"){
+                conteudo_modal.innerHTML = modal_success;
+            }
+            else{
+                conteudo_modal.innerHTML = modal_danger;
+            }
+        }
+        else{
+            conteudo_modal.innerHTML = modal_null;
+        }
+    });
+</script>
+
 {%endblock%}
