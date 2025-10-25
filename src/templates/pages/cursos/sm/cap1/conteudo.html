@@ -71,9 +71,7 @@
 {%block scripts%}
 
 <script>
-    // --- 1. DEFINIÇÃO DE CONTEÚDO (Dos seus Blocos 2 e 3) ---
-
-    // Capítulos (do seu Bloco 3)
+    
     const conteudo1 = `
             <h3>1. FUNÇÃO DO CARGO</h3>
             <div class="txt-justify">
@@ -92,15 +90,31 @@
                 <p class="mt-2">A jornada de um Product Owner é cheia de desafios...</p>
                 </div>
     `;
-    // (Preenchendo o resto do seu menu)
-    const conteudo4 = '<h3>Capítulo 2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2...</p></div>';
-    const conteudo5 = '<h3>Capítulo 2.1</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.1...</p></div>';
-    const conteudo6 = '<h3>Capítulo 2.2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.2...</p></div>';
+    
+    const conteudo4 = `<h3>Capítulo 2</h3><div class="txt-justify">
+        <p>Como visto anteriormente, o SM é comunicador e servidor. Diferente dos Developers, cujo foco primário é a construção do Incremento, o SM se concentra na eficácia geral do Time Scrum. O seu compromisso é com a saúde do processo e a correta implementação da metodologia. Ele é a engrenagem catalisadora que assegura que os pilares da Transparência, Inspeção e Adaptação sejam compreendidos, adotados e executados com excelência, garantindo que a "máquina" ágil funcione em sua plenitude.</p>
+
+        </div>`;
+    const conteudo5 = `<h3>Capítulo 2.1</h3><div class="txt-justify">
+        <p>Embora o Time Scrum como um todo colabore, há uma divisão clara de responsabilidades na resolução de problemas. É consenso que os Developers têm a autonomia e o dever de resolver os impedimentos técnicos (ex: um problema no código, uma falha na integração). Em contrapartida direta, o Scrum Master é o responsável por identificar e remover ativamente os impedimentos organizacionais.</p>
+
+        <p>Isso inclui barreiras burocráticas, dependências de outras equipes que não são resolvidas, falta de ferramentas, ou qualquer obstáculo que esteja fora do controle imediato dos Developers. Essa atuação é crucial, pois blinda o time de interrupções externas e permite que mantenham o foco total na Meta da Sprint.</p>
+        </div>`;
+    const conteudo6 = `<h3>Capítulo 2.2</h3><div class="txt-justify">
+        <p">O foco da equipe em geral deve ser em todos, mas o SM tem um foco em 4 específicos:</p>
+        <h5 class="mt-5">Sprint Planning</h5>
+        <p>O SM garante que a cerimônia ocorra e seja produtiva. Ele não dita o que fazer, mas ajuda o Product Owner a comunicar o objetivo (o "Porquê") e os Developers a selecionar o trabalho (o "O Quê") e planejar sua execução (o "Como"), assegurando que uma Meta da Sprint clara e inspiradora seja definida.</p>
+        <h5 class="mt-5">Daily Scrum</h5>
+        <p>Este evento é dos Developers, para os Developers. O SM zela para que a reunião aconteça, mantenha sua curta duração (geralmente 15 minutos) e atinja seu objetivo de sincronização e replanejamento diário. Sua principal função é ouvir atentamente os impedimentos levantados para que possa iniciar sua remoção imediatamente após o evento.</p>
+        <h5 class="mt-5">Sprint Review</h5>
+        <p> O SM atua como o orquestrador, assegurando que os stakeholders(partes interessadas) relevantes sejam convidados e que o Incremento "Pronto" (Done) seja apresentado. Ele fomenta a colaboração e garante que o foco seja a inspeção do produto e a coleta de feedback acionável, em vez de uma mera demonstração passiva.</p>
+        <h5 class="mt-5">Sprint Retrospective</h5>
+        <p>Este é o evento-chave para o SM como um agente de mudança. Ele é o facilitador principal, responsável por criar um ambiente de segurança psicológica. Ele guia o time na inspeção de si mesmo (indivíduos, interações, processos e ferramentas) e assegura que a discussão culmine em um plano de ação concreto para aprimorar a eficácia do time na próxima Sprint.</p>
+        </div>`;
 
 
-    // Exercícios (do seu Bloco 2)
-    // ISSO É IMPORTANTE: Defini eles *depois* dos do Bloco 3,
-    // para que o `exercicio1` com a pergunta real APAGUE o `exercicio1 = 'teste 1'`
+    
+   
 const exercicio1 = `
        <div class="row"> <!-- DIVISÃO DE LINHA -->
            <div class="col"> <!-- DIVISÃO DE COLUNA -->
@@ -366,9 +380,7 @@ const exercicio5 = `
                </form>
            </div>
        `;
-    // --- 2. LÓGICA DE NAVEGAÇÃO (Do seu Bloco 1, mas corrigida) ---
-
-    // (Usei os nomes de variáveis que você deu no Bloco 1)
+    
     
     // CORREÇÃO: Mudei ID para ficar mais seguro e não dar conflito
     const voltar = document.querySelector("#btn_voltar"); 
@@ -378,8 +390,8 @@ const exercicio5 = `
     const conteudo_questao = document.querySelector(".conteudo"); 
     const verificadorContainer = document.querySelector("#verificador_container");
 
-    let valor = 1; // Sua variável de controle
-    const maxValor = 12; // O total de etapas (6 capítulos + 6 exercícios)
+    let valor = 1; 
+    const maxValor = 12; 
 
     voltar.addEventListener("click", () => {
         if (valor > 1){
@@ -389,7 +401,7 @@ const exercicio5 = `
     });
 
     proximo.addEventListener("click", () => {
-        // limite de 12 (questão + conteúdo)
+        
         if (valor < maxValor){ 
             valor = valor + 1;
             renderizar(valor);
@@ -450,16 +462,15 @@ const exercicio5 = `
         }
     }
 
-    // Carrega a primeira página (Capítulo 1)
+    
     renderizar(valor);
     
-    // Removi a lógica do menu lateral (pressbtn, pressbtn2) 
-    // porque ela conflita com a lógica do "Próximo/Voltar".
+    
 
 </script>
 
 <script>
-    // (Cole o seu "código 4" completo aqui)
+    
     
     //VARIVEIS QUE GUARDAM O RESULTADO DO VERIFICADOR
     const modal_success = `... (código do modal de sucesso) ...`;

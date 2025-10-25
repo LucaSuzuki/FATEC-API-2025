@@ -71,9 +71,7 @@
 {%block scripts%}
 
 <script>
-    // --- 1. DEFINIÇÃO DE CONTEÚDO (Dos seus Blocos 2 e 3) ---
-
-    // Capítulos (do seu Bloco 3)
+    
     const conteudo1 = `
             <h3>1. FUNÇÃO DO CARGO</h3>
             <div class="txt-justify">
@@ -83,7 +81,7 @@
     const conteudo2 = `
             <h3>1.1. DESENVOLVIMENTO DE SKILLS</h3>
             <div class="txt-justify">
-                <p class="mt-2"> Assim como o Scrum Master...</p>
+                <p></p>
                 </div>
     `;
     const conteudo3 = `
@@ -92,15 +90,37 @@
                 <p class="mt-2">A jornada de um Product Owner é cheia de desafios...</p>
                 </div>
     `;
-    // (Preenchendo o resto do seu menu)
-    const conteudo4 = '<h3>Capítulo 2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2...</p></div>';
-    const conteudo5 = '<h3>Capítulo 2.1</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.1...</p></div>';
-    const conteudo6 = '<h3>Capítulo 2.2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.2...</p></div>';
+    
+    const conteudo4 = `<h3>Capítulo 2</h3><div class="txt-justify">
+        <p>Em uma equipe de desenvolvimento aplicada ao sistema ágil Scrum, há uma prévia comunicação para decisão de cargos. Nessa conversa, por votação, consenso ou demandas superiores, cria-se as divisões de cargo, PO, SM e ST.</p>
+        <p>Na decisão de escolha, o perfil pessoal de cada um é de grande ajuda, os mais paralelos a líderes e secretários tendem a ocupar cargos diferentes do ST, aqueles que pretendem focar em trabalho, na parte de desenvolvimento, aprimorando suas habilidades técnicas e evoluindo na comunicação de equipe, costumam ser do Scrum Team.<p>
+        <p>Retomando conceitos da metodologia Scrum, sabe-se que para a estimativa de cada User Story é considerada também o tempo de estudo; é mais comum que os Developers se interessem por essa parte, pois amplia um repertório diretamente técnico. Exemplificando: se a tarefa for de criar uma homepage em um website, caso haja tempo na Sprint, os menos conhecedores do assunto serão encarregados da tarefa, com a supervisão e assistência daqueles com maior habilidade no assunto.</p>
+        <p>Sabe-se, então, que o perfil ideal de um Developer participante da Equipe Scrum é aquele que aspira ver a equipe avançar e entende que, para isso, deve continuar em constante evolução pessoal: em suas Hard Skills e Soft Skills; a única coisa que não pode ocorrer de maneira alguma é estagnar, pois caso ocorra, isso dificulta o próprio trabalho do Developer e a equipe como um todo, é impossível, no Scrum, a equipe funcionar só. Scrum é como uma máquina, os cargos são as engrenagens que farão a máquina funcionar: ela até consegue desempenhar sua função sem uma das engrenagens, mas só pode funcionar como deveria se todas girarem de acordo.</p>
+        </div>`;
+    const conteudo5 = `<h3>Capítulo 2.1</h3><div class="txt-justify">
+        <p>É fato que todos os membros numa equipe se ajudam e fazem seus deveres juntamente, porém, há deveres exclusivos também para cada pessoa e para cada cargo. Nesta seção serão tratados alguns trabalhos que apenas o Scrum Team pode desenvolver e finalizar.</p>
+        <h5 class="mt-5">Técnico:</h5>
+        <p>Boa parte dos trabalhos técnicos serão de responsabilidade geral, na qual todos da equipe terão que atuar, pelo menos uma vez, como desenvolvedores e aplicarem seus conhecimentos em prol da entrega de um bom/satisfatório produto. Entretanto, é consenso de que algumas tarefas específicas terão exclusividade na área dos Developers, como resolver os impedimentos técnicos de determinada problemática: deve-se ocorrer a responsabilização do Scrum Team nesse âmbito pois o Scrum Master será responsável pela resolução de impedimentos organizacionais. Além disso, há a preparação de demonstrações técnicas do produto nas Sprint Reviews, apesar do Product Owner e do SM poderem participar como apresentadores nas Sprint Reviews, o trabalho de descomplicar a demonstração técnica do produto recai sobre o Scrum Team.</p>
+        <h5 class="mt-5">Social:</h5>
+        <p>Auto organização interna pode ser colocado juntamente aos trabalhos exclusivos, pois dentre as asks direcionadas ao ST, o grupo tem de distribuir para cada um o que mais se adequa e relaciona, caso contrário, todos terão de estudar mais que o necessário e, apesar de obterem conhecimento, desperdiçarão tempo de desenvolvimento que foi estimado para a Sprint. A estimativa de alguns objetivos também são exclusivos para o time dos Developers, visto que esses específicos serão desenvolvidos por eles, portanto, não há maneira melhor de definir a estimativa de uma tarefa senão com alguém que sabe a manejar.</p>
+        <br>
+        <p>Percebe-se, então, que obrigações são existentes e constantes no Scrum, além de se dividirem entre obrigações do grupo, de cargo e pessoais, para fins de organização, otimização do uso de tempo e aspiração para a construção de um produto que satisfaça o cliente.  </p>
+
+        </div>`;
+    const conteudo6 = `<h3>Capítulo 2.2</h3><div class="txt-justify">
+        <P>Um dos principais pontos do Scrum é sua divisão por Sprints, que são, resumidamente, períodos de trabalho e entregas parciais do produto requisitado pelo cliente. Nessas Sprints, ocorrem alguns episódios: Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective; esses tópicos já foram muito abordados, portanto não haverá significativo aprofundamento acerca deles, porém, será comentado sobre o posicionamento do Scrum Team.</p>
+        <h5 class="mt-5">Sprint Planning para Dev Team:</h5>
+        <p>Como um dos principais objetivos da Sprint Planning é separar em seções a resolução de um problema raiz. O dever de planejar é do Product Owner, mas o auxílio primordial deve ser do ST, pois, como comentado anteriormente, os membros têm de estimar juntamente o período a ser concluído determinada atividade, afinal, eles são os que vão trabalhar na maior parte ou todas elas.</p>
+        <h5 class="mt-5">Daily Scrum para Dev Team:</h5>
+        <p>Primordialmente, “Dailys” são um dos passos mais relevantes para toda a metodologia Scrum, é nela que se acompanham os progressos e problemáticas do processo. A participação do ST nas Dailys são mais do que importantes, são indispensáveis, eles devem repassar todos seus avanços, pedir ajuda, sugestões, todo e qualquer tipo de comunicação importante deve ser priorizado no dia da Daily, para que não se perca. Para Devs, manter a Daily como dia para comunicar é muito vantajoso, visto que há tempo para maturar a dúvida/problemática e discutir com o grupo para possíveis soluções e incrementos, além de tudo ser anotado pelos membros da equipe.</p>
+        <h5 class="mt-5">Sprint Review para Dev Team:</h5>
+        <p>Ao finalizar uma Sprint, o Scrum Team apresenta o que foi desenvolvido. Essa apresentação é colaborativa, o PO e o SM podem participar e provavelmente irão em algum ponto, mas o protagonismo inicial é do Scrum Team, que demonstra tecnicamente o produto funcionando. O objetivo é coletar feedback e validar se o incremento atende aos critérios definidos, tudo isso com base no que o cliente e avaliador falam (tópicos que serão tragos à tona em futuras Dailys da equipe).</p>
+        <h5 class="mt-5">Sprint Retrospective para Dev Team:</h5>
+        <p>Em um evento semelhante à Daily, haverá o Sprint Retrospective, no qual todos olham para trás e percebem o que devem melhorar no projeto, seguindo sugestões de clientes e avaliadores da Sprint Review. Muitas dessas sugestões terão de partir dos Devs, que entendem onde erraram ou o que acertaram, o que podem melhorar e o que não conseguem e preferem manter. Tudo deve ser conversado pois o objetivo é não haver falhas comunicativas.</p>
+        </div>`;
 
 
-    // Exercícios (do seu Bloco 2)
-    // ISSO É IMPORTANTE: Defini eles *depois* dos do Bloco 3,
-    // para que o `exercicio1` com a pergunta real APAGUE o `exercicio1 = 'teste 1'`
+     
 const exercicio1 = `
        <div class="row"> <!-- DIVISÃO DE LINHA -->
            <div class="col"> <!-- DIVISÃO DE COLUNA -->
@@ -366,9 +386,7 @@ const exercicio5 = `
                </form>
            </div>
        `;
-    // --- 2. LÓGICA DE NAVEGAÇÃO (Do seu Bloco 1, mas corrigida) ---
 
-    // (Usei os nomes de variáveis que você deu no Bloco 1)
     
     // CORREÇÃO: Mudei ID para ficar mais seguro e não dar conflito
     const voltar = document.querySelector("#btn_voltar"); 
@@ -378,8 +396,8 @@ const exercicio5 = `
     const conteudo_questao = document.querySelector(".conteudo"); 
     const verificadorContainer = document.querySelector("#verificador_container");
 
-    let valor = 1; // Sua variável de controle
-    const maxValor = 12; // O total de etapas (6 capítulos + 6 exercícios)
+    let valor = 1; 
+    const maxValor = 12; 
 
     voltar.addEventListener("click", () => {
         if (valor > 1){
@@ -389,7 +407,7 @@ const exercicio5 = `
     });
 
     proximo.addEventListener("click", () => {
-        // limite de 12 (questão + conteúdo)
+        
         if (valor < maxValor){ 
             valor = valor + 1;
             renderizar(valor);
@@ -397,7 +415,7 @@ const exercicio5 = `
     });
 
     function renderizar(valor){
-        // Desabilita botões nos limites
+        
         voltar.disabled = (valor === 1);
         proximo.disabled = (valor === maxValor);
         if (valor === 1) {
@@ -450,16 +468,14 @@ const exercicio5 = `
         }
     }
 
-    // Carrega a primeira página (Capítulo 1)
+    
     renderizar(valor);
     
-    // Removi a lógica do menu lateral (pressbtn, pressbtn2) 
-    // porque ela conflita com a lógica do "Próximo/Voltar".
+    
 
 </script>
 
 <script>
-    // (Cole o seu "código 4" completo aqui)
     
     //VARIVEIS QUE GUARDAM O RESULTADO DO VERIFICADOR
     const modal_success = `... (código do modal de sucesso) ...`;

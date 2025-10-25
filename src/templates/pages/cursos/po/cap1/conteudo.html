@@ -71,9 +71,7 @@
 {%block scripts%}
 
 <script>
-    // --- 1. DEFINIÇÃO DE CONTEÚDO (Dos seus Blocos 2 e 3) ---
-
-    // Capítulos (do seu Bloco 3)
+    
     const conteudo1 = `
             <h3>1. FUNÇÃO DO CARGO</h3>
             <div class="txt-justify">
@@ -92,15 +90,14 @@
                 <p class="mt-2">A jornada de um Product Owner é cheia de desafios...</p>
                 </div>
     `;
-    // (Preenchendo o resto do seu menu)
+    
     const conteudo4 = '<h3>Capítulo 2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2...</p></div>';
     const conteudo5 = '<h3>Capítulo 2.1</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.1...</p></div>';
     const conteudo6 = '<h3>Capítulo 2.2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.2...</p></div>';
 
 
-    // Exercícios (do seu Bloco 2)
-    // ISSO É IMPORTANTE: Defini eles *depois* dos do Bloco 3,
-    // para que o `exercicio1` com a pergunta real APAGUE o `exercicio1 = 'teste 1'`
+    
+
 const exercicio1 = `
        <div class="row"> <!-- DIVISÃO DE LINHA -->
            <div class="col"> <!-- DIVISÃO DE COLUNA -->
@@ -366,9 +363,7 @@ const exercicio5 = `
                </form>
            </div>
        `;
-    // --- 2. LÓGICA DE NAVEGAÇÃO (Do seu Bloco 1, mas corrigida) ---
 
-    // (Usei os nomes de variáveis que você deu no Bloco 1)
     
     // CORREÇÃO: Mudei ID para ficar mais seguro e não dar conflito
     const voltar = document.querySelector("#btn_voltar"); 
@@ -378,8 +373,8 @@ const exercicio5 = `
     const conteudo_questao = document.querySelector(".conteudo"); 
     const verificadorContainer = document.querySelector("#verificador_container");
 
-    let valor = 1; // Sua variável de controle
-    const maxValor = 12; // O total de etapas (6 capítulos + 6 exercícios)
+    let valor = 1; 
+    const maxValor = 12; 
 
     voltar.addEventListener("click", () => {
         if (valor > 1){
@@ -389,7 +384,7 @@ const exercicio5 = `
     });
 
     proximo.addEventListener("click", () => {
-        // limite de 12 (questão + conteúdo)
+        
         if (valor < maxValor){ 
             valor = valor + 1;
             renderizar(valor);
@@ -397,7 +392,7 @@ const exercicio5 = `
     });
 
     function renderizar(valor){
-        // Desabilita botões nos limites
+        
         voltar.disabled = (valor === 1);
         proximo.disabled = (valor === maxValor);
         if (valor === 1) {
@@ -450,16 +445,15 @@ const exercicio5 = `
         }
     }
 
-    // Carrega a primeira página (Capítulo 1)
+    
     renderizar(valor);
     
-    // Removi a lógica do menu lateral (pressbtn, pressbtn2) 
-    // porque ela conflita com a lógica do "Próximo/Voltar".
+    
 
 </script>
 
 <script>
-    // (Cole o seu "código 4" completo aqui)
+    
     
     //VARIVEIS QUE GUARDAM O RESULTADO DO VERIFICADOR
     const modal_success = `... (código do modal de sucesso) ...`;
