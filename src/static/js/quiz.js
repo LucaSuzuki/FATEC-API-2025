@@ -14,6 +14,62 @@ const perguntas = [
     alternativas: ["Não", "Depende do contexto", "Sim, muito"],
     numeroq: 3,
   },
+    {
+    pergunta: "Você prefere planejar e definir metas do projeto?",
+    alternativas: ["Sim", "Às vezes", "Prefiro executar tarefas técnicas"],
+    numeroq: 4,
+  },
+  {
+    pergunta: "Você gosta de facilitar reuniões e ajudar o time a se organizar?",
+    alternativas: ["Não muito", "Sim, bastante", "Prefiro programar ou desenvolver"],
+    numeroq: 5,
+  },
+  {
+    pergunta: "Você se sente mais confortável codando e resolvendo problemas técnicos?",
+    alternativas: ["Não", "Depende do contexto", "Sim, muito"],
+    numeroq: 6,
+  },
+    {
+    pergunta: "Você prefere planejar e definir metas do projeto?",
+    alternativas: ["Sim", "Às vezes", "Prefiro executar tarefas técnicas"],
+    numeroq: 7,
+  },
+  {
+    pergunta: "Você gosta de facilitar reuniões e ajudar o time a se organizar?",
+    alternativas: ["Não muito", "Sim, bastante", "Prefiro programar ou desenvolver"],
+    numeroq: 8,
+  },
+  {
+    pergunta: "Você se sente mais confortável codando e resolvendo problemas técnicos?",
+    alternativas: ["Não", "Depende do contexto", "Sim, muito"],
+    numeroq: 9,
+  },
+    {
+    pergunta: "Você prefere planejar e definir metas do projeto?",
+    alternativas: ["Sim", "Às vezes", "Prefiro executar tarefas técnicas"],
+    numeroq: 10,
+  },
+  {
+    pergunta: "Você gosta de facilitar reuniões e ajudar o time a se organizar?",
+    alternativas: ["Não muito", "Sim, bastante", "Prefiro programar ou desenvolver"],
+    numeroq: 11,
+  },
+  {
+    pergunta: "Você se sente mais confortável codando e resolvendo problemas técnicos?",
+    alternativas: ["Não", "Depende do contexto", "Sim, muito"],
+    numeroq: 12,
+  },
+    {
+    pergunta: "Você gosta de facilitar reuniões e ajudar o time a se organizar?",
+    alternativas: ["Não muito", "Sim, bastante", "Prefiro programar ou desenvolver"],
+    numeroq: 13,
+  },
+  {
+    pergunta: "Você se sente mais confortável codando e resolvendo problemas técnicos?",
+    alternativas: ["Não", "Depende do contexto", "Sim, muito"],
+    numeroq: 14,
+  },
+
 ];
 
 let atual = 0;
@@ -121,10 +177,33 @@ async function finalizar() {
 
   if(envio.ok){
     quizEl.innerHTML = `
-      <h3>Obrigado, ${nome}!</h3>
-      <p>PO: ${envio.po ?? 0}% | SM: ${envio.sm ?? 0}% | Dev: ${envio.dev ?? 0}%</p>
-      <p>Perfil dominante: ${envio.perfil}</p>
-      <p class="text-success">Resultado enviado e salvo ✅</p>
+<div class="d-flex justify-content-center align-items-center flex-column" style="min-height: 60vh;">
+    <h3>Obrigado, ${nome}!</h3>
+    <h3>Relatório de desempenho:</h3>
+    <div class="mb-3 w-100">
+      <div class="d-flex flex-column align-items-center">
+          <span> P.O </span>
+        <div class="progress mb-3 shadow" style="width: 60%;">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: ${envio.po ?? 0}%"></div>
+        </div>
+          <span> S.M </span>
+        <div class="progress mb-3 shadow" style="width: 60%;">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: ${envio.sm ?? 0}%"></div>
+        </div>
+          <span> S.T </span>
+        <div class="progress mb-3 shadow" style="width: 60%;">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: ${envio.dev ?? 0}%"></div>
+        </div>
+      </div>
+    </div>
+    <h1> Seu perfil é: ${envio.perfil}</h1>
+    <p> Você a partir deste teste desempenhou um papel que remete muito a um ${envio.perfil}, para evoluir neste cargo, prossiga no curso dele!</p>
+    <p class="text-success">Resultado enviado e salvo ✅</p>
+  </div>
+
+  
+
+
     `;
   } else {
     quizEl.innerHTML = `<p class="text-danger">Erro ao enviar: ${envio.mensagem}</p>`;
