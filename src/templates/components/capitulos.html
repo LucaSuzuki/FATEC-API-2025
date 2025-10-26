@@ -1,0 +1,67 @@
+<main class="container">
+    <div class="row">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <section class="chapters mt-5">
+                <!-- B -->
+                <p class="h2">Capítulos</p>
+                <ul>
+                    <li class="btn_conteudo1" id="sub0">Capítulo 1</li>
+                    <li class="btn_exercicio1" id="sub1">Exercicio 1</li>
+
+                    <li class="btn_conteudo2" id="sub2">Capítulo 1.1</li>
+                    <li class="btn_exercicio2" id="sub3">exercicio 2</li>
+
+                    <li class="btn_conteudo3" id="sub4">Capítulo 1.2</li>
+                    <li class="btn_exercicio3" id="sub5">exercicio 3</li>
+
+                    <li class="btn_conteudo4" id="sub6">Capítulo 2</li>
+                    <li class="btn_exercicio4" id="sub7">Exercicio 4</li>
+
+                    <li class="btn_conteudo5" id="sub8">Capítulo 2.1</li>
+                    <li class="btn_exercicio5" id="sub9">exercicio 5</li>
+
+                    <li class="btn_conteudo6" id="sub10">Capítulo 2.2</li>
+                    <li class="btn_exercicio6" id="sub11">exercicio 6</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="col-12 col-md-9">
+            <section class="mt-5 mb-5">
+                <!--CONTEUDO-->
+                <div class="conteudo text-center">
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <button class="btn btn-secondary btn_voltar">
+                        <i class="bi bi-arrow-left-short"></i>
+                        Voltar
+                    </button>
+
+                    <div class="bottuns-right d-flex justify-content-between gap-3">
+                        <button id="btn_verificador" data-bs-toggle="modal" data-bs-target="#ModalVerificar"
+                            class="btn btn-info btn_verificador">
+                            Verificar
+                        </button>
+                        <button class="btn btn-primary btn_proximo">
+                            Próximo <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<div id="ModalVerificar" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-tittle">Verificador</h1>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center conteudo_verificar"></div>
+        </div>
+    </div>
+</div>

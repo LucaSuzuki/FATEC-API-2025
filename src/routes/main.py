@@ -20,9 +20,9 @@ def processos():
     return render_template("pages/processos.html")
 
 
-@main_bp.route("/quiz")
-def quiz():
-    return render_template("pages/quiz.html")
+@main_bp.route("/avaliacao")
+def avaliacao():
+    return render_template("pages/avaliacao.html")
 
 
 @main_bp.route("/metodos")

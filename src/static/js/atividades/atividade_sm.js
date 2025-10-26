@@ -1,7 +1,7 @@
-const exercio1 = `
+const exercicio1 = `
        <div class="row"> <!-- DIVISÃO DE LINHA -->
            <div class="col"> <!-- DIVISÃO DE COLUNA -->
-               <h3>Capitulo 1 P.O</h3>
+               <h3>EXERCÍCIO FIXADOR</h3>
                <div class="row txt-justify">
                    <p> 1. A principal responsabilidade de um Product Owner (P.O.), que guia
                        todas as suas ações, é:</p>
@@ -9,7 +9,7 @@ const exercio1 = `
            </div>
        </div>
        <div class="row">
-           <form action="">
+           <form class="text-start" action="">
                <label for="" class="form-label">Alternativas:</label>
                <div class="form-check">
                    <input type="radio" name="questao" class="form-check-input" value="false">
@@ -41,18 +41,19 @@ const exercio1 = `
                </div>
            </form>
        </div>
-       `;
-const exercio2 = `
+`;
+
+const exercicio2 = `
        <div class="row"> <!-- DIVISÃO DE LINHA -->
            <div class="col"> <!-- DIVISÃO DE COLUNA -->
-               <h3>Capitulo 1 P.O</h3>
+               <h3>EXERCÍCIO FIXADOR</h3>
                <div class="row txt-justify">
                    <p> 2. Como funciona a relação de um Product Owner com a equipe de Developers?</p>
                </div>
            </div>
        </div>
        <div class="row">
-           <form action="">
+           <form class="text-start" action="">
                <label for="" class="form-label">Alternativas:</label>
                <div class="form-check">
                    <input type="radio" name="questao" class="form-check-input"
@@ -85,18 +86,19 @@ const exercio2 = `
                </div>
            </form>
        </div>
-       `;
-const exercio3 = `
+`;
+
+const exercicio3 = `
        <div class="row"> <!-- DIVISÃO DE LINHA -->
            <div class="col"> <!-- DIVISÃO DE COLUNA -->
-               <h3>Capitulo 1 P.O</h3>
+               <h3>EXERCÍCIO FIXADOR</h3>
                <div class="row txt-justify">
                    <p> 3.  Um dos desafios mais comuns do P.O. é lidar com múltiplos stakeholders que querem suas solicitações priorizadas. A melhor ferramenta para gerenciar isso é:</p>
                </div>
            </div>
        </div>
        <div class="row">
-           <form action="">
+           <form class="text-start" action="">
                <label for="" class="form-label">Alternativas:</label>
                <div class="form-check">
                    <input type="radio" name="questao" class="form-check-input"
@@ -130,17 +132,17 @@ const exercio3 = `
            </form>
        </div>
        `;
-const exercio4 = `
+const exercicio4 = `
        <div class="row"> <!-- DIVISÃO DE LINHA -->
            <div class="col"> <!-- DIVISÃO DE COLUNA -->
-               <h3>Capitulo 1 P.O</h3>
+               <h3>EXERCÍCIO FIXADOR</h3>
                <div class="row txt-justify">
                    <p> 4. Qual das seguintes opções é considerada uma HARD SKILL essencial para um Product Owner?</p>
                </div>
            </div>
        </div>
        <div class="row">
-           <form action="">
+           <form class="text-start" action="">
                <label for="" class="form-label">Alternativas:</label>
                <div class="form-check">
                    <input type="radio" name="questao" class="form-check-input"
@@ -173,18 +175,19 @@ const exercio4 = `
                </div>
            </form>
        </div>
-       `;
-const exercio5 = `
+`;
+
+const exercicio5 = `
            <div class="row"> <!-- DIVISÃO DE LINHA -->
                <div class="col"> <!-- DIVISÃO DE COLUNA -->
-                   <h3>Capitulo 1 P.O</h3>
+               <h3>EXERCÍCIO FIXADOR</h3>
                    <div class="row txt-justify">
                        <p> 5. Por que a habilidade de "dizer não" é tão crucial para o sucesso de um Product Owner?</p>
                    </div>
                </div>
            </div>
            <div class="row">
-               <form action="">
+               <form class="text-start" action="">
                    <label for="" class="form-label">Alternativas:</label>
                    <div class="form-check">
                        <input type="radio" name="questao" class="form-check-input"
@@ -217,4 +220,49 @@ const exercio5 = `
                    </div>
                </form>
            </div>
-       `;
+`;
+
+const exercicio6 = `
+           <div class="row"> <!-- DIVISÃO DE LINHA -->
+               <div class="col"> <!-- DIVISÃO DE COLUNA -->
+               <h3>EXERCÍCIO FIXADOR</h3>
+                   <div class="row txt-justify">
+                       <p> 6. Por que a habilidade de "dizer não" é tão crucial para o sucesso de um Product Owner?</p>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+               <form class="text-start" action="">
+                   <label for="" class="form-label">Alternativas:</label>
+                   <div class="form-check">
+                       <input type="radio" name="questao" class="form-check-input"
+                           value="false">
+                       <label for="valor1" class="form-check-label"><b>A)</b> Para mostrar autoridade e controle sobre a equipe de desenvolvimento.</label>
+                   </div>
+
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor2" class="form-check-input"
+                           value="false">
+                       <label for="valor2" class="form-check-label"><b>B)</b> Para evitar trabalho e reduzir os custos do projeto o máximo possível.</label>
+                   </div>
+
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor3" class="form-check-input"
+                           value="true">
+                       <label for="valor3" class="form-check-label"><b>C)</b> Porque o foco é essencial. Dizer "não" para ideias de baixo valor permite dizer "sim" para as funcionalidades que realmente importam e movem o produto na direção estratégica correta.</label>
+                   </div>
+
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor4" class="form-check-input"
+                           value="false">
+                       <label for="valor4" class="form-check-label"><b>D)</b> Para garantir que apenas as tarefas mais fáceis e rápidas sejam selecionadas para a Sprint.</label>
+                   </div>
+
+                   <div class="form-check">
+                       <input type="radio" name="questao" id="valor5" class="form-check-input"
+                           value="false">
+                       <label for="valor5" class="form-check-label"><b>E)</b> Nenhuma das questões está correta.</label>
+                   </div>
+               </form>
+           </div>
+`;

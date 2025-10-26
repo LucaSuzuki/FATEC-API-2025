@@ -6,6 +6,8 @@ from config import email_sender,senha_email
 from routes.main import main_bp
 from routes.cursos import cursos_bp
 from routes.quiz import quiz_bp
+from routes.avaliacao import avaliacao_bp
+
 
 
 app = Flask(__name__)
@@ -31,6 +33,8 @@ mail = Mail(app)
 app.register_blueprint(main_bp)
 app.register_blueprint(cursos_bp)
 app.register_blueprint(quiz_bp)
+app.register_blueprint(avaliacao_bp)
+
 
 
 
@@ -42,3 +46,5 @@ def page_not_found(e):
 
 if __name__ == "__main__":
     app.run(debug=True)
+from flask import Flask
+

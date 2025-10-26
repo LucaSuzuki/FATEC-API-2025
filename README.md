@@ -18,10 +18,10 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 - [Cronograma de Evolução do Projeto](./Docs/cronograma/)
 
 ### 📖 Definições de Qualidade
-- [Definition of Ready (DoR)](./Docs/doc_DOR.md)
-- [Definition of Done (DoD)](./Docs/doc_DOD.md)
-- [DoR por Sprint](./Docs/doc_DOR_sprint.md)
-- [DoD por Sprint](./Docs/doc_DOD_sprint.md)
+- [Definition of Ready (DoR)](./Docs/sprints/doc_DOR.md)
+- [Definition of Done (DoD)](./Docs/sprints/doc_DOD.md)
+- [DoR por Sprint](./Docs/sprints/doc_DOR_sprint.md)
+- [DoD por Sprint](./Docs/sprints/doc_DOD_sprint.md)
 
 ### 🎨 Modelagem
 - [Diagrama de Caso de Uso (.asta)](./Docs/usercase/UseCase.asta)
@@ -52,8 +52,14 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 ### Sprint 1
 **Período:** 08/09 - 28/09
 
-- 📄 [Documentação da Sprint](./Docs/sprints/sprint01.md)
+- 📄 [Documentação da Sprint](./Docs/sprints/sprint_backlog1.md)
 - 🎥 [Vídeo do Incremento no YouTube](https://youtu.be/Oi-A6S8d2tw)
+
+### Sprint 2
+**Período:** 06/09 - 26/09
+
+- 📄 [Documentação da Sprint](./Docs/sprints/sprint_backlog2.md)
+- 🎥 [Vídeo do Incremento no YouTube](https://youtu.be/url-aqui)
 
 ### Próximas Sprints
 *(Documentação será adicionada conforme progresso)*

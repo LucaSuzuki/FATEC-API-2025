@@ -1,56 +1,71 @@
-from flask import Blueprint, request, jsonify
-from flask_mail import Mail, Message
-from config import email_sender, senha_email
+from flask import Blueprint, render_template, abort
+from jinja2.exceptions import TemplateNotFound
+from flask import Flask, request, jsonify
+import csv
 
-quiz_bp = Blueprint('quiz', __name__, url_prefix='/api')
-mail = Mail()
-EMAIL_RECIPIENTE = ''
+quiz_bp = Blueprint("quiz", __name__, url_prefix="/quiz")
 
-class Dados:
-    def __init__(self, nome, email, nota, total):
-        self.nome = nome
-        self.email = email
-        self.nota = nota
-        self.total = total
+app = Flask(__name__)
 
-@quiz_bp.route('/quiz', methods=['POST'])
-def Enviar_Resultado():
-    try:
-        # Recebe dados JSON
-        dados = request.get_json()
-        
-        # Validação básica
-        if not dados:
-            return jsonify({'erro': 'Nenhum dado enviado'}), 400
-        
-        # Cria objeto com os dados
-        formDados = Dados(
-            nome=dados.get('nome'),
-            email=dados.get('email'),
-            nota=dados.get('nota'),
-            total=dados.get('total')
-        )
-        
-        # Validação dos campos obrigatórios
-        if not all([formDados.nome, formDados.email, formDados.nota, formDados.total]):
-            return jsonify({'erro': 'Campos obrigatórios faltando'}), 400
-        
-        # Cria e envia email
-        msg = Message(
-            subject=f'Resultado do Quiz de {formDados.nome}',
-            sender=email_sender,
-            recipients=['gabixp10@gmail.com'],
-            body=f'''{formDados.nome} que está cadastrado no email {formDados.email}, teve o seguinte resultado no Quiz Scrum:
-Nota: {formDados.nota}/{formDados.total}'''
-        )
-        
-        mail.send(msg)
-        
-        return jsonify({
-            'mensagem': 'Email enviado com sucesso!',
-            'nome': formDados.nome,
-            'nota': formDados.nota
-        }), 200
-        
-    except Exception as e:
-        return jsonify({'erro': str(e)}), 500
+ARQUIVO_CSV = "algoritmo/dados/resultados.csv"
+
+@quiz_bp.route("/")
+def quiz():
+    return render_template("pages/quiz.html")
+
+@quiz_bp.route("/api", methods=["POST"])
+def receber_resultado():
+    data = request.get_json()
+
+    nome = data.get("nome", "")
+    email = data.get("email", "")
+    respostas = data.get("respostas", [])
+
+    # Contadores
+    po_count = respostas.count("A")
+    sm_count = respostas.count("B")
+    dev_count = respostas.count("C")
+    total = len(respostas)
+
+    # Porcentagens
+    def pct(x): return round((x / total) * 100, 2) if total > 0 else 0
+    po = pct(po_count)
+    sm = pct(sm_count)
+    dev = pct(dev_count)
+
+    # Determina perfil dominante
+    if po > sm and po > dev:
+        perfil = "Product Owner"
+    elif sm > po and sm > dev:
+        perfil = "Scrum Master"
+    elif dev > po and dev > sm:
+        perfil = "Dev Team"
+    else:
+        perfil = "Equilíbrio entre os perfis"
+
+    # Salva no CSV
+    dados = {
+        "Nome": nome,
+        "E-Mail": email,
+        "PO (%)": po,
+        "SM (%)": sm,
+        "DEV (%)": dev,
+        "Perfil": perfil,
+        "Respostas": ", ".join(respostas)
+    }
+
+    with open(ARQUIVO_CSV, "a", newline="") as arquivo:
+        colunas = ["Nome", "E-Mail", "PO (%)", "SM (%)", "DEV (%)", "Perfil", "Respostas"]
+        escritor = csv.DictWriter(arquivo, fieldnames=colunas)
+        if arquivo.tell() == 0:
+            escritor.writeheader()
+        escritor.writerow(dados)
+
+    return jsonify({
+        "ok": True,
+        "mensagem": "Resultado recebido e salvo.",
+        "perfil": perfil,
+        "po": po,
+        "sm": sm,
+        "dev": dev
+    })

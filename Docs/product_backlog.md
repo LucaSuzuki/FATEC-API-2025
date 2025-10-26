@@ -27,7 +27,7 @@
         <td> 3 </td>
         <td> Média </td>
         <td> Como gerente, quero fazer um teste para prever o tipo de perfil que cada papel Scrum possui. (PO, SM, Developer) Para que minha equipe possa se enquadrar em algum deles. </td>
-        <td> 28/09 </td>
+        <td> 26/10 </td>
         <td> 8 </td>
         <td> 1 </td>
     </tr>
