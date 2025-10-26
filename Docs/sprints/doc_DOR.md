@@ -7,3 +7,4 @@
     <li>🖌️Protótipo do design do sistema no Figma</li>
     <li>✒️Users histories definidas de modo claro e conciso</li>
 </ul>
+
