@@ -1,3 +1,4 @@
+
 <h1> Definition of Done do Projeto</h1>
 
 <ul>
@@ -12,3 +13,4 @@
     <li>👓Código versionado e documentado no GitHub</li>
     <li>🖋️Cliente valida que o sistema cumpre o objetivo de ensino e replicação do Scrum</li>
 </ul>
+

@@ -1,3 +1,4 @@
+
 from flask import Flask
 
 # importar todos os blueprints aqui
