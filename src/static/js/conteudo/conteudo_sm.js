@@ -1,5 +1,5 @@
 const conteudo1 = `
-            <h3>Função do Cargo</h3>
+            <h3>1. FUNÇÃO DO CARGO</h3>
             <div class="row txt-justify">
                 <p class="mt-2">O Scrum Master é responsável por estabelecer toda a ideia desta
                 metodologia ágil, ele sabe como funciona a prática e a teoria da aplicação,
@@ -47,7 +47,7 @@ const conteudo1 = `
 `;
 
 const conteudo2 = `
-            <h3>Desenvolvimento de Skills</h3>
+            <h3>1.1. DESENVOLVIMENTO DE SKILLS</h3>
             <div class="row txt-justify">
                 <p class="mt-2">Soft e Hard Skills são conceitos importantes para poder
                     desenvolver-se na vida
@@ -129,7 +129,7 @@ const conteudo2 = `
 `;
 
 conteudo3 = `
-    <h3>Desafios comuns na jornada do Scrum Master</h3>
+    <h3>1.2. DESAFIOS COMUNS NA JORNADA DO SCRUM MASTER</h3>
         <div class="row txt-justify">
             <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
             <p class="mt-2">Como dito anteriormente, haverá muitos riscos no meio processo que precisarão
@@ -160,22 +160,21 @@ conteudo3 = `
             gestor, como pode ser visto nesta imagem: (imagem1)</p>
 `;
 
-const conteudo4 = `<h3>Capítulo 2</h3><div class="txt-justify">
+const conteudo4 = `<h3>2. APLICANDO A "LIDERANÇA SERVIDORA"</h3><div class="txt-justify">
         <p>Como visto anteriormente, o SM é comunicador e servidor. Diferente dos Developers, cujo foco primário é a construção do Incremento, o SM se concentra na eficácia geral do Time Scrum. O seu compromisso é com a saúde do processo e a correta implementação da metodologia. Ele é a engrenagem catalisadora que assegura que os pilares da Transparência, Inspeção e Adaptação sejam compreendidos, adotados e executados com excelência, garantindo que a "máquina" ágil funcione em sua plenitude.</p>
 `;
-const conteudo5 = `<h3>Capítulo 2.1</h3><div class="txt-justify">
-        <p>Embora o Time Scrum como um todo colabore, há uma divisão clara de responsabilidades na resolução de problemas. É consenso que os Developers têm a autonomia e o dever de resolver os impedimentos técnicos (ex: um problema no código, uma falha na integração). Em contrapartida direta, o Scrum Master é o responsável por identificar e remover ativamente os impedimentos organizacionais.</p>
-
+const conteudo5 = `<h3>2.1. ATIVIDADE E FOCO EM TIRAR OS IMPEDIMENTOS</h3><div class="txt-justify">
+        <p>Embora o Time Scrum como um todo colabore, há uma divisão clara de responsabilidades na resolução de problemas. É consenso que os Developers têm a autonomia e o dever de resolver os impedimentos técnicos (ex: um problema no código, uma falha na integração). Em contrapartida direta, o Scrum Master é o responsável por identificar e remover ativamente os impedimentos organizacionais.<p>
         <p>Isso inclui barreiras burocráticas, dependências de outras equipes que não são resolvidas, falta de ferramentas, ou qualquer obstáculo que esteja fora do controle imediato dos Developers. Essa atuação é crucial, pois blinda o time de interrupções externas e permite que mantenham o foco total na Meta da Sprint.</p>
-`;
-const conteudo6 = `<h3>Capítulo 2.2</h3><div class="txt-justify">
-        <p">O foco da equipe em geral deve ser em todos, mas o SM tem um foco em 4 específicos:</p>
-        <h5 class="mt-5">Sprint Planning</h5>
+        `;
+const conteudo6 = `<h3>2.2. QUAIS EVENTOS E ARTEFATOS QUE SE APLICAM PRINCIPALMENTE AO SM?</h3><div class="txt-justify">
+        <p>O foco da equipe em geral deve ser em todos, mas o SM tem um foco em 4 específicos:</p>
+        <p class="mt-2"><b>Sprint Planning</b></p>
         <p>O SM garante que a cerimônia ocorra e seja produtiva. Ele não dita o que fazer, mas ajuda o Product Owner a comunicar o objetivo (o "Porquê") e os Developers a selecionar o trabalho (o "O Quê") e planejar sua execução (o "Como"), assegurando que uma Meta da Sprint clara e inspiradora seja definida.</p>
-        <h5 class="mt-5">Daily Scrum</h5>
+        <p class="mt-2"><b>Daily Scrum</b></p>
         <p>Este evento é dos Developers, para os Developers. O SM zela para que a reunião aconteça, mantenha sua curta duração (geralmente 15 minutos) e atinja seu objetivo de sincronização e replanejamento diário. Sua principal função é ouvir atentamente os impedimentos levantados para que possa iniciar sua remoção imediatamente após o evento.</p>
-        <h5 class="mt-5">Sprint Review</h5>
+        <p class="mt-2"><b>Sprint Review</b></p>
         <p> O SM atua como o orquestrador, assegurando que os stakeholders(partes interessadas) relevantes sejam convidados e que o Incremento "Pronto" (Done) seja apresentado. Ele fomenta a colaboração e garante que o foco seja a inspeção do produto e a coleta de feedback acionável, em vez de uma mera demonstração passiva.</p>
-        <h5 class="mt-5">Sprint Retrospective</h5>
+        <p class="mt-2"><b>Sprint Retrospective</b></p>
         <p>Este é o evento-chave para o SM como um agente de mudança. Ele é o facilitador principal, responsável por criar um ambiente de segurança psicológica. Ele guia o time na inspeção de si mesmo (indivíduos, interações, processos e ferramentas) e assegura que a discussão culmine em um plano de ação concreto para aprimorar a eficácia do time na próxima Sprint.</p>
 `;

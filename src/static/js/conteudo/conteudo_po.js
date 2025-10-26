@@ -39,8 +39,9 @@ const conteudo2 = `
             <p class="mt-2"> Assim como o Scrum Master, um Product Owner de sucesso precisa de um conjunto
             equilibrado de habilidades interpessoais e técnicas para navegar em um ambiente
             complexo e dinâmico. </p>
-
-            <p class="mt-2"><b>SOFT SKILLS DE UM PRODUCT OWNER:</b></p>
+            
+            <p class="mt-2"><b>SKILLS DE UM PRODUCT OWNER:</b></p>
+            <p class="mt-2">
             Comunicação e Negociação: Talvez a mais crítica das habilidades. O P.O. precisa
             articular a visão do produto para a equipe, negociar prioridades com múltiplos
             stakeholders (que muitas vezes têm interesses conflitantes) e comunicar o progresso
@@ -124,6 +125,64 @@ conteudo3 = `
             estratégica e colaborativa. </p>
             </div>
 `;
-const conteudo4 = '<h3>Capítulo 2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2...</p></div>';
-const conteudo5 = '<h3>Capítulo 2.1</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.1...</p></div>';
-const conteudo6 = '<h3>Capítulo 2.2</h3><div class="txt-justify"><p>Conteúdo do Capítulo 2.2...</p></div>';
+const conteudo4 = `<h3>2. INSPEÇÃO E CORREÇÃO</h3><div class="txt-justify">
+<p class="mt-2"><b></b></p>
+<p>A inspeção recorrente do projeto se vê necessária para que qualquer 
+erro ou variação prejudicial seja identificada evitando qualquer 
+problema futuro ou mais problemas ao decorrer do produto. 
+Apesar disso, qualquer acontecimento prejudicial a entrega do projeto 
+precisa ser do conhecimento de todos da equipe, pois tudo na visão do 
+P.O. deve ser entendido e visto por todos os envolvidos para uma melhor 
+comunicação da equipe e precisão no resultado final do projeto. Mesmo 
+assim, problemas ainda podem acontecer, para isso será necessário 
+entender o ato de simplificação do processo na Filosofia Lean que 
+incentiva a eliminação do desperdício, trazendo apenas o necessário na 
+prática do projeto mas com incrementos e qualidade. 
+No scrum uma prática quase que fundamental é o Timebox que seria 
+eventos que possuem uma duração, podendo ser qualquer tipo de evento ou 
+prática como: reuniões e iterações, assim organizando melhor o tempo. 
+É importante ressaltar que uma vez definida a timebox ela não deve ser 
+alterada até o final da entrega do produto. </p>
+</div>`;
+
+const conteudo5 = `<h3>2.1. RESPONSABILIDADES E VISÃO</h3><div class="txt-justify">
+<p>Anteriormente já foram citados alguns métodos como o timebox, apesar do 
+mesmo ser bem essencial para a realização do projeto, Isso deve ser 
+englobado nas responsabilidades do Product Owner, esclarecendo mais 
+agora a visão do produto que deve ser passada para a equipe, assim 
+junto com outros membros aplicando práticas da visão que podem ser:</p>
+<ul>
+<li>Expectativas</li>
+<li>Objetivos</li>
+<li>Público alvo</li>
+<li>Valor do produto</li>
+<li>Prioridades</li>
+</ul>
+<p>Assim como a visão o P.O. deve delimitar o escopo do produto, deixando claro para todos da equipe com o que estão trabalhando, o que poderá 
+ser feito e o que não poderá ser feito, isso deve ser persistente na duração todo o projeto. É importante também uma determinação dos pontos que limitam e os que podem atrapalhar na entrega do produto, seja a falta de recursos da equipe ou um prazo muito curto ou processos e pedidos muito complicados, nesse caso o P.O. fica encarregado de organizar esses 
+pontos e junto com a equipe, desenvolver melhores alternativas e 
+estratégias que as contorne, podendo ser uma apresentação mais 
+chamativa aos pontos mais avançados do projeto no momento ou uma data 
+estratégica do lançamento do produto (algo extremamente importante em 
+certas áreas).</p>
+</div>`;
+
+const conteudo6 = `<h3>2.2. O PAPEL DO PRODUCT OWNER NOS SCRUM EVENTS</h3><div class="txt-justify">
+<p>O comportamento do P.O. durante todos os eventos Scrum leva toda sua 
+bagagem já comentada em capítulos anteriores, exercendo um papel 
+central e estratégico em todos os passos dos eventos, garantindo que o 
+time mantenha-se alinhado a visão do produto e seus objetivos.</p>
+<p>No Sprint Planning o papel do P.O. é crucial ao apresentar os itens do 
+Product Backlog que vão possuir um valor maior no negócio, explicar a 
+visão e objetivos, e esclarecer dúvidas para a equipe entender o porque 
+de cada item, O P.O. não é quem decide como o time fará o trabalho, mas 
+garante o que o time deve entregar e a qualidade dessa entrega. </p>
+<p>No Daily Scrum o foco gira em torno mais dos Scrum Teams e o 
+desenvolvimento, mas o esclarecimento de dúvidas e o gerenciamento de 
+impedimentos pedem sua presença com o apoio do Scrum Master, sempre 
+lembrando a equipe do objetivo do produto. </p>
+<p>Por fim no Sprint Review o P.O. assume seu protagonismo, entra em 
+processo de avaliação o incremento entregue para verificar se está de 
+acordo com os critérios e comunicar o valor da entrega, ainda mantendo 
+a transparência do progresso e os próximos passos. </p>
+</div>`;

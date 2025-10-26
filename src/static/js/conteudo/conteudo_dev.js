@@ -1,6 +1,6 @@
 //conteudo
 const conteudo1 = `
-<h3>Função do Cargo</h3>
+<h3>1. FUNÇÃO DO CARGO</h3>
 <div class="row txt-justify">
     <p class="mt-2">O Scrum Team exerce apenas os papéis que o Scrum estabelece, nada mais além do
         que a metodologia já explica, diferindo-se do Scrum Master e do Product Owner, que
@@ -48,10 +48,10 @@ const conteudo1 = `
         os ST em momentos de “aperto”, facilitando para o aprendizado de habilidades
         necessárias.</p>
     </div>
-`
+`;
 
 const conteudo2 = `
-<h3>Desenvolvimento de Skills</h3>
+<h3>1.1. DESENVOLVIMENTO DE SKILLS</h3>
 <div class="row txt-justify">
     <p class="mt-2">Algumas habilidades são indispensáveis para quando se é um membro do Scrum
         Team, isto é, a falta de algumas habilidades ou a falta de interesse para as obter pode
@@ -106,7 +106,7 @@ const conteudo2 = `
 `;
 
 const conteudo3 = `
-<h3>Desafios comuns na jornada do Scrum Team</h3>
+<h3>1.2. DESAFIOS COMUNS NA JORNADA DO SCRUM TEAM</h3>
 <div class="row txt-justify">
     <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
     <p class="mt-2">Muitas das complicações já foram abordadas anteriormente neste capítulo,
@@ -125,7 +125,7 @@ const conteudo3 = `
 `;
 
 const conteudo4 = `
-<h3>Capítulo 2</h3>
+<h3>2. PERFIL DE DEV</h3>
 <div class="txt-justify">
     <p>Em uma equipe de desenvolvimento aplicada ao sistema ágil Scrum, há uma prévia comunicação para
         decisão de
@@ -168,7 +168,7 @@ const conteudo4 = `
 </div>`;
 
 const conteudo5 = `
-<h3>Capítulo 2.1</h3>
+<h3>2.1. TRABALHOS DO SCRUM TEAM</h3>
 <div class="txt-justify">
     <p>É fato que todos os membros numa equipe se ajudam e fazem seus deveres juntamente, porém, há deveres
         exclusivos
@@ -176,7 +176,7 @@ const conteudo5 = `
         Scrum
         Team
         pode desenvolver e finalizar.</p>
-    <h5 class="mt-5">Técnico:</h5>
+    <p class="mt-2"><b>TÉCNICO:</b></p>
     <p>Boa parte dos trabalhos técnicos serão de responsabilidade geral, na qual todos da equipe terão que
         atuar,
         pelo
@@ -196,7 +196,7 @@ const conteudo5 = `
         técnica
         do
         produto recai sobre o Scrum Team.</p>
-    <h5 class="mt-5">Social:</h5>
+    <p class="mt-2"><b>SOCIAL:</b></p>
     <p>Auto organização interna pode ser colocado juntamente aos trabalhos exclusivos, pois dentre as asks
         direcionadas
         ao ST, o grupo tem de distribuir para cada um o que mais se adequa e relaciona, caso contrário,
@@ -222,7 +222,7 @@ const conteudo5 = `
 
 </div>`;
 
-const conteudo6 = `<h3>Capítulo 2.2</h3>
+const conteudo6 = `<h3>2.2. DINÂMICA EM SPRINTS</h3>
 <div class="txt-justify">
     <P>Um dos principais pontos do Scrum é sua divisão por Sprints, que são, resumidamente, períodos de
         trabalho e
@@ -233,7 +233,7 @@ const conteudo6 = `<h3>Capítulo 2.2</h3>
         não haverá significativo aprofundamento acerca deles, porém, será comentado sobre o posicionamento
         do Scrum
         Team.</p>
-    <h5 class="mt-5">Sprint Planning para Dev Team:</h5>
+    <p class="mt-2"><b>SPRINT PLANNING PARA DEV TEAM:</b></p>
     <p>Como um dos principais objetivos da Sprint Planning é separar em seções a resolução de um problema
         raiz. O
         dever
@@ -244,7 +244,7 @@ const conteudo6 = `<h3>Capítulo 2.2</h3>
         os que
         vão
         trabalhar na maior parte ou todas elas.</p>
-    <h5 class="mt-5">Daily Scrum para Dev Team:</h5>
+    <p class="mt-2"><b>DAILY SCRUM PARA DEV TEAM:</b></p>
     <p>Primordialmente, “Dailys” são um dos passos mais relevantes para toda a metodologia Scrum, é nela que
         se
         acompanham os progressos e problemáticas do processo. A participação do ST nas Dailys são mais do
@@ -261,7 +261,7 @@ const conteudo6 = `<h3>Capítulo 2.2</h3>
         da
         equipe.
     </p>
-    <h5 class="mt-5">Sprint Review para Dev Team:</h5>
+    <p class="mt-2"><b>SPRINT REEVIEW PARA DEV TEAM:</b></p>
     <p>Ao finalizar uma Sprint, o Scrum Team apresenta o que foi desenvolvido. Essa apresentação é
         colaborativa, o
         PO e
@@ -274,7 +274,7 @@ const conteudo6 = `<h3>Capítulo 2.2</h3>
         à tona
         em
         futuras Dailys da equipe).</p>
-    <h5 class="mt-5">Sprint Retrospective para Dev Team:</h5>
+    <p class="mt-2"><b>SPRINT RETROSPECTIVE PARA DEV TEAM:</b></p>
     <p>Em um evento semelhante à Daily, haverá o Sprint Retrospective, no qual todos olham para trás e
         percebem o
         que

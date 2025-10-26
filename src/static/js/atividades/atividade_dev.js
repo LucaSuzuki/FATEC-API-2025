@@ -138,7 +138,7 @@ const exercicio4 = `
     <div class="col"> <!-- DIVISÃO DE COLUNA -->
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p> 4. Qual das seguintes opções é considerada uma HARD SKILL essencial para um Product Owner?
+            <p> 4. Cada membro de uma equipe possui suas especificidades, personalidade e modo de trabalho. Apesar disso, existem perfis que se adequam melhor ao Scrum Team, qual seria esse perfil?
             </p>
         </div>
     </div>
@@ -148,32 +148,27 @@ const exercicio4 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label for="valor1" class="form-check-label"><b>A)</b> Liderança Servidora.</label>
+            <label for="valor1" class="form-check-label"><b>A)</b> O perfil ideal é aquele com extrema habilidade técnica, conhecendo todos os métodos que serão usados no processo do projeto.</label>
         </div>
 
         <div class="form-check">
-            <input type="radio" name="questao" id="valor2" class="form-check-input" value="true">
-            <label for="valor2" class="form-check-label"><b>B)</b> Gerenciamento de Product Backlog e
-                conhecimento
-                de
-                técnicas de priorização.</label>
+            <input type="radio" name="questao" id="valor2" class="form-check-input" value="false">
+            <label for="valor2" class="form-check-label"><b>B)</b> Melhor se adequa ao Scrum Team quem tem significativas Soft Skills e Hard Skills, ao ponto de dispensar a busca por evolução pessoal.</label>
         </div>
 
         <div class="form-check">
-            <input type="radio" name="questao" id="valor3" class="form-check-input" value="false">
-            <label for="valor3" class="form-check-label"><b>C)</b> Resolução de conflitos internos da
-                equipe.</label>
+            <input type="radio" name="questao" id="valor3" class="form-check-input" value="true">
+            <label for="valor3" class="form-check-label"><b>C)</b>  Ideal seria alguém que busca evitar a estagnação, focado em evoluir suas Soft Skills e Hard Skills.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor4" class="form-check-input" value="false">
-            <label for="valor4" class="form-check-label"><b>D)</b> Coaching e Mentoria sobre a metodologia
-                ágil.</label>
+            <label for="valor4" class="form-check-label"><b>D)</b> É indispensável ao Scrum Team aqueles que apaziguam todo o grupo, mantendo a paz e a organização.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor5" class="form-check-input" value="false">
-            <label for="valor5" class="form-check-label"><b>E)</b> Empatia e inteligência emocional.</label>
+            <label for="valor5" class="form-check-label"><b>E)</b> A melhor escolha para escolha dos Developers seriam aqueles que focam exclusivamente no trabalho, fazendo apenas suas próprias tarefas sem auxiliar a equipe.</label>
         </div>
     </form>
 </div>
@@ -184,7 +179,7 @@ const exercicio5 = `
     <div class="col"> <!-- DIVISÃO DE COLUNA -->
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p> 5. Por que a habilidade de "dizer não" é tão crucial para o sucesso de um Product Owner?</p>
+            <p> 5. Ao longo do desenvolvimento de um projeto, alguns trabalhos são direcionados mais especificamente aos Developers. Sabendo disso, quais trabalhos são exclusivos dos Devs?</p>
         </div>
     </div>
 </div>
@@ -192,42 +187,30 @@ const exercicio5 = `
     <form class="text-start" action="">
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
-            <input type="radio" name="questao" class="form-check-input" value="false">
-            <label for="valor1" class="form-check-label"><b>A)</b> Para mostrar autoridade e controle sobre
-                a equipe
-                de
-                desenvolvimento.</label>
+            <input type="radio" name="questao" class="form-check-input" value="true">
+            <label for="valor1" class="form-check-label"><b>A)</b> Resolução de impedimentos técnicos, preparação de Sprint Reviews e direcionamento das tarefas do cargo.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor2" class="form-check-input" value="false">
-            <label for="valor2" class="form-check-label"><b>B)</b> Para evitar trabalho e reduzir os custos
-                do
-                projeto o
-                máximo possível.</label>
+            <label for="valor2" class="form-check-label"><b>B)</b> Resolução de impedimentos organizacionais e montagem das User Stories e estimativas.</label>
         </div>
 
         <div class="form-check">
-            <input type="radio" name="questao" id="valor3" class="form-check-input" value="true">
-            <label for="valor3" class="form-check-label"><b>C)</b> Porque o foco é essencial. Dizer "não"
-                para
-                ideias de
-                baixo valor permite dizer "sim" para as funcionalidades que realmente importam e movem o
-                produto na
-                direção estratégica correta.</label>
+            <input type="radio" name="questao" id="valor3" class="form-check-input" value="false">
+            <label for="valor3" class="form-check-label"><b>C)</b> Participação na montagem das estimativas, apresentação da Sprint Review e redefinição do DOD (Definition Of Done).</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor4" class="form-check-input" value="false">
-            <label for="valor4" class="form-check-label"><b>D)</b> Para garantir que apenas as tarefas mais
-                fáceis e
-                rápidas sejam selecionadas para a Sprint.</label>
+            <label for="valor4" class="form-check-label"><b>D)</b> Criação do projeto e participação integral e contínua na montagem em toda parte do processo.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor5" class="form-check-input" value="false">
-            <label for="valor5" class="form-check-label"><b>E)</b> Nenhuma das questões está
-                correta.</label>
+            <label for="valor5" class="form-check-label"><b>E)</b> Não há nenhum trabalho exclusivo dos Developers, todos dividem as mesmas tarefas.
+
+</label>
         </div>
     </form>
 </div>
@@ -238,7 +221,7 @@ const exercicio6 = `
     <div class="col"> <!-- DIVISÃO DE COLUNA -->
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p> 6. Por que a habilidade de "dizer não" é tão crucial para o sucesso de um Product Owner?</p>
+            <p>6. Durante todo o processo de desenvolvimento para um projeto que utiliza a metodologia Scrum, vários episódios de definitiva importância ocorrem. Em relação a esses episódios, qual deve ser o posicionamento do Scrum Team?</p>
         </div>
     </div>
 </div>
@@ -247,41 +230,27 @@ const exercicio6 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label for="valor1" class="form-check-label"><b>A)</b> Para mostrar autoridade e controle sobre
-                a equipe
-                de
-                desenvolvimento.</label>
+            <label for="valor1" class="form-check-label"><b>A)</b> Auxiliar no Sprint Planning, liderar as Dailys, apresentar a Sprint Review e sugerir melhorias em suas falhas na Sprint Retrospective.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor2" class="form-check-input" value="false">
-            <label for="valor2" class="form-check-label"><b>B)</b> Para evitar trabalho e reduzir os custos
-                do
-                projeto o
-                máximo possível.</label>
+            <label for="valor2" class="form-check-label"><b>B)</b> Criar a Sprint Planning, ter média presença nas Dailys, auxiliar na Sprint Review e absorver sugestões na Sprint Retrospective.</label>
         </div>
 
         <div class="form-check">
-            <input type="radio" name="questao" id="valor3" class="form-check-input" value="true">
-            <label for="valor3" class="form-check-label"><b>C)</b> Porque o foco é essencial. Dizer "não"
-                para
-                ideias de
-                baixo valor permite dizer "sim" para as funcionalidades que realmente importam e movem o
-                produto na
-                direção estratégica correta.</label>
+            <input type="radio" name="questao" id="valor3" class="form-check-input" value="false">
+            <label for="valor3" class="form-check-label"><b>C)</b> Entender a Sprint Planning, comunicar nas Dailys, liderar a Sprint Review e revisar os erros na Sprint Retrospective.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor4" class="form-check-input" value="false">
-            <label for="valor4" class="form-check-label"><b>D)</b> Para garantir que apenas as tarefas mais
-                fáceis e
-                rápidas sejam selecionadas para a Sprint.</label>
+            <label for="valor4" class="form-check-label"><b>D)</b> Criar a Sprint Planning, comunicar erros e acertos nas Dailys, apresentar a Sprint Review e revisar os erros na Sprint Retrospective.</label>
         </div>
 
         <div class="form-check">
-            <input type="radio" name="questao" id="valor5" class="form-check-input" value="false">
-            <label for="valor5" class="form-check-label"><b>E)</b> Nenhuma das questões está
-                correta.</label>
+            <input type="radio" name="questao" id="valor5" class="form-check-input" value="true">
+            <label for="valor5" class="form-check-label"><b>E)</b> Auxiliar no Sprint Planning, comunicar erros, acertos ou mudanças nas Dailys, apresentar a Sprint Review e sugerir melhorias em suas falhas na Sprint Retrospective.</label>
         </div>
     </form>
 </div>

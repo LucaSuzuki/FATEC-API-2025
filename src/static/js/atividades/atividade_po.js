@@ -226,7 +226,8 @@ const exercicio6 = `
     <div class="col"> <!-- DIVISÃO DE COLUNA -->
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p> 6. Por que a habilidade de "dizer não" é tão crucial para o sucesso de um Product Owner?</p>
+            <p> 6. Nos Scrum Events, qual deles o P.O. tem menos peso em seu papel pra 
+equipe? </p>
         </div>
     </div>
 </div>
@@ -235,27 +236,22 @@ const exercicio6 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label for="valor1" class="form-check-label"><b>A)</b> Para mostrar autoridade e controle sobre a equipe de
-                desenvolvimento.</label>
+            <label for="valor1" class="form-check-label"><b>A)</b> Sprint Planning.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor2" class="form-check-input" value="false">
-            <label for="valor2" class="form-check-label"><b>B)</b> Para evitar trabalho e reduzir os custos do projeto o
-                máximo possível.</label>
+            <label for="valor2" class="form-check-label"><b>B)</b> Sprint Review.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor3" class="form-check-input" value="true">
-            <label for="valor3" class="form-check-label"><b>C)</b> Porque o foco é essencial. Dizer "não" para ideias de
-                baixo valor permite dizer "sim" para as funcionalidades que realmente importam e movem o produto na
-                direção estratégica correta.</label>
+            <label for="valor3" class="form-check-label"><b>C)</b> Daily Scrum.</label>
         </div>
 
         <div class="form-check">
             <input type="radio" name="questao" id="valor4" class="form-check-input" value="false">
-            <label for="valor4" class="form-check-label"><b>D)</b> Para garantir que apenas as tarefas mais fáceis e
-                rápidas sejam selecionadas para a Sprint.</label>
+            <label for="valor4" class="form-check-label"><b>D)</b> Em todos.</label>
         </div>
 
         <div class="form-check">
