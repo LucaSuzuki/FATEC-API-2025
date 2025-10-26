@@ -187,7 +187,7 @@ body{
     text-align: justify;
 }
 
-    /* Estilo dos capítulos em forma de "árvore" */
+/* Estilo dos capítulos em forma de "árvore" */
 .chapters {
     margin-top: 2rem;
     margin-left: 0.5rem;
@@ -208,37 +208,15 @@ body{
     font-size: 1.2rem;
 }
 
-/* Bolinhas maiores para capítulos principais */
-.chapters .main-chapter::before {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 6px;
-    width: 30px; 
-    height: 30px;
-    background: #524f4f;
-    border-radius: 50%;
-}
-
-/* Bolinhas menores para subcapítulos */
-.chapters .sub-chapter::before {
+/* Bolinhas maiores */
+.chapters li::before {
     content: "";
     position: absolute;
     left: 10px;
     top: 6px;
-    width: 20px;  
+    width: 20px;
     height: 20px;
-    background: #857777;
-    border-radius: 50%;
-}
-.chapters .sub-atividade::before {
-   content: "";
-    position: absolute;
-    left: 13px;
-    top: 8px;
-    width: 15px;  
-    height: 15px;
-    background: #aca1a1;
+    background: #555;
     border-radius: 50%;
 }
 
