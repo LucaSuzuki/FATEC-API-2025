@@ -9,7 +9,6 @@ main_bp = Blueprint("main", __name__)
 def home():
     return render_template("index.html")
 
-
 @main_bp.route("/sobre")
 def sobre():
     return render_template("pages/sobrenos.html")

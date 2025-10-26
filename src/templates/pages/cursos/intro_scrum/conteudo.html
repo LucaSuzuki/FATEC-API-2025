@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}Introdução ao Scrum{% endblock %}
+
+{% block content %}
+
+<main class="container">
+    <div class="row">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <section class="chapters mt-5">
+                <!-- B -->
+                <p class="h2">Módulos</p>
+                <ul>
+                    <li class="btn_conteudo1" id="sub0">1 - Introdução ao Scrum</li>
+                    <li class="btn_conteudo2" id="sub1">2 - Backlog do Produto</li>
+                    <li class="btn_conteudo3" id="sub2">3 - Backlog da Sprint</li>
+                    <li class="btn_conteudo4" id="sub3">4 - Burdown Chart</li>
+                    <li class="btn_conteudo5" id="sub4">5 - Incremento</li>
+                    <li class="btn_conteudo6" id="sub5">6 - D.O.R</li>
+                    <li class="btn_conteudo7" id="sub6">7 - D.O.D</li>
+                    <li class="btn_conteudo8" id="sub7">8 - Sprints</li>
+                    <li class="btn_conteudo9" id="sub8">9 - Sprints Planning</li>
+                    <li class="btn_conteudo10" id="sub9">10 - Daily Scrum</li>
+                    <li class="btn_conteudo11" id="sub10">11 - Sprint Review</li>
+                    <li class="btn_conteudo12" id="sub11">12 - Sprint Retrospective</li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-12 col-md-9">
+            <section class="mt-5 mb-5">
+                <!--CONTEUDO-->
+                <div class="conteudo text-center">
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <button class="btn btn-secondary btn_voltar">
+                        <i class="bi bi-arrow-left-short"></i>
+                        Voltar
+                    </button>
+
+
+                    <button class="btn btn-primary btn_proximo">
+                        Próximo <i class="bi bi-arrow-right-short"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+{%endblock%}
+
+{%block scripts%}
+<script src="{{url_for('static', filename='js/conteudo/conteudo_intro_scrum.js')}}"></script>
+<script src="{{url_for('static', filename='js/button_intro_scrum.js')}}"></script>
+{%endblock%}
