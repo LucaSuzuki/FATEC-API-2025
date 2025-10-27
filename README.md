@@ -1,3 +1,7 @@
+<div align="center">
+<img width="300" height="400" alt="TSCRUM_FATECOS-Photoroom" src="https://github.com/user-attachments/assets/a028cb5d-8196-4121-b573-dad686b239ac" />
+</div>
+
 # Treinamento e Avaliação de Padrão Ágil de Desenvolvimento de Software
 
 ## 🎯 Desafio
