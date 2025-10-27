@@ -8,21 +8,22 @@ cursos_bp = Blueprint("cursos", __name__, url_prefix="/cursos")
 def dev_team():
     return render_template("pages/cursos/dev.html")
 
-
 @cursos_bp.route("/sm")
 def scrum_master():
     return render_template("pages/cursos/scrum_master.html")
-
 
 @cursos_bp.route("/po")
 def product_owner():
     return render_template("pages/cursos/po.html")
 
+@cursos_bp.route("/intro")
+def intro_ao_scrum():
+    return render_template("pages/cursos/intro_scrum/conteudo.html")
 
 # Rota para capítulos normais
 @cursos_bp.route("/<curso>/cap<int:id>")
 def cap_conteudo(curso: str, id: int):
-    lista_cursos = ["dev", "sm", "po"]
+    lista_cursos = ["dev", "sm", "po", "intro"]
     if curso not in lista_cursos:
         abort(404)
     template_path = f"pages/cursos/{curso}/cap{id}/conteudo.html"
@@ -31,7 +32,6 @@ def cap_conteudo(curso: str, id: int):
         return render_template(template_path)
     except TemplateNotFound:
         abort(404)
-
 
 # Rota para atividades dos capítulos
 @cursos_bp.route("/<curso>/cap<int:id>/atividade")
