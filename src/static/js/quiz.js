@@ -247,11 +247,9 @@ function mostrarPergunta() {
           const texto = (alt && alt.texto) ? alt.texto : "";
           const selected = respostas[atual] === i ? "selected" : "";
        
-          const disabledAttr = isEmpty ? "data-empty='true' style='opacity:0.45;pointer-events:none;'" : "";
-       
           const indiceVisivel = i + 1;
           return `
-            <div class="option ${selected}" onclick="selecionarResposta(${i})" ${disabledAttr}>
+            <div class="option ${selected}" onclick="selecionarResposta(${i})">
               <strong>${indiceVisivel}.</strong> ${texto}
             </div>
           `;
@@ -364,11 +362,12 @@ async function finalizar() {
   `;
 
   const envio = await enviarResultado(resultadoFinal);
-  const statusEl = document.getElementById("statusEnvio");
-  if (envio.ok) {
-    statusEl.textContent = "Resultado enviado com sucesso.";
-  } else {
-    statusEl.textContent = "Falha ao enviar resultado: " + envio.message + " (salvo localmente)";
+  const resultadoDiv = document.querySelector('.text-center.h5.fw-bold');
+  if (resultadoDiv) {
+    const statusEl = document.createElement('p');
+    statusEl.id = 'statusEnvio';
+    statusEl.textContent = envio.ok ? "Resultado enviado com sucesso." : "Falha ao enviar resultado: " + envio.message + " (salvo localmente)";
+    resultadoDiv.appendChild(statusEl);
   }
 
   console.log("ResultadoFinal:", resultadoFinal);
