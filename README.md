@@ -59,7 +59,7 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 **Período:** 06/09 - 26/09
 
 - 📄 [Documentação da Sprint](./Docs/sprints/sprint_backlog2.md)
-- 🎥 [Vídeo do Incremento no YouTube](https://youtu.be/url-aqui)
+- 🎥 [Vídeo do Incremento no YouTube](https://youtu.be/9lsROn2HaGY)
 
 ### Próximas Sprints
 *(Documentação será adicionada conforme progresso)*
