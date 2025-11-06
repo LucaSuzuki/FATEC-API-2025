@@ -1,10 +1,35 @@
-{% extends 'base.html' %} {% block title %}quiz{% endblock %} {% block content%}
+{% extends 'base.html' %}
+{% block title %}Quiz{% endblock %}
+{% block content %}
     <div class="container container-info p-3 mt-5">
-        <div id="quiz"></div>
+        <div id="quiz" aria-live="polite"></div>
     </div>
-</section>
-{%endblock%}
-<!-- bloco dos scripts -->
-{%block scripts%}
+{% endblock %}
+
+{% block scripts %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script>
-{%endblock%}
+
+<script>
+(function(){
+
+  function applyFromStorage() {
+    try {
+      const t = localStorage.getItem('theme');
+      const legacy = localStorage.getItem('darkMode');
+      const theme = t ?? (legacy === 'true' ? 'dark' : null);
+      if (theme === 'dark') document.body.classList.add('dark');
+      else if (theme === 'light') document.body.classList.remove('dark');
+
+    } catch(e){}
+  }
+
+  applyFromStorage();
+
+  window.addEventListener('storage', function(e){
+    if (e.key === 'theme' || e.key === 'darkMode') applyFromStorage();
+  });
+})();
+</script>
+
+{{ super() }}
+{% endblock %}

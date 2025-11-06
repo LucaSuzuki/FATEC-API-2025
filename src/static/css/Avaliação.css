@@ -1,13 +1,16 @@
 h2 {
   margin-bottom: 15px;
+  color: #111;
 }
 
+/* layout das opções */
 .options {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+/* opção padrão (claro) */
 .option {
   padding: 10px;
   border: 1px solid #ddd;
@@ -15,7 +18,8 @@ h2 {
   cursor: pointer;
   background: #fff;
   text-align: left;
-  transition: background 0.3s;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  color: #111;
 }
 
 .option:hover {
@@ -25,4 +29,32 @@ h2 {
 .option.selected {
   background: #a30000;
   color: white;
+  border-color: #8a0000;
 }
+
+/* ==========================
+   DARK MODE
+   ========================== */
+
+body.dark h2 {
+  color: #e6eef8;
+}
+
+body.dark .option {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06);
+  color: rgba(215,230,245,0.95);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+body.dark .option:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+body.dark .option.selected {
+  background: linear-gradient(90deg, #7a0f0f, #5a0303);
+  color: #fff;
+  border-color: rgba(255,255,255,0.06);
+}
+
+body.dark .options { gap: 12px; }

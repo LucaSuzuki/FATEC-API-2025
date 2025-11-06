@@ -1,9 +1,24 @@
-.btn-primary{
-    background-color:#005C6E;
-    border: #005C6E;
+.btn-primary {
+    background-color: #005C6E;
+    border: 1px solid #005C6E;
+    color: #fff;
 }
 
-.cursos-btn{
+.cursos-btn {
     margin: 20px;
     padding: 20px;
+}
+
+/* ==========================
+   DARK MODE
+   ========================== */
+
+body.dark .btn-primary {
+    background-color: #064754; 
+    border-color: #064754;
+    color: #ffffff;
+}
+
+body.dark .btn-primary:hover {
+    filter: brightness(1.06);
 }

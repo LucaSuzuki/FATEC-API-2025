@@ -5,22 +5,19 @@
             <a href="{{url_for('main.home')}}" class="navbar-brand text-white"
                 >T-Scrum</a
             >
-            <!-- CONTAINER COM FUNÇÕES DE UM DISPLAY FLEX -->
             <button
                 class="navbar-toggler"
                 data-bs-toggle="collapse"
                 data-bs-target="#navdrop"
                 type="button"
             >
-                <!-- BOTÃO HAMBUERGUER -->
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div
                 class="collapse navbar-collapse justify-content-end"
                 id="navdrop"
             >
-                <!-- O COLLAPSE SÓ É NECESSARIO CASO TENHA O BOTÃO HAMBUERGUER -->
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-center">
                     <!-- LOCAL ONDE FICA OS LINKS DE NAVEGAÇÃO -->
 
                     <li class="nav-item dropdown me-2">
@@ -70,6 +67,19 @@
                             class="nav-link text-white"
                             >Avaliação</a
                         >
+                    </li>
+
+                    <li class="nav-item ms-2">
+                        <div class="nav-dark-toggle">
+                            <button id="dark-mode-toggle"
+                                    class="btn"
+                                    aria-pressed="false"
+                                    aria-label="Ativar modo escuro"
+                                    title="Ativar modo escuro">
+                                <i id="dark-mode-icon" class="bi bi-moon-fill" aria-hidden="true"></i>
+                                <span class="sr-only" id="dark-mode-label">Ativar modo escuro</span>
+                            </button>
+                        </div>
                     </li>
                 </ul>
             </div>

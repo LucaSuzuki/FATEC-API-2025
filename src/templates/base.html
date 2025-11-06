@@ -1,37 +1,97 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}FatecOs{% endblock %}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Avaliação.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz.css') }}" />
-    {% block extra_css %}{% endblock %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}FatecOs{% endblock %}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Avaliação.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz.css') }}" />
+  {% block extra_css %}{% endblock %}
 </head>
-
 <body class="d-flex flex-column min-vh-100">
-    <!-- Faz o body ocupar a pagina toda, mesmo que não tenha conteudo suficiente, assim o footer não fica bugado -->
-    <!--inclui a navBar em todos os componentes que extendem este arquivo -->
-    {% include 'components/navbar.html' %}
-    <!-- aqui fica todo o conteúdo das páginas que extendem este arquivo -->
-    {% block content %}
-    <!-- Conteúdo específico de cada página vai aqui dentro-->
-    {% endblock %}
-    <!--inclui o footer em todos os componentes que extendem este arquivo -->
-    {% include 'components/footer.html' %}
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-    {% block scripts %}{% endblock %}
-</body>
+  {% include 'components/navbar.html' %}
 
+  <div id="page-content" class="page-wrap">
+    {% block content %}{% endblock %}
+  </div>
+
+  {% include 'components/footer.html' %}
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+
+  {% block scripts %}
+  <script>
+  (function() {
+      const toggleBtn = document.getElementById('dark-mode-toggle');
+      const icon = document.getElementById('dark-mode-icon');
+      const label = document.getElementById('dark-mode-label');
+
+      const storedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      function applyTheme(theme) {
+          if (theme === 'dark') {
+              document.body.classList.add('dark');
+              if (toggleBtn) {
+                  toggleBtn.setAttribute('aria-pressed', 'true');
+                  toggleBtn.setAttribute('title', 'Desativar modo escuro');
+              }
+              if (icon) {
+                  icon.classList.remove('bi-moon-fill');
+                  icon.classList.add('bi-sun-fill');
+              }
+              if (label) label.textContent = 'Desativar modo escuro';
+          } else {
+              document.body.classList.remove('dark');
+              if (toggleBtn) {
+                  toggleBtn.setAttribute('aria-pressed', 'false');
+                  toggleBtn.setAttribute('title', 'Ativar modo escuro');
+              }
+              if (icon) {
+                  icon.classList.remove('bi-sun-fill');
+                  icon.classList.add('bi-moon-fill');
+              }
+              if (label) label.textContent = 'Ativar modo escuro';
+          }
+      }
+      if (storedTheme) {
+          applyTheme(storedTheme);
+      } else {
+          applyTheme(prefersDark ? 'dark' : 'light');
+      }
+
+      if (toggleBtn) {
+          toggleBtn.addEventListener('click', function () {
+              const isDark = document.body.classList.contains('dark');
+              const newTheme = isDark ? 'light' : 'dark';
+              applyTheme(newTheme);
+              localStorage.setItem('theme', newTheme);
+
+              window.dispatchEvent(new StorageEvent('storage', { key: 'theme', newValue: newTheme }));
+          });
+      }
+
+      if (window.matchMedia) {
+          const mq = window.matchMedia('(prefers-color-scheme: dark)');
+          mq.addEventListener && mq.addEventListener('change', (e) => {
+              if (!localStorage.getItem('theme')) {
+                  applyTheme(e.matches ? 'dark' : 'light');
+              }
+          });
+      }
+
+      window.addEventListener('storage', function(e){
+        if (e.key === 'theme') {
+          applyTheme(e.newValue);
+        }
+      });
+  })();
+  </script>
+  {% endblock %}
+</body>
 </html>

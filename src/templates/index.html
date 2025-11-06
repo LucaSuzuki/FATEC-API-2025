@@ -1,76 +1,70 @@
-{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content
-%}
-<!--BANNER DA FATEC-->
+{% extends 'base.html' %} 
+{% block title %}Home{% endblock %} 
+{% block content %}
+
 <section>
     <figure class="banner">
-        <div class="d-flex align-items-center flex-column banner-text">
-            <h1 class="banner-h1">SCRUM!</h1>
-            <p> O que sua equipe precisa!</p>
-            <a href="{{url_for('main.sobre')}}" class="btn btn-saiba">Sobre nós</a>
+        <div class="banner-inner">
+            <h1 class="banner-h1">SCRUM! <span style="font-size:0.9em"></span></h1>
+            <p class="banner-sub">O MÉTODO QUE SUA EQUIPE PRECISA!</p>
+            <a href="{{url_for('main.sobre')}}" class="btn btn-saiba">Sobre Nos</a>
         </div>
     </figure>
 </section>
 
 <!--ACESSO RÁPIDO -->
-<section class="">
-    <div class="acesso-rapido">
-        <h3>Acesso rápido</h3>
-        <div class="acesso-a">
-            <a href="{{url_for('main.processos')}}" class="btn btn-danger me-2 ms-2 mb-2">Como funciona o
-                treinamento?</a>
-            <a href="{{url_for('main.metodos')}}" class="btn btn-danger me-2 ms-2 mb-2">Outros métodos</a>
-            <a href="{{url_for('quiz.quiz')}}" class="btn btn-danger me-2 ms-2 mb-2">Quiz</a>
-        </div>
+<section class="access-wrapper">
+    <div class="text-center">
+        <div class="access-title">Acesso rápido</div>
+        <div class="access-divider"></div>
+    </div>
+
+    <div class="access-row">
+        <div class="access-arrow" aria-hidden="true">&lsaquo;</div>
+
+        <a href="{{url_for('main.processos')}}" class="quick-btn">Como funciona o treinamento?</a>
+        <a href="{{url_for('main.metodos')}}" class="quick-btn">Outros métodos</a>
+        <a href="{{url_for('quiz.quiz')}}" class="quick-btn">Quiz</a>
+
+        <div class="access-arrow" aria-hidden="true">&rsaquo;</div>
     </div>
 </section>
 
 <!--CONTEÚDO-->
 <main class="container d-flex flex-column mb-5 mt-4">
 
-    <section>
-        <div>
-            <h1>Bem vindo ao site!</h1>
-            <p>
-                Seja bem vindo ao site de treinamento Scrum! Aqui você irá aprender
-                sobre tudo sobre as metodoligias ágeis e principalmente o Scrum,
-                oferecemos o curso para saber qual é o cargo ideal para sua
-                respectiva área.
-            </p>
-        </div>
+    <section class="welcome">
+        <h1>Bem Vindo!</h1>
+        <p>Seja bem vindo ao site de treinamento Scrum! Aqui você irá aprender sobre as metodologias ágeis e principalmente o Scrum. Oferecemos cursos e materiais para encontrar o cargo ideal para sua área.</p>
+    </section>
 
-        <div class="container text-center">
-            <h3 class="mt-4 row">Principais Frameworks</h3>
-            <div class="container-info row p-3">
-                <div class="col-12 col-md-4">
-                    <b class="h4">Scrum</b>
-                    <p>
-                        Framework iterativo que organiza times em papéis, eventos e
-                        artefatos.
-                    </p>
-                </div>
+    <!-- PRINCIPAIS FRAMEWORKS -->
+    <section class="container-info p-4 mt-3">
+        <h3 class="mt-2">Principais Frameworks</h3>
 
-                <div class="col-12 col-md-4">
-                    <b class="h4">Kanban</b>
-                    <p>
-                        Gestão visual do fluxo de trabalho, limitando tarefas em
-                        andamento.
-                    </p>
-                </div>
+        <!-- usando flexbox (sem .row/.col do bootstrap dentro deste container) -->
+        <div class="feature-grid p-3">
+            <div class="feature-card">
+                <b>Scrum</b>
+                <p>Framework iterativo que organiza times em papéis, eventos e artefatos.</p>
+            </div>
 
-                <div class="col-12 col-md-4">
-                    <b class="h4">XP (Extreme Programming)</b>
-                    <p>
-                        Práticas como TDD, pair programming e integração contínua.
-                    </p>
-                </div>
+            <div class="feature-card">
+                <b>Kanban</b>
+                <p>Gestão visual do fluxo de trabalho, limitando tarefas em andamento.</p>
+            </div>
+
+            <div class="feature-card">
+                <b>XP (Extreme Programming)</b>
+                <p>Práticas como TDD, pair programming e integração contínua.</p>
             </div>
         </div>
     </section>
 
-    <!-- MÉTODO SCRUM -->
-    <section class="container">
-        <h3 class="mt-4 row">Método Scrum</h3>
-        <p>
+    <!-- MÉTODO SCRUM (mesmo design) -->
+    <section class="container-info p-4 mt-4">
+        <h3 class="mt-2">Método Scrum</h3>
+         <p>
             O Scrum é um dos métodos ágeis mais utilizados para gestão de
             projetos, especialmente no desenvolvimento de software, mas também
             em outras áreas. Ele organiza o trabalho em ciclos curtos chamados
@@ -79,18 +73,18 @@
             e adaptação, promovendo colaboração, comunicação constante e foco no
             valor entregue ao cliente.
         </p>
-        <div class="container-info row p-4">
-            <div class="col-12 col-md-4 text-center">
+
+        <div class="method-grid p-3">
+            <div class="method-card">
                 <b class="h4">Scrum Master (SM)</b>
-                <p>
+               <p>
                     Facilita o processo e garante que o Scrum seja seguido
                     corretamente. Remove obstáculos que impedem a equipe de
                     entregar valor. Atua como coach da equipe, promovendo boas
                     práticas e colaboração.
                 </p>
             </div>
-
-            <div class="col-12 col-md-4 text-center">
+            <div class="method-card">
                 <b class="h4">Product Owner (PO)</b>
                 <p>
                     Responsável por definir o que deve ser feito e priorizar o
@@ -99,9 +93,9 @@
                     sobre funcionalidades e priorização, equilibrando
                     necessidades do negócio e capacidade da equipe.
                 </p>
-            </div>
+</div>
 
-            <div class="col-12 col-md-4 text-center">
+            <div class="method-card">
                 <b class="h4">Time de Desenvolvimento (ST/Dev)</b>
                 <p>
                     Grupo responsável por entregar as funcionalidades planejadas
@@ -110,6 +104,7 @@
                     trabalho. Colabora diretamente com o Product Owner e o Scrum
                     Master.
                 </p>
+
             </div>
         </div>
     </section>
