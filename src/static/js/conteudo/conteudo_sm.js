@@ -178,3 +178,15 @@ const conteudo6 = `<h3>2.2. QUAIS EVENTOS E ARTEFATOS QUE SE APLICAM PRINCIPALME
         <p class="mt-2"><b>Sprint Retrospective</b></p>
         <p>Este é o evento-chave para o SM como um agente de mudança. Ele é o facilitador principal, responsável por criar um ambiente de segurança psicológica. Ele guia o time na inspeção de si mesmo (indivíduos, interações, processos e ferramentas) e assegura que a discussão culmine em um plano de ação concreto para aprimorar a eficácia do time na próxima Sprint.</p>
 `;
+
+const conteudo7 = `<h3>3. TÍTULO DO CAPÍTULO 3</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3 aqui.</p>
+`;
+
+const conteudo8 = `<h3>3.1. TÍTULO DO SUBCAPÍTULO 3.1</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3.1 aqui.</p>
+`;
+
+const conteudo9 = `<h3>3.2. TÍTULO DO SUBCAPÍTULO 3.2</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3.2 aqui.</p>
+`;

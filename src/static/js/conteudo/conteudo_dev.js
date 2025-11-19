@@ -287,3 +287,15 @@ const conteudo6 = `<h3>2.2. DINÂMICA EM SPRINTS</h3>
         comunicativas.
     </p>
 </div>`;
+
+const conteudo7 = `<h3>3. TÍTULO DO CAPÍTULO 3</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3 aqui.</p>
+`;
+
+const conteudo8 = `<h3>3.1. TÍTULO DO SUBCAPÍTULO 3.1</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3.1 aqui.</p>
+`;
+
+const conteudo9 = `<h3>3.2. TÍTULO DO SUBCAPÍTULO 3.2</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3.2 aqui.</p>
+`;

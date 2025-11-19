@@ -261,3 +261,111 @@ equipe? </p>
     </form>
 </div>
 `;
+
+const exercicio7 = `
+<div class="row">
+    <div class="col">
+        <h3>EXERCÍCIO FIXADOR</h3>
+        <div class="row txt-justify">
+            <p>7. Pergunta do Capítulo 3</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <form class="text-start" action="">
+        <label for="" class="form-label">Alternativas:</label>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="true">
+            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+        </div>
+    </form>
+</div>
+`;
+
+const exercicio8 = `
+<div class="row">
+    <div class="col">
+        <h3>EXERCÍCIO FIXADOR</h3>
+        <div class="row txt-justify">
+            <p>8. Pergunta do Capítulo 3.1</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <form class="text-start" action="">
+        <label for="" class="form-label">Alternativas:</label>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="true">
+            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+        </div>
+    </form>
+</div>
+`;
+
+const exercicio9 = `
+<div class="row">
+    <div class="col">
+        <h3>EXERCÍCIO FIXADOR</h3>
+        <div class="row txt-justify">
+            <p>9. Pergunta do Capítulo 3.2</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <form class="text-start" action="">
+        <label for="" class="form-label">Alternativas:</label>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="true">
+            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="questao" class="form-check-input" value="false">
+            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+        </div>
+    </form>
+</div>
+`;

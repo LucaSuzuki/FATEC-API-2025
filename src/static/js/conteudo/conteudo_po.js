@@ -181,8 +181,20 @@ garante o que o time deve entregar e a qualidade dessa entrega. </p>
 desenvolvimento, mas o esclarecimento de dúvidas e o gerenciamento de 
 impedimentos pedem sua presença com o apoio do Scrum Master, sempre 
 lembrando a equipe do objetivo do produto. </p>
-<p>Por fim no Sprint Review o P.O. assume seu protagonismo, entra em 
+<p>No Sprint Review o P.O. assume seu protagonismo, entra em 
 processo de avaliação o incremento entregue para verificar se está de 
 acordo com os critérios e comunicar o valor da entrega, ainda mantendo 
 a transparência do progresso e os próximos passos. </p>
 </div>`;
+
+const conteudo7 = `<h3>3. TÍTULO DO CAPÍTULO 3</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3 aqui.</p>
+`;
+
+const conteudo8 = `<h3>3.1. TÍTULO DO SUBCAPÍTULO 3.1</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3.1 aqui.</p>
+`;
+
+const conteudo9 = `<h3>3.2. TÍTULO DO SUBCAPÍTULO 3.2</h3><div class="txt-justify">
+        <p>Adicione o conteúdo do capítulo 3.2 aqui.</p>
+`;

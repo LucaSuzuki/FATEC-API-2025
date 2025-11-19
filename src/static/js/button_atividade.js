@@ -21,6 +21,15 @@ const btn_exercicio5 = document.querySelector(".btn_exercicio5");
 const btn_conteudo6 = document.querySelector(".btn_conteudo6");
 const btn_exercicio6 = document.querySelector(".btn_exercicio6");
 
+const btn_conteudo7 = document.querySelector(".btn_conteudo7");
+const btn_exercicio7 = document.querySelector(".btn_exercicio7");
+
+const btn_conteudo8 = document.querySelector(".btn_conteudo8");
+const btn_exercicio8 = document.querySelector(".btn_exercicio8");
+
+const btn_conteudo9 = document.querySelector(".btn_conteudo9");
+const btn_exercicio9 = document.querySelector(".btn_exercicio9");
+
 let valor = 1; // Variavel para trocar de pagina
 
 // ------------- Assim que inciar a pagina ----------
@@ -60,6 +69,21 @@ btn_conteudo6.addEventListener("click", ()=>{
     renderizar(valor);
 })
 
+btn_conteudo7.addEventListener("click", ()=>{
+    valor = 13;
+    renderizar(valor);
+})
+
+btn_conteudo8.addEventListener("click", ()=>{
+    valor = 15;
+    renderizar(valor);
+})
+
+btn_conteudo9.addEventListener("click", ()=>{
+    valor = 17;
+    renderizar(valor);
+})
+
 // ------- Exerciocios --------
 btn_exercicio1.addEventListener("click", ()=>{
     valor = 2;
@@ -91,6 +115,21 @@ btn_exercicio6.addEventListener("click", ()=>{
     renderizar(valor);
 })
 
+btn_exercicio7.addEventListener("click", ()=>{
+    valor = 14;
+    renderizar(valor);
+})
+
+btn_exercicio8.addEventListener("click", ()=>{
+    valor = 16;
+    renderizar(valor);
+})
+
+btn_exercicio9.addEventListener("click", ()=>{
+    valor = 18;
+    renderizar(valor);
+})
+
 // -------- Voltar -------
 voltar.addEventListener("click", () => {
     if (valor > 1){
@@ -105,12 +144,12 @@ voltar.addEventListener("click", () => {
 
 // -------- Proximo ---------
 proximo.addEventListener("click", () => {
-    if(valor <= 12){
+    if(valor <= 18){
         valor = valor + 1;
         renderizar(valor);
     }
     else{
-        valor = 12;
+        valor = 18;
         renderizar(valor);
     }
 });
@@ -143,6 +182,18 @@ function renderizar(valor){
         btn_verificar.style.display='none';
         conteudo.innerHTML = conteudo6
     };
+    if (valor === 13) {
+        btn_verificar.style.display='none';
+        conteudo.innerHTML = conteudo7
+    };
+    if (valor === 15) {
+        btn_verificar.style.display='none';
+        conteudo.innerHTML = conteudo8
+    };
+    if (valor === 17) {
+        btn_verificar.style.display='none';
+        conteudo.innerHTML = conteudo9
+    };
 
     //Renderizar Exercicios
     if (valor === 2) {
@@ -168,5 +219,17 @@ function renderizar(valor){
     if (valor === 12) {
         btn_verificar.style.display='block';
         conteudo.innerHTML = exercicio6
+    };
+    if (valor === 14) {
+        btn_verificar.style.display='block';
+        conteudo.innerHTML = exercicio7
+    };
+    if (valor === 16) {
+        btn_verificar.style.display='block';
+        conteudo.innerHTML = exercicio8
+    };
+    if (valor === 18) {
+        btn_verificar.style.display='block';
+        conteudo.innerHTML = exercicio9
     };
 }
