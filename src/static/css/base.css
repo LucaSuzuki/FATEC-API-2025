@@ -48,11 +48,9 @@ body {
 
 /* HEADER */
 .navbar-red {
-    background-image: linear-gradient(to right, rgb(184, 112, 112), #a30000);
+    background-image: linear-gradient(to right, #a30000, #d31a1a);
     color: white;
-    padding: 1.2% 1.5%;
     transition: background 0.35s ease, color 0.35s ease;
-    border-radius: 6px;
 }
 
 /* NAV brand */
@@ -121,12 +119,6 @@ body {
 .btn-saiba:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 28px rgba(163, 0, 0, 0.16);
-}
-
-.access-wrapper {
-    margin: 18px auto;
-    max-width: var(--container-max);
-    padding: 8px 16px 26px 16px;
 }
 
 .access-title {
@@ -240,7 +232,6 @@ main.container {
     max-width: 360px;
     min-width: 220px;
     box-sizing: border-box;
-    height: 260px;
 }
 
 .feature-card:hover,
@@ -273,15 +264,13 @@ main.container {
 
 /* rodapé do site */
 .footer {
-    background: linear-gradient(90deg, #a30000, #7a0000);
+    background: linear-gradient(90deg, #7a0000,#a30000);
     color: white;
     text-align: center;
     padding: 24px 12px;
-    margin-top: 36px;
-    border-radius: 8px;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO 
 @media (max-width: 992px) {
     .banner-h1 {
         font-size: 40px;
@@ -347,6 +336,11 @@ body.dark {
 }
 
 body.dark .navbar-red {
+    background-image: linear-gradient(to right, #3b1b1b, #240707);
+    color: #e6eef8;
+}
+
+body.dark .footer-red {
     background-image: linear-gradient(to right, #3b1b1b, #240707);
     color: #e6eef8;
 }

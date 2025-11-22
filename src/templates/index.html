@@ -12,23 +12,7 @@
     </figure>
 </section>
 
-<!--ACESSO RÁPIDO -->
-<section class="access-wrapper">
-    <div class="text-center">
-        <div class="access-title">Acesso rápido</div>
-        <div class="access-divider"></div>
-    </div>
-
-    <div class="access-row">
-        <div class="access-arrow" aria-hidden="true">&lsaquo;</div>
-
-        <a href="{{url_for('main.processos')}}" class="quick-btn">Como funciona o treinamento?</a>
-        <a href="{{url_for('main.metodos')}}" class="quick-btn">Outros métodos</a>
-        <a href="{{url_for('quiz.quiz')}}" class="quick-btn">Quiz</a>
-
-        <div class="access-arrow" aria-hidden="true">&rsaquo;</div>
-    </div>
-</section>
+{% include 'components/acesso.html' %}
 
 <!--CONTEÚDO-->
 <main class="container d-flex flex-column mb-5 mt-4">

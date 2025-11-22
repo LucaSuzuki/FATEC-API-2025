@@ -2,19 +2,7 @@
 {% block title %}Sobre nós{% endblock %}
 {% block content %}
 
-<section>
-    <div class="access-wrapper">
-        <div class="text-center">
-            <div class="access-title">Acesso rápido</div>
-            <div class="access-divider"></div>
-        </div>
-
-        <div class="access-row justify-content-center">
-            <a href="{{url_for('main.processos')}}" class="quick-btn btn">Como funciona o treinamento?</a>
-            <a href="{{url_for('main.metodos')}}" class="quick-btn btn">Outros métodos</a>
-        </div>
-    </div>
-</section>
+{% include 'components/acesso.html' %}
 
 <main class="container mb-5 mt-4">
     <section>
