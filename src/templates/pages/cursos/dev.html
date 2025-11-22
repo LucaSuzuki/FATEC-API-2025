@@ -1,35 +1,10 @@
-{% extends 'base.html' %} {% block title%} Dev Team {%endblock%} {% block
+{% extends 'base_curso.html' %} {% block title%} Dev Team {%endblock%} {% block
 content %}
-<main class="container">
-    <section>
-        <div class="container mt-5">
-            <div class="row container-info text-center pb-3">
-                <div class="text-center p-3">
-                    <h3>Capítulos para Dev Team:</h3>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <a href="{{ url_for('cursos.cap_conteudo', curso='dev', id=1) }}" class="btn btn-primary">
-                            Capítulos
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="mt-5">
-            <div class="container container-info p-3">
-                <h3 class="text-center mb-4">Sobre o Developer Team:</h3>
-                <p>
-                    É a equipe de desenvolvedores auto-organizável e
-                    multifuncional que efetivamente constrói o produto,
-                    entregando um incremento de valor funcional a cada Sprint.
-                </p>
-            </div>
-        </div>
-    </section>
-</main>
-
+{% block image_curso %}{% endblock %}<!-- IMAGEM DO CURSO -->
+{% block curso %}Capítulo para Dev Team:{% endblock %}<!-- TITULO DO CURSO -->
+{% block descricacao %}É a equipe de desenvolvedores auto-organizável e multifuncional que efetivamente constrói o produto, entregando um incremento de valor funcional a cada Sprint.{% endblock %}<!-- DESCRIÇÃO DO CURSO -->
+{% block iniciar %}<a href="{{ url_for('cursos.cap_conteudo', curso='dev', id=1) }}" class="btn btn-primary">Iniciar</a>{% endblock %}<!-- BOTÃO DO CURSO -->
+{% block nome %}{% endblock %}<!-- NOME DA FIGURA IMPORTANTE -->
+{% block descricacao_figura %}{% endblock %}<!-- DESCRIÇÃO DA FIGURA IMPORTANTE -->
+{% block image_figura %}{% endblock %}<!-- IMAGEM DA FIGURA IMPORTANTE -->
 {%endblock%}

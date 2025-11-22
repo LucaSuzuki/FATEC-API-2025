@@ -4,10 +4,6 @@
     margin: 0;
 }
 
-footer {
-    margin-top: auto;
-}
-
 /* Variáveis */
 :root {
     --red-1: #a30000;
@@ -395,6 +391,11 @@ body.dark .method-card p {
 }
 
 
+body.dark .bg-cinza {
+    background: linear-gradient(180deg, #0e1620, #0b1118);
+    color: #e6eef8;
+}
+
 /* dark mode toggle (header) styles */
 .nav-dark-toggle {
     display: inline-flex;
@@ -435,4 +436,13 @@ body.dark #dark-mode-toggle {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+/*texto formatação*/
+.text-justify{
+    text-align: justify;
+}
+
+.bg-cinza{
+    background: var(--card-gray);
 }
