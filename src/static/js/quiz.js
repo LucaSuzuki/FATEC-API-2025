@@ -237,8 +237,14 @@ function mostrarPergunta() {
   const q = quizPerguntas[atual];
  
   const exibicaoNumero = `Questão n°: ${atual + 1}`;
+  const percentualProgresso = Math.round((atual / quizPerguntas.length) * 100);
 
   quizEl.innerHTML = `
+    <div class="mb-3">
+      <div class="progress" role="progressbar" aria-valuenow="${percentualProgresso}" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: ${percentualProgresso}%"></div>
+      </div>
+    </div>
     <p>${exibicaoNumero}</p>
     <h2>${q.pergunta || ""}</h2>
     <div class="options">
@@ -346,17 +352,39 @@ async function finalizar() {
     console.warn("Não foi possível salvar no localStorage:", e);
   }
 
+  // Calcular o máximo de pontos possível para normalizar as barras
+  const maxPontos = Math.max(...Object.values(totais), 1);
+
   // aq fiz literalmente so pra test, qualquer coisa so apagar isso
   quizEl.innerHTML = `
     <div class="text-center h5 fw-bold">
       <p>Obrigado, <strong>${nome}</strong>!</p>
       <p>Resultado salvo localmente .</p>
-      <div style="margin-top:12px;text-align:left;">
+      <div style="margin-top:24px;text-align:left;">
         <strong>Totais por papel:</strong>
-        <ul id="listaTotais">
-          ${Object.keys(totais).length === 0 ? "<li>(nenhum total computado)</li>" :
-            Object.entries(totais).map(([papel, val]) => `<li>${papel}: ${val}</li>`).join("")}
-        </ul>
+        <div id="listaTotais" style="margin-top:16px;">
+          ${Object.keys(totais).length === 0 ? "<p>(nenhum total computado)</p>" :
+            Object.entries(totais).map(([papel, val]) => {
+              const percentual = Math.round((val / maxPontos) * 100);
+              const cores = {
+                'ST': 'bg-primary',
+                'PO': 'bg-success',
+                'SM': 'bg-warning'
+              };
+              const cor = cores[papel] || 'bg-info';
+              return `
+                <div style="margin-bottom:16px;">
+                  <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+                    <strong>${papel}</strong>
+                    <span>${val} pontos</span>
+                  </div>
+                  <div class="progress" role="progressbar" aria-valuenow="${percentual}" aria-valuemin="0" aria-valuemax="100" style="height:24px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated ${cor}" style="width: ${percentual}%"></div>
+                  </div>
+                </div>
+              `;
+            }).join("")}
+        </div>
       </div>
     </div>
   `;
