@@ -179,14 +179,38 @@ const conteudo6 = `<h3>2.2. QUAIS EVENTOS E ARTEFATOS QUE SE APLICAM PRINCIPALME
         <p>Este é o evento-chave para o SM como um agente de mudança. Ele é o facilitador principal, responsável por criar um ambiente de segurança psicológica. Ele guia o time na inspeção de si mesmo (indivíduos, interações, processos e ferramentas) e assegura que a discussão culmine em um plano de ação concreto para aprimorar a eficácia do time na próxima Sprint.</p>
 `;
 
-const conteudo7 = `<h3>3. TÍTULO DO CAPÍTULO 3</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3 aqui.</p>
+const conteudo7 = `<h3>3. COACHING E DESENVOLVIMENTO DA EQUIPE</h3><div class="txt-justify">
+        <p class="mt-2">Uma das responsabilidades mais estratégicas do Scrum Master é atuar como coach, facilitando o crescimento individual e coletivo do Time Scrum. Isso vai muito além de simplesmente ensinar as regras do Scrum - envolve desenvolver as pessoas para que se tornem profissionais mais autônomos, colaborativos e eficazes.</p>
+        
+        <p class="mt-2">O coaching no contexto Scrum é fundamentado na crença de que as pessoas já possuem o potencial e as respostas dentro de si mesmas. O papel do Scrum Master é fazer as perguntas certas, criar o ambiente propício e fornecer o suporte necessário para que esse potencial seja liberado.</p>
+        
+        <p class="mt-2">Diferente de um treinamento tradicional, onde o instrutor transmite conhecimento, o coaching é um processo de descoberta guiada. O Scrum Master observa os comportamentos, identifica oportunidades de melhoria e, através de conversas estruturadas, ajuda os indivíduos a encontrarem suas próprias soluções.</p>
+        
+        <p class="mt-2">Este processo de desenvolvimento contínuo é essencial para que o time evolua de um grupo de especialistas individuais para uma verdadeira equipe auto-organizada, capaz de adaptar-se rapidamente às mudanças e entregar valor de forma consistente.</p>
 `;
 
-const conteudo8 = `<h3>3.1. TÍTULO DO SUBCAPÍTULO 3.1</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3.1 aqui.</p>
+const conteudo8 = `<h3>3.1. TÉCNICAS DE COACHING PARA TIMES SCRUM</h3><div class="txt-justify">
+        <p class="mt-2">O coaching eficaz em times Scrum requer uma caixa de ferramentas diversificada. Uma das técnicas mais poderosas é a <strong>escuta ativa</strong> - não apenas ouvir as palavras, mas compreender as emoções, motivações e necessidades subjacentes dos membros do time.</p>
+        
+        <p class="mt-2"><strong>Perguntas Poderosas:</strong> Ao invés de dar respostas diretas, o Scrum Master deve formular perguntas que levem à reflexão. Por exemplo: "O que você acha que funcionou bem nesta Sprint?" ou "Que experimento poderíamos tentar para resolver este desafio?"</p>
+        
+        <p class="mt-2"><strong>Feedback Construtivo:</strong> Fornecer observações específicas e oportunas sobre comportamentos, sempre focando no impacto e nas possibilidades de melhoria. O feedback deve ser uma via de mão dupla, onde o Scrum Master também está aberto a receber retornos sobre sua própria atuação.</p>
+        
+        <p class="mt-2"><strong>Modelagem de Comportamento:</strong> O Scrum Master deve "ser o exemplo" dos valores ágeis que deseja ver na equipe. Transparência, coragem, foco, compromisso e respeito devem ser demonstrados através de suas ações diárias.</p>
+        
+        <p class="mt-2"><strong>Facilitação de Aprendizado:</strong> Criar oportunidades para que o time experimente, falhe rapidamente e aprenda com os erros. Isso pode incluir sessões de pair programming, dojos de código, ou experimentos de processo durante as Retrospectivas.</p>
 `;
 
-const conteudo9 = `<h3>3.2. TÍTULO DO SUBCAPÍTULO 3.2</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3.2 aqui.</p>
+const conteudo9 = `<h3>3.2. FACILITANDO A MELHORIA CONTÍNUA</h3><div class="txt-justify">
+        <p class="mt-2">A melhoria contínua é o coração pulsante de qualquer implementação Scrum bem-sucedida. O Scrum Master atua como o guardião deste processo, garantindo que a equipe não apenas entregue software funcionando, mas que também evolua constantemente em sua capacidade de entrega.</p>
+        
+        <p class="mt-2"><strong>Cultura de Experimentação:</strong> Promover um ambiente onde tentativas, erros e aprendizados são valorizados. O Scrum Master deve encorajar a equipe a propor e testar pequenas mudanças em seus processos, medindo os resultados e adaptando conforme necessário.</p>
+        
+        <p class="mt-2"><strong>Métricas Ágeis:</strong> Utilizar dados para guiar decisões de melhoria. Velocidade, burn-down charts, lead time e cycle time são algumas das métricas que podem fornecer insights valiosos sobre a performance do time e áreas de oportunidade.</p>
+        
+        <p class="mt-2"><strong>Retrospectivas Eficazes:</strong> Facilitar retrospectivas que vão além da superfície. Usar técnicas variadas como "Start-Stop-Continue", "5 Porquês", ou "Sailboat" para extrair insights profundos e gerar ações concretas de melhoria.</p>
+        
+        <p class="mt-2"><strong>Implementação Gradual:</strong> Ajudar a equipe a implementar mudanças de forma incremental, evitando transformações drásticas que possam causar resistência ou instabilidade. Cada mudança deve ser testada por um período definido antes de ser adotada permanentemente.</p>
+        
+        <p class="mt-2">Lembre-se: a melhoria contínua não é um destino, mas uma jornada. O Scrum Master deve cultivar uma mentalidade de crescimento onde cada Sprint é uma oportunidade de evoluir e se tornar mais eficaz.</p>
 `;

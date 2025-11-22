@@ -288,14 +288,40 @@ const conteudo6 = `<h3>2.2. DINÂMICA EM SPRINTS</h3>
     </p>
 </div>`;
 
-const conteudo7 = `<h3>3. TÍTULO DO CAPÍTULO 3</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3 aqui.</p>
+const conteudo7 = `<h3>3. PRÁTICAS TÉCNICAS E QUALIDADE DE CÓDIGO</h3><div class="txt-justify">
+        <p class="mt-2">No desenvolvimento ágil, a velocidade de entrega deve ser equilibrada com a qualidade técnica. Como Developer, você é responsável por implementar práticas que garantam que o código seja não apenas funcional, mas também sustentável, testável e evoluível.</p>
+        
+        <p class="mt-2">A qualidade técnica não é um luxo ou algo que pode ser "adicionado depois" - é fundamental para a capacidade da equipe de manter um ritmo sustentável de desenvolvimento. Código de baixa qualidade se torna uma dívida técnica que eventualmente compromete a velocidade e a confiabilidade das entregas.</p>
+        
+        <p class="mt-2">As práticas de engenharia ágil como Test-Driven Development (TDD), Continuous Integration (CI), e refatoração contínua não são apenas ferramentas técnicas, mas habilitadores estratégicos que permitem que a equipe responda rapidamente às mudanças sem comprometer a estabilidade do produto.</p>
+        
+        <p class="mt-2">Investir em qualidade técnica desde o início é investir na capacidade futura da equipe de inovar e entregar valor. É a diferença entre um produto que escala com sucesso e um que colapsa sob o peso de sua própria complexidade.</p>
 `;
 
-const conteudo8 = `<h3>3.1. TÍTULO DO SUBCAPÍTULO 3.1</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3.1 aqui.</p>
+const conteudo8 = `<h3>3.1. TEST-DRIVEN DEVELOPMENT E AUTOMAÇÃO</h3><div class="txt-justify">
+        <p class="mt-2">O Test-Driven Development (TDD) é mais que uma técnica de teste - é uma disciplina de design que resulta em código mais limpo, modular e confiável. O ciclo Red-Green-Refactor do TDD força você a pensar sobre o comportamento desejado antes de implementar a solução.</p>
+        
+        <p class="mt-2"><strong>Red:</strong> Escreva um teste que falha, definindo exatamente o comportamento esperado. Este teste inicial captura os requisitos de forma executável e serve como especificação viva do código.</p>
+        
+        <p class="mt-2"><strong>Green:</strong> Implemente o mínimo de código necessário para fazer o teste passar. Não se preocupe com elegância neste momento - o objetivo é apenas satisfazer o comportamento definido pelo teste.</p>
+        
+        <p class="mt-2"><strong>Refactor:</strong> Melhore o código mantendo os testes passando. Esta etapa é crucial para evitar dívida técnica e manter o código expressivo e maintível.</p>
+        
+        <p class="mt-2"><strong>Pirâmide de Testes:</strong> Implemente uma estratégia de testes balanceada com muitos testes unitários (rápidos e focados), alguns testes de integração (verificam a colaboração entre componentes), e poucos testes end-to-end (validam o fluxo completo).</p>
+        
+        <p class="mt-2"><strong>Continuous Integration:</strong> Configure pipelines que executem todos os testes automaticamente a cada commit, garantindo que mudanças não quebrem funcionalidades existentes e mantendo a base de código sempre em estado deployável.</p>
 `;
 
-const conteudo9 = `<h3>3.2. TÍTULO DO SUBCAPÍTULO 3.2</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3.2 aqui.</p>
+const conteudo9 = `<h3>3.2. COLABORAÇÃO E AUTO-ORGANIZAÇÃO</h3><div class="txt-justify">
+        <p class="mt-2">Em times Scrum, os Developers funcionam como uma equipe auto-organizada, coletivamente responsável pela qualidade e entrega do Incremento. Esta auto-organização não significa ausência de estrutura, mas sim uma estrutura adaptativa baseada na competência e colaboração.</p>
+        
+        <p class="mt-2"><strong>Propriedade Coletiva do Código:</strong> Todo o time é responsável por toda a base de código. Isso significa que qualquer Developer pode trabalhar em qualquer parte do sistema, promovendo compartilhamento de conhecimento e reduzindo gargalos de especialização.</p>
+        
+        <p class="mt-2"><strong>Pair Programming e Mob Programming:</strong> Trabalhar em conjunto não apenas melhora a qualidade do código através de revisão contínua, mas também acelera o aprendizado e a disseminação de conhecimento dentro do time.</p>
+        
+        <p class="mt-2"><strong>Code Reviews Construtivos:</strong> Revise código com foco no aprendizado mútuo, na consistência do estilo, e na aderência aos padrões acordados. Code reviews devem ser colaborativos, não críticos.</p>
+        
+        <p class="mt-2"><strong>Definição de "Done":</strong> Estabeleça critérios claros e compartilhados do que significa uma feature estar "pronta". Isso pode incluir testes passando, documentação atualizada, revisão de código completada, e critérios de performance atendidos.</p>
+        
+        <p class="mt-2"><strong>Melhoria Técnica Contínua:</strong> Dedique tempo regularmente para refatoração, atualização de dependências, e redução de dívida técnica. Esta não é uma atividade opcional, mas essencial para manter a velocidade sustentável do time.</p>
 `;

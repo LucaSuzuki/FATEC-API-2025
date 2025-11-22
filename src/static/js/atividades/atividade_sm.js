@@ -278,7 +278,7 @@ const exercicio7 = `
                <div class="col">
                <h3>EXERCÍCIO FIXADOR</h3>
                    <div class="row txt-justify">
-                       <p>7. Pergunta do Capítulo 3</p>
+                       <p>7. No contexto de coaching ágil, qual é a principal diferença entre o papel do Scrum Master e um instrutor tradicional?</p>
                    </div>
                </div>
            </div>
@@ -314,7 +314,7 @@ const exercicio8 = `
                <div class="col">
                <h3>EXERCÍCIO FIXADOR</h3>
                    <div class="row txt-justify">
-                       <p>8. Pergunta do Capítulo 3.1</p>
+                       <p>8. Qual das seguintes técnicas de coaching é mais eficaz para promover a reflexão e o aprendizado autônomo em um time Scrum?</p>
                    </div>
                </div>
            </div>
@@ -323,23 +323,23 @@ const exercicio8 = `
                    <label for="" class="form-label">Alternativas:</label>
                    <div class="form-check">
                        <input type="radio" name="questao" class="form-check-input" value="false">
-                       <label class="form-check-label"><b>A)</b> Alternativa A</label>
+                       <label class="form-check-label"><b>A)</b> Dar respostas diretas e soluções prontas para acelerar o processo.</label>
                    </div>
                    <div class="form-check">
                        <input type="radio" name="questao" class="form-check-input" value="true">
-                       <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+                       <label class="form-check-label"><b>B)</b> Fazer perguntas poderosas que levem à reflexão, como "O que funcionou bem?" ou "Que experimento podemos tentar?"</label>
                    </div>
                    <div class="form-check">
                        <input type="radio" name="questao" class="form-check-input" value="false">
-                       <label class="form-check-label"><b>C)</b> Alternativa C</label>
+                       <label class="form-check-label"><b>C)</b> Implementar mudanças sem consultar a equipe para economizar tempo.</label>
                    </div>
                    <div class="form-check">
                        <input type="radio" name="questao" class="form-check-input" value="false">
-                       <label class="form-check-label"><b>D)</b> Alternativa D</label>
+                       <label class="form-check-label"><b>D)</b> Evitar feedback para não causar conflitos.</label>
                    </div>
                    <div class="form-check">
                        <input type="radio" name="questao" class="form-check-input" value="false">
-                       <label class="form-check-label"><b>E)</b> Alternativa E</label>
+                       <label class="form-check-label"><b>E)</b> Focar apenas nos aspectos técnicos do desenvolvimento.</label>
                    </div>
                </form>
            </div>
@@ -350,7 +350,7 @@ const exercicio9 = `
                <div class="col">
                <h3>EXERCÍCIO FIXADOR</h3>
                    <div class="row txt-justify">
-                       <p>9. Pergunta do Capítulo 3.2</p>
+                       <p>9. Qual é a importância da melhoria contínua no contexto do Scrum e como o Scrum Master deve facilitá-la?</p>
                    </div>
                </div>
            </div>

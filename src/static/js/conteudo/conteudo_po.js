@@ -187,14 +187,40 @@ acordo com os critérios e comunicar o valor da entrega, ainda mantendo
 a transparência do progresso e os próximos passos. </p>
 </div>`;
 
-const conteudo7 = `<h3>3. TÍTULO DO CAPÍTULO 3</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3 aqui.</p>
+const conteudo7 = `<h3>3. GESTÃO ESTRATÉGICA DO PRODUCT BACKLOG</h3><div class="txt-justify">
+        <p class="mt-2">O Product Backlog é muito mais que uma simples lista de funcionalidades - é o coração estratégico do produto. Como Product Owner, você é o guardião desta ferramenta fundamental, responsável por transformar a visão do produto em itens acionáveis que maximizem o valor entregue a cada Sprint.</p>
+        
+        <p class="mt-2">A gestão eficaz do Product Backlog requer uma compreensão profunda do mercado, dos usuários e das capacidades técnicas da equipe. Cada item deve ser cuidadosamente priorizado com base no valor de negócio, na urgência das necessidades dos usuários e nas dependências técnicas.</p>
+        
+        <p class="mt-2">Um Product Backlog bem gerenciado evolui constantemente. À medida que aprendemos mais sobre nossos usuários, recebemos feedback do mercado e a tecnologia avança, o backlog deve ser refinado para refletir essas mudanças. Este processo contínuo de adaptação é o que mantém o produto relevante e competitivo.</p>
+        
+        <p class="mt-2">Lembre-se: o objetivo não é ter o backlog mais longo ou mais detalhado, mas sim o mais estratégico e focado no valor. Cada item deve contribuir claramente para os objetivos do produto e da organização.</p>
 `;
 
-const conteudo8 = `<h3>3.1. TÍTULO DO SUBCAPÍTULO 3.1</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3.1 aqui.</p>
+const conteudo8 = `<h3>3.1. TÉCNICAS DE PRIORIZAÇÃO E REFINAMENTO</h3><div class="txt-justify">
+        <p class="mt-2">A priorização eficaz é uma das habilidades mais críticas de um Product Owner. Existem várias técnicas comprovadas que podem ajudar a tomar decisões mais informadas e estratégicas sobre o que desenvolver primeiro.</p>
+        
+        <p class="mt-2"><strong>Método MoSCoW:</strong> Classifique os itens em Must have (obrigatório), Should have (importante), Could have (desejável) e Won't have (não terá nesta versão). Esta técnica ajuda a focar no essencial primeiro.</p>
+        
+        <p class="mt-2"><strong>Value vs Effort Matrix:</strong> Avalie cada item em duas dimensões: valor de negócio e esforço de implementação. Priorize itens de alto valor e baixo esforço, seguidos por alto valor e alto esforço.</p>
+        
+        <p class="mt-2"><strong>User Story Mapping:</strong> Organize as funcionalidades em uma jornada do usuário, identificando o caminho mínimo viável e as melhorias incrementais. Isso ajuda a visualizar o fluxo de valor do produto.</p>
+        
+        <p class="mt-2"><strong>Weighted Shortest Job First (WSJF):</strong> Calcule uma pontuação baseada em valor de negócio, criticidade temporal e redução de risco, dividido pelo esforço estimado. Itens com maior pontuação WSJF têm prioridade.</p>
+        
+        <p class="mt-2">O refinamento contínuo do backlog (grooming) deve ser uma atividade regular, não algo feito apenas antes do Sprint Planning. Dedique tempo constantemente para detalhar itens futuros, removê-los se não forem mais relevantes, e quebrar épicos em user stories menores e mais gerenciáveis.</p>
 `;
 
-const conteudo9 = `<h3>3.2. TÍTULO DO SUBCAPÍTULO 3.2</h3><div class="txt-justify">
-        <p>Adicione o conteúdo do capítulo 3.2 aqui.</p>
+const conteudo9 = `<h3>3.2. COLABORAÇÃO COM STAKEHOLDERS E FEEDBACK</h3><div class="txt-justify">
+        <p class="mt-2">O Product Owner atua como a ponte entre o mundo técnico da equipe de desenvolvimento e o mundo dos negócios dos stakeholders. Esta posição única requer habilidades excepcionais de comunicação e gestão de relacionamentos.</p>
+        
+        <p class="mt-2"><strong>Gestão de Stakeholders:</strong> Identifique todos os stakeholders do produto - usuários finais, patrocinadores, áreas de negócio, compliance, marketing, vendas. Cada grupo tem necessidades e perspectivas diferentes que devem ser balanceadas na tomada de decisões.</p>
+        
+        <p class="mt-2"><strong>Coleta de Feedback Estruturada:</strong> Implemente loops de feedback contínuos através de Sprint Reviews, pesquisas com usuários, análise de dados de uso, e sessões de discovery. O feedback deve ser coletado sistematicamente, não apenas quando há problemas.</p>
+        
+        <p class="mt-2"><strong>Comunicação Transparente:</strong> Mantenha stakeholders informados sobre o progresso, mudanças de prioridade e decisões tomadas. Use métricas de produto como North Star Metrics, OKRs, e indicadores de adoção para comunicar valor de forma objetiva.</p>
+        
+        <p class="mt-2"><strong>Dizer "Não" Estrategicamente:</strong> Uma das responsabilidades mais difíceis é recusar pedidos que não agregam valor ou que desviam o foco dos objetivos principais. Aprenda a dizer "não" de forma construtiva, explicando o raciocínio e oferecendo alternativas quando apropriado.</p>
+        
+        <p class="mt-2">Lembre-se: seu papel não é atender a todos os pedidos, mas maximizar o valor do produto. Isso às vezes significa tomar decisões difíceis e educar stakeholders sobre os princípios ágeis e a importância do foco.</p>
 `;

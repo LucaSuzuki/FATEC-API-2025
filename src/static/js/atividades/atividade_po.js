@@ -267,7 +267,7 @@ const exercicio7 = `
     <div class="col">
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p>7. Pergunta do Capítulo 3</p>
+            <p>7. O que caracteriza uma gestão estratégica eficaz do Product Backlog?</p>
         </div>
     </div>
 </div>
@@ -276,23 +276,23 @@ const exercicio7 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+            <label class="form-check-label"><b>A)</b> Ter o maior número possível de itens detalhados para não perder nenhuma ideia.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="true">
-            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+            <label class="form-check-label"><b>B)</b> Priorizar itens baseados em valor de negócio, urgência das necessidades dos usuários e dependências técnicas.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+            <label class="form-check-label"><b>C)</b> Manter todos os itens com a mesma prioridade para dar flexibilidade à equipe.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+            <label class="form-check-label"><b>D)</b> Definir o backlog uma única vez no início do projeto.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+            <label class="form-check-label"><b>E)</b> Focar apenas nos requisitos técnicos sem considerar valor de negócio.</label>
         </div>
     </form>
 </div>
@@ -303,7 +303,7 @@ const exercicio8 = `
     <div class="col">
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p>8. Pergunta do Capítulo 3.1</p>
+            <p>8. Qual técnica de priorização é mais eficaz quando você precisa equilibrar valor de negócio com esforço de implementação?</p>
         </div>
     </div>
 </div>
@@ -312,23 +312,23 @@ const exercicio8 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+            <label class="form-check-label"><b>A)</b> Método MoSCoW, focando apenas na categoria "Must have".</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="true">
-            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+            <label class="form-check-label"><b>B)</b> Value vs Effort Matrix, priorizando itens de alto valor e baixo esforço.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+            <label class="form-check-label"><b>C)</b> User Story Mapping, sem considerar esforço técnico.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+            <label class="form-check-label"><b>D)</b> WSJF, ignorando a redução de riscos.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+            <label class="form-check-label"><b>E)</b> Priorização aleatória para dar flexibilidade.</label>
         </div>
     </form>
 </div>
@@ -339,7 +339,7 @@ const exercicio9 = `
     <div class="col">
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p>9. Pergunta do Capítulo 3.2</p>
+            <p>9. Como um Product Owner deve lidar efetivamente com stakeholders que têm demandas conflitantes?</p>
         </div>
     </div>
 </div>
@@ -348,23 +348,23 @@ const exercicio9 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+            <label class="form-check-label"><b>A)</b> Atender a todas as demandas para manter todos satisfeitos.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="true">
-            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+            <label class="form-check-label"><b>B)</b> Usar dados objetivos e métricas de valor para tomar decisões transparentes e comunicar o raciocínio.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+            <label class="form-check-label"><b>C)</b> Ignorar as demandas conflitantes e focar apenas nos desenvolvedores.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+            <label class="form-check-label"><b>D)</b> Deixar que os stakeholders decidam entre si sem interferir.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+            <label class="form-check-label"><b>E)</b> Priorizar sempre o stakeholder com mais autoridade na empresa.</label>
         </div>
     </form>
 </div>

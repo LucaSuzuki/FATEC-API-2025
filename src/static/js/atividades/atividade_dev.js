@@ -261,7 +261,7 @@ const exercicio7 = `
     <div class="col">
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p>7. Pergunta do Capítulo 3</p>
+            <p>7. Por que a qualidade técnica é fundamental no desenvolvimento ágil?</p>
         </div>
     </div>
 </div>
@@ -270,23 +270,23 @@ const exercicio7 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+            <label class="form-check-label"><b>A)</b> É um luxo que pode ser adicionado depois que todas as funcionalidades estiverem prontas.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="true">
-            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+            <label class="form-check-label"><b>B)</b> É fundamental para manter um ritmo sustentável e evitar dívida técnica que compromete entregas futuras.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+            <label class="form-check-label"><b>C)</b> Só é importante em projetos grandes e complexos.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+            <label class="form-check-label"><b>D)</b> Deve ser responsabilidade apenas dos desenvolvedores seniores.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+            <label class="form-check-label"><b>E)</b> Atrapalha a velocidade de desenvolvimento.</label>
         </div>
     </form>
 </div>
@@ -297,7 +297,7 @@ const exercicio8 = `
     <div class="col">
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p>8. Pergunta do Capítulo 3.1</p>
+            <p>8. Qual é o principal benefício do ciclo Red-Green-Refactor do Test-Driven Development (TDD)?</p>
         </div>
     </div>
 </div>
@@ -306,23 +306,23 @@ const exercicio8 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+            <label class="form-check-label"><b>A)</b> Acelerar o desenvolvimento pulando a fase de testes.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="true">
-            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+            <label class="form-check-label"><b>B)</b> Garantir que o código seja mais limpo, modular e que o comportamento seja definido antes da implementação.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+            <label class="form-check-label"><b>C)</b> Focar apenas na cobertura de código sem considerar qualidade.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+            <label class="form-check-label"><b>D)</b> Eliminar a necessidade de refatoração.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+            <label class="form-check-label"><b>E)</b> Substituir completamente a documentação técnica.</label>
         </div>
     </form>
 </div>
@@ -333,7 +333,7 @@ const exercicio9 = `
     <div class="col">
         <h3>EXERCÍCIO FIXADOR</h3>
         <div class="row txt-justify">
-            <p>9. Pergunta do Capítulo 3.2</p>
+            <p>9. O que caracteriza a "propriedade coletiva do código" em times Scrum auto-organizados?</p>
         </div>
     </div>
 </div>
@@ -342,23 +342,23 @@ const exercicio9 = `
         <label for="" class="form-label">Alternativas:</label>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>A)</b> Alternativa A</label>
+            <label class="form-check-label"><b>A)</b> Cada desenvolvedor é responsável apenas pelo código que escreve individualmente.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="true">
-            <label class="form-check-label"><b>B)</b> Alternativa B (Correta)</label>
+            <label class="form-check-label"><b>B)</b> Todo o time é responsável por toda a base de código, promovendo compartilhamento de conhecimento e reduzindo gargalos.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>C)</b> Alternativa C</label>
+            <label class="form-check-label"><b>C)</b> Apenas os desenvolvedores seniores podem modificar código crítico.</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>D)</b> Alternativa D</label>
+            <label class="form-check-label"><b>D)</b> O código deve ser dividido por especialização técnica (frontend, backend, etc.).</label>
         </div>
         <div class="form-check">
             <input type="radio" name="questao" class="form-check-input" value="false">
-            <label class="form-check-label"><b>E)</b> Alternativa E</label>
+            <label class="form-check-label"><b>E)</b> Somente o Product Owner pode decidir sobre mudanças no código.</label>
         </div>
     </form>
 </div>
