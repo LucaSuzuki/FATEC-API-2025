@@ -67,6 +67,8 @@ body {
     position: relative;
     height: 260px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(245, 245, 245, 0.98));
+    background-image: url("/static/images/fatecoDAY.png");
+    background-size: cover;
     border-radius: 10px;
     margin: 12px auto;
     max-width: var(--container-max);
@@ -78,6 +80,12 @@ body {
     padding: 28px 20px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
+
+.shadowp{
+     text-shadow: 2px 2px #00000028;
+     font-weight: bold;
+}
+
 
 .banner-inner {
     max-width: 820px;
@@ -348,6 +356,9 @@ body.dark .navbar-red .navbar-brand {
 
 body.dark .banner {
     background: linear-gradient(180deg, rgba(10, 16, 25, 0.85), rgba(15, 22, 30, 0.95));
+    background-image: url("/static/images/fatecoNIGHT.png");
+    background-size:cover;
+    background-repeat: repeat-y;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
     color: var(--text-light);
 }
