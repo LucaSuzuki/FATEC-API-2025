@@ -1,7 +1,7 @@
 //conteudo
 const conteudo1 = `
 <h3>1. FUNÇÃO DO CARGO</h3>
-<div class="row txt-justify">
+<div class="row text-justify">
     <p class="mt-2">O Scrum Team exerce apenas os papéis que o Scrum estabelece, nada mais além do
         que a metodologia já explica, diferindo-se do Scrum Master e do Product Owner, que
         possuem papéis mais específicos e além de apenas seguir o método.</p>
@@ -52,7 +52,7 @@ const conteudo1 = `
 
 const conteudo2 = `
 <h3>1.1. DESENVOLVIMENTO DE SKILLS</h3>
-<div class="row txt-justify">
+<div class="row text-justify">
     <p class="mt-2">Algumas habilidades são indispensáveis para quando se é um membro do Scrum
         Team, isto é, a falta de algumas habilidades ou a falta de interesse para as obter pode
         causar uma gradual desaceleração em todo o processo, podendo danificar os prazos
@@ -107,7 +107,7 @@ const conteudo2 = `
 
 const conteudo3 = `
 <h3>1.2. DESAFIOS COMUNS NA JORNADA DO SCRUM TEAM</h3>
-<div class="row txt-justify">
+<div class="row text-justify">
     <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
     <p class="mt-2">Muitas das complicações já foram abordadas anteriormente neste capítulo,
         retomando, seriam: atenção aos pedidos do cliente repassados pelo PO e SM;
@@ -126,7 +126,7 @@ const conteudo3 = `
 
 const conteudo4 = `
 <h3>2. PERFIL DE DEV</h3>
-<div class="txt-justify">
+<div class="text-justify">
     <p>Em uma equipe de desenvolvimento aplicada ao sistema ágil Scrum, há uma prévia comunicação para
         decisão de
         cargos. Nessa conversa, por votação, consenso ou demandas superiores, cria-se as divisões de cargo,
@@ -169,7 +169,7 @@ const conteudo4 = `
 
 const conteudo5 = `
 <h3>2.1. TRABALHOS DO SCRUM TEAM</h3>
-<div class="txt-justify">
+<div class="text-justify">
     <p>É fato que todos os membros numa equipe se ajudam e fazem seus deveres juntamente, porém, há deveres
         exclusivos
         também para cada pessoa e para cada cargo. Nesta seção serão tratados alguns trabalhos que apenas o
@@ -223,7 +223,7 @@ const conteudo5 = `
 </div>`;
 
 const conteudo6 = `<h3>2.2. DINÂMICA EM SPRINTS</h3>
-<div class="txt-justify">
+<div class="text-justify">
     <P>Um dos principais pontos do Scrum é sua divisão por Sprints, que são, resumidamente, períodos de
         trabalho e
         entregas parciais do produto requisitado pelo cliente. Nessas Sprints, ocorrem alguns episódios:
@@ -288,7 +288,7 @@ const conteudo6 = `<h3>2.2. DINÂMICA EM SPRINTS</h3>
     </p>
 </div>`;
 
-const conteudo7 = `<h3>3. PRÁTICAS TÉCNICAS E QUALIDADE DE CÓDIGO</h3><div class="txt-justify">
+const conteudo7 = `<h3>3. PRÁTICAS TÉCNICAS E QUALIDADE DE CÓDIGO</h3><div class="text-justify">
         <p class="mt-2">No desenvolvimento ágil, a velocidade de entrega deve ser equilibrada com a qualidade técnica. Como Developer, você é responsável por implementar práticas que garantam que o código seja não apenas funcional, mas também sustentável, testável e evoluível.</p>
         
         <p class="mt-2">A qualidade técnica não é um luxo ou algo que pode ser "adicionado depois" - é fundamental para a capacidade da equipe de manter um ritmo sustentável de desenvolvimento. Código de baixa qualidade se torna uma dívida técnica que eventualmente compromete a velocidade e a confiabilidade das entregas.</p>
@@ -298,7 +298,7 @@ const conteudo7 = `<h3>3. PRÁTICAS TÉCNICAS E QUALIDADE DE CÓDIGO</h3><div cl
         <p class="mt-2">Investir em qualidade técnica desde o início é investir na capacidade futura da equipe de inovar e entregar valor. É a diferença entre um produto que escala com sucesso e um que colapsa sob o peso de sua própria complexidade.</p>
 `;
 
-const conteudo8 = `<h3>3.1. TEST-DRIVEN DEVELOPMENT E AUTOMAÇÃO</h3><div class="txt-justify">
+const conteudo8 = `<h3>3.1. TEST-DRIVEN DEVELOPMENT E AUTOMAÇÃO</h3><div class="text-justify">
         <p class="mt-2">O Test-Driven Development (TDD) é mais que uma técnica de teste - é uma disciplina de design que resulta em código mais limpo, modular e confiável. O ciclo Red-Green-Refactor do TDD força você a pensar sobre o comportamento desejado antes de implementar a solução.</p>
         
         <p class="mt-2"><strong>Red:</strong> Escreva um teste que falha, definindo exatamente o comportamento esperado. Este teste inicial captura os requisitos de forma executável e serve como especificação viva do código.</p>
@@ -312,7 +312,7 @@ const conteudo8 = `<h3>3.1. TEST-DRIVEN DEVELOPMENT E AUTOMAÇÃO</h3><div class
         <p class="mt-2"><strong>Continuous Integration:</strong> Configure pipelines que executem todos os testes automaticamente a cada commit, garantindo que mudanças não quebrem funcionalidades existentes e mantendo a base de código sempre em estado deployável.</p>
 `;
 
-const conteudo9 = `<h3>3.2. COLABORAÇÃO E AUTO-ORGANIZAÇÃO</h3><div class="txt-justify">
+const conteudo9 = `<h3>3.2. COLABORAÇÃO E AUTO-ORGANIZAÇÃO</h3><div class="text-justify">
         <p class="mt-2">Em times Scrum, os Developers funcionam como uma equipe auto-organizada, coletivamente responsável pela qualidade e entrega do Incremento. Esta auto-organização não significa ausência de estrutura, mas sim uma estrutura adaptativa baseada na competência e colaboração.</p>
         
         <p class="mt-2"><strong>Propriedade Coletiva do Código:</strong> Todo o time é responsável por toda a base de código. Isso significa que qualquer Developer pode trabalhar em qualquer parte do sistema, promovendo compartilhamento de conhecimento e reduzindo gargalos de especialização.</p>

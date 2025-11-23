@@ -1,7 +1,7 @@
 //conteudo
 const conteudo1 = `
 <h3>Função do Cargo</h3>
-<div class="row txt-justify">
+<div class="row text-justify">
     <h3> 1 - BREVE RESUMO DO QUE É SCRUM</h3>
     <p class="mt-2">O Scrum é uma metodologia ágil feito para ajudar pessoas e equipes a desenvolverem,
 entregar e manter produtos de alto valor em ambientes complexos. Ele se baseia
@@ -30,7 +30,7 @@ fundamentais para a compreensão e entendimento aplicável desta metodologia.</p
 
 const conteudo2 = `
 <h3> 2 -BACKLOG DO PRODUTO</h3>
-<div class="row txt-justify">
+<div class="row text-justify">
     <p class="mt-2">Para poder visualizar um Backlog do produto e suas hierarquias, abaixo há um anexo
 de uma imagem que demonstra suas funcionalidades:</p>
 
@@ -67,7 +67,7 @@ Backlog se encontra no link abaixo:</p>
 
 const conteudo3 = `
 <h3> 3 - BACKLOG DA SPRINT</h3>
-<div class="row txt-justify">
+<div class="row text-justify">
     <p class="mt-2">O Sprint Backlog é um dos três artefatos oficiais do Scrum. Em termos simples, ele é o
 plano de trabalho detalhado dos Developers para a Sprint atual</p>
     <p class="mt-2">Ele é criado a partir das USes do Product Backlog. Ele não é estático e o intuíto dele é
@@ -80,7 +80,7 @@ existentes podem ser modificadas ou removidas.</p>
 
 const conteudo4 = `
 <h3> 4 - BURNDOWN CHART</h3>
-<div class="txt-justify">
+<div class="text-justify">
     <p class="mt-2">Este artefato é o nosso termômetro visual para o progresso da Sprint. Ele faz uma
 contraposição gráfica entre o tempo que esvai e o trabalho que persiste no Sprint
 Backlog.</p>
@@ -99,7 +99,7 @@ Scrum Team por ser autônomo, tem que usar algum aplicativo comum no meio Scrum
 
 const conteudo5 = `
 <h3> 5 - INCREMENTO</h3>
-<div class="txt-justify">
+<div class="text-justify">
 <p class="mt-2">O Incremento é a síntese de todo o trabalho concluído e validado durante a Sprint. Ele
 é a materialização per se do que o time entregou, devendo ser funcional, coeso e
 potencialmente utilizável. Cada Incremento é aditivo a todos os Incrementos
@@ -124,7 +124,7 @@ Sprint, e o valor correspondente não é considerado parte do Incremento.</p>
 
 const conteudo6 = `
 <h3> 6 - DoR (Definition of Ready - Definição de Pronto):</h3>
-<div class="txt-justify">
+<div class="text-justify">
 <p class="mt-2">A DoR é um conjunto de critérios rigorosos que qualificam um item do Product Backlog
 a ser selecionado para uma Sprint. É o nosso protocolo de elegibilidade ou de entrada.
 Ela assegura que o time de desenvolvimento terá todas as premissas indispensáveis —
@@ -137,7 +137,7 @@ e precisa de mais refinamento antes de ser comprometido pelo time.</p>
 
 const conteudo7 = `
 <h3> 7 - DoD (Definition of Done - Definição de Concluído):</h3>
-<div class="txt-justify">
+<div class="text-justify">
 <p class="mt-2">O DoD é o estatuto da qualidade do nosso produto; é a política formal que define o
 padrão de excelência. É o critério inconteste que determina quando um item do
 trabalho está verdadeiramente finalizado e aderente aos requisitos. Ele abrange desde
@@ -150,7 +150,7 @@ sendo entregue é robusto, testado e liberável. O DoD cria transparência, elim
 `;
 const conteudo8 = `
 <h3> 8 - Sprint</h3>
-<div class="txt-justify">
+<div class="text-justify">
 <p class="mt-2">Sprint: É o evento-contêiner que abriga todos os demais. Ele que é o Norte para todo o
 resto da organização do produto, geralmente de um mês ou menos, durante o qual um
 Incremento de produto "Pronto" (Done), utilizável e potencialmente liberável, é criado.
@@ -161,7 +161,7 @@ adaptação do processo e do produto.</p>
 `;
 const conteudo9 = `
 <h3> 9 - Sprint planning</h3>
-<div class="txt-justify">
+<div class="text-justify">
 <p class="mt-2">Sprint Planning (Planejamento da Sprint): É a cerimônia que inicia a Sprint, onde todo
 o Time Scrum colabora para definir o trabalho a ser realizado. Ela é estruturada para
 responder a três questões centrais:</p>
@@ -169,7 +169,7 @@ responder a três questões centrais:</p>
 `;
 const conteudo10 = `
 <h3> 10 - Daily Scrum</h3>
-<div class="txt-justify">
+<div class="text-justify">
 <p class="mt-2">Daily Scrum (Reunião Diária): Uma reunião diária que dura de 5 a 15 minutos
 dependendo de sua pauta. Realizada para e pelos Desenvolvedores. Seu propósito é
 inspecionar o progresso em direção à Meta da Sprint e adaptar o Sprint Backlog (o
@@ -184,7 +184,7 @@ disso pode ficar maçante para a equipe.</p>
 `;
 const conteudo11 = `
 <h3> 11 - Sprint Review (Revisão da Sprint)</h3>
-<div class="txt-justify">
+<div class="text-justify">
 <p class="mt-2">Sprint Review (Revisão da Sprint): A apresentação do Incremento, realizada ao final
 da Sprint. O Time Scrum apresenta os resultados do seu trabalho (o que foi "Pronto" de
 acordo com o DoD e todos os outros eventos) aos principais stakeholders (partes
@@ -200,7 +200,7 @@ realmente aquilo que ele está esperando receber.</p>
 `;
 const conteudo12 = `
 <h3> 12 - Sprint Retrospective (Retrospectiva da Sprint):</h3>
-<div class="txt-justify">
+<div class="text-justify">
 <p class="mt-2">Este é o evento formal para o Time
 Scrum inspecionar a si mesmo e criar um plano de melhorias a ser implementado na
 próxima Sprint. A equipe identifica o que funcionou bem e o que pode ser aperfeiçoado

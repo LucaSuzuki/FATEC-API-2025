@@ -1,10 +1,13 @@
 {% extends 'base_curso.html' %} {% block title%} Dev Team {%endblock%} {% block
 content %}
-{% block image_curso %}{% endblock %}<!-- IMAGEM DO CURSO -->
+{% block image_curso %}<img style="width: 200px;" 
+                        src="https://cdn-icons-png.flaticon.com/512/6478/6478099.png" alt="Linus Torvalds">{% endblock %}<!-- IMAGEM DO CURSO -->
 {% block curso %}Capítulo para Dev Team:{% endblock %}<!-- TITULO DO CURSO -->
 {% block descricacao %}É a equipe de desenvolvedores auto-organizável e multifuncional que efetivamente constrói o produto, entregando um incremento de valor funcional a cada Sprint.{% endblock %}<!-- DESCRIÇÃO DO CURSO -->
 {% block iniciar %}<a href="{{ url_for('cursos.cap_conteudo', curso='dev', id=1) }}" class="btn btn-primary">Iniciar</a>{% endblock %}<!-- BOTÃO DO CURSO -->
-{% block nome %}{% endblock %}<!-- NOME DA FIGURA IMPORTANTE -->
-{% block descricacao_figura %}{% endblock %}<!-- DESCRIÇÃO DA FIGURA IMPORTANTE -->
-{% block image_figura %}{% endblock %}<!-- IMAGEM DA FIGURA IMPORTANTE -->
+{% block nome %}Linus Torvalds{% endblock %}<!-- NOME DA FIGURA IMPORTANTE -->
+{% block descricacao_figura %}O criador do Linux e do Git, Linus Torvalds é uma das figuras mais influentes da computação moderna. Nascido na Finlândia, ele desenvolveu o kernel Linux aos 21 anos e revolucionou o mundo da tecnologia com software livre. Conhecido por sua abordagem pragmática e direta, Linus acredita na colaboração distribuída e na qualidade do código. Seu trabalho com o Git transformou como equipes de desenvolvimento colaboram globalmente.<br><br><em><strong>"Talk is cheap. Show me the code."</strong></em>{% endblock %}<!-- DESCRIÇÃO DA FIGURA IMPORTANTE -->
+{% block image_figura %}<img style="width: 300px; height: 300px; border-radius: 50%;" 
+                            src="https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg" 
+                            alt="Linus Torvalds - Criador do Linux">{% endblock %}<!-- IMAGEM DA FIGURA IMPORTANTE -->
 {%endblock%}

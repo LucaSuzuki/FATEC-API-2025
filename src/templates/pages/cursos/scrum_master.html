@@ -1,12 +1,15 @@
-{% extends 'base_curso.html' %} {% block title%} Dev Team {%endblock%} {% block
+{% extends 'base_curso.html' %} {% block title%} Scrum Master {%endblock%} {% block
 content %}
-{% block image_curso %}{% endblock %}<!-- IMAGEM DO CURSO -->
+{% block image_curso %}<img style="width: 200px;" 
+                        src="https://cdn-icons-png.flaticon.com/512/860/860430.png" alt="Liderança">{% endblock %}<!-- IMAGEM DO CURSO -->
 {% block curso %}Capítulo para Scrum Master:{% endblock %}<!-- TITULO DO CURSO -->
-{% block descricacao %}É a equipe de desenvolvedores auto-organizável e multifuncional que efetivamente constrói o produto, entregando um incremento de valor funcional a cada Sprint.{% endblock %}<!-- DESCRIÇÃO DO CURSO -->
+{% block descricacao %}É o facilitador e coach do time Scrum, responsável por garantir que a equipe siga os valores e práticas do framework, removendo impedimentos e promovendo a melhoria contínua.{% endblock %}<!-- DESCRIÇÃO DO CURSO -->
 {% block iniciar %}<a href="{{ url_for('cursos.cap_conteudo', curso='sm', id=1) }}" class="btn btn-primary">
                             Iniciar
                         </a>{% endblock %}<!-- BOTÃO DO CURSO -->
-{% block nome %}{% endblock %}<!-- NOME DA FIGURA IMPORTANTE -->
-{% block descricacao_figura %}{% endblock %}<!-- DESCRIÇÃO DA FIGURA IMPORTANTE -->
-{% block image_figura %}{% endblock %}<!-- IMAGEM DA FIGURA IMPORTANTE -->
+{% block nome %}Gabe Newell{% endblock %}<!-- NOME DA FIGURA IMPORTANTE -->
+{% block descricacao_figura %}Co-fundador e presidente da Valve Corporation, Gabe Newell revolucionou a indústria de jogos com a Steam e criou franquias icônicas como Half-Life e Portal. Ex-funcionário da Microsoft, Newell é conhecido por sua liderança inovadora e cultura organizacional única na Valve, que opera sem hierarquia tradicional e com equipes auto-organizáveis. Sua filosofia de "fazer o que é melhor para o cliente" e foco na autonomia das equipes espelha os princípios fundamentais do Scrum. É uma figura lendária no mundo dos games e tecnologia.<br><br><em><strong>The PC is successful because we're all benefiting from the competition with each other. If Twitter comes along, our games benefit. If Nvidia makes better graphics technology, all the games are going to shine. If we come out with a better game, people are going to buy more PCs.</strong></em>{% endblock %}<!-- DESCRIÇÃO DA FIGURA IMPORTANTE -->
+{% block image_figura %}<img style="width: 300px; height: 300px; border-radius: 50%;" 
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/The_International_2018_%2843263984845%29_%28cropped%29.jpg/250px-The_International_2018_%2843263984845%29_%28cropped%29.jpg" 
+                            alt="Gabe Newell - Co-fundador da Valve">{% endblock %}<!-- IMAGEM DA FIGURA IMPORTANTE -->
 {%endblock%}

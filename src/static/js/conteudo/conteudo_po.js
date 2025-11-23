@@ -1,6 +1,6 @@
 const conteudo1 = `
             <h3>1. FUNÇÃO DO CARGO</h3>
-            <div class="row txt-justify">
+            <div class="row text-justify">
             <p class="mt-2">O Product Owner (P.O.) é o dono do produto, sendo o único responsável por maximizar
             o valor do produto resultante do trabalho da equipe de desenvolvimento. A forma como
             isso é feito pode variar amplamente entre organizações, equipes Scrum e indivíduos,
@@ -35,7 +35,7 @@ const conteudo1 = `
 
 const conteudo2 = `
             <h3>1.1. DESENVOLVIMENTO DE SKILLS</h3>
-            <div class="row txt-justify">
+            <div class="row text-justify">
             <p class="mt-2"> Assim como o Scrum Master, um Product Owner de sucesso precisa de um conjunto
             equilibrado de habilidades interpessoais e técnicas para navegar em um ambiente
             complexo e dinâmico. </p>
@@ -92,7 +92,7 @@ const conteudo2 = `
 
 conteudo3 = `
             <h3>1.2. DESAFIOS COMUNS NA JORNADA DO PRODUCT OWNER</h3>
-            <div class="row txt-justify">
+            <div class="row text-justify">
             <p class="mt-2">A jornada de um Product Owner é cheia de desafios que exigem equilíbrio e resiliência.
             O sucesso não vem de ter todas as respostas, mas de saber como navegar na incerteza
             e guiar o produto na direção certa, aprendendo e adaptando ao longo do caminho. </p>
@@ -125,7 +125,7 @@ conteudo3 = `
             estratégica e colaborativa. </p>
             </div>
 `;
-const conteudo4 = `<h3>2. INSPEÇÃO E CORREÇÃO</h3><div class="txt-justify">
+const conteudo4 = `<h3>2. INSPEÇÃO E CORREÇÃO</h3><div class="text-justify">
 <p class="mt-2"><b></b></p>
 <p>A inspeção recorrente do projeto se vê necessária para que qualquer 
 erro ou variação prejudicial seja identificada evitando qualquer 
@@ -145,7 +145,7 @@ prática como: reuniões e iterações, assim organizando melhor o tempo.
 alterada até o final da entrega do produto. </p>
 </div>`;
 
-const conteudo5 = `<h3>2.1. RESPONSABILIDADES E VISÃO</h3><div class="txt-justify">
+const conteudo5 = `<h3>2.1. RESPONSABILIDADES E VISÃO</h3><div class="text-justify">
 <p>Anteriormente já foram citados alguns métodos como o timebox, apesar do 
 mesmo ser bem essencial para a realização do projeto, Isso deve ser 
 englobado nas responsabilidades do Product Owner, esclarecendo mais 
@@ -167,7 +167,7 @@ estratégica do lançamento do produto (algo extremamente importante em
 certas áreas).</p>
 </div>`;
 
-const conteudo6 = `<h3>2.2. O PAPEL DO PRODUCT OWNER NOS SCRUM EVENTS</h3><div class="txt-justify">
+const conteudo6 = `<h3>2.2. O PAPEL DO PRODUCT OWNER NOS SCRUM EVENTS</h3><div class="text-justify">
 <p>O comportamento do P.O. durante todos os eventos Scrum leva toda sua 
 bagagem já comentada em capítulos anteriores, exercendo um papel 
 central e estratégico em todos os passos dos eventos, garantindo que o 
@@ -187,7 +187,7 @@ acordo com os critérios e comunicar o valor da entrega, ainda mantendo
 a transparência do progresso e os próximos passos. </p>
 </div>`;
 
-const conteudo7 = `<h3>3. GESTÃO ESTRATÉGICA DO PRODUCT BACKLOG</h3><div class="txt-justify">
+const conteudo7 = `<h3>3. GESTÃO ESTRATÉGICA DO PRODUCT BACKLOG</h3><div class="text-justify">
         <p class="mt-2">O Product Backlog é muito mais que uma simples lista de funcionalidades - é o coração estratégico do produto. Como Product Owner, você é o guardião desta ferramenta fundamental, responsável por transformar a visão do produto em itens acionáveis que maximizem o valor entregue a cada Sprint.</p>
         
         <p class="mt-2">A gestão eficaz do Product Backlog requer uma compreensão profunda do mercado, dos usuários e das capacidades técnicas da equipe. Cada item deve ser cuidadosamente priorizado com base no valor de negócio, na urgência das necessidades dos usuários e nas dependências técnicas.</p>
@@ -197,7 +197,7 @@ const conteudo7 = `<h3>3. GESTÃO ESTRATÉGICA DO PRODUCT BACKLOG</h3><div class
         <p class="mt-2">Lembre-se: o objetivo não é ter o backlog mais longo ou mais detalhado, mas sim o mais estratégico e focado no valor. Cada item deve contribuir claramente para os objetivos do produto e da organização.</p>
 `;
 
-const conteudo8 = `<h3>3.1. TÉCNICAS DE PRIORIZAÇÃO E REFINAMENTO</h3><div class="txt-justify">
+const conteudo8 = `<h3>3.1. TÉCNICAS DE PRIORIZAÇÃO E REFINAMENTO</h3><div class="text-justify">
         <p class="mt-2">A priorização eficaz é uma das habilidades mais críticas de um Product Owner. Existem várias técnicas comprovadas que podem ajudar a tomar decisões mais informadas e estratégicas sobre o que desenvolver primeiro.</p>
         
         <p class="mt-2"><strong>Método MoSCoW:</strong> Classifique os itens em Must have (obrigatório), Should have (importante), Could have (desejável) e Won't have (não terá nesta versão). Esta técnica ajuda a focar no essencial primeiro.</p>
@@ -211,7 +211,7 @@ const conteudo8 = `<h3>3.1. TÉCNICAS DE PRIORIZAÇÃO E REFINAMENTO</h3><div cl
         <p class="mt-2">O refinamento contínuo do backlog (grooming) deve ser uma atividade regular, não algo feito apenas antes do Sprint Planning. Dedique tempo constantemente para detalhar itens futuros, removê-los se não forem mais relevantes, e quebrar épicos em user stories menores e mais gerenciáveis.</p>
 `;
 
-const conteudo9 = `<h3>3.2. COLABORAÇÃO COM STAKEHOLDERS E FEEDBACK</h3><div class="txt-justify">
+const conteudo9 = `<h3>3.2. COLABORAÇÃO COM STAKEHOLDERS E FEEDBACK</h3><div class="text-justify">
         <p class="mt-2">O Product Owner atua como a ponte entre o mundo técnico da equipe de desenvolvimento e o mundo dos negócios dos stakeholders. Esta posição única requer habilidades excepcionais de comunicação e gestão de relacionamentos.</p>
         
         <p class="mt-2"><strong>Gestão de Stakeholders:</strong> Identifique todos os stakeholders do produto - usuários finais, patrocinadores, áreas de negócio, compliance, marketing, vendas. Cada grupo tem necessidades e perspectivas diferentes que devem ser balanceadas na tomada de decisões.</p>

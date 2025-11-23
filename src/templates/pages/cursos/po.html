@@ -1,4 +1,4 @@
-{% extends 'base_curso.html' %} {% block title%} Dev Team {%endblock%} {% block
+{% extends 'base_curso.html' %} {% block title%} Product Owner {%endblock%} {% block
 content %}
 {% block image_curso %}<img style="width: 200px;"
                         src="https://zibtek-ghost-blog.sfo3.cdn.digitaloceanspaces.com/2019/12/image-7.png" alt="">{% endblock %}<!-- IMAGEM DO CURSO -->
@@ -9,7 +9,9 @@ content %}
 {% block iniciar %}<a href="{{ url_for('cursos.cap_conteudo', curso='po', id=1) }}" class="btn btn-primary">
                     Iniciar
                 </a>{% endblock %}<!-- BOTÃO DO CURSO -->
-{% block nome %}{% endblock %}<!-- NOME DA FIGURA IMPORTANTE -->
-{% block descricacao_figura %}{% endblock %}<!-- DESCRIÇÃO DA FIGURA IMPORTANTE -->
-{% block image_figura %}{% endblock %}<!-- IMAGEM DA FIGURA IMPORTANTE -->
+{% block nome %}Steve Jobs{% endblock %}<!-- NOME DA FIGURA IMPORTANTE -->
+{% block descricacao_figura %}O icônico cofundador da Apple, Steve Jobs revolucionou múltiplas indústrias com sua visão de produto incomparável. Conhecido por sua obsessão pela experiência do usuário e design elegante, Jobs transformou a Apple de uma startup em garagem na empresa mais valiosa do mundo. Sua filosofia de "pensar diferente" e foco na simplicidade criou produtos que definiram gerações, do Mac ao iPhone. Como Product Owner supremo, ele entendia que o sucesso vem de antecipar as necessidades dos usuários antes mesmo deles saberem que as tinham.<br><br><em><strong>"Stay hungry, stay foolish."</strong></em>{% endblock %}<!-- DESCRIÇÃO DA FIGURA IMPORTANTE -->
+{% block image_figura %}<img style="width: 300px; height: 300px; border-radius: 50%;" 
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg/800px-Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg" 
+                            alt="Steve Jobs - Visionário de Produtos">{% endblock %}<!-- IMAGEM DA FIGURA IMPORTANTE -->
 {%endblock%}

@@ -1,6 +1,6 @@
 const conteudo1 = `
             <h3>1. FUNÇÃO DO CARGO</h3>
-            <div class="row txt-justify">
+            <div class="row text-justify">
                 <p class="mt-2">O Scrum Master é responsável por estabelecer toda a ideia desta
                 metodologia ágil, ele sabe como funciona a prática e a teoria da aplicação,
                 tanto dentro da equipe como na organização.</p>
@@ -48,7 +48,7 @@ const conteudo1 = `
 
 const conteudo2 = `
             <h3>1.1. DESENVOLVIMENTO DE SKILLS</h3>
-            <div class="row txt-justify">
+            <div class="row text-justify">
                 <p class="mt-2">Soft e Hard Skills são conceitos importantes para poder
                     desenvolver-se na vida
                     pessoal e na vida empresarial. Respectivamente sendo habilidades
@@ -130,7 +130,7 @@ const conteudo2 = `
 
 conteudo3 = `
     <h3>1.2. DESAFIOS COMUNS NA JORNADA DO SCRUM MASTER</h3>
-        <div class="row txt-justify">
+        <div class="row text-justify">
             <!-- CLASSE CONTEUDO É PEGA PELO JS PARA QUE QUANDO O BOTÃO SEJA ACIONADO ELE TROQUE O CONTEUDO -->
             <p class="mt-2">Como dito anteriormente, haverá muitos riscos no meio processo que precisarão
             ser tomados de forma crítica e empírica. As vezes pode ser um pouco frustrante
@@ -160,14 +160,14 @@ conteudo3 = `
             gestor, como pode ser visto nesta imagem: (imagem1)</p>
 `;
 
-const conteudo4 = `<h3>2. APLICANDO A "LIDERANÇA SERVIDORA"</h3><div class="txt-justify">
+const conteudo4 = `<h3>2. APLICANDO A "LIDERANÇA SERVIDORA"</h3><div class="text-justify">
         <p>Como visto anteriormente, o SM é comunicador e servidor. Diferente dos Developers, cujo foco primário é a construção do Incremento, o SM se concentra na eficácia geral do Time Scrum. O seu compromisso é com a saúde do processo e a correta implementação da metodologia. Ele é a engrenagem catalisadora que assegura que os pilares da Transparência, Inspeção e Adaptação sejam compreendidos, adotados e executados com excelência, garantindo que a "máquina" ágil funcione em sua plenitude.</p>
 `;
-const conteudo5 = `<h3>2.1. ATIVIDADE E FOCO EM TIRAR OS IMPEDIMENTOS</h3><div class="txt-justify">
+const conteudo5 = `<h3>2.1. ATIVIDADE E FOCO EM TIRAR OS IMPEDIMENTOS</h3><div class="text-justify">
         <p>Embora o Time Scrum como um todo colabore, há uma divisão clara de responsabilidades na resolução de problemas. É consenso que os Developers têm a autonomia e o dever de resolver os impedimentos técnicos (ex: um problema no código, uma falha na integração). Em contrapartida direta, o Scrum Master é o responsável por identificar e remover ativamente os impedimentos organizacionais.<p>
         <p>Isso inclui barreiras burocráticas, dependências de outras equipes que não são resolvidas, falta de ferramentas, ou qualquer obstáculo que esteja fora do controle imediato dos Developers. Essa atuação é crucial, pois blinda o time de interrupções externas e permite que mantenham o foco total na Meta da Sprint.</p>
         `;
-const conteudo6 = `<h3>2.2. QUAIS EVENTOS E ARTEFATOS QUE SE APLICAM PRINCIPALMENTE AO SM?</h3><div class="txt-justify">
+const conteudo6 = `<h3>2.2. QUAIS EVENTOS E ARTEFATOS QUE SE APLICAM PRINCIPALMENTE AO SM?</h3><div class="text-justify">
         <p>O foco da equipe em geral deve ser em todos, mas o SM tem um foco em 4 específicos:</p>
         <p class="mt-2"><b>Sprint Planning</b></p>
         <p>O SM garante que a cerimônia ocorra e seja produtiva. Ele não dita o que fazer, mas ajuda o Product Owner a comunicar o objetivo (o "Porquê") e os Developers a selecionar o trabalho (o "O Quê") e planejar sua execução (o "Como"), assegurando que uma Meta da Sprint clara e inspiradora seja definida.</p>
@@ -179,7 +179,7 @@ const conteudo6 = `<h3>2.2. QUAIS EVENTOS E ARTEFATOS QUE SE APLICAM PRINCIPALME
         <p>Este é o evento-chave para o SM como um agente de mudança. Ele é o facilitador principal, responsável por criar um ambiente de segurança psicológica. Ele guia o time na inspeção de si mesmo (indivíduos, interações, processos e ferramentas) e assegura que a discussão culmine em um plano de ação concreto para aprimorar a eficácia do time na próxima Sprint.</p>
 `;
 
-const conteudo7 = `<h3>3. COACHING E DESENVOLVIMENTO DA EQUIPE</h3><div class="txt-justify">
+const conteudo7 = `<h3>3. COACHING E DESENVOLVIMENTO DA EQUIPE</h3><div class="text-justify">
         <p class="mt-2">Uma das responsabilidades mais estratégicas do Scrum Master é atuar como coach, facilitando o crescimento individual e coletivo do Time Scrum. Isso vai muito além de simplesmente ensinar as regras do Scrum - envolve desenvolver as pessoas para que se tornem profissionais mais autônomos, colaborativos e eficazes.</p>
         
         <p class="mt-2">O coaching no contexto Scrum é fundamentado na crença de que as pessoas já possuem o potencial e as respostas dentro de si mesmas. O papel do Scrum Master é fazer as perguntas certas, criar o ambiente propício e fornecer o suporte necessário para que esse potencial seja liberado.</p>
@@ -189,7 +189,7 @@ const conteudo7 = `<h3>3. COACHING E DESENVOLVIMENTO DA EQUIPE</h3><div class="t
         <p class="mt-2">Este processo de desenvolvimento contínuo é essencial para que o time evolua de um grupo de especialistas individuais para uma verdadeira equipe auto-organizada, capaz de adaptar-se rapidamente às mudanças e entregar valor de forma consistente.</p>
 `;
 
-const conteudo8 = `<h3>3.1. TÉCNICAS DE COACHING PARA TIMES SCRUM</h3><div class="txt-justify">
+const conteudo8 = `<h3>3.1. TÉCNICAS DE COACHING PARA TIMES SCRUM</h3><div class="text-justify">
         <p class="mt-2">O coaching eficaz em times Scrum requer uma caixa de ferramentas diversificada. Uma das técnicas mais poderosas é a <strong>escuta ativa</strong> - não apenas ouvir as palavras, mas compreender as emoções, motivações e necessidades subjacentes dos membros do time.</p>
         
         <p class="mt-2"><strong>Perguntas Poderosas:</strong> Ao invés de dar respostas diretas, o Scrum Master deve formular perguntas que levem à reflexão. Por exemplo: "O que você acha que funcionou bem nesta Sprint?" ou "Que experimento poderíamos tentar para resolver este desafio?"</p>
@@ -201,7 +201,7 @@ const conteudo8 = `<h3>3.1. TÉCNICAS DE COACHING PARA TIMES SCRUM</h3><div clas
         <p class="mt-2"><strong>Facilitação de Aprendizado:</strong> Criar oportunidades para que o time experimente, falhe rapidamente e aprenda com os erros. Isso pode incluir sessões de pair programming, dojos de código, ou experimentos de processo durante as Retrospectivas.</p>
 `;
 
-const conteudo9 = `<h3>3.2. FACILITANDO A MELHORIA CONTÍNUA</h3><div class="txt-justify">
+const conteudo9 = `<h3>3.2. FACILITANDO A MELHORIA CONTÍNUA</h3><div class="text-justify">
         <p class="mt-2">A melhoria contínua é o coração pulsante de qualquer implementação Scrum bem-sucedida. O Scrum Master atua como o guardião deste processo, garantindo que a equipe não apenas entregue software funcionando, mas que também evolua constantemente em sua capacidade de entrega.</p>
         
         <p class="mt-2"><strong>Cultura de Experimentação:</strong> Promover um ambiente onde tentativas, erros e aprendizados são valorizados. O Scrum Master deve encorajar a equipe a propor e testar pequenas mudanças em seus processos, medindo os resultados e adaptando conforme necessário.</p>
