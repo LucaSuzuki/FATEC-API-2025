@@ -11,7 +11,6 @@
 <ul>
     <li>🏠 Homepage funcional com navegação intuitiva.</li>
     <li>📚 Seções educativas sobre metodologias ágeis implementadas.</li>
-    <li>🎯 Quiz de perfil Scrum totalmente funcional.</li>
     <li>📖 Páginas com todos os capítulos completos (capítulo 1 completo).</li>
     <li>📕 Explicação do Scrum (por cargos).</li>
     <li>📘 Explicação do Scrum (por metodologia).</li>
