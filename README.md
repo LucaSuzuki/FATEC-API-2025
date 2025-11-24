@@ -26,6 +26,16 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 - [DoR por Sprint](./Docs/sprints/doc_DOR_sprint.md)
 - [DoD por Sprint](./Docs/sprints/doc_DOD_sprint.md)
 
+#### 📋 Por Sprint Individual
+**Sprint 1:**
+- [DoR Sprint 1](./Docs/sprints/doc_DOR_sprint1.md) | [DoD Sprint 1](./Docs/sprints/doc_DOD_sprint1.md)
+
+**Sprint 2:**
+- [DoR Sprint 2](./Docs/sprints/doc_DOR_sprint2.md) | [DoD Sprint 2](./Docs/sprints/doc_DOD_sprint2.md)
+
+**Sprint 3:**
+- [DoR Sprint 3](./Docs/sprints/doc_DOR_sprint3.md) | [DoD Sprint 3](./Docs/sprints/doc_DOD_sprint3.md)
+
 ### 🎨 Modelagem
 - [Diagrama de Caso de Uso (.asta)](./Docs/usercase/UseCase.asta)
 - [Diagrama de Caso de Uso (imagem)](./Docs/usercase/usercase.md)
@@ -36,7 +46,7 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 
 - [Tecnologias Utilizadas](./Docs/technologies.md)
 - [Estrutura de Pastas do Projeto](./Docs/folder_structure.md)
-- Estratégia de Branch *(em desenvolvimento)*
+- [Estratégia de Branches](./Docs/branch_strategy.md)
 
 ---
 
@@ -66,7 +76,8 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 
 ### Sprint 3
 **Período:** 03/11 - 23/11
-- 📄 [Documentação da Sprint](#)
+
+- 📄 [Documentação da Sprint](./Docs/sprints/sprint_backlog3.md)
 - 🎥 [Vídeo do Incremento no YouTube](https://youtu.be/TF9etDAwNn4)
 
 ---
@@ -77,8 +88,46 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 
 ---
 
-## 📝 Notas
+## 🎯 Resultados e Entregas
 
-Este projeto está sendo desenvolvido seguindo as práticas e cerimônias do framework Scrum, com foco em entregar valor incremental através de sprints bem definidas.
+### 📊 Métricas do Projeto
+- **3 Sprints** concluídas com sucesso
+- **10 User Stories** implementadas
+- **Sistema completo** de treinamento em metodologia ágil
+- **Documentação técnica** abrangente e organizada
 
-**Status:** Em Desenvolvimento 🚧
+### 🏆 Principais Conquistas
+- ✅ Plataforma web funcional para ensino de Scrum
+- ✅ Sistema de quiz e avaliação implementado
+- ✅ Interface responsiva e intuitiva
+- ✅ Módulos educacionais para todos os papéis Scrum (PO, SM, Developer)
+- ✅ Documentação completa seguindo boas práticas ágeis
+
+### 🔍 Tecnologias Consolidadas
+- **Backend:** Python Flask
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Metodologia:** Scrum com Definition of Ready e Definition of Done
+- **Versionamento:** Git com estratégia de branches estruturada
+
+---
+
+## 🚀 Status do Projeto
+
+**Status Atual:** ✅ **Concluído com Sucesso**
+
+Este projeto foi desenvolvido seguindo rigorosamente as práticas e cerimônias do framework Scrum, demonstrando na prática os conceitos ensinados pela plataforma. Cada sprint foi planejada, executada e revisada com foco em entregar valor incremental e funcionalidades de alta qualidade.
+
+### 🎓 Impacto Educacional
+O sistema desenvolvido serve como uma ferramenta completa para:
+- **Capacitação** de equipes em metodologias ágeis
+- **Avaliação** de conhecimento em Scrum
+- **Aplicação prática** dos conceitos aprendidos
+- **Acompanhamento** do progresso de aprendizagem
+
+---
+
+## 📞 Contato e Suporte
+
+Para dúvidas, sugestões ou contribuições, consulte a [lista de membros da equipe](./Docs/members.md) ou abra uma issue no repositório.
+
+**Desenvolvido com 💜 pela equipe Fatecos**

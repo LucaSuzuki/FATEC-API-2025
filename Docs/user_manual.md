@@ -41,7 +41,7 @@
 
 <ol>
     <li>Abra seu navegador de internet (Chrome, Firefox, Edge, Safari)</li>
-    <li>Digite o endereço da aplicação: <code>[URL_DO_SISTEMA]</code></li>
+    <li>Digite o endereço da aplicação: <code>https://github.com/LucaSuzuki/FATEC-API-2025</code></li>
     <li>A página inicial será carregada automaticamente</li>
 </ol>
 
@@ -313,7 +313,7 @@ R: Entre em contato através dos canais de suporte listados abaixo.</p>
 </ul>
 
 <h4>📚 Base de Conhecimento</h4>
-<p>Acesse nossa base de conhecimento em: [URL]/ajuda</p>
+<p>Acesse nossa base de conhecimento em: <a href="https://github.com/LucaSuzuki/FATEC-API-2025/tree/main/Docs">https://github.com/LucaSuzuki/FATEC-API-2025/Docs</a></p>
 
 <hr>
 
@@ -350,7 +350,7 @@ R: Entre em contato através dos canais de suporte listados abaixo.</p>
 <h2>🔄 Atualizações</h2>
 
 <p><strong>Versão do Manual:</strong> 1.0<br>
-<strong>Última Atualização:</strong> [DATA]</p>
+<strong>Última Atualização:</strong> 23/11/2024</p>
 
 <p>Consulte esta página regularmente para verificar atualizações no sistema e novos recursos.</p>
 
