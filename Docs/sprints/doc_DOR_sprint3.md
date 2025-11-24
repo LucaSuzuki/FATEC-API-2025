@@ -1,13 +1,9 @@
 <h1> SPRINT 3</h1>
 <h3>Exemplificando os itens do backlog </h3>
 
-<i><b><p>7 - "Como usuário, quero ter acesso a uma avaliação completa do meu conhecimento em Scrum, para validar meu aprendizado através do sistema."</p></b></i>
+<i><b><p>8 - "Como desenvolvedor, preciso deixar o layout do projeto responsivo para mobile."</p></b></i>
 
-<i><b><p>8 - "Como gerente, quero visualizar relatórios de progresso da minha equipe, para acompanhar o desenvolvimento do conhecimento em metodologias ágeis."</p></b></i>
-
-<i><b><p>9 - "Como usuário, quero ter uma interface intuitiva e responsiva, para acessar o conteúdo em diferentes dispositivos."</p></b></i>
-
-<i><b><p>10 - "Como administrador, quero ter documentação técnica completa do sistema, para facilitar manutenções futuras."</p></b></i>
+<i><b><p>9 - "Como desenvolvedor, preciso criar a funcionalidade de trocar de temas dentre o projeto (preto e branco)."</p></b></i>
 
 <ul>
     <li>🎯 Critérios de aceitação definidos para todas as user stories.</li>

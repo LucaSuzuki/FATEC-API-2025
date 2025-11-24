@@ -8,10 +8,10 @@
 <i><b><p>6 - "Como um aprendiz, quero que eu possa com o treinamento dado, ter capacidade de aplicar e entender a metodologia ágil SCRUM a partir de testes."</p></b></i>
 
 <ul>
-    <li>📚 Módulos de treinamento completos para todos os papéis Scrum.</li>
+    <li>📚 Módulos de treinamento completos para todos os papéis Scrum (capítulo 2).</li>
     <li>📊 Sistema de avaliação de proficiência implementado.</li>
     <li>🎯 Testes práticos para validação de conhecimento.</li>
-    <li>📈 Dashboard para acompanhamento de progresso.</li>
+    <li>📧 Sistema de email com relatório de nota configurado.</li>
     <li>📝 Conteúdo educacional revisado e validado.</li>
     <li>🔧 Integração backend-frontend finalizada.</li>
 </ul>
