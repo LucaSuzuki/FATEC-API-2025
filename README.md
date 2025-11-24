@@ -1,4 +1,4 @@
-<div align="center">
+<img width="307" height="169" alt="image" src="https://github.com/user-attachments/assets/0f204960-a3ed-40c6-b36c-cd68444d4bdd" /><div align="center">
 <img width="300" height="400" alt="TSCRUM_FATECOS-Photoroom" src="https://github.com/user-attachments/assets/a028cb5d-8196-4121-b573-dad686b239ac" />
 </div>
 
@@ -65,8 +65,10 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 - 📄 [Documentação da Sprint](./Docs/sprints/sprint_backlog2.md)
 - 🎥 [Vídeo do Incremento no YouTube](https://youtu.be/9lsROn2HaGY)
 
-### Próximas Sprints
-*(Documentação será adicionada conforme progresso)*
+### Sprint 3
+**Período:** 03/11 - 23/11
+- 📄 [Documentação da Sprint](#)
+- 🎥 [Vídeo do Incremento no YouTube](https://youtu.be/TF9etDAwNn4)
 
 ---
 
