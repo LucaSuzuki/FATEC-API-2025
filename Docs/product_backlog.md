@@ -66,7 +66,7 @@
     <tr>
         <td> 8 </td>
         <td> Baixa </td>
-        <td> Como desenvolvedor, preciso deixar o layout do projeto responsivo para mobile.  </td>
+        <td> Como usuário, quero acessar a plataforma de qualquer dispositivo móvel com uma experiência otimizada, para poder estudar metodologias ágeis em qualquer lugar.  </td>
         <td> 23/11 </td>
         <td> 5 </td>
         <td> 3 </td>
@@ -75,9 +75,17 @@
         </tr>
         <td> 9 </td>
         <td> Baixa </td>
-        <td> Como desenvolvedor, preciso criar a funcionalidade de trocar de temas dentre o projeto (preto e branco). </td>
+        <td> Como usuário, quero poder alternar entre temas claro e escuro na plataforma, para ter uma experiência visual confortável conforme minha preferência e ambiente de estudo. </td>
         <td> 23/11 </td>
         <td> 5 </td>
+        <td> 3 </td>
+    </tr>
+    <tr>
+        <td> 10 </td>
+        <td> Média </td>
+        <td> Como gerente/usuário, preciso que a plataforma tenha uma interface profissional e moderna que transmita credibilidade e seriedade do conteúdo educacional, para que minha equipe tenha confiança na qualidade do treinamento oferecido. </td>
+        <td> 23/11 </td>
+        <td> 8 </td>
         <td> 3 </td>
     </tr>
 </table>

@@ -5,11 +5,11 @@
         <th>Previsão da Sprint (Extras, sem compromisso de entrega)</th>
     </tr>
     <td>
-        10 Story Points
+        18 Story Points
     </td>
-    <td>User Stories de rank 8 e 9 (10 Story Points) 
+    <td>Foco total em UI/UX: Responsividade mobile, sistema de temas e design profissional (18 Story Points) 
     </td>
-    <td>Melhorias de UI/UX e documentação adicional</td>
+    <td>Refinamentos visuais adicionais, testes de usabilidade e otimizações de acessibilidade</td>
 </table>
 <table>
    <tr>
@@ -34,6 +34,14 @@
         <td> Como desenvolvedor, preciso criar a funcionalidade de trocar de temas dentre o projeto (preto e branco). </td>
         <td> 23/11 </td>
         <td> 5 </td>
+        <td> 3 </td>
+    </tr>
+    <tr>
+        <td> 10 </td>
+        <td> Média </td>
+        <td> Como gerente/usuário, preciso que a plataforma tenha uma interface profissional e moderna que transmita credibilidade e seriedade do conteúdo educacional, para que minha equipe tenha confiança na qualidade do treinamento oferecido. </td>
+        <td> 23/11 </td>
+        <td> 8 </td>
         <td> 3 </td>
     </tr>
 </table>
