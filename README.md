@@ -88,44 +88,6 @@ Desenvolver um sistema web que indique todos os processos e artefatos da metodol
 
 ---
 
-## 🎯 Resultados e Entregas
-
-### 📊 Métricas do Projeto
-- **3 Sprints** concluídas com sucesso
-- **10 User Stories** implementadas
-- **Sistema completo** de treinamento em metodologia ágil
-- **Documentação técnica** abrangente e organizada
-
-### 🏆 Principais Conquistas
-- ✅ Plataforma web funcional para ensino de Scrum
-- ✅ Sistema de quiz e avaliação implementado
-- ✅ Interface responsiva e intuitiva
-- ✅ Módulos educacionais para todos os papéis Scrum (PO, SM, Developer)
-- ✅ Documentação completa seguindo boas práticas ágeis
-
-### 🔍 Tecnologias Consolidadas
-- **Backend:** Python Flask
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Metodologia:** Scrum com Definition of Ready e Definition of Done
-- **Versionamento:** Git com estratégia de branches estruturada
-
----
-
-## 🚀 Status do Projeto
-
-**Status Atual:** ✅ **Concluído com Sucesso**
-
-Este projeto foi desenvolvido seguindo rigorosamente as práticas e cerimônias do framework Scrum, demonstrando na prática os conceitos ensinados pela plataforma. Cada sprint foi planejada, executada e revisada com foco em entregar valor incremental e funcionalidades de alta qualidade.
-
-### 🎓 Impacto Educacional
-O sistema desenvolvido serve como uma ferramenta completa para:
-- **Capacitação** de equipes em metodologias ágeis
-- **Avaliação** de conhecimento em Scrum
-- **Aplicação prática** dos conceitos aprendidos
-- **Acompanhamento** do progresso de aprendizagem
-
----
-
 ## 📞 Contato e Suporte
 
 Para dúvidas, sugestões ou contribuições, consulte a [lista de membros da equipe](./Docs/members.md) ou abra uma issue no repositório.
