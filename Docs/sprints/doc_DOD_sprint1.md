@@ -9,9 +9,10 @@
 <i><b><p>3 - "Como gerente, quero fazer um teste para prever o tipo de perfil que cada papel Scrum possui. (PO, SM, Developer) Para que minha equipe possa se enquadrar em algum deles."</p></b></i>
 
 <ul>
-    <li>✉️Criação do sistema de envio de relatório via Email. </li>
-    <li>📖Páginas com todos os capítulos completos. (capítulo 1 completo)</li>
-    <li>📕Explicação do Scrum (por cargos) </li>
-    <li>📘Explicação do Scrum (por metodologia) </li>
-
+    <li>🏠 Homepage funcional com navegação intuitiva.</li>
+    <li>📚 Seções educativas sobre metodologias ágeis implementadas.</li>
+    <li>🎯 Quiz de perfil Scrum totalmente funcional.</li>
+    <li>📖 Páginas com todos os capítulos completos (capítulo 1 completo).</li>
+    <li>📕 Explicação do Scrum (por cargos).</li>
+    <li>📘 Explicação do Scrum (por metodologia).</li>
 </ul>
